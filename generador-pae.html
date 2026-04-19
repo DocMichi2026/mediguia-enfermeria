@@ -391,7 +391,7 @@
       <span class="highlight">Lee patologías desde data/patologias.json</span>
     </div>
   </section>
-
+  
   <section id="configuracion">
     <div class="layout">
       <div class="sidebar stack">
@@ -467,6 +467,10 @@
           <div class="loader" id="loader">Generando vista previa...</div>
         </div>
       </div>
+
+      <button class="btn btn-secondary" onclick="exportarWord()">
+  Descargar en Word
+</button>
 
       <div id="resultado" class="result-box">
         <div class="empty-state" id="emptyState">
@@ -739,6 +743,47 @@
       actualizarModo();
       cargarPatologias();
     });
+    function exportarWord() {
+  const contenido = document.getElementById('previewContent');
+
+  if (contenido.classList.contains('hidden')) {
+    alert("Primero genera el PAE");
+    return;
+  }
+
+  const html = `
+  <html xmlns:o='urn:schemas-microsoft-com:office:office' 
+        xmlns:w='urn:schemas-microsoft-com:office:word'>
+  <head>
+    <meta charset='utf-8'>
+    <title>PAE</title>
+    <style>
+      body { font-family: Arial; }
+      h2 { color: #ff4d88; }
+      h4 { color: #e6005c; }
+      ul { margin-bottom: 10px; }
+    </style>
+  </head>
+  <body>
+    ${contenido.innerHTML}
+  </body>
+  </html>
+  `;
+
+  const blob = new Blob(['\ufeff', html], {
+    type: 'application/msword'
+  });
+
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'PAE.doc';
+  document.body.appendChild(link);
+  link.click();
+
+  document.body.removeChild(link);
+}
   </script>
 </body>
 </html>
