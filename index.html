@@ -35,7 +35,6 @@
 
     .logo{font-size:1.7rem;font-weight:bold;}
     .logo span{color:#ffe4ec;}
-
     .menu{display:flex;gap:12px;flex-wrap:wrap;}
 
     .menu button{
@@ -70,7 +69,6 @@
 
     .hero-text h1{font-size:3rem;margin-bottom:15px;color:#ff4d88;}
     .hero-text p{font-size:1.08rem;line-height:1.7;margin-bottom:20px;color:#7a1e3a;}
-
     .hero-buttons{display:flex;gap:12px;flex-wrap:wrap;}
 
     .hero-buttons button{
@@ -85,7 +83,6 @@
 
     .primary{background:#ff4d88;color:white;}
     .primary:hover{background:#e6005c;}
-
     .secondary{background:#ffe4ec;color:#ff4d88;}
     .secondary:hover{background:#ffd6e7;}
 
@@ -139,7 +136,6 @@
     }
 
     .card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(255,77,136,0.15);}
-
     .card h3{color:#ff4d88;margin-bottom:10px;}
     .card p{color:#7a1e3a;line-height:1.6;margin-bottom:15px;}
 
@@ -175,19 +171,75 @@
       padding:16px;border-radius:18px;margin-top:10px;
     }
 
-    footer{text-align:center;padding:30px 20px 50px;color:#7a1e3a;font-size:0.95rem;}
-
     .hidden{display:none;}
 
     #resultadoBusqueda{
-      margin-top:18px;padding:18px;border-radius:18px;
-      background:#fff0f5;border:1px solid #ffd6e7;color:#7a1e3a;line-height:1.7;
+      margin-top:18px;
+      padding:22px;
+      border-radius:22px;
+      background:#fff0f5;
+      border:1px solid #ffd6e7;
+      color:#7a1e3a;
+      line-height:1.7;
     }
+
+    .pae-header{
+      margin-bottom:18px;
+      padding-bottom:12px;
+      border-bottom:2px solid #ffd6e7;
+    }
+
+    .pae-header h3{
+      color:#ff4d88;
+      margin-bottom:6px;
+      font-size:1.8rem;
+    }
+
+    .pae-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:16px;
+      margin-top:16px;
+    }
+
+    .pae-block{
+      background:white;
+      border:1px solid #ffd6e7;
+      border-radius:18px;
+      padding:18px;
+    }
+
+    .pae-block h4{
+      color:#ff4d88;
+      margin-bottom:10px;
+      font-size:1.08rem;
+    }
+
+    .pae-block ul{
+      padding-left:18px;
+    }
+
+    .pae-block li{
+      margin-bottom:8px;
+      color:#7a1e3a;
+    }
+
+    .tagline{
+      display:inline-block;
+      background:#ffe4ec;
+      color:#ff4d88;
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:0.92rem;
+      font-weight:bold;
+      margin-top:8px;
+    }
+
+    footer{text-align:center;padding:30px 20px 50px;color:#7a1e3a;font-size:0.95rem;}
 
     @media(max-width:900px){
       .hero{grid-template-columns:1fr;}
       .hero-text h1{font-size:2.3rem;}
-    }
     }
   </style>
 </head>
@@ -198,7 +250,7 @@
       <div class="logo">MediGuía <span>Enfermería</span></div>
       <div class="menu">
         <button onclick="irA('inicio')">Inicio</button>
-        <button onclick="irA('patologias')">Patologías</button>
+        <button onclick="irA('paes')">PAE</button>
         <button onclick="irA('herramientas')">Herramientas</button>
         <button onclick="irA('ia')">IA</button>
       </div>
@@ -207,39 +259,38 @@
 
   <section class="hero" id="inicio">
     <div class="hero-text">
-      <h1>Tu apoyo digital para enfermería</h1>
+      <h1>MediGuía para hacer PAE</h1>
       <p>
-        MediGuía Enfermería está pensada como una base práctica para consultar patologías,
-        signos y síntomas, cuidados, diagnósticos de enfermería y contenido útil para estudio.
-        La idea es que sea clara, rápida y que más adelante pueda crecer con una IA propia.
+        Esta página ya no está pensada como una enciclopedia de patologías, sino como una guía práctica
+        para construir procesos de atención de enfermería. La idea es encontrar una condición clínica y
+        ver directamente valoración, diagnósticos, resultados esperados, intervenciones y cuidados.
       </p>
       <div class="hero-buttons">
-        <button class="primary" onclick="irA('patologias')">Ver patologías</button>
-        <button class="secondary" onclick="irA('ia')">Explorar idea de IA</button>
+        <button class="primary" onclick="irA('paes')">Ver plantillas PAE</button>
+        <button class="secondary" onclick="irA('ia')">Idea futura de IA</button>
       </div>
     </div>
 
     <div class="hero-card">
-      <div class="emoji">🩺</div>
-      <h3>MediGuía te acompaña</h3>
+      <div class="emoji">💗</div>
+      <h3>Enfoque práctico</h3>
       <p>
-        Consulta rápida, estructura visual limpia y espacio para seguir agregando temas,
-        cuidados e información clínica de forma organizada.
+        Buscar rápido, organizar la información y convertirla en una base útil para tareas, exposiciones y
+        planes de cuidado de enfermería.
       </p>
     </div>
   </section>
 
-  <section id="patologias">
+  <section id="paes">
     <div class="section-box">
-      <h2 class="section-title">Buscador de patologías</h2>
+      <h2 class="section-title">Buscador de PAE</h2>
       <p class="section-subtitle">
-        Aquí luego podrás buscar una patología y ver su resumen, síntomas, cuidados de enfermería,
-        complicaciones y más. Por ahora ya te dejo una base que funciona con ejemplos.
+        Escribe una condición clínica y la página te mostrará una ficha base orientada al Proceso de Atención de Enfermería.
       </p>
 
       <div class="search-box">
-        <input type="text" id="busqueda" placeholder="Ejemplo: apendicitis, hipertensión, diabetes...">
-        <button onclick="buscarPatologia()">Buscar</button>
+        <input type="text" id="busqueda" placeholder="Ejemplo: apendicitis, hipertensión, diabetes, neumonía...">
+        <button onclick="buscarPAE()">Buscar</button>
       </div>
 
       <div id="resultadoBusqueda" class="hidden"></div>
@@ -247,26 +298,26 @@
       <div class="cards" style="margin-top:22px;">
         <div class="card">
           <h3>Apendicitis</h3>
-          <p>Inflamación del apéndice que suele provocar dolor abdominal, fiebre y náuseas.</p>
-          <button onclick="mostrarPatologia('apendicitis')">Ver ejemplo</button>
+          <p>Ficha PAE con valoración, diagnósticos, NOC, NIC y cuidados prioritarios.</p>
+          <button onclick="mostrarPAE('apendicitis')">Ver PAE</button>
         </div>
 
         <div class="card">
           <h3>Hipertensión arterial</h3>
-          <p>Elevación persistente de la presión arterial que puede afectar distintos órganos.</p>
-          <button onclick="mostrarPatologia('hipertension')">Ver ejemplo</button>
+          <p>Base práctica para control, vigilancia y educación del paciente.</p>
+          <button onclick="mostrarPAE('hipertension')">Ver PAE</button>
         </div>
 
         <div class="card">
           <h3>Diabetes mellitus</h3>
-          <p>Enfermedad metabólica caracterizada por alteración en el control de la glucosa.</p>
-          <button onclick="mostrarPatologia('diabetes')">Ver ejemplo</button>
+          <p>Estructura útil para autocuidado, control glucémico y prevención de complicaciones.</p>
+          <button onclick="mostrarPAE('diabetes')">Ver PAE</button>
         </div>
 
         <div class="card">
           <h3>Neumonía</h3>
-          <p>Infección respiratoria que puede causar fiebre, tos, dificultad respiratoria y malestar.</p>
-          <button onclick="mostrarPatologia('neumonia')">Ver ejemplo</button>
+          <p>Ficha enfocada en patrón respiratorio, oxigenación y vigilancia clínica.</p>
+          <button onclick="mostrarPAE('neumonia')">Ver PAE</button>
         </div>
       </div>
     </div>
@@ -274,30 +325,30 @@
 
   <section id="herramientas">
     <div class="section-box">
-      <h2 class="section-title">Herramientas que puede llevar</h2>
+      <h2 class="section-title">Herramientas que sí le sirven al PAE</h2>
       <p class="section-subtitle">
-        Esta parte sirve para mostrar desde el inicio todo lo que MediGuía Enfermería podría incluir.
+        Aquí lo importante no es solo la patología, sino cómo se valora y qué hace enfermería con esa información.
       </p>
 
       <div class="features">
         <div class="feature">
-          <h4>Resumen de patologías</h4>
-          <p>Definición, causas, signos y síntomas, complicaciones y tratamiento general.</p>
+          <h4>Valoración inicial</h4>
+          <p>Datos subjetivos y objetivos, signos vitales, observación clínica y necesidades alteradas.</p>
         </div>
 
         <div class="feature">
-          <h4>Cuidados de enfermería</h4>
-          <p>Intervenciones básicas, vigilancia, educación al paciente y prevención de riesgos.</p>
+          <h4>Diagnósticos NANDA</h4>
+          <p>Diagnósticos sugeridos según la condición del paciente y sus manifestaciones clínicas.</p>
         </div>
 
         <div class="feature">
-          <h4>NANDA, NOC y NIC</h4>
-          <p>Más adelante se puede agregar una estructura pensada para ayudar con PAE.</p>
+          <h4>Resultados NOC</h4>
+          <p>Objetivos esperados para orientar la evolución y evaluar la respuesta del paciente.</p>
         </div>
 
         <div class="feature">
-          <h4>Modo estudio</h4>
-          <p>Mini exámenes, tarjetas de repaso y repasos rápidos por tema o sistema.</p>
+          <h4>Intervenciones NIC</h4>
+          <p>Actividades de enfermería que pueden apoyar el cuidado, la vigilancia y la educación.</p>
         </div>
       </div>
     </div>
@@ -305,96 +356,238 @@
 
   <section id="ia">
     <div class="ai-box">
-      <h2>¿Tu patología no está?</h2>
+      <h2>¿No está el caso que buscas?</h2>
       <p>
-        Aquí puede ir en el futuro una herramienta de IA que permita buscar una patología que todavía
-        no esté en la base de datos. La idea sería que el sistema consulte la información, la ordene,
-        revise si ya existe una versión o sinónimo y luego la agregue sin duplicados.
+        Más adelante esta sección puede servir para generar una base PAE a partir del problema de salud que escriba el usuario.
+        La IA no buscaría solo definición, sino una estructura lista con valoración, posibles diagnósticos, NOC, NIC y cuidados.
       </p>
 
       <div class="mini">
         <strong>Idea futura:</strong>
         <p style="margin-top:8px;">
-          El usuario escribe una patología → el sistema revisa si ya existe o si hay sinónimos →
-          si no está, genera una ficha inicial con definición, síntomas y cuidados de enfermería →
-          luego esa ficha se puede revisar y guardar en la base de MediGuía.
+          El usuario escribe la condición o caso clínico → el sistema revisa si ya existe → si no existe,
+          propone una ficha PAE inicial y luego se guarda evitando duplicados o sinónimos repetidos.
         </p>
       </div>
     </div>
   </section>
 
   <footer>
-    MediGuía Enfermería · Base inicial de la página
+    MediGuía Enfermería · Base inicial orientada a PAE
   </footer>
 
   <script>
-    const patologias = {
+    const paes = {
       apendicitis: {
-        nombre: "Apendicitis",
-        texto: `
-          <strong>Definición:</strong> inflamación del apéndice, generalmente de inicio agudo.<br><br>
-          <strong>Signos y síntomas:</strong> dolor abdominal que puede iniciar en región periumbilical y luego localizarse en fosa ilíaca derecha, fiebre, náuseas, vómitos y sensibilidad abdominal.<br><br>
-          <strong>Cuidados de enfermería:</strong> vigilar signos vitales, valorar dolor, mantener reposo, controlar hidratación, preparar para procedimientos indicados y educar al paciente.
-        `
+        nombre: 'PAE base · Apendicitis',
+        enfoque: 'Paciente con dolor abdominal agudo y probable manejo quirúrgico.',
+        valoracion: [
+          'Valorar características del dolor: localización, intensidad, duración y factores asociados.',
+          'Controlar signos vitales y vigilar fiebre.',
+          'Observar náuseas, vómitos, sensibilidad abdominal y defensa muscular.',
+          'Verificar estado de hidratación y tolerancia oral.',
+          'Identificar ansiedad relacionada con el procedimiento o la hospitalización.'
+        ],
+        nanda: [
+          'Dolor agudo relacionado con proceso inflamatorio evidenciado por verbalización de dolor y sensibilidad abdominal.',
+          'Riesgo de infección relacionado con proceso inflamatorio y posible intervención quirúrgica.',
+          'Ansiedad relacionada con hospitalización y procedimiento quirúrgico.'
+        ],
+        noc: [
+          'Control del dolor.',
+          'Estado infeccioso controlado.',
+          'Nivel de ansiedad disminuido.',
+          'Paciente preparado para procedimiento indicado.'
+        ],
+        nic: [
+          'Manejo del dolor.',
+          'Monitorización de signos vitales.',
+          'Vigilancia de signos y síntomas de complicación.',
+          'Preparación preoperatoria según indicación médica.',
+          'Disminución de la ansiedad mediante apoyo emocional e información clara.'
+        ],
+        cuidados: [
+          'Mantener ayuno si está indicado.',
+          'Favorecer reposo y ambiente tranquilo.',
+          'Vigilar cambios en dolor abdominal o empeoramiento clínico.',
+          'Administrar tratamiento prescrito y registrar respuesta.',
+          'Educar al paciente sobre el proceso y cuidados inmediatos.'
+        ]
       },
       hipertension: {
-        nombre: "Hipertensión arterial",
-        texto: `
-          <strong>Definición:</strong> elevación sostenida de la presión arterial por arriba de los valores normales.<br><br>
-          <strong>Signos y síntomas:</strong> a veces puede ser asintomática, aunque algunas personas presentan cefalea, mareo o visión borrosa.<br><br>
-          <strong>Cuidados de enfermería:</strong> control periódico de la presión arterial, educación sobre dieta y medicamentos, vigilancia de signos de alarma y promoción de hábitos saludables.
-        `
+        nombre: 'PAE base · Hipertensión arterial',
+        enfoque: 'Paciente con elevación persistente de presión arterial y necesidad de control continuo.',
+        valoracion: [
+          'Tomar presión arterial con técnica correcta y de forma periódica.',
+          'Valorar cefalea, mareo, visión borrosa o dolor torácico si están presentes.',
+          'Indagar adherencia al tratamiento y hábitos de vida.',
+          'Evaluar consumo de sodio, actividad física, estrés y control médico previo.',
+          'Observar signos de complicaciones cardiovasculares o neurológicas.'
+        ],
+        nanda: [
+          'Manejo inefectivo de la salud relacionado con conocimiento insuficiente del tratamiento.',
+          'Riesgo de perfusión tisular ineficaz relacionado con cifras tensionales elevadas.',
+          'Conocimientos deficientes sobre autocuidado y control de la enfermedad.'
+        ],
+        noc: [
+          'Presión arterial dentro de parámetros esperados.',
+          'Mayor adherencia al tratamiento.',
+          'Conocimiento mejorado sobre dieta, medicamentos y signos de alarma.'
+        ],
+        nic: [
+          'Monitorización de la presión arterial.',
+          'Educación sobre medicamentos y adherencia terapéutica.',
+          'Fomento del ejercicio y hábitos saludables.',
+          'Orientación sobre dieta baja en sodio y control periódico.'
+        ],
+        cuidados: [
+          'Registrar presión arterial y evolución clínica.',
+          'Reforzar cumplimiento del tratamiento indicado.',
+          'Educar sobre signos de alarma y consulta oportuna.',
+          'Promover disminución de estrés y autocuidado.'
+        ]
       },
       diabetes: {
-        nombre: "Diabetes mellitus",
-        texto: `
-          <strong>Definición:</strong> trastorno metabólico caracterizado por hiperglucemia por alteración en la producción o acción de la insulina.<br><br>
-          <strong>Signos y síntomas:</strong> poliuria, polidipsia, polifagia, fatiga y pérdida de peso en algunos casos.<br><br>
-          <strong>Cuidados de enfermería:</strong> control de glucosa, educación sobre alimentación, administración correcta de tratamiento, vigilancia de complicaciones y fomento del autocuidado.
-        `
+        nombre: 'PAE base · Diabetes mellitus',
+        enfoque: 'Paciente con alteración del control glucémico y necesidad de educación continua.',
+        valoracion: [
+          'Controlar glucemia capilar según indicación.',
+          'Valorar signos de hiperglucemia o hipoglucemia.',
+          'Indagar hábitos alimenticios y adherencia al tratamiento.',
+          'Observar estado de piel, hidratación y presencia de lesiones.',
+          'Evaluar conocimiento del paciente sobre su enfermedad y autocuidado.'
+        ],
+        nanda: [
+          'Riesgo de nivel de glucemia inestable relacionado con manejo inadecuado del tratamiento.',
+          'Conocimientos deficientes sobre autocontrol de la diabetes.',
+          'Riesgo de infección relacionado con alteración metabólica.'
+        ],
+        noc: [
+          'Glucemia controlada dentro de valores esperados.',
+          'Mayor conocimiento sobre autocuidado.',
+          'Disminución del riesgo de complicaciones.'
+        ],
+        nic: [
+          'Monitorización de glucosa en sangre.',
+          'Educación sobre alimentación, medicamentos y signos de alarma.',
+          'Fomento del autocuidado.',
+          'Vigilancia de la integridad cutánea y prevención de lesiones.'
+        ],
+        cuidados: [
+          'Registrar glucemias y respuesta al tratamiento.',
+          'Reforzar dieta adecuada y horarios establecidos.',
+          'Educar sobre cuidado de pies y prevención de heridas.',
+          'Promover seguimiento médico y apego terapéutico.'
+        ]
       },
       neumonia: {
-        nombre: "Neumonía",
-        texto: `
-          <strong>Definición:</strong> infección del tejido pulmonar que compromete el intercambio gaseoso.<br><br>
-          <strong>Signos y síntomas:</strong> fiebre, tos, dolor torácico, dificultad respiratoria, secreciones y malestar general.<br><br>
-          <strong>Cuidados de enfermería:</strong> vigilar respiración y saturación, facilitar posición cómoda, favorecer hidratación, controlar temperatura y reforzar indicaciones del tratamiento.
-        `
+        nombre: 'PAE base · Neumonía',
+        enfoque: 'Paciente con compromiso respiratorio e intercambio gaseoso alterado.',
+        valoracion: [
+          'Valorar frecuencia respiratoria, saturación de oxígeno y esfuerzo respiratorio.',
+          'Observar tos, secreciones, fiebre y dolor torácico.',
+          'Auscultar campos pulmonares y registrar hallazgos.',
+          'Valorar coloración de piel y mucosas.',
+          'Identificar intolerancia a la actividad y fatiga.'
+        ],
+        nanda: [
+          'Limpieza ineficaz de las vías aéreas relacionada con secreciones.',
+          'Intercambio gaseoso deteriorado relacionado con proceso infeccioso pulmonar.',
+          'Hipertermia relacionada con proceso infeccioso.'
+        ],
+        noc: [
+          'Mejorar oxigenación del paciente.',
+          'Mantener vía aérea permeable.',
+          'Disminuir temperatura corporal.',
+          'Paciente con menor dificultad respiratoria.'
+        ],
+        nic: [
+          'Monitorización respiratoria.',
+          'Manejo de la vía aérea.',
+          'Control de la temperatura.',
+          'Administración de oxígeno según indicación.',
+          'Fomento de hidratación y eliminación de secreciones.'
+        ],
+        cuidados: [
+          'Colocar al paciente en posición que facilite la respiración.',
+          'Vigilar saturación y signos de dificultad respiratoria.',
+          'Administrar tratamiento indicado y valorar respuesta.',
+          'Favorecer higiene bronquial y educación básica al paciente.'
+        ]
       }
     };
 
     function irA(id){
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+      document.getElementById(id).scrollIntoView({behavior:'smooth'});
     }
 
-    function mostrarPatologia(clave){
+    function crearLista(items){
+      return `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+    }
+
+    function renderPAE(data){
+      return `
+        <div class="pae-header">
+          <h3>${data.nombre}</h3>
+          <p>${data.enfoque}</p>
+          <span class="tagline">Formato orientado al Proceso de Atención de Enfermería</span>
+        </div>
+        <div class="pae-grid">
+          <div class="pae-block">
+            <h4>Valoración</h4>
+            ${crearLista(data.valoracion)}
+          </div>
+          <div class="pae-block">
+            <h4>Diagnósticos NANDA</h4>
+            ${crearLista(data.nanda)}
+          </div>
+          <div class="pae-block">
+            <h4>Resultados esperados NOC</h4>
+            ${crearLista(data.noc)}
+          </div>
+          <div class="pae-block">
+            <h4>Intervenciones NIC</h4>
+            ${crearLista(data.nic)}
+          </div>
+          <div class="pae-block" style="grid-column:1/-1;">
+            <h4>Cuidados de enfermería prioritarios</h4>
+            ${crearLista(data.cuidados)}
+          </div>
+        </div>
+      `;
+    }
+
+    function mostrarPAE(clave){
       const box = document.getElementById('resultadoBusqueda');
-      const patologia = patologias[clave];
-
       box.classList.remove('hidden');
-      box.innerHTML = `<h3 style="margin-bottom:10px; color:#0d3b66;">${patologia.nombre}</h3>${patologia.texto}`;
-      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      box.innerHTML = renderPAE(paes[clave]);
+      box.scrollIntoView({behavior:'smooth', block:'center'});
     }
 
-    function buscarPatologia(){
+    function buscarPAE(){
       const valor = document.getElementById('busqueda').value.trim().toLowerCase();
+      const box = document.getElementById('resultadoBusqueda');
 
       if(valor.includes('apend')){
-        mostrarPatologia('apendicitis');
+        mostrarPAE('apendicitis');
       }else if(valor.includes('hipert')){
-        mostrarPatologia('hipertension');
+        mostrarPAE('hipertension');
       }else if(valor.includes('diabet')){
-        mostrarPatologia('diabetes');
+        mostrarPAE('diabetes');
       }else if(valor.includes('neum')){
-        mostrarPatologia('neumonia');
+        mostrarPAE('neumonia');
       }else if(valor === ''){
-        const box = document.getElementById('resultadoBusqueda');
         box.classList.remove('hidden');
-        box.innerHTML = 'Escribe el nombre de una patología para buscar.';
+        box.innerHTML = 'Escribe una condición clínica para mostrar una ficha base de PAE.';
       }else{
-        const box = document.getElementById('resultadoBusqueda');
         box.classList.remove('hidden');
-        box.innerHTML = `No encontré esa patología en la base actual.<br><br><strong>Más adelante aquí podría entrar la IA</strong> para buscarla, ordenarla y proponer agregarla a MediGuía.`;
+        box.innerHTML = `
+          <div class="pae-header">
+            <h3>No encontré esa ficha PAE en la base actual</h3>
+            <p>Más adelante aquí puede entrar la IA para generar una estructura inicial con valoración, NANDA, NOC, NIC y cuidados.</p>
+            <span class="tagline">Pensado para casos que aún no estén guardados</span>
+          </div>
+        `;
       }
     }
   </script>
