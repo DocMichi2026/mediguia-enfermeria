@@ -1,13 +1,15 @@
 {
   "metadata": {
-    "version": "MediGuía Enfermería 1.0",
+    "version": "MediGuía Enfermería 2.0",
     "compatible_con": [
       "nanda.json",
-      "generador-pae.html"
+      "generador-pae.html",
+      "base-pae.html"
     ],
     "estructura_diagnosticos": "diagnosticos_sugeridos usa códigos NANDA tomados de nanda.json; diagnosticos_respaldo conserva etiquetas heredadas si una coincidencia exacta no existe.",
     "total_patologias": 50,
-    "fecha_actualizacion": "2026-04-19"
+    "fecha_actualizacion": "2026-04-19",
+    "estructura": "Molde clínico para PAE corto y largo"
   },
   "patologias": [
     {
@@ -18,9 +20,11 @@
       ],
       "categoria": "Gastrointestinal / Quirúrgica",
       "descripcion_breve": "Inflamación aguda del apéndice vermiforme con dolor abdominal progresivo.",
-      "definicion": "Proceso inflamatorio agudo del apéndice que suele requerir abordaje quirúrgico oportuno.",
-      "fisiopatologia": "La obstrucción luminal favorece congestión, proliferación bacteriana e inflamación, con riesgo de perforación.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Proceso inflamatorio agudo del apéndice que suele requerir abordaje quirúrgico oportuno.",
+      "procedimiento_quirurgico_base": "Debido al diagnóstico de apendicitis aguda, el manejo puede incluir preparación preoperatoria y tratamiento quirúrgico según indicación médica. De forma general, el procedimiento busca corregir la causa del cuadro, disminuir la inflamación o infección, aliviar síntomas y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de apendicitis aguda permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La obstrucción luminal favorece congestión, proliferación bacteriana e inflamación, con riesgo de perforación.",
+      "signos_sintomas_base": [
         "dolor periumbilical que migra a fosa iliaca derecha",
         "náuseas",
         "vómitos",
@@ -28,59 +32,59 @@
         "fiebre",
         "dolor a la palpación abdominal"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "obstrucción por fecalito",
         "hiperplasia linfoide",
         "infección",
         "antecedentes de dolor abdominal agudo"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "perforación",
         "peritonitis",
         "absceso intraabdominal",
         "sepsis"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar localización e intensidad del dolor",
         "controlar temperatura y signos vitales",
         "observar náuseas y vómitos",
         "valorar signos de irritación peritoneal",
         "mantener ayuno según indicación"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00004",
+        "00384"
+      ],
+      "noc_base": [
         "Control del dolor",
         "Severidad de la infección",
         "Estado gastrointestinal"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo del dolor",
         "Vigilancia",
         "Control de infecciones",
         "Manejo de la náusea"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "preparar para estudios y cirugía si aplica",
         "mantener reposo",
         "administrar medicación prescrita",
         "registrar cambios clínicos"
       ],
-      "observaciones": "Frecuente en PAE preoperatorio y postoperatorio.",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "Frecuente en PAE preoperatorio y postoperatorio.",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "preoperatorio",
         "postoperatorio"
       ],
-      "diagnosticos_sugeridos": [
-        "00132",
-        "00004",
-        "00384"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "colecistitis-aguda",
@@ -91,9 +95,11 @@
       ],
       "categoria": "Gastrointestinal / Quirúrgica",
       "descripcion_breve": "Inflamación aguda de la vesícula biliar, por lo general asociada a cálculos.",
-      "definicion": "Inflamación de la vesícula biliar causada habitualmente por obstrucción del conducto cístico.",
-      "fisiopatologia": "La obstrucción biliar produce distensión, inflamación local e infección secundaria en algunos casos.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Inflamación de la vesícula biliar causada habitualmente por obstrucción del conducto cístico.",
+      "procedimiento_quirurgico_base": "Debido al diagnóstico de colecistitis aguda, el manejo puede incluir preparación preoperatoria y tratamiento quirúrgico según indicación médica. De forma general, el procedimiento busca corregir la causa del cuadro, disminuir la inflamación o infección, aliviar síntomas y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de colecistitis aguda permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La obstrucción biliar produce distensión, inflamación local e infección secundaria en algunos casos.",
+      "signos_sintomas_base": [
         "dolor en hipocondrio derecho",
         "náuseas",
         "vómitos",
@@ -101,58 +107,58 @@
         "intolerancia a grasas",
         "sensibilidad abdominal"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "colelitiasis",
         "dieta alta en grasas",
         "obesidad",
         "sexo femenino",
         "edad media o avanzada"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "empiema vesicular",
         "perforación",
         "pancreatitis",
         "sepsis"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar dolor y náuseas",
         "observar fiebre",
         "controlar tolerancia oral",
         "evaluar coloración de piel y mucosas",
         "vigilar abdomen"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00343",
+        "00004"
+      ],
+      "noc_base": [
         "Control del dolor",
         "Estado nutricional",
         "Estado infeccioso"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo del dolor",
         "Manejo de la nutrición",
         "Control de infecciones",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "mantener dieta o ayuno según prescripción",
         "administrar analgésicos y antibióticos indicados",
         "educar sobre signos de alarma"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00132",
-        "00343",
-        "00004"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "pancreatitis-aguda",
@@ -162,9 +168,11 @@
       ],
       "categoria": "Gastrointestinal / Metabólica",
       "descripcion_breve": "Inflamación aguda del páncreas que suele manifestarse con dolor abdominal intenso.",
-      "definicion": "Inflamación aguda del páncreas por activación intrapancreática de enzimas digestivas.",
-      "fisiopatologia": "La autodigestión pancreática provoca edema, inflamación y en casos severos necrosis y respuesta sistémica.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Inflamación aguda del páncreas por activación intrapancreática de enzimas digestivas.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de pancreatitis aguda dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de pancreatitis aguda permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La autodigestión pancreática provoca edema, inflamación y en casos severos necrosis y respuesta sistémica.",
+      "signos_sintomas_base": [
         "dolor epigástrico intenso irradiado a espalda",
         "náuseas",
         "vómitos",
@@ -172,59 +180,59 @@
         "fiebre",
         "taquicardia"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "litiasis biliar",
         "consumo de alcohol",
         "hipertrigliceridemia",
         "medicamentos",
         "procedimientos biliares"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "necrosis pancreática",
         "hipovolemia",
         "insuficiencia respiratoria",
         "sepsis",
         "shock"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar dolor y distensión",
         "controlar balance hídrico",
         "observar signos de hipovolemia",
         "monitorizar signos vitales",
         "valorar tolerancia digestiva"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00420",
+        "00384"
+      ],
+      "noc_base": [
         "Control del dolor",
         "Equilibrio hídrico",
         "Estado respiratorio"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo del dolor",
         "Manejo de líquidos",
         "Vigilancia",
         "Manejo de la náusea"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "mantener ayuno según indicación",
         "administrar fluidos prescritos",
         "vigilar laboratorio y evolución clínica"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00132",
-        "00420",
-        "00384"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "gastritis",
@@ -234,9 +242,11 @@
       ],
       "categoria": "Gastrointestinal",
       "descripcion_breve": "Inflamación de la mucosa gástrica con molestias digestivas variables.",
-      "definicion": "Inflamación de la mucosa del estómago que puede ser aguda o crónica.",
-      "fisiopatologia": "La lesión de la barrera mucosa favorece inflamación, dolor epigástrico y en algunos casos sangrado.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Inflamación de la mucosa del estómago que puede ser aguda o crónica.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de gastritis dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de gastritis permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La lesión de la barrera mucosa favorece inflamación, dolor epigástrico y en algunos casos sangrado.",
+      "signos_sintomas_base": [
         "dolor o ardor epigástrico",
         "náuseas",
         "vómitos",
@@ -244,55 +254,55 @@
         "acidez",
         "eructos"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "uso de AINE",
         "alcohol",
         "infección por Helicobacter pylori",
         "estrés fisiológico",
         "irritantes gástricos"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "hemorragia digestiva",
         "deshidratación",
         "anemia si es crónica o erosiva"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "valorar dolor y patrón alimentario",
         "observar vómitos o sangrado",
         "controlar tolerancia oral",
         "indagar consumo de irritantes"
       ],
-      "noc_sugeridos": [
-        "Control del dolor",
-        "Estado gastrointestinal",
-        "Conocimiento: proceso de la enfermedad"
-      ],
-      "nic_sugeridos": [
-        "Manejo del dolor",
-        "Manejo de la nutrición",
-        "Educación sanitaria"
-      ],
-      "cuidados_generales": [
-        "promover dieta no irritante",
-        "administrar tratamiento prescrito",
-        "educar sobre evitar alcohol y AINE sin control"
-      ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
-      "modelos_pae_compatibles": [
-        "corto",
-        "largo"
-      ],
-      "fases_recomendadas": [
-        "general"
-      ],
       "diagnosticos_sugeridos": [
         "00132",
         "00384",
         "00435"
-      ]
+      ],
+      "noc_base": [
+        "Control del dolor",
+        "Estado gastrointestinal",
+        "Conocimiento: proceso de la enfermedad"
+      ],
+      "nic_base": [
+        "Manejo del dolor",
+        "Manejo de la nutrición",
+        "Educación sanitaria"
+      ],
+      "cuidados_prioritarios_base": [
+        "promover dieta no irritante",
+        "administrar tratamiento prescrito",
+        "educar sobre evitar alcohol y AINE sin control"
+      ],
+      "observaciones_base": "",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "etapas_compatibles": [
+        "general"
+      ],
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "ulcera-peptica",
@@ -303,9 +313,11 @@
       ],
       "categoria": "Gastrointestinal",
       "descripcion_breve": "Lesión ulcerosa en estómago o duodeno asociada a dolor y riesgo de sangrado.",
-      "definicion": "Solución de continuidad de la mucosa gástrica o duodenal por acción de ácido y pepsina.",
-      "fisiopatologia": "El desequilibrio entre factores agresivos y protectores de la mucosa origina ulceración.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Solución de continuidad de la mucosa gástrica o duodenal por acción de ácido y pepsina.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de úlcera péptica dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de úlcera péptica permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "El desequilibrio entre factores agresivos y protectores de la mucosa origina ulceración.",
+      "signos_sintomas_base": [
         "dolor epigástrico",
         "ardor",
         "náuseas",
@@ -313,55 +325,55 @@
         "melena en casos complicados",
         "hematemesis en sangrado"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "H. pylori",
         "uso crónico de AINE",
         "tabaquismo",
         "estrés fisiológico"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "hemorragia digestiva",
         "perforación",
         "anemia"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar dolor y signos de sangrado",
         "controlar heces y vómitos",
         "evaluar tolerancia oral",
         "monitorizar signos vitales si hay sangrado"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00374",
+        "00435"
+      ],
+      "noc_base": [
         "Control del dolor",
         "Severidad del sangrado",
         "Conocimiento terapéutico"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo del dolor",
         "Precauciones hemorrágicas",
         "Educación sanitaria",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "administrar medicación indicada",
         "orientar signos de alarma",
         "evitar irritantes y automedicación"
       ],
-      "observaciones": "Útil para PAE médico y perioperatorio si hay complicación.",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "Útil para PAE médico y perioperatorio si hay complicación.",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00132",
-        "00374",
-        "00435"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "obstruccion-intestinal",
@@ -372,67 +384,69 @@
       ],
       "categoria": "Gastrointestinal / Quirúrgica",
       "descripcion_breve": "Interrupción parcial o total del tránsito intestinal.",
-      "definicion": "Bloqueo mecánico o funcional del paso del contenido intestinal.",
-      "fisiopatologia": "La acumulación proximal de gas y líquido causa distensión, dolor y alteraciones hidroelectrolíticas.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Bloqueo mecánico o funcional del paso del contenido intestinal.",
+      "procedimiento_quirurgico_base": "Debido al diagnóstico de obstrucción intestinal, el manejo puede incluir preparación preoperatoria y tratamiento quirúrgico según indicación médica. De forma general, el procedimiento busca corregir la causa del cuadro, disminuir la inflamación o infección, aliviar síntomas y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de obstrucción intestinal permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La acumulación proximal de gas y líquido causa distensión, dolor y alteraciones hidroelectrolíticas.",
+      "signos_sintomas_base": [
         "dolor abdominal tipo cólico",
         "distensión",
         "vómitos",
         "ausencia de evacuaciones o gases",
         "náuseas"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "adherencias",
         "hernia",
         "tumores",
         "íleo paralítico",
         "cirugías previas"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "isquemia intestinal",
         "perforación",
         "deshidratación",
         "sepsis"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar distensión y dolor",
         "controlar vómitos",
         "balance hídrico",
         "auscultar ruidos intestinales",
         "mantener ayuno si está indicado"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00420",
+        "00423"
+      ],
+      "noc_base": [
         "Equilibrio hídrico",
         "Control del dolor",
         "Función gastrointestinal"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo de líquidos",
         "Manejo del dolor",
         "Vigilancia",
         "Manejo gastrointestinal"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "vigilar necesidad de sonda nasogástrica",
         "preparar para cirugía si procede",
         "registrar eliminación y dolor"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00132",
-        "00420",
-        "00423"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "peritonitis",
@@ -442,9 +456,11 @@
       ],
       "categoria": "Gastrointestinal / Infecciosa",
       "descripcion_breve": "Inflamación del peritoneo, generalmente secundaria a perforación o infección abdominal.",
-      "definicion": "Proceso inflamatorio del peritoneo que constituye una urgencia médica.",
-      "fisiopatologia": "La contaminación peritoneal desencadena inflamación intensa, dolor severo y respuesta sistémica.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Proceso inflamatorio del peritoneo que constituye una urgencia médica.",
+      "procedimiento_quirurgico_base": "Debido al diagnóstico de peritonitis, el manejo puede incluir preparación preoperatoria y tratamiento quirúrgico según indicación médica. De forma general, el procedimiento busca corregir la causa del cuadro, disminuir la inflamación o infección, aliviar síntomas y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de peritonitis permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La contaminación peritoneal desencadena inflamación intensa, dolor severo y respuesta sistémica.",
+      "signos_sintomas_base": [
         "dolor abdominal intenso",
         "abdomen rígido",
         "fiebre",
@@ -452,56 +468,56 @@
         "vómitos",
         "taquicardia"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "perforación de víscera hueca",
         "apendicitis complicada",
         "trauma abdominal",
         "diálisis peritoneal"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "sepsis",
         "shock séptico",
         "insuficiencia multiorgánica"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar estado hemodinámico",
         "valorar rigidez abdominal",
         "controlar temperatura",
         "observar signos de sepsis",
         "mantener ayuno según indicación"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00205",
+        "00004"
+      ],
+      "noc_base": [
         "Control del dolor",
         "Estado circulatorio",
         "Severidad de la infección"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo del dolor",
         "Monitorización hemodinámica",
         "Control de infecciones",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "preparar para manejo quirúrgico si aplica",
         "administrar antibióticos y fluidos indicados",
         "vigilar perfusión"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00132",
-        "00205",
-        "00004"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "absceso-abdominal",
@@ -511,65 +527,67 @@
       ],
       "categoria": "Gastrointestinal / Infecciosa",
       "descripcion_breve": "Colección localizada de pus dentro de la cavidad abdominal.",
-      "definicion": "Acumulación purulenta intraabdominal secundaria a infección o complicación quirúrgica.",
-      "fisiopatologia": "La infección localizada genera inflamación, dolor y posible respuesta sistémica.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Acumulación purulenta intraabdominal secundaria a infección o complicación quirúrgica.",
+      "procedimiento_quirurgico_base": "Debido al diagnóstico de absceso abdominal, el manejo puede incluir preparación preoperatoria y tratamiento quirúrgico según indicación médica. De forma general, el procedimiento busca corregir la causa del cuadro, disminuir la inflamación o infección, aliviar síntomas y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de absceso abdominal permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La infección localizada genera inflamación, dolor y posible respuesta sistémica.",
+      "signos_sintomas_base": [
         "dolor abdominal",
         "fiebre",
         "malestar general",
         "náuseas",
         "sensibilidad abdominal"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "cirugía abdominal reciente",
         "perforación intestinal",
         "apendicitis complicada",
         "peritonitis previa"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "sepsis",
         "diseminación de la infección",
         "dolor persistente"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar signos vitales",
         "valorar dolor",
         "observar drenajes",
         "controlar temperatura",
         "vigilar abdomen"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00004",
+        "00420"
+      ],
+      "noc_base": [
         "Control del dolor",
         "Estado infeccioso",
         "Respuesta al tratamiento"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo del dolor",
         "Control de infecciones",
         "Vigilancia",
         "Manejo de líquidos"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "vigilar estudios y procedimientos de drenaje",
         "administrar tratamiento prescrito",
         "educar sobre signos de alarma"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00132",
-        "00004",
-        "00420"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "hemorragia-digestiva-alta",
@@ -579,9 +597,11 @@
       ],
       "categoria": "Gastrointestinal / Urgencias",
       "descripcion_breve": "Sangrado originado en esófago, estómago o duodeno.",
-      "definicion": "Pérdida sanguínea del tracto digestivo superior con riesgo de compromiso hemodinámico.",
-      "fisiopatologia": "La lesión vascular o mucosa produce hematemesis, melena y posible hipovolemia.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Pérdida sanguínea del tracto digestivo superior con riesgo de compromiso hemodinámico.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de hemorragia digestiva alta dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de hemorragia digestiva alta permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La lesión vascular o mucosa produce hematemesis, melena y posible hipovolemia.",
+      "signos_sintomas_base": [
         "hematemesis",
         "melena",
         "palidez",
@@ -589,56 +609,56 @@
         "hipotensión",
         "mareo"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "úlcera péptica",
         "varices esofágicas",
         "gastritis erosiva",
         "uso de AINE"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "shock hipovolémico",
         "anemia aguda",
         "aspiración"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar signos vitales y perfusión",
         "cuantificar sangrado",
         "controlar estado de conciencia",
         "mantener vía venosa permeable",
         "observar color de heces y vómitos"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00228",
+        "00400"
+      ],
+      "noc_base": [
         "Estado circulatorio",
         "Severidad de la pérdida sanguínea",
         "Perfusión tisular"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo de líquidos",
         "Precauciones hemorrágicas",
         "Monitorización hemodinámica",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "mantener ayuno",
         "preparar para endoscopia si corresponde",
         "administrar hemoderivados o medicamentos prescritos"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00421",
-        "00228",
-        "00400"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "hernia-inguinal",
@@ -648,63 +668,65 @@
       ],
       "categoria": "Quirúrgica",
       "descripcion_breve": "Protrusión de contenido abdominal a través del conducto inguinal.",
-      "definicion": "Salida de tejido abdominal por un defecto de la pared inguinal.",
-      "fisiopatologia": "La debilidad de la pared abdominal favorece protrusión, dolor y riesgo de incarceración.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Salida de tejido abdominal por un defecto de la pared inguinal.",
+      "procedimiento_quirurgico_base": "Debido al diagnóstico de hernia inguinal, el manejo puede incluir preparación preoperatoria y tratamiento quirúrgico según indicación médica. De forma general, el procedimiento busca corregir la causa del cuadro, disminuir la inflamación o infección, aliviar síntomas y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de hernia inguinal permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La debilidad de la pared abdominal favorece protrusión, dolor y riesgo de incarceración.",
+      "signos_sintomas_base": [
         "bulto inguinal",
         "dolor o molestia al esfuerzo",
         "sensación de peso",
         "aumento del volumen al toser"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "sexo masculino",
         "esfuerzo físico",
         "tos crónica",
         "estreñimiento",
         "debilidad de pared abdominal"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "incarceración",
         "estrangulación",
         "obstrucción intestinal"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar dolor y características del bulto",
         "evaluar signos de incarceración",
         "observar tolerancia a la actividad",
         "educar sobre esfuerzos"
       ],
-      "noc_sugeridos": [
-        "Control del dolor",
-        "Conocimiento: proceso de la enfermedad",
-        "Estado tisular"
-      ],
-      "nic_sugeridos": [
-        "Manejo del dolor",
-        "Educación sanitaria",
-        "Vigilancia"
-      ],
-      "cuidados_generales": [
-        "evitar esfuerzos según indicación",
-        "preparar para cirugía si aplica",
-        "vigilar cambios bruscos de dolor o coloración"
-      ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
-      "modelos_pae_compatibles": [
-        "corto",
-        "largo"
-      ],
-      "fases_recomendadas": [
-        "general"
-      ],
       "diagnosticos_sugeridos": [
         "00132",
         "00228",
         "00435"
-      ]
+      ],
+      "noc_base": [
+        "Control del dolor",
+        "Conocimiento: proceso de la enfermedad",
+        "Estado tisular"
+      ],
+      "nic_base": [
+        "Manejo del dolor",
+        "Educación sanitaria",
+        "Vigilancia"
+      ],
+      "cuidados_prioritarios_base": [
+        "evitar esfuerzos según indicación",
+        "preparar para cirugía si aplica",
+        "vigilar cambios bruscos de dolor o coloración"
+      ],
+      "observaciones_base": "",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "etapas_compatibles": [
+        "general"
+      ],
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "neumonia",
@@ -714,9 +736,11 @@
       ],
       "categoria": "Respiratoria / Infecciosa",
       "descripcion_breve": "Infección del parénquima pulmonar con compromiso del intercambio gaseoso.",
-      "definicion": "Infección pulmonar que produce inflamación alveolar y acumulación de secreciones.",
-      "fisiopatologia": "La respuesta inflamatoria llena los alvéolos de exudado y reduce la oxigenación.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Infección pulmonar que produce inflamación alveolar y acumulación de secreciones.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de neumonía dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de neumonía permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La respuesta inflamatoria llena los alvéolos de exudado y reduce la oxigenación.",
+      "signos_sintomas_base": [
         "tos",
         "fiebre",
         "disnea",
@@ -725,57 +749,57 @@
         "dolor torácico",
         "fatiga"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "edad extrema",
         "tabaquismo",
         "inmovilidad",
         "enfermedad crónica",
         "aspiración"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "insuficiencia respiratoria",
         "sepsis",
         "derrame pleural"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar frecuencia respiratoria y saturación",
         "auscultar campos pulmonares",
         "observar características del esputo",
         "controlar temperatura",
         "evaluar tolerancia a la actividad"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00030",
+        "00031",
+        "00007"
+      ],
+      "noc_base": [
         "Estado respiratorio: intercambio gaseoso",
         "Permeabilidad de las vías aéreas",
         "Termorregulación"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Oxigenoterapia",
         "Manejo de las vías aéreas",
         "Control de infecciones",
         "Monitorización respiratoria"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "favorecer hidratación si está indicada",
         "promover tos efectiva y cambios posturales",
         "administrar medicación prescrita"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00030",
-        "00031",
-        "00007"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "asma",
@@ -786,66 +810,68 @@
       ],
       "categoria": "Respiratoria",
       "descripcion_breve": "Enfermedad inflamatoria crónica de las vías aéreas con episodios de broncoespasmo.",
-      "definicion": "Trastorno inflamatorio crónico que causa obstrucción reversible del flujo aéreo.",
-      "fisiopatologia": "La hiperreactividad bronquial genera broncoconstricción, edema y producción de moco.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Trastorno inflamatorio crónico que causa obstrucción reversible del flujo aéreo.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de asma dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de asma permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La hiperreactividad bronquial genera broncoconstricción, edema y producción de moco.",
+      "signos_sintomas_base": [
         "disnea",
         "sibilancias",
         "tos",
         "opresión torácica",
         "dificultad respiratoria nocturna"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "alergenos",
         "infecciones respiratorias",
         "ejercicio",
         "humo",
         "cambios climáticos"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "status asmático",
         "insuficiencia respiratoria",
         "ansiedad"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar patrón respiratorio",
         "auscultar sibilancias",
         "controlar saturación",
         "identificar desencadenantes",
         "evaluar respuesta a broncodilatadores"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00032",
+        "00031",
+        "00400"
+      ],
+      "noc_base": [
         "Estado respiratorio",
         "Autocontrol del asma",
         "Permeabilidad de vías aéreas"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo de las vías aéreas",
         "Oxigenoterapia",
         "Educación sanitaria",
         "Monitorización respiratoria"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "enseñar técnica de inhaladores",
         "evitar desencadenantes",
         "administrar tratamiento prescrito"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00032",
-        "00031",
-        "00400"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "epoc",
@@ -855,9 +881,11 @@
       ],
       "categoria": "Respiratoria",
       "descripcion_breve": "Enfermedad pulmonar obstructiva crónica con limitación persistente del flujo aéreo.",
-      "definicion": "Trastorno respiratorio crónico caracterizado por obstrucción del flujo aéreo no totalmente reversible.",
-      "fisiopatologia": "La inflamación crónica y el daño pulmonar reducen el intercambio gaseoso y la ventilación.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Trastorno respiratorio crónico caracterizado por obstrucción del flujo aéreo no totalmente reversible.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de epoc dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de epoc permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La inflamación crónica y el daño pulmonar reducen el intercambio gaseoso y la ventilación.",
+      "signos_sintomas_base": [
         "disnea progresiva",
         "tos crónica",
         "expectoración",
@@ -865,56 +893,56 @@
         "sibilancias",
         "intolerancia al esfuerzo"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "tabaquismo",
         "exposición a humo o biomasa",
         "edad avanzada",
         "infecciones respiratorias repetidas"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "exacerbación aguda",
         "insuficiencia respiratoria",
         "cor pulmonale"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar saturación y disnea",
         "auscultar ruidos respiratorios",
         "valorar esputo",
         "observar tolerancia a la actividad",
         "enseñar respiración con labios fruncidos"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00030",
+        "00298",
+        "00031"
+      ],
+      "noc_base": [
         "Estado respiratorio",
         "Tolerancia a la actividad",
         "Conservación de la energía"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Oxigenoterapia",
         "Manejo de las vías aéreas",
         "Conservación de energía",
         "Educación sanitaria"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "promover abandono del tabaco",
         "administrar broncodilatadores prescritos",
         "vigilar signos de exacerbación"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00030",
-        "00298",
-        "00031"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "bronquiolitis",
@@ -924,9 +952,11 @@
       ],
       "categoria": "Respiratoria / Pediátrica",
       "descripcion_breve": "Infección viral de vías aéreas pequeñas, frecuente en lactantes.",
-      "definicion": "Inflamación aguda de bronquiolos que ocasiona aumento del trabajo respiratorio.",
-      "fisiopatologia": "El edema y las secreciones obstruyen bronquiolos, disminuyendo ventilación efectiva.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Inflamación aguda de bronquiolos que ocasiona aumento del trabajo respiratorio.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de bronquiolitis dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de bronquiolitis permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "El edema y las secreciones obstruyen bronquiolos, disminuyendo ventilación efectiva.",
+      "signos_sintomas_base": [
         "tos",
         "sibilancias",
         "taquipnea",
@@ -934,55 +964,55 @@
         "irritabilidad",
         "dificultad para alimentarse"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "lactancia interrumpida",
         "prematuridad",
         "exposición al humo",
         "contacto con infección viral"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "deshidratación",
         "apnea",
         "insuficiencia respiratoria"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar frecuencia respiratoria",
         "controlar saturación",
         "valorar signos de esfuerzo respiratorio",
         "vigilar hidratación y alimentación"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00032",
+        "00420",
+        "00031"
+      ],
+      "noc_base": [
         "Estado respiratorio",
         "Hidratación",
         "Severidad de la infección"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Monitorización respiratoria",
         "Manejo de las vías aéreas",
         "Manejo de líquidos",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "favorecer despeje de secreciones",
         "administrar oxígeno si se indica",
         "educar a cuidadores sobre signos de alarma"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00032",
-        "00420",
-        "00031"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "tuberculosis-pulmonar",
@@ -992,9 +1022,11 @@
       ],
       "categoria": "Respiratoria / Infecciosa",
       "descripcion_breve": "Infección pulmonar por Mycobacterium tuberculosis.",
-      "definicion": "Enfermedad infecciosa que afecta principalmente pulmones y requiere tratamiento prolongado.",
-      "fisiopatologia": "La respuesta granulomatosa produce tos crónica, fiebre y pérdida de peso.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Enfermedad infecciosa que afecta principalmente pulmones y requiere tratamiento prolongado.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de tuberculosis pulmonar dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de tuberculosis pulmonar permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La respuesta granulomatosa produce tos crónica, fiebre y pérdida de peso.",
+      "signos_sintomas_base": [
         "tos persistente",
         "hemoptisis ocasional",
         "fiebre",
@@ -1002,56 +1034,56 @@
         "pérdida de peso",
         "fatiga"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "contacto con caso activo",
         "hacinamiento",
         "inmunosupresión",
         "desnutrición"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "diseminación",
         "insuficiencia respiratoria",
         "abandono terapéutico",
         "resistencia a fármacos"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar patrón respiratorio",
         "controlar adherencia al tratamiento",
         "observar pérdida de peso",
         "educar sobre aislamiento y tos"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00031",
+        "00343",
+        "00435"
+      ],
+      "noc_base": [
         "Estado respiratorio",
         "Estado nutricional",
         "Adherencia al tratamiento"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Control de infecciones",
         "Educación sanitaria",
         "Manejo de la nutrición",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "fomentar cumplimiento terapéutico",
         "promover higiene respiratoria",
         "seguir indicaciones de aislamiento"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00031",
-        "00343",
-        "00435"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "derrame-pleural",
@@ -1061,64 +1093,66 @@
       ],
       "categoria": "Respiratoria",
       "descripcion_breve": "Acumulación de líquido en el espacio pleural.",
-      "definicion": "Presencia anormal de líquido pleural que puede comprometer la expansión pulmonar.",
-      "fisiopatologia": "El líquido pleural limita la expansión del pulmón y reduce la ventilación.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Presencia anormal de líquido pleural que puede comprometer la expansión pulmonar.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de derrame pleural dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de derrame pleural permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "El líquido pleural limita la expansión del pulmón y reduce la ventilación.",
+      "signos_sintomas_base": [
         "disnea",
         "dolor torácico",
         "taquipnea",
         "disminución de ruidos respiratorios",
         "ortopnea"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "neumonía",
         "insuficiencia cardiaca",
         "neoplasias",
         "tuberculosis"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "hipoxemia",
         "infección pleural",
         "insuficiencia respiratoria"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar respiración y saturación",
         "auscultar campos pulmonares",
         "observar comodidad postural",
         "controlar dolor"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00032",
+        "00132",
+        "00400"
+      ],
+      "noc_base": [
         "Estado respiratorio",
         "Control del dolor",
         "Nivel de ansiedad"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Monitorización respiratoria",
         "Oxigenoterapia",
         "Manejo del dolor",
         "Disminución de la ansiedad"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "favorecer posición semifowler",
         "preparar para toracocentesis si aplica",
         "vigilar respuesta clínica"
       ],
-      "observaciones": "Útil en PAE médico y postprocedimiento.",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "Útil en PAE médico y postprocedimiento.",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00032",
-        "00132",
-        "00400"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "edema-agudo-de-pulmon",
@@ -1128,9 +1162,11 @@
       ],
       "categoria": "Respiratoria / Cardiovascular",
       "descripcion_breve": "Acumulación aguda de líquido en alvéolos con deterioro respiratorio severo.",
-      "definicion": "Situación clínica aguda en la que líquido pasa al intersticio y alvéolos pulmonares.",
-      "fisiopatologia": "El aumento de presión hidrostática o daño alveolar reduce el intercambio gaseoso.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Situación clínica aguda en la que líquido pasa al intersticio y alvéolos pulmonares.",
+      "procedimiento_quirurgico_base": "En edema agudo de pulmón, el manejo inicial suele ser médico y de vigilancia estrecha. Dependiendo de la evolución clínica, pueden requerirse procedimientos especializados o intervenciones invasivas orientadas a estabilizar al paciente y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de edema agudo de pulmón permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "El aumento de presión hidrostática o daño alveolar reduce el intercambio gaseoso.",
+      "signos_sintomas_base": [
         "disnea intensa",
         "ortopnea",
         "taquipnea",
@@ -1139,55 +1175,55 @@
         "cianosis",
         "espuma rosada en casos graves"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "insuficiencia cardiaca",
         "hipertensión",
         "infarto agudo de miocardio",
         "sobrecarga de líquidos"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "hipoxemia grave",
         "insuficiencia respiratoria",
         "paro cardiorrespiratorio"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar saturación y respiración",
         "colocar en posición semifowler o fowler",
         "monitorizar signos vitales",
         "observar ansiedad y cianosis"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00030",
+        "00026",
+        "00400"
+      ],
+      "noc_base": [
         "Estado respiratorio",
         "Equilibrio hídrico",
         "Estado cardiopulmonar"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Oxigenoterapia",
         "Monitorización respiratoria",
         "Manejo de líquidos",
         "Disminución de la ansiedad"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "notificar deterioro inmediato",
         "administrar tratamiento prescrito",
         "vigilar respuesta al oxígeno y diuréticos"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00030",
-        "00026",
-        "00400"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "aspiracion-pulmonar",
@@ -1197,9 +1233,11 @@
       ],
       "categoria": "Respiratoria / Urgencias",
       "descripcion_breve": "Entrada de contenido gástrico o material extraño a la vía aérea.",
-      "definicion": "Paso accidental de secreciones, alimentos o contenido gástrico al árbol respiratorio.",
-      "fisiopatologia": "La obstrucción y reacción inflamatoria alteran oxigenación y predisponen a neumonía aspirativa.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Paso accidental de secreciones, alimentos o contenido gástrico al árbol respiratorio.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de aspiración pulmonar dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de aspiración pulmonar permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La obstrucción y reacción inflamatoria alteran oxigenación y predisponen a neumonía aspirativa.",
+      "signos_sintomas_base": [
         "tos súbita",
         "disnea",
         "desaturación",
@@ -1207,55 +1245,55 @@
         "cianosis",
         "fiebre posterior si se infecta"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "disfagia",
         "disminución del nivel de conciencia",
         "vómitos",
         "alimentación enteral",
         "trastornos neurológicos"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "neumonía aspirativa",
         "obstrucción de vía aérea",
         "insuficiencia respiratoria"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar vía aérea y saturación",
         "evaluar reflejo de deglución",
         "observar tos durante alimentación",
         "mantener posición segura"
       ],
-      "noc_sugeridos": [
-        "Permeabilidad de vías aéreas",
-        "Estado respiratorio",
-        "Prevención de la aspiración"
-      ],
-      "nic_sugeridos": [
-        "Precauciones para evitar la aspiración",
-        "Manejo de las vías aéreas",
-        "Monitorización respiratoria"
-      ],
-      "cuidados_generales": [
-        "elevar cabecera",
-        "verificar tolerancia oral o enteral",
-        "seguir protocolo de alimentación segura"
-      ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
-      "modelos_pae_compatibles": [
-        "corto",
-        "largo"
-      ],
-      "fases_recomendadas": [
-        "general"
-      ],
       "diagnosticos_sugeridos": [
         "00031",
         "00039",
         "00030"
-      ]
+      ],
+      "noc_base": [
+        "Permeabilidad de vías aéreas",
+        "Estado respiratorio",
+        "Prevención de la aspiración"
+      ],
+      "nic_base": [
+        "Precauciones para evitar la aspiración",
+        "Manejo de las vías aéreas",
+        "Monitorización respiratoria"
+      ],
+      "cuidados_prioritarios_base": [
+        "elevar cabecera",
+        "verificar tolerancia oral o enteral",
+        "seguir protocolo de alimentación segura"
+      ],
+      "observaciones_base": "",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "etapas_compatibles": [
+        "general"
+      ],
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "sinusitis-aguda",
@@ -1265,9 +1303,11 @@
       ],
       "categoria": "Respiratoria / ORL",
       "descripcion_breve": "Inflamación aguda de senos paranasales, usualmente infecciosa.",
-      "definicion": "Inflamación de la mucosa de los senos paranasales con obstrucción del drenaje.",
-      "fisiopatologia": "La obstrucción y el edema favorecen secreción retenida y dolor facial.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Inflamación de la mucosa de los senos paranasales con obstrucción del drenaje.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de sinusitis aguda dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de sinusitis aguda permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La obstrucción y el edema favorecen secreción retenida y dolor facial.",
+      "signos_sintomas_base": [
         "congestión nasal",
         "dolor o presión facial",
         "rinorrea",
@@ -1275,54 +1315,54 @@
         "fiebre ocasional",
         "tos"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "resfriado común",
         "alergias",
         "desviación septal",
         "tabaquismo"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "sinusitis crónica",
         "otitis",
         "diseminación local poco frecuente"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "valorar dolor facial",
         "controlar fiebre",
         "observar características de secreción nasal",
         "vigilar patrón de sueño"
       ],
-      "noc_sugeridos": [
-        "Control del dolor",
-        "Estado respiratorio: permeabilidad nasal",
-        "Conocimiento terapéutico"
-      ],
-      "nic_sugeridos": [
-        "Manejo del dolor",
-        "Educación sanitaria",
-        "Vigilancia"
-      ],
-      "cuidados_generales": [
-        "favorecer hidratación y medidas locales si están indicadas",
-        "educar sobre uso de tratamiento",
-        "vigilar evolución"
-      ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
-      "modelos_pae_compatibles": [
-        "corto",
-        "largo"
-      ],
-      "fases_recomendadas": [
-        "general"
-      ],
       "diagnosticos_sugeridos": [
         "00132",
         "00337",
         "00435"
-      ]
+      ],
+      "noc_base": [
+        "Control del dolor",
+        "Estado respiratorio: permeabilidad nasal",
+        "Conocimiento terapéutico"
+      ],
+      "nic_base": [
+        "Manejo del dolor",
+        "Educación sanitaria",
+        "Vigilancia"
+      ],
+      "cuidados_prioritarios_base": [
+        "favorecer hidratación y medidas locales si están indicadas",
+        "educar sobre uso de tratamiento",
+        "vigilar evolución"
+      ],
+      "observaciones_base": "",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "etapas_compatibles": [
+        "general"
+      ],
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "hipertension-arterial",
@@ -1332,15 +1372,17 @@
       ],
       "categoria": "Cardiovascular",
       "descripcion_breve": "Elevación persistente de la presión arterial, a menudo asintomática.",
-      "definicion": "Condición crónica caracterizada por cifras elevadas de presión arterial.",
-      "fisiopatologia": "El aumento sostenido de la resistencia vascular y otros factores eleva el riesgo cardiovascular.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Condición crónica caracterizada por cifras elevadas de presión arterial.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de hipertensión arterial dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de hipertensión arterial permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "El aumento sostenido de la resistencia vascular y otros factores eleva el riesgo cardiovascular.",
+      "signos_sintomas_base": [
         "cefalea ocasional",
         "mareo ocasional",
         "visión borrosa ocasional",
         "puede ser asintomática"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "antecedentes familiares",
         "obesidad",
         "sedentarismo",
@@ -1348,50 +1390,50 @@
         "estrés",
         "edad"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "accidente cerebrovascular",
         "infarto",
         "enfermedad renal",
         "retinopatía"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "tomar presión arterial correctamente",
         "vigilar adherencia al tratamiento",
         "evaluar estilo de vida",
         "observar síntomas de daño a órgano blanco"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00276",
+        "00228",
+        "00435"
+      ],
+      "noc_base": [
         "Control de la presión arterial",
         "Conducta de cumplimiento",
         "Conocimiento: estilo de vida saludable"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Monitorización de signos vitales",
         "Educación sanitaria",
         "Fomento del ejercicio",
         "Asesoramiento nutricional"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "educar sobre adherencia, dieta y ejercicio",
         "vigilar respuesta al tratamiento",
         "promover seguimiento periódico"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00276",
-        "00228",
-        "00435"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "insuficiencia-cardiaca",
@@ -1401,9 +1443,11 @@
       ],
       "categoria": "Cardiovascular",
       "descripcion_breve": "Incapacidad del corazón para bombear sangre de manera suficiente para las demandas del organismo.",
-      "definicion": "Síndrome clínico en el que el gasto cardiaco resulta insuficiente o a expensas de presiones elevadas.",
-      "fisiopatologia": "La disfunción ventricular provoca congestión, fatiga y retención de líquidos.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Síndrome clínico en el que el gasto cardiaco resulta insuficiente o a expensas de presiones elevadas.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de insuficiencia cardiaca dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de insuficiencia cardiaca permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La disfunción ventricular provoca congestión, fatiga y retención de líquidos.",
+      "signos_sintomas_base": [
         "disnea",
         "edema periférico",
         "fatiga",
@@ -1411,56 +1455,56 @@
         "aumento de peso",
         "estertores"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "hipertensión",
         "cardiopatía isquémica",
         "valvulopatías",
         "diabetes"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "edema agudo de pulmón",
         "arritmias",
         "insuficiencia renal",
         "hospitalizaciones repetidas"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar peso diario",
         "controlar edema y diuresis",
         "monitorizar respiración y saturación",
         "evaluar tolerancia a la actividad"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00240",
+        "00026",
+        "00298"
+      ],
+      "noc_base": [
         "Estado cardiaco",
         "Equilibrio hídrico",
         "Tolerancia a la actividad"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Monitorización hemodinámica",
         "Manejo de líquidos",
         "Conservación de energía",
         "Oxigenoterapia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "restringir sodio o líquidos si se indica",
         "educar sobre peso diario y signos de descompensación",
         "administrar tratamiento prescrito"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00240",
-        "00026",
-        "00298"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "infarto-agudo-de-miocardio",
@@ -1471,9 +1515,11 @@
       ],
       "categoria": "Cardiovascular / Urgencias",
       "descripcion_breve": "Necrosis del músculo cardiaco por isquemia prolongada.",
-      "definicion": "Lesión miocárdica aguda secundaria a obstrucción coronaria.",
-      "fisiopatologia": "La interrupción del flujo coronario causa necrosis, dolor torácico y riesgo de inestabilidad hemodinámica.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Lesión miocárdica aguda secundaria a obstrucción coronaria.",
+      "procedimiento_quirurgico_base": "En infarto agudo de miocardio, el manejo inicial suele ser médico y de vigilancia estrecha. Dependiendo de la evolución clínica, pueden requerirse procedimientos especializados o intervenciones invasivas orientadas a estabilizar al paciente y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de infarto agudo de miocardio permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La interrupción del flujo coronario causa necrosis, dolor torácico y riesgo de inestabilidad hemodinámica.",
+      "signos_sintomas_base": [
         "dolor torácico opresivo",
         "disnea",
         "sudoración",
@@ -1481,7 +1527,7 @@
         "palidez",
         "ansiedad"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "hipertensión",
         "tabaquismo",
         "diabetes",
@@ -1489,51 +1535,51 @@
         "obesidad",
         "sedentarismo"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "arritmias",
         "shock cardiogénico",
         "insuficiencia cardiaca",
         "muerte súbita"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar dolor torácico",
         "monitorizar signos vitales y ECG si disponible",
         "observar perfusión",
         "controlar ansiedad"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00240",
+        "00132",
+        "00400"
+      ],
+      "noc_base": [
         "Perfusión tisular: cardiaca",
         "Control del dolor",
         "Estado circulatorio"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Monitorización cardiaca",
         "Manejo del dolor",
         "Oxigenoterapia",
         "Disminución de la ansiedad"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "activar manejo urgente",
         "mantener reposo",
         "administrar medicación prescrita",
         "vigilar complicaciones"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00240",
-        "00132",
-        "00400"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "accidente-cerebrovascular",
@@ -1544,67 +1590,69 @@
       ],
       "categoria": "Neurológica / Urgencias",
       "descripcion_breve": "Déficit neurológico agudo por interrupción del flujo sanguíneo cerebral o hemorragia.",
-      "definicion": "Evento agudo que compromete la perfusión cerebral y causa déficit focal.",
-      "fisiopatologia": "La isquemia o hemorragia cerebral produce daño neuronal de inicio súbito.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Evento agudo que compromete la perfusión cerebral y causa déficit focal.",
+      "procedimiento_quirurgico_base": "En accidente cerebrovascular, el manejo inicial suele ser médico y de vigilancia estrecha. Dependiendo de la evolución clínica, pueden requerirse procedimientos especializados o intervenciones invasivas orientadas a estabilizar al paciente y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de accidente cerebrovascular permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La isquemia o hemorragia cerebral produce daño neuronal de inicio súbito.",
+      "signos_sintomas_base": [
         "debilidad de un lado",
         "dificultad para hablar",
         "asimetría facial",
         "alteración del estado de conciencia",
         "cefalea en algunos casos"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "hipertensión",
         "fibrilación auricular",
         "diabetes",
         "tabaquismo",
         "dislipidemia"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "edema cerebral",
         "broncoaspiración",
         "discapacidad permanente",
         "muerte"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar Glasgow o estado neurológico",
         "controlar presión arterial",
         "valorar deglución",
         "observar movilidad y lenguaje",
         "prevenir caídas y úlceras"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00201",
+        "00085",
+        "00039"
+      ],
+      "noc_base": [
         "Estado neurológico",
         "Movilidad",
         "Prevención de aspiración"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Vigilancia neurológica",
         "Precauciones para evitar la aspiración",
         "Prevención de caídas",
         "Terapia de ejercicios"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "mantener cabecera según indicación",
         "facilitar rehabilitación temprana",
         "educar a familia sobre cuidado seguro"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00201",
-        "00085",
-        "00039"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "trombosis-venosa-profunda",
@@ -1614,16 +1662,18 @@
       ],
       "categoria": "Vascular",
       "descripcion_breve": "Formación de trombo en venas profundas, usualmente de miembros inferiores.",
-      "definicion": "Presencia de coágulo en el sistema venoso profundo con riesgo embólico.",
-      "fisiopatologia": "La estasis venosa, lesión endotelial e hipercoagulabilidad favorecen la trombosis.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Presencia de coágulo en el sistema venoso profundo con riesgo embólico.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de trombosis venosa profunda dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de trombosis venosa profunda permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La estasis venosa, lesión endotelial e hipercoagulabilidad favorecen la trombosis.",
+      "signos_sintomas_base": [
         "dolor en extremidad",
         "edema unilateral",
         "calor local",
         "enrojecimiento",
         "sensibilidad"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "inmovilidad",
         "cirugía",
         "cáncer",
@@ -1631,48 +1681,48 @@
         "trombofilias",
         "uso de estrógenos"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "embolia pulmonar",
         "síndrome postrombótico"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar edema y dolor de extremidad",
         "evaluar color y temperatura",
         "observar signos de embolia pulmonar",
         "favorecer seguridad en la movilización"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00204",
+        "00132",
+        "00374"
+      ],
+      "noc_base": [
         "Perfusión tisular periférica",
         "Control del dolor",
         "Coagulación sanguínea"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Vigilancia",
         "Prevención de trombos",
         "Manejo del dolor",
         "Precauciones hemorrágicas"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "no masajear la extremidad afectada",
         "fomentar adherencia al tratamiento",
         "educar sobre signos de embolia"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00204",
-        "00132",
-        "00374"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "diabetes-mellitus-tipo-2",
@@ -1683,9 +1733,11 @@
       ],
       "categoria": "Metabólica / Endocrina",
       "descripcion_breve": "Trastorno metabólico crónico con hiperglucemia por resistencia a la insulina y secreción insuficiente relativa.",
-      "definicion": "Enfermedad metabólica caracterizada por elevación de glucosa sanguínea persistente.",
-      "fisiopatologia": "La resistencia a la insulina y el deterioro progresivo de la célula beta producen hiperglucemia.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Enfermedad metabólica caracterizada por elevación de glucosa sanguínea persistente.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de diabetes mellitus tipo 2 dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de diabetes mellitus tipo 2 permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La resistencia a la insulina y el deterioro progresivo de la célula beta producen hiperglucemia.",
+      "signos_sintomas_base": [
         "poliuria",
         "polidipsia",
         "polifagia",
@@ -1693,58 +1745,58 @@
         "visión borrosa",
         "puede ser asintomática al inicio"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "obesidad",
         "sedentarismo",
         "antecedentes familiares",
         "edad",
         "dieta inadecuada"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "pie diabético",
         "nefropatía",
         "retinopatía",
         "neuropatía",
         "enfermedad cardiovascular"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "controlar glucemia capilar según indicación",
         "vigilar integridad de piel y pies",
         "evaluar adherencia a dieta y medicación",
         "observar signos de hipoglucemia e hiperglucemia"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00489",
+        "00276",
+        "00047"
+      ],
+      "noc_base": [
         "Control de la glucemia",
         "Autocontrol de la diabetes",
         "Integridad tisular: piel"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Monitorización de glucosa sanguínea",
         "Educación sanitaria",
         "Cuidados de los pies",
         "Asesoramiento nutricional"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "promover autocuidado y adherencia",
         "enseñar signos de alarma",
         "vigilar heridas y circulación periférica"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00489",
-        "00276",
-        "00047"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "cetoacidosis-diabetica",
@@ -1754,9 +1806,11 @@
       ],
       "categoria": "Metabólica / Urgencias",
       "descripcion_breve": "Complicación aguda grave de la diabetes con hiperglucemia, cetosis y acidosis.",
-      "definicion": "Descompensación metabólica aguda por déficit de insulina y aumento de hormonas contrarreguladoras.",
-      "fisiopatologia": "La lipólisis excesiva genera cetonas y acidosis, con deshidratación marcada.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Descompensación metabólica aguda por déficit de insulina y aumento de hormonas contrarreguladoras.",
+      "procedimiento_quirurgico_base": "En cetoacidosis diabética, el manejo inicial suele ser médico y de vigilancia estrecha. Dependiendo de la evolución clínica, pueden requerirse procedimientos especializados o intervenciones invasivas orientadas a estabilizar al paciente y prevenir complicaciones.",
+      "relacion_caso_clinico_base": "La comprensión de cetoacidosis diabética permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La lipólisis excesiva genera cetonas y acidosis, con deshidratación marcada.",
+      "signos_sintomas_base": [
         "náuseas",
         "vómitos",
         "dolor abdominal",
@@ -1765,57 +1819,57 @@
         "respiración de Kussmaul",
         "aliento cetónico"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "suspensión de insulina",
         "infección",
         "debut diabético",
         "estrés fisiológico"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "shock",
         "alteraciones electrolíticas",
         "edema cerebral poco frecuente",
         "muerte"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar glucemia y estado neurológico",
         "controlar balance hídrico",
         "observar respiración",
         "monitorizar signos vitales",
         "vigilar vómitos"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00489",
+        "00491"
+      ],
+      "noc_base": [
         "Hidratación",
         "Control de la glucemia",
         "Equilibrio electrolítico"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo de líquidos",
         "Monitorización de glucosa sanguínea",
         "Vigilancia",
         "Manejo de electrolitos"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "seguir protocolo institucional",
         "vigilar respuesta al tratamiento",
         "detectar deterioro neurológico"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00421",
-        "00489",
-        "00491"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "hipotiroidismo",
@@ -1825,9 +1879,11 @@
       ],
       "categoria": "Endocrina",
       "descripcion_breve": "Disminución de la producción de hormonas tiroideas con enlentecimiento metabólico.",
-      "definicion": "Trastorno endocrino por déficit de hormonas tiroideas.",
-      "fisiopatologia": "La baja disponibilidad hormonal reduce el metabolismo basal y enlentece funciones corporales.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Trastorno endocrino por déficit de hormonas tiroideas.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de hipotiroidismo dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de hipotiroidismo permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La baja disponibilidad hormonal reduce el metabolismo basal y enlentece funciones corporales.",
+      "signos_sintomas_base": [
         "fatiga",
         "intolerancia al frío",
         "aumento de peso",
@@ -1835,54 +1891,54 @@
         "estreñimiento",
         "somnolencia"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "enfermedad autoinmune",
         "cirugía tiroidea",
         "radiación",
         "deficiencia de yodo en algunos contextos"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "mixedema",
         "dislipidemia",
         "bradicardia marcada"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "valorar energía y tolerancia a actividad",
         "observar piel y eliminación intestinal",
         "vigilar temperatura y frecuencia cardiaca",
         "educar adherencia medicamentosa"
       ],
-      "noc_sugeridos": [
-        "Nivel de energía",
-        "Eliminación intestinal",
-        "Conocimiento terapéutico"
-      ],
-      "nic_sugeridos": [
-        "Manejo de la energía",
-        "Manejo intestinal",
-        "Educación sanitaria"
-      ],
-      "cuidados_generales": [
-        "promover cumplimiento terapéutico",
-        "vigilar cambios clínicos",
-        "orientar controles periódicos"
-      ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
-      "modelos_pae_compatibles": [
-        "corto",
-        "largo"
-      ],
-      "fases_recomendadas": [
-        "general"
-      ],
       "diagnosticos_sugeridos": [
         "00477",
         "00235",
         "00435"
-      ]
+      ],
+      "noc_base": [
+        "Nivel de energía",
+        "Eliminación intestinal",
+        "Conocimiento terapéutico"
+      ],
+      "nic_base": [
+        "Manejo de la energía",
+        "Manejo intestinal",
+        "Educación sanitaria"
+      ],
+      "cuidados_prioritarios_base": [
+        "promover cumplimiento terapéutico",
+        "vigilar cambios clínicos",
+        "orientar controles periódicos"
+      ],
+      "observaciones_base": "",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "etapas_compatibles": [
+        "general"
+      ],
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "hipertiroidismo",
@@ -1892,9 +1948,11 @@
       ],
       "categoria": "Endocrina",
       "descripcion_breve": "Exceso de hormonas tiroideas con aumento del metabolismo basal.",
-      "definicion": "Trastorno endocrino caracterizado por producción aumentada de hormonas tiroideas.",
-      "fisiopatologia": "El exceso hormonal acelera procesos metabólicos y cardiovasculares.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Trastorno endocrino caracterizado por producción aumentada de hormonas tiroideas.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de hipertiroidismo dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de hipertiroidismo permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "El exceso hormonal acelera procesos metabólicos y cardiovasculares.",
+      "signos_sintomas_base": [
         "pérdida de peso",
         "taquicardia",
         "nerviosismo",
@@ -1902,54 +1960,54 @@
         "intolerancia al calor",
         "diarrea"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "enfermedad de Graves",
         "nódulos tiroideos",
         "exceso de hormona exógena"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "crisis tiroidea",
         "arritmias",
         "osteopenia"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar frecuencia cardiaca",
         "evaluar ansiedad y temblor",
         "controlar peso y tolerancia al calor",
         "observar diarrea"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00343",
+        "00400",
+        "00007"
+      ],
+      "noc_base": [
         "Estado metabólico",
         "Nivel de ansiedad",
         "Estado cardiovascular"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo nutricional",
         "Disminución de la ansiedad",
         "Monitorización de signos vitales",
         "Educación sanitaria"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "favorecer ambiente tranquilo",
         "administrar tratamiento prescrito",
         "vigilar signos de crisis tiroidea"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00343",
-        "00400",
-        "00007"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "obesidad",
@@ -1959,66 +2017,68 @@
       ],
       "categoria": "Metabólica / Nutricional",
       "descripcion_breve": "Acumulación excesiva de grasa corporal que aumenta el riesgo de enfermedad.",
-      "definicion": "Trastorno multifactorial asociado a exceso de tejido adiposo y riesgos metabólicos.",
-      "fisiopatologia": "El balance energético positivo sostenido favorece acumulación de grasa y alteraciones metabólicas.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Trastorno multifactorial asociado a exceso de tejido adiposo y riesgos metabólicos.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de obesidad dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de obesidad permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "El balance energético positivo sostenido favorece acumulación de grasa y alteraciones metabólicas.",
+      "signos_sintomas_base": [
         "aumento de peso",
         "fatiga al esfuerzo",
         "limitación funcional",
         "ronquidos en algunos casos"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "dieta hipercalórica",
         "sedentarismo",
         "factores genéticos",
         "alteraciones hormonales",
         "sueño insuficiente"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "diabetes tipo 2",
         "hipertensión",
         "apnea del sueño",
         "dislipidemia",
         "osteoartrosis"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "valorar IMC y hábitos",
         "evaluar disposición al cambio",
         "observar limitaciones físicas",
         "explorar comorbilidades"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00398",
+        "00481",
+        "00435"
+      ],
+      "noc_base": [
         "Control del peso",
         "Conocimiento: dieta saludable",
         "Nivel de autoestima"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Asesoramiento nutricional",
         "Fomento del ejercicio",
         "Apoyo emocional",
         "Educación sanitaria"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "establecer metas realistas",
         "promover seguimiento continuo",
         "trabajar en cambios sostenibles"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00398",
-        "00481",
-        "00435"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "infeccion-de-vias-urinarias",
@@ -2030,9 +2090,11 @@
       ],
       "categoria": "Renal / Infecciosa",
       "descripcion_breve": "Infección del tracto urinario que puede afectar vejiga, uretra o riñón.",
-      "definicion": "Proceso infeccioso del sistema urinario, con frecuencia localizado en vejiga.",
-      "fisiopatologia": "La colonización bacteriana produce inflamación urinaria y síntomas irritativos.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Proceso infeccioso del sistema urinario, con frecuencia localizado en vejiga.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de infección de vías urinarias dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de infección de vías urinarias permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La colonización bacteriana produce inflamación urinaria y síntomas irritativos.",
+      "signos_sintomas_base": [
         "disuria",
         "urgencia urinaria",
         "polaquiuria",
@@ -2040,57 +2102,57 @@
         "orina turbia",
         "fiebre en algunos casos"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "sexo femenino",
         "catéter urinario",
         "diabetes",
         "retención urinaria",
         "actividad sexual"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "pielonefritis",
         "sepsis",
         "recaídas"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar patrón urinario",
         "observar características de la orina",
         "controlar temperatura",
         "valorar dolor suprapúbico o lumbar",
         "favorecer hidratación si está indicada"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00016",
+        "00132",
+        "00007"
+      ],
+      "noc_base": [
         "Eliminación urinaria",
         "Control del dolor",
         "Severidad de la infección"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo de la eliminación urinaria",
         "Control de infecciones",
         "Manejo del dolor",
         "Educación sanitaria"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "educar completar antibiótico si fue prescrito",
         "promover higiene adecuada",
         "vigilar signos de complicación"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00016",
-        "00132",
-        "00007"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "pielonefritis",
@@ -2100,9 +2162,11 @@
       ],
       "categoria": "Renal / Infecciosa",
       "descripcion_breve": "Infección bacteriana del riñón y pelvis renal.",
-      "definicion": "Infección del tracto urinario superior con afectación renal.",
-      "fisiopatologia": "La invasión bacteriana renal provoca inflamación, fiebre y dolor lumbar.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Infección del tracto urinario superior con afectación renal.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de pielonefritis dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de pielonefritis permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La invasión bacteriana renal provoca inflamación, fiebre y dolor lumbar.",
+      "signos_sintomas_base": [
         "fiebre",
         "escalofríos",
         "dolor lumbar",
@@ -2110,56 +2174,56 @@
         "vómitos",
         "disuria"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "IVU recurrente",
         "reflujo vesicoureteral",
         "obstrucción urinaria",
         "embarazo",
         "diabetes"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "absceso renal",
         "sepsis",
         "insuficiencia renal"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar temperatura y dolor lumbar",
         "controlar náuseas y vómitos",
         "observar patrón urinario",
         "vigilar hidratación"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00007",
+        "00132",
+        "00420"
+      ],
+      "noc_base": [
         "Severidad de la infección",
         "Control del dolor",
         "Hidratación"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Control de infecciones",
         "Manejo del dolor",
         "Manejo de líquidos",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "administrar tratamiento indicado",
         "promover reposo e hidratación si procede",
         "vigilar signos de sepsis"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00007",
-        "00132",
-        "00420"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "insuficiencia-renal-aguda",
@@ -2170,9 +2234,11 @@
       ],
       "categoria": "Renal",
       "descripcion_breve": "Deterioro súbito de la función renal con alteración de líquidos y electrolitos.",
-      "definicion": "Disminución aguda de la capacidad renal para filtrar desechos y regular volumen.",
-      "fisiopatologia": "La caída de filtración glomerular causa acumulación de toxinas y alteraciones hidroelectrolíticas.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Disminución aguda de la capacidad renal para filtrar desechos y regular volumen.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de insuficiencia renal aguda dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de insuficiencia renal aguda permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La caída de filtración glomerular causa acumulación de toxinas y alteraciones hidroelectrolíticas.",
+      "signos_sintomas_base": [
         "oliguria",
         "edema",
         "fatiga",
@@ -2180,57 +2246,57 @@
         "confusión",
         "hipertensión"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "sepsis",
         "deshidratación",
         "nefrotóxicos",
         "obstrucción urinaria",
         "shock"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "hiperpotasemia",
         "sobrecarga de volumen",
         "acidosis metabólica",
         "necesidad de diálisis"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar diuresis estricta",
         "controlar peso y edema",
         "monitorizar presión arterial",
         "observar alteración del estado mental"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00026",
+        "00491",
+        "00228"
+      ],
+      "noc_base": [
         "Función renal",
         "Equilibrio hídrico",
         "Equilibrio electrolítico"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo de líquidos",
         "Monitorización de signos vitales",
         "Vigilancia",
         "Manejo de electrolitos"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "llevar control estricto de ingresos y egresos",
         "evitar nefrotóxicos sin indicación",
         "vigilar necesidad de soporte renal"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00026",
-        "00491",
-        "00228"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "enfermedad-renal-cronica",
@@ -2241,9 +2307,11 @@
       ],
       "categoria": "Renal",
       "descripcion_breve": "Pérdida progresiva y sostenida de la función renal.",
-      "definicion": "Disminución crónica e irreversible de la función renal de diversa etiología.",
-      "fisiopatologia": "El daño renal crónico altera excreción, equilibrio ácido-base y regulación hormonal.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Disminución crónica e irreversible de la función renal de diversa etiología.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de enfermedad renal crónica dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de enfermedad renal crónica permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "El daño renal crónico altera excreción, equilibrio ácido-base y regulación hormonal.",
+      "signos_sintomas_base": [
         "fatiga",
         "edema",
         "prurito",
@@ -2251,57 +2319,57 @@
         "anemia",
         "cambios urinarios"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "diabetes",
         "hipertensión",
         "glomerulopatías",
         "enfermedad poliquística"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "uremia",
         "hiperpotasemia",
         "enfermedad ósea",
         "cardiopatía",
         "necesidad de diálisis"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar presión arterial",
         "controlar edema y peso",
         "evaluar adherencia a dieta y tratamiento",
         "observar signos urémicos"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00477",
+        "00026",
+        "00435"
+      ],
+      "noc_base": [
         "Función renal",
         "Estado nutricional",
         "Conocimiento terapéutico"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo de líquidos",
         "Asesoramiento nutricional",
         "Educación sanitaria",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "promover adherencia a restricciones y medicación",
         "vigilar accesos de diálisis si existen",
         "apoyo emocional continuo"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00477",
-        "00026",
-        "00435"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "litiasis-renal",
@@ -2312,9 +2380,11 @@
       ],
       "categoria": "Renal",
       "descripcion_breve": "Presencia de cálculos en el sistema urinario con dolor tipo cólico frecuente.",
-      "definicion": "Formación de piedras en riñón o vías urinarias.",
-      "fisiopatologia": "La precipitación de sales forma cálculos que pueden obstruir y producir dolor intenso.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Formación de piedras en riñón o vías urinarias.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de litiasis renal dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de litiasis renal permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La precipitación de sales forma cálculos que pueden obstruir y producir dolor intenso.",
+      "signos_sintomas_base": [
         "dolor lumbar o en flanco",
         "hematuria",
         "náuseas",
@@ -2322,54 +2392,54 @@
         "disuria",
         "inquietud"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "baja ingesta de agua",
         "antecedentes familiares",
         "dieta rica en oxalato o sodio",
         "infecciones urinarias"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "obstrucción urinaria",
         "infección urinaria",
         "hidronefrosis"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar dolor y patrón urinario",
         "observar hematuria",
         "controlar náuseas",
         "favorecer hidratación según indicación"
       ],
-      "noc_sugeridos": [
-        "Control del dolor",
-        "Eliminación urinaria",
-        "Conocimiento preventivo"
-      ],
-      "nic_sugeridos": [
-        "Manejo del dolor",
-        "Manejo de la eliminación urinaria",
-        "Educación sanitaria"
-      ],
-      "cuidados_generales": [
-        "filtrar orina si está indicado",
-        "vigilar eliminación del cálculo",
-        "educar sobre hidratación y dieta"
-      ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
-      "modelos_pae_compatibles": [
-        "corto",
-        "largo"
-      ],
-      "fases_recomendadas": [
-        "general"
-      ],
       "diagnosticos_sugeridos": [
         "00132",
         "00016",
         "00435"
-      ]
+      ],
+      "noc_base": [
+        "Control del dolor",
+        "Eliminación urinaria",
+        "Conocimiento preventivo"
+      ],
+      "nic_base": [
+        "Manejo del dolor",
+        "Manejo de la eliminación urinaria",
+        "Educación sanitaria"
+      ],
+      "cuidados_prioritarios_base": [
+        "filtrar orina si está indicado",
+        "vigilar eliminación del cálculo",
+        "educar sobre hidratación y dieta"
+      ],
+      "observaciones_base": "",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "etapas_compatibles": [
+        "general"
+      ],
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "glomerulonefritis-aguda",
@@ -2379,62 +2449,64 @@
       ],
       "categoria": "Renal / Inmunológica",
       "descripcion_breve": "Inflamación aguda glomerular que altera la filtración renal.",
-      "definicion": "Proceso inflamatorio glomerular con hematuria, edema e hipertensión.",
-      "fisiopatologia": "La lesión inmunológica glomerular reduce la filtración y favorece retención de líquidos.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Proceso inflamatorio glomerular con hematuria, edema e hipertensión.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de glomerulonefritis aguda dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de glomerulonefritis aguda permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La lesión inmunológica glomerular reduce la filtración y favorece retención de líquidos.",
+      "signos_sintomas_base": [
         "hematuria",
         "edema",
         "hipertensión",
         "oliguria",
         "malestar general"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "infecciones previas",
         "trastornos autoinmunes",
         "depósito de inmunocomplejos"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "insuficiencia renal",
         "encefalopatía hipertensiva",
         "sobrecarga de volumen"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar diuresis y presión arterial",
         "observar edema",
         "controlar peso diario",
         "revisar características de la orina"
       ],
-      "noc_sugeridos": [
-        "Función renal",
-        "Equilibrio hídrico",
-        "Presión arterial"
-      ],
-      "nic_sugeridos": [
-        "Manejo de líquidos",
-        "Monitorización de signos vitales",
-        "Vigilancia"
-      ],
-      "cuidados_generales": [
-        "seguir restricciones indicadas",
-        "vigilar deterioro renal",
-        "educar sobre control y seguimiento"
-      ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
-      "modelos_pae_compatibles": [
-        "corto",
-        "largo"
-      ],
-      "fases_recomendadas": [
-        "general"
-      ],
       "diagnosticos_sugeridos": [
         "00026",
         "00228",
         "00491"
-      ]
+      ],
+      "noc_base": [
+        "Función renal",
+        "Equilibrio hídrico",
+        "Presión arterial"
+      ],
+      "nic_base": [
+        "Manejo de líquidos",
+        "Monitorización de signos vitales",
+        "Vigilancia"
+      ],
+      "cuidados_prioritarios_base": [
+        "seguir restricciones indicadas",
+        "vigilar deterioro renal",
+        "educar sobre control y seguimiento"
+      ],
+      "observaciones_base": "",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "etapas_compatibles": [
+        "general"
+      ],
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "hepatitis-viral",
@@ -2444,9 +2516,11 @@
       ],
       "categoria": "Hepática / Infecciosa",
       "descripcion_breve": "Inflamación del hígado causada por virus hepatotropos.",
-      "definicion": "Proceso inflamatorio hepático infeccioso que puede ser agudo o crónico según el virus.",
-      "fisiopatologia": "La lesión hepatocelular altera metabolismo, excreción biliar y estado general.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Proceso inflamatorio hepático infeccioso que puede ser agudo o crónico según el virus.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de hepatitis viral dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de hepatitis viral permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La lesión hepatocelular altera metabolismo, excreción biliar y estado general.",
+      "signos_sintomas_base": [
         "fatiga",
         "ictericia",
         "náuseas",
@@ -2454,54 +2528,54 @@
         "orina oscura",
         "dolor en hipocondrio derecho"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "exposición a sangre o fluidos",
         "agua/alimentos contaminados según tipo",
         "contacto sexual",
         "uso de agujas compartidas"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "insuficiencia hepática",
         "cronificación en algunos tipos",
         "cirrosis"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar coloración de piel y mucosas",
         "controlar náuseas y apetito",
         "observar signos de sangrado",
         "educar medidas de prevención"
       ],
-      "noc_sugeridos": [
-        "Estado hepático",
-        "Estado nutricional",
-        "Conocimiento terapéutico"
-      ],
-      "nic_sugeridos": [
-        "Manejo de la nutrición",
-        "Educación sanitaria",
-        "Vigilancia"
-      ],
-      "cuidados_generales": [
-        "favorecer reposo relativo",
-        "administrar tratamiento indicado",
-        "vigilar datos de empeoramiento"
-      ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
-      "modelos_pae_compatibles": [
-        "corto",
-        "largo"
-      ],
-      "fases_recomendadas": [
-        "general"
-      ],
       "diagnosticos_sugeridos": [
         "00477",
         "00343",
         "00435"
-      ]
+      ],
+      "noc_base": [
+        "Estado hepático",
+        "Estado nutricional",
+        "Conocimiento terapéutico"
+      ],
+      "nic_base": [
+        "Manejo de la nutrición",
+        "Educación sanitaria",
+        "Vigilancia"
+      ],
+      "cuidados_prioritarios_base": [
+        "favorecer reposo relativo",
+        "administrar tratamiento indicado",
+        "vigilar datos de empeoramiento"
+      ],
+      "observaciones_base": "",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "etapas_compatibles": [
+        "general"
+      ],
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "dengue",
@@ -2511,9 +2585,11 @@
       ],
       "categoria": "Infecciosa",
       "descripcion_breve": "Infección viral transmitida por mosquitos con fiebre y dolor corporal marcado.",
-      "definicion": "Enfermedad viral aguda transmitida por Aedes, de gravedad variable.",
-      "fisiopatologia": "La infección causa respuesta inflamatoria sistémica y en casos graves fuga capilar y sangrado.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Enfermedad viral aguda transmitida por Aedes, de gravedad variable.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de dengue dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de dengue permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La infección causa respuesta inflamatoria sistémica y en casos graves fuga capilar y sangrado.",
+      "signos_sintomas_base": [
         "fiebre",
         "cefalea",
         "dolor retroocular",
@@ -2522,53 +2598,53 @@
         "exantema",
         "náuseas"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "exposición a mosquitos en áreas endémicas",
         "falta de control vectorial"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "sangrado",
         "shock por fuga capilar",
         "deshidratación"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar temperatura y signos de alarma",
         "controlar hidratación",
         "observar sangrado",
         "monitorizar presión arterial y llenado capilar"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00007",
+        "00420",
+        "00132"
+      ],
+      "noc_base": [
         "Termorregulación",
         "Hidratación",
         "Severidad del sangrado"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo de líquidos",
         "Monitorización de signos vitales",
         "Manejo del dolor",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "educar sobre signos de alarma",
         "evitar medicamentos no indicados",
         "promover control vectorial"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00007",
-        "00420",
-        "00132"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "gastroenteritis-aguda",
@@ -2579,9 +2655,11 @@
       ],
       "categoria": "Infecciosa / Gastrointestinal",
       "descripcion_breve": "Inflamación infecciosa del tracto gastrointestinal con diarrea y vómitos.",
-      "definicion": "Proceso agudo, habitualmente infeccioso, que compromete estómago e intestino.",
-      "fisiopatologia": "La pérdida gastrointestinal de agua y electrolitos genera riesgo de deshidratación.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Proceso agudo, habitualmente infeccioso, que compromete estómago e intestino.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de gastroenteritis aguda dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de gastroenteritis aguda permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La pérdida gastrointestinal de agua y electrolitos genera riesgo de deshidratación.",
+      "signos_sintomas_base": [
         "diarrea",
         "vómitos",
         "dolor abdominal",
@@ -2589,55 +2667,55 @@
         "fiebre",
         "debilidad"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "alimentos contaminados",
         "agua insegura",
         "contacto con personas infectadas",
         "higiene deficiente"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "deshidratación",
         "desequilibrio electrolítico",
         "shock en casos severos"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar frecuencia de diarreas y vómitos",
         "controlar hidratación y mucosas",
         "observar fiebre",
         "llevar balance hídrico"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00344",
+        "00384"
+      ],
+      "noc_base": [
         "Hidratación",
         "Eliminación intestinal",
         "Equilibrio electrolítico"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo de líquidos",
         "Manejo de la diarrea",
         "Manejo de la náusea",
         "Educación sanitaria"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "favorecer rehidratación según indicación",
         "vigilar intolerancia oral",
         "educar higiene alimentaria"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00421",
-        "00344",
-        "00384"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "sepsis",
@@ -2647,9 +2725,11 @@
       ],
       "categoria": "Infecciosa / Urgencias",
       "descripcion_breve": "Disfunción orgánica potencialmente mortal causada por respuesta desregulada a una infección.",
-      "definicion": "Síndrome de gravedad en el que la respuesta del huésped a la infección provoca daño orgánico.",
-      "fisiopatologia": "La inflamación sistémica altera perfusión, coagulación y función de órganos.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Síndrome de gravedad en el que la respuesta del huésped a la infección provoca daño orgánico.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de sepsis dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de sepsis permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La inflamación sistémica altera perfusión, coagulación y función de órganos.",
+      "signos_sintomas_base": [
         "fiebre o hipotermia",
         "taquicardia",
         "taquipnea",
@@ -2657,55 +2737,55 @@
         "confusión",
         "oliguria"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "infección grave",
         "inmunosupresión",
         "hospitalización",
         "procedimientos invasivos"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "shock séptico",
         "falla multiorgánica",
         "muerte"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar signos vitales frecuentes",
         "controlar estado mental y diuresis",
         "observar perfusión periférica",
         "monitorizar lactato y estudios según indicación"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00228",
+        "00205",
+        "00007"
+      ],
+      "noc_base": [
         "Estado circulatorio",
         "Severidad de la infección",
         "Función orgánica"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Control de infecciones",
         "Monitorización hemodinámica",
         "Manejo de líquidos",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "seguir protocolos institucionales de sepsis",
         "administrar tratamiento oportuno",
         "reconocer deterioro temprano"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00228",
-        "00205",
-        "00007"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "meningitis",
@@ -2715,9 +2795,11 @@
       ],
       "categoria": "Neurológica / Infecciosa",
       "descripcion_breve": "Inflamación de las meninges, generalmente por infección.",
-      "definicion": "Proceso inflamatorio meníngeo de inicio agudo que puede comprometer la vida.",
-      "fisiopatologia": "La infección meníngea desencadena respuesta inflamatoria con cefalea, fiebre y rigidez nucal.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Proceso inflamatorio meníngeo de inicio agudo que puede comprometer la vida.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de meningitis dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de meningitis permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La infección meníngea desencadena respuesta inflamatoria con cefalea, fiebre y rigidez nucal.",
+      "signos_sintomas_base": [
         "fiebre",
         "cefalea",
         "rigidez de nuca",
@@ -2725,56 +2807,56 @@
         "fotofobia",
         "alteración del estado mental"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "contacto cercano con casos",
         "inmunosupresión",
         "edad extrema",
         "infecciones vecinas"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "convulsiones",
         "shock séptico",
         "déficit neurológico",
         "muerte"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar estado neurológico",
         "controlar temperatura",
         "observar signos meníngeos",
         "disminuir estímulos si hay fotofobia"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00201",
+        "00007",
+        "00132"
+      ],
+      "noc_base": [
         "Estado neurológico",
         "Termorregulación",
         "Control del dolor"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Vigilancia neurológica",
         "Control de infecciones",
         "Manejo del dolor",
         "Disminución de estímulos ambientales"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "seguir aislamiento si corresponde",
         "administrar medicación prescrita",
         "vigilar convulsiones y deterioro"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00201",
-        "00007",
-        "00132"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "epilepsia",
@@ -2784,64 +2866,66 @@
       ],
       "categoria": "Neurológica",
       "descripcion_breve": "Trastorno caracterizado por predisposición a presentar crisis epilépticas recurrentes.",
-      "definicion": "Enfermedad neurológica crónica en la que ocurren crisis por descarga neuronal anormal.",
-      "fisiopatologia": "La actividad eléctrica cerebral anormal produce manifestaciones motoras, sensoriales o de conciencia.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Enfermedad neurológica crónica en la que ocurren crisis por descarga neuronal anormal.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de epilepsia dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de epilepsia permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La actividad eléctrica cerebral anormal produce manifestaciones motoras, sensoriales o de conciencia.",
+      "signos_sintomas_base": [
         "convulsiones",
         "ausencias",
         "confusión postictal",
         "caídas",
         "mordedura de lengua en algunos casos"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "lesiones cerebrales",
         "factores genéticos",
         "infecciones del SNC",
         "trastornos metabólicos"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "traumatismos",
         "broncoaspiración",
         "estado epiléptico"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar tipo y duración de crisis",
         "proteger de lesiones durante convulsión",
         "valorar estado postictal",
         "vigilar adherencia a medicación"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00336",
+        "00039",
+        "00435"
+      ],
+      "noc_base": [
         "Control de las crisis",
         "Seguridad personal",
         "Conocimiento terapéutico"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Precauciones contra convulsiones",
         "Protección contra lesiones",
         "Educación sanitaria",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "no introducir objetos en boca durante crisis",
         "colocar de lado si es posible",
         "registrar características del episodio"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00336",
-        "00039",
-        "00435"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "migraña",
@@ -2851,9 +2935,11 @@
       ],
       "categoria": "Neurológica",
       "descripcion_breve": "Cefalea recurrente, usualmente pulsátil, que puede asociarse a náuseas y fotofobia.",
-      "definicion": "Trastorno neurológico primario con episodios de cefalea de intensidad moderada o severa.",
-      "fisiopatologia": "Mecanismos neurovasculares y sensibilización trigeminal participan en el dolor.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Trastorno neurológico primario con episodios de cefalea de intensidad moderada o severa.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de migraña dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de migraña permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "Mecanismos neurovasculares y sensibilización trigeminal participan en el dolor.",
+      "signos_sintomas_base": [
         "cefalea pulsátil",
         "náuseas",
         "vómitos",
@@ -2861,56 +2947,56 @@
         "fonofobia",
         "aura en algunos casos"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "estrés",
         "privación de sueño",
         "alimentos desencadenantes",
         "cambios hormonales",
         "luces intensas"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "deshidratación",
         "incapacidad funcional temporal",
         "uso excesivo de analgésicos"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "valorar intensidad y duración del dolor",
         "identificar desencadenantes",
         "observar náuseas y tolerancia oral",
         "favorecer ambiente oscuro y silencioso"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00384",
+        "00435"
+      ],
+      "noc_base": [
         "Control del dolor",
         "Control de la náusea",
         "Autocontrol de síntomas"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo del dolor",
         "Manejo de la náusea",
         "Educación sanitaria",
         "Disminución de estímulos ambientales"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "promover registro de desencadenantes",
         "administrar medicación prescrita",
         "favorecer descanso"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00132",
-        "00384",
-        "00435"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "anemia-ferropenica",
@@ -2920,9 +3006,11 @@
       ],
       "categoria": "Hematológica",
       "descripcion_breve": "Disminución de hemoglobina por déficit de hierro.",
-      "definicion": "Anemia microcítica e hipocrómica causada por falta de hierro disponible.",
-      "fisiopatologia": "La reducción del hierro limita síntesis de hemoglobina y transporte de oxígeno.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Anemia microcítica e hipocrómica causada por falta de hierro disponible.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de anemia ferropénica dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de anemia ferropénica permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La reducción del hierro limita síntesis de hemoglobina y transporte de oxígeno.",
+      "signos_sintomas_base": [
         "fatiga",
         "palidez",
         "disnea al esfuerzo",
@@ -2930,55 +3018,55 @@
         "taquicardia",
         "uñas frágiles"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "sangrado crónico",
         "dieta deficiente en hierro",
         "embarazo",
         "parasitismo"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "bajo rendimiento físico",
         "compromiso del embarazo",
         "desarrollo alterado en niños"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar fatiga y tolerancia a actividad",
         "observar palidez",
         "evaluar dieta y sangrados",
         "controlar resultados de laboratorio si se dispone"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00477",
+        "00343",
+        "00298"
+      ],
+      "noc_base": [
         "Nivel de energía",
         "Estado hematológico",
         "Tolerancia a la actividad"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Manejo nutricional",
         "Administración de medicación",
         "Conservación de energía",
         "Educación sanitaria"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "promover dieta rica en hierro",
         "vigilar adherencia al suplemento",
         "investigar causa de pérdidas"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00477",
-        "00343",
-        "00298"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "embarazo-ectopico",
@@ -2988,64 +3076,66 @@
       ],
       "categoria": "Ginecoobstétrica / Urgencias",
       "descripcion_breve": "Implantación del embarazo fuera de la cavidad uterina, con mayor frecuencia en trompa.",
-      "definicion": "Gestación extrauterina que pone en riesgo la vida materna si se rompe.",
-      "fisiopatologia": "El crecimiento del embarazo en localización anómala provoca dolor y sangrado con riesgo hemorrágico.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Gestación extrauterina que pone en riesgo la vida materna si se rompe.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de embarazo ectópico dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de embarazo ectópico permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "El crecimiento del embarazo en localización anómala provoca dolor y sangrado con riesgo hemorrágico.",
+      "signos_sintomas_base": [
         "dolor abdominal o pélvico",
         "sangrado vaginal",
         "amenorrea",
         "mareo",
         "lipotimia"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "enfermedad inflamatoria pélvica",
         "cirugía tubárica",
         "antecedente de ectópico",
         "tabaquismo"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "ruptura tubárica",
         "shock hipovolémico",
         "hemorragia interna"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar sangrado y signos vitales",
         "valorar dolor pélvico",
         "observar signos de shock",
         "brindar apoyo emocional"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00132",
+        "00400"
+      ],
+      "noc_base": [
         "Estado circulatorio",
         "Control del dolor",
         "Nivel de ansiedad"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Precauciones hemorrágicas",
         "Manejo del dolor",
         "Apoyo emocional",
         "Vigilancia"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "preparar para estudios y manejo urgente",
         "mantener vía venosa según indicación",
         "acompañamiento emocional"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00421",
-        "00132",
-        "00400"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "preeclampsia",
@@ -3055,9 +3145,11 @@
       ],
       "categoria": "Ginecoobstétrica",
       "descripcion_breve": "Trastorno hipertensivo del embarazo con riesgo materno-fetal.",
-      "definicion": "Complicación del embarazo caracterizada por hipertensión de nueva aparición y compromiso sistémico.",
-      "fisiopatologia": "La disfunción endotelial y placentaria afecta perfusión materna y fetal.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Complicación del embarazo caracterizada por hipertensión de nueva aparición y compromiso sistémico.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de preeclampsia dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de preeclampsia permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La disfunción endotelial y placentaria afecta perfusión materna y fetal.",
+      "signos_sintomas_base": [
         "hipertensión",
         "edema",
         "cefalea",
@@ -3065,57 +3157,57 @@
         "dolor epigástrico",
         "proteinuria si se documenta"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "primigestación",
         "embarazo múltiple",
         "antecedente de preeclampsia",
         "hipertensión crónica",
         "diabetes"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "eclampsia",
         "HELLP",
         "desprendimiento placentario",
         "restricción de crecimiento fetal"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar presión arterial",
         "observar cefalea y visión borrosa",
         "controlar diuresis y edema",
         "vigilar bienestar fetal según recursos"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00228",
+        "00336",
+        "00400"
+      ],
+      "noc_base": [
         "Presión arterial",
         "Estado materno",
         "Estado fetal"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Monitorización de signos vitales",
         "Vigilancia",
         "Manejo de líquidos",
         "Apoyo emocional"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "reposo según indicación",
         "educar signos de alarma",
         "seguir control obstétrico estrecho"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00228",
-        "00336",
-        "00400"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "hemorragia-postparto",
@@ -3125,9 +3217,11 @@
       ],
       "categoria": "Ginecoobstétrica / Urgencias",
       "descripcion_breve": "Pérdida sanguínea excesiva después del parto.",
-      "definicion": "Sangrado obstétrico posparto que puede comprometer rápidamente la estabilidad hemodinámica.",
-      "fisiopatologia": "La atonía uterina u otras causas generan pérdida sanguínea aguda.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Sangrado obstétrico posparto que puede comprometer rápidamente la estabilidad hemodinámica.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de hemorragia postparto dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de hemorragia postparto permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La atonía uterina u otras causas generan pérdida sanguínea aguda.",
+      "signos_sintomas_base": [
         "sangrado abundante",
         "taquicardia",
         "hipotensión",
@@ -3135,56 +3229,56 @@
         "mareo",
         "útero atónico en algunos casos"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "atonía uterina",
         "retención placentaria",
         "laceraciones",
         "coagulopatía",
         "parto prolongado"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "shock hipovolémico",
         "anemia aguda",
         "muerte materna"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar cuantía del sangrado",
         "controlar tono uterino si corresponde",
         "monitorizar signos vitales",
         "observar perfusión y conciencia"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00205",
+        "00400"
+      ],
+      "noc_base": [
         "Estado circulatorio",
         "Severidad del sangrado",
         "Perfusión tisular"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Precauciones hemorrágicas",
         "Manejo de líquidos",
         "Monitorización hemodinámica",
         "Apoyo emocional"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "activar protocolo institucional",
         "mantener acceso venoso permeable",
         "vigilar respuesta a intervenciones"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00421",
-        "00205",
-        "00400"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "mastitis",
@@ -3194,63 +3288,65 @@
       ],
       "categoria": "Ginecoobstétrica / Infecciosa",
       "descripcion_breve": "Inflamación de la mama, frecuente durante la lactancia.",
-      "definicion": "Infección o inflamación mamaria asociada a estasis de leche y fisuras del pezón.",
-      "fisiopatologia": "La retención de leche favorece inflamación e infección local.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Infección o inflamación mamaria asociada a estasis de leche y fisuras del pezón.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de mastitis dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de mastitis permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La retención de leche favorece inflamación e infección local.",
+      "signos_sintomas_base": [
         "dolor mamario",
         "enrojecimiento",
         "fiebre",
         "malestar general",
         "endurecimiento de la mama"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "lactancia ineficaz",
         "vaciamiento incompleto",
         "fisuras del pezón",
         "técnica inadecuada"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "absceso mamario",
         "abandono de lactancia"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "vigilar dolor y temperatura",
         "observar área afectada",
         "evaluar técnica de lactancia",
         "favorecer vaciamiento mamario"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00371",
+        "00007"
+      ],
+      "noc_base": [
         "Control del dolor",
         "Lactancia materna establecida",
         "Severidad de la infección"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Apoyo a la lactancia",
         "Manejo del dolor",
         "Control de infecciones",
         "Educación sanitaria"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "corregir técnica de agarre",
         "continuar lactancia o extracción si se indica",
         "vigilar progresión a absceso"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00132",
-        "00371",
-        "00007"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "depresion",
@@ -3260,9 +3356,11 @@
       ],
       "categoria": "Salud mental",
       "descripcion_breve": "Trastorno del estado de ánimo con tristeza persistente y pérdida de interés.",
-      "definicion": "Afección mental caracterizada por ánimo deprimido y deterioro funcional.",
-      "fisiopatologia": "Factores biológicos, psicológicos y sociales contribuyen a alteraciones del estado de ánimo.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Afección mental caracterizada por ánimo deprimido y deterioro funcional.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de depresión dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de depresión permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "Factores biológicos, psicológicos y sociales contribuyen a alteraciones del estado de ánimo.",
+      "signos_sintomas_base": [
         "tristeza persistente",
         "anhedonia",
         "fatiga",
@@ -3270,56 +3368,56 @@
         "cambios de apetito",
         "dificultad para concentrarse"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "antecedentes personales o familiares",
         "estrés",
         "duelos",
         "enfermedad crónica",
         "aislamiento"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "riesgo suicida",
         "deterioro funcional",
         "abuso de sustancias"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "valorar estado de ánimo y sueño",
         "explorar apoyo social",
         "indagar ideas de autolesión",
         "favorecer escucha activa"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00405",
+        "00483",
+        "00466"
+      ],
+      "noc_base": [
         "Estado de ánimo",
         "Afrontamiento",
         "Seguridad personal"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Apoyo emocional",
         "Potenciación de la autoestima",
         "Prevención del suicidio",
         "Escucha activa"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "derivar y seguir atención especializada según necesidad",
         "fortalecer red de apoyo",
         "vigilar signos de riesgo"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00405",
-        "00483",
-        "00466"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "ansiedad",
@@ -3329,9 +3427,11 @@
       ],
       "categoria": "Salud mental",
       "descripcion_breve": "Estado de preocupación excesiva acompañado de síntomas físicos y emocionales.",
-      "definicion": "Respuesta emocional de temor o inquietud que puede volverse desadaptativa.",
-      "fisiopatologia": "La hiperactivación autonómica produce síntomas somáticos y cognitivos.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Respuesta emocional de temor o inquietud que puede volverse desadaptativa.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de ansiedad dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de ansiedad permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La hiperactivación autonómica produce síntomas somáticos y cognitivos.",
+      "signos_sintomas_base": [
         "inquietud",
         "taquicardia",
         "temblor",
@@ -3339,55 +3439,55 @@
         "insomnio",
         "dificultad para concentrarse"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "estrés",
         "eventos traumáticos",
         "enfermedad crónica",
         "predisposición individual"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "deterioro funcional",
         "crisis de pánico",
         "abuso de sustancias"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "valorar nivel de ansiedad y desencadenantes",
         "observar signos físicos",
         "favorecer ambiente tranquilo",
         "enseñar respiración controlada"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00400",
+        "00405",
+        "00337"
+      ],
+      "noc_base": [
         "Nivel de ansiedad",
         "Afrontamiento",
         "Sueño"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Disminución de la ansiedad",
         "Escucha activa",
         "Enseñanza: técnicas de relajación",
         "Apoyo emocional"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "validar emociones",
         "promover estrategias de respiración y relajación",
         "referir si hay deterioro importante"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00400",
-        "00405",
-        "00337"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     },
     {
       "id": "quemadura",
@@ -3397,68 +3497,70 @@
       ],
       "categoria": "Trauma / Piel",
       "descripcion_breve": "Lesión tisular causada por calor, sustancias químicas, electricidad o radiación.",
-      "definicion": "Daño de piel y tejidos subyacentes de profundidad variable.",
-      "fisiopatologia": "La destrucción tisular produce dolor, pérdida de barrera cutánea y riesgo de infección y líquidos.",
-      "signos_sintomas": [
+      "definicion_patologia_base": "Daño de piel y tejidos subyacentes de profundidad variable.",
+      "procedimiento_quirurgico_base": "El manejo quirúrgico de quemadura dependerá de la evolución clínica, la severidad del cuadro y el criterio médico. En los casos complicados puede requerirse abordaje quirúrgico, drenaje, reparación, resección o procedimiento específico según la patología.",
+      "relacion_caso_clinico_base": "La comprensión de quemadura permite fundamentar la atención de enfermería, identificar necesidades alteradas, vigilar signos y síntomas relevantes y orientar intervenciones dirigidas a prevenir complicaciones, controlar el dolor, favorecer la estabilidad clínica y apoyar la recuperación del paciente.",
+      "fisiopatologia_base": "La destrucción tisular produce dolor, pérdida de barrera cutánea y riesgo de infección y líquidos.",
+      "signos_sintomas_base": [
         "dolor",
         "eritema",
         "ampollas",
         "tejido blanquecino o carbonizado en casos profundos",
         "edema"
       ],
-      "factores_riesgo": [
+      "factores_riesgo_base": [
         "exposición térmica",
         "químicos",
         "electricidad",
         "radiación",
         "accidentes domésticos o laborales"
       ],
-      "complicaciones": [
+      "complicaciones_base": [
         "infección",
         "pérdida de líquidos",
         "shock",
         "cicatrices",
         "contracturas"
       ],
-      "valoracion_enfermeria": [
+      "valoracion_enfermeria_base": [
         "valorar extensión y profundidad",
         "vigilar dolor",
         "controlar signos vitales",
         "observar perfusión y signos de infección",
         "llevar balance hídrico en quemaduras extensas"
       ],
-      "noc_sugeridos": [
+      "diagnosticos_sugeridos": [
+        "00046",
+        "00132",
+        "00004"
+      ],
+      "noc_base": [
         "Integridad tisular: piel",
         "Control del dolor",
         "Severidad de la infección"
       ],
-      "nic_sugeridos": [
+      "nic_base": [
         "Cuidados de heridas",
         "Manejo del dolor",
         "Control de infecciones",
         "Manejo de líquidos"
       ],
-      "cuidados_generales": [
+      "cuidados_prioritarios_base": [
         "usar medidas asépticas",
         "vigilar evolución de la herida",
         "educar sobre curaciones y signos de alarma"
       ],
-      "observaciones": "",
-      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
-      "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19",
+      "observaciones_base": "",
       "modelos_pae_compatibles": [
         "corto",
         "largo"
       ],
-      "fases_recomendadas": [
+      "etapas_compatibles": [
         "general"
       ],
-      "diagnosticos_sugeridos": [
-        "00046",
-        "00132",
-        "00004"
-      ]
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
     }
   ]
 }
