@@ -1,0 +1,3902 @@
+{
+  "patologias": [
+    {
+      "id": "apendicitis-aguda",
+      "nombre": "Apendicitis aguda",
+      "sinonimos": [
+        "inflamación del apéndice"
+      ],
+      "categoria": "Gastrointestinal / Quirúrgica",
+      "descripcion_breve": "Inflamación aguda del apéndice vermiforme con dolor abdominal progresivo.",
+      "definicion": "Proceso inflamatorio agudo del apéndice que suele requerir abordaje quirúrgico oportuno.",
+      "fisiopatologia": "La obstrucción luminal favorece congestión, proliferación bacteriana e inflamación, con riesgo de perforación.",
+      "signos_sintomas": [
+        "dolor periumbilical que migra a fosa iliaca derecha",
+        "náuseas",
+        "vómitos",
+        "anorexia",
+        "fiebre",
+        "dolor a la palpación abdominal"
+      ],
+      "factores_riesgo": [
+        "obstrucción por fecalito",
+        "hiperplasia linfoide",
+        "infección",
+        "antecedentes de dolor abdominal agudo"
+      ],
+      "complicaciones": [
+        "perforación",
+        "peritonitis",
+        "absceso intraabdominal",
+        "sepsis"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar localización e intensidad del dolor",
+        "controlar temperatura y signos vitales",
+        "observar náuseas y vómitos",
+        "valorar signos de irritación peritoneal",
+        "mantener ayuno según indicación"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "proceso inflamatorio apendicular",
+          "evidenciado_por": [
+            "manifestación verbal de dolor",
+            "defensa abdominal"
+          ]
+        },
+        {
+          "nombre": "Riesgo de infección",
+          "relacionado_con": "posible perforación y proceso inflamatorio agudo",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Náuseas",
+          "relacionado_con": "irritación gastrointestinal",
+          "evidenciado_por": [
+            "reporta náuseas y vómitos"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Severidad de la infección",
+        "Estado gastrointestinal"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Vigilancia",
+        "Control de infecciones",
+        "Manejo de la náusea"
+      ],
+      "cuidados_generales": [
+        "preparar para estudios y cirugía si aplica",
+        "mantener reposo",
+        "administrar medicación prescrita",
+        "registrar cambios clínicos"
+      ],
+      "observaciones": "Frecuente en PAE preoperatorio y postoperatorio.",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "colecistitis-aguda",
+      "nombre": "Colecistitis aguda",
+      "sinonimos": [
+        "inflamación de la vesícula",
+        "vesícula inflamada"
+      ],
+      "categoria": "Gastrointestinal / Quirúrgica",
+      "descripcion_breve": "Inflamación aguda de la vesícula biliar, por lo general asociada a cálculos.",
+      "definicion": "Inflamación de la vesícula biliar causada habitualmente por obstrucción del conducto cístico.",
+      "fisiopatologia": "La obstrucción biliar produce distensión, inflamación local e infección secundaria en algunos casos.",
+      "signos_sintomas": [
+        "dolor en hipocondrio derecho",
+        "náuseas",
+        "vómitos",
+        "fiebre",
+        "intolerancia a grasas",
+        "sensibilidad abdominal"
+      ],
+      "factores_riesgo": [
+        "colelitiasis",
+        "dieta alta en grasas",
+        "obesidad",
+        "sexo femenino",
+        "edad media o avanzada"
+      ],
+      "complicaciones": [
+        "empiema vesicular",
+        "perforación",
+        "pancreatitis",
+        "sepsis"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar dolor y náuseas",
+        "observar fiebre",
+        "controlar tolerancia oral",
+        "evaluar coloración de piel y mucosas",
+        "vigilar abdomen"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "inflamación vesicular",
+          "evidenciado_por": [
+            "dolor en hipocondrio derecho"
+          ]
+        },
+        {
+          "nombre": "Desequilibrio nutricional: ingesta inferior a las necesidades",
+          "relacionado_con": "náuseas e intolerancia alimentaria",
+          "evidenciado_por": [
+            "disminución del apetito"
+          ]
+        },
+        {
+          "nombre": "Riesgo de infección",
+          "relacionado_con": "proceso inflamatorio biliar",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Estado nutricional",
+        "Estado infeccioso"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Manejo de la nutrición",
+        "Control de infecciones",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "mantener dieta o ayuno según prescripción",
+        "administrar analgésicos y antibióticos indicados",
+        "educar sobre signos de alarma"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "pancreatitis-aguda",
+      "nombre": "Pancreatitis aguda",
+      "sinonimos": [
+        "inflamación del páncreas"
+      ],
+      "categoria": "Gastrointestinal / Metabólica",
+      "descripcion_breve": "Inflamación aguda del páncreas que suele manifestarse con dolor abdominal intenso.",
+      "definicion": "Inflamación aguda del páncreas por activación intrapancreática de enzimas digestivas.",
+      "fisiopatologia": "La autodigestión pancreática provoca edema, inflamación y en casos severos necrosis y respuesta sistémica.",
+      "signos_sintomas": [
+        "dolor epigástrico intenso irradiado a espalda",
+        "náuseas",
+        "vómitos",
+        "distensión abdominal",
+        "fiebre",
+        "taquicardia"
+      ],
+      "factores_riesgo": [
+        "litiasis biliar",
+        "consumo de alcohol",
+        "hipertrigliceridemia",
+        "medicamentos",
+        "procedimientos biliares"
+      ],
+      "complicaciones": [
+        "necrosis pancreática",
+        "hipovolemia",
+        "insuficiencia respiratoria",
+        "sepsis",
+        "shock"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar dolor y distensión",
+        "controlar balance hídrico",
+        "observar signos de hipovolemia",
+        "monitorizar signos vitales",
+        "valorar tolerancia digestiva"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "inflamación pancreática",
+          "evidenciado_por": [
+            "dolor epigástrico intenso"
+          ]
+        },
+        {
+          "nombre": "Riesgo de déficit de volumen de líquidos",
+          "relacionado_con": "vómitos y tercer espacio",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Náuseas",
+          "relacionado_con": "irritación gastrointestinal",
+          "evidenciado_por": [
+            "episodios de vómito"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Equilibrio hídrico",
+        "Estado respiratorio"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Manejo de líquidos",
+        "Vigilancia",
+        "Manejo de la náusea"
+      ],
+      "cuidados_generales": [
+        "mantener ayuno según indicación",
+        "administrar fluidos prescritos",
+        "vigilar laboratorio y evolución clínica"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "gastritis",
+      "nombre": "Gastritis",
+      "sinonimos": [
+        "inflamación gástrica"
+      ],
+      "categoria": "Gastrointestinal",
+      "descripcion_breve": "Inflamación de la mucosa gástrica con molestias digestivas variables.",
+      "definicion": "Inflamación de la mucosa del estómago que puede ser aguda o crónica.",
+      "fisiopatologia": "La lesión de la barrera mucosa favorece inflamación, dolor epigástrico y en algunos casos sangrado.",
+      "signos_sintomas": [
+        "dolor o ardor epigástrico",
+        "náuseas",
+        "vómitos",
+        "plenitud",
+        "acidez",
+        "eructos"
+      ],
+      "factores_riesgo": [
+        "uso de AINE",
+        "alcohol",
+        "infección por Helicobacter pylori",
+        "estrés fisiológico",
+        "irritantes gástricos"
+      ],
+      "complicaciones": [
+        "hemorragia digestiva",
+        "deshidratación",
+        "anemia si es crónica o erosiva"
+      ],
+      "valoracion_enfermeria": [
+        "valorar dolor y patrón alimentario",
+        "observar vómitos o sangrado",
+        "controlar tolerancia oral",
+        "indagar consumo de irritantes"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "irritación de la mucosa gástrica",
+          "evidenciado_por": [
+            "ardor o dolor epigástrico"
+          ]
+        },
+        {
+          "nombre": "Náuseas",
+          "relacionado_con": "irritación gástrica",
+          "evidenciado_por": [
+            "sensación nauseosa"
+          ]
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "falta de información sobre dieta y medicamentos",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Estado gastrointestinal",
+        "Conocimiento: proceso de la enfermedad"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Manejo de la nutrición",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "promover dieta no irritante",
+        "administrar tratamiento prescrito",
+        "educar sobre evitar alcohol y AINE sin control"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "ulcera-peptica",
+      "nombre": "Úlcera péptica",
+      "sinonimos": [
+        "úlcera gástrica",
+        "úlcera duodenal"
+      ],
+      "categoria": "Gastrointestinal",
+      "descripcion_breve": "Lesión ulcerosa en estómago o duodeno asociada a dolor y riesgo de sangrado.",
+      "definicion": "Solución de continuidad de la mucosa gástrica o duodenal por acción de ácido y pepsina.",
+      "fisiopatologia": "El desequilibrio entre factores agresivos y protectores de la mucosa origina ulceración.",
+      "signos_sintomas": [
+        "dolor epigástrico",
+        "ardor",
+        "náuseas",
+        "vómitos",
+        "melena en casos complicados",
+        "hematemesis en sangrado"
+      ],
+      "factores_riesgo": [
+        "H. pylori",
+        "uso crónico de AINE",
+        "tabaquismo",
+        "estrés fisiológico"
+      ],
+      "complicaciones": [
+        "hemorragia digestiva",
+        "perforación",
+        "anemia"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar dolor y signos de sangrado",
+        "controlar heces y vómitos",
+        "evaluar tolerancia oral",
+        "monitorizar signos vitales si hay sangrado"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "lesión de mucosa gastrointestinal",
+          "evidenciado_por": [
+            "dolor epigástrico"
+          ]
+        },
+        {
+          "nombre": "Riesgo de sangrado",
+          "relacionado_con": "erosión vascular secundaria a úlcera",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "falta de información sobre dieta y tratamiento",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Severidad del sangrado",
+        "Conocimiento terapéutico"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Precauciones hemorrágicas",
+        "Educación sanitaria",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "administrar medicación indicada",
+        "orientar signos de alarma",
+        "evitar irritantes y automedicación"
+      ],
+      "observaciones": "Útil para PAE médico y perioperatorio si hay complicación.",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "obstruccion-intestinal",
+      "nombre": "Obstrucción intestinal",
+      "sinonimos": [
+        "íleo",
+        "bloqueo intestinal"
+      ],
+      "categoria": "Gastrointestinal / Quirúrgica",
+      "descripcion_breve": "Interrupción parcial o total del tránsito intestinal.",
+      "definicion": "Bloqueo mecánico o funcional del paso del contenido intestinal.",
+      "fisiopatologia": "La acumulación proximal de gas y líquido causa distensión, dolor y alteraciones hidroelectrolíticas.",
+      "signos_sintomas": [
+        "dolor abdominal tipo cólico",
+        "distensión",
+        "vómitos",
+        "ausencia de evacuaciones o gases",
+        "náuseas"
+      ],
+      "factores_riesgo": [
+        "adherencias",
+        "hernia",
+        "tumores",
+        "íleo paralítico",
+        "cirugías previas"
+      ],
+      "complicaciones": [
+        "isquemia intestinal",
+        "perforación",
+        "deshidratación",
+        "sepsis"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar distensión y dolor",
+        "controlar vómitos",
+        "balance hídrico",
+        "auscultar ruidos intestinales",
+        "mantener ayuno si está indicado"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "distensión intestinal",
+          "evidenciado_por": [
+            "dolor tipo cólico"
+          ]
+        },
+        {
+          "nombre": "Riesgo de déficit de volumen de líquidos",
+          "relacionado_con": "vómitos y secuestro de líquidos",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Deterioro de la motilidad gastrointestinal",
+          "relacionado_con": "obstrucción o íleo",
+          "evidenciado_por": [
+            "distensión y ausencia de evacuaciones"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Equilibrio hídrico",
+        "Control del dolor",
+        "Función gastrointestinal"
+      ],
+      "nic_sugeridos": [
+        "Manejo de líquidos",
+        "Manejo del dolor",
+        "Vigilancia",
+        "Manejo gastrointestinal"
+      ],
+      "cuidados_generales": [
+        "vigilar necesidad de sonda nasogástrica",
+        "preparar para cirugía si procede",
+        "registrar eliminación y dolor"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "peritonitis",
+      "nombre": "Peritonitis",
+      "sinonimos": [
+        "infección peritoneal"
+      ],
+      "categoria": "Gastrointestinal / Infecciosa",
+      "descripcion_breve": "Inflamación del peritoneo, generalmente secundaria a perforación o infección abdominal.",
+      "definicion": "Proceso inflamatorio del peritoneo que constituye una urgencia médica.",
+      "fisiopatologia": "La contaminación peritoneal desencadena inflamación intensa, dolor severo y respuesta sistémica.",
+      "signos_sintomas": [
+        "dolor abdominal intenso",
+        "abdomen rígido",
+        "fiebre",
+        "náuseas",
+        "vómitos",
+        "taquicardia"
+      ],
+      "factores_riesgo": [
+        "perforación de víscera hueca",
+        "apendicitis complicada",
+        "trauma abdominal",
+        "diálisis peritoneal"
+      ],
+      "complicaciones": [
+        "sepsis",
+        "shock séptico",
+        "insuficiencia multiorgánica"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar estado hemodinámico",
+        "valorar rigidez abdominal",
+        "controlar temperatura",
+        "observar signos de sepsis",
+        "mantener ayuno según indicación"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "inflamación peritoneal",
+          "evidenciado_por": [
+            "abdomen rígido y dolor intenso"
+          ]
+        },
+        {
+          "nombre": "Riesgo de shock",
+          "relacionado_con": "infección grave y tercer espacio",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Riesgo de infección",
+          "relacionado_con": "contaminación peritoneal activa",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Estado circulatorio",
+        "Severidad de la infección"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Monitorización hemodinámica",
+        "Control de infecciones",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "preparar para manejo quirúrgico si aplica",
+        "administrar antibióticos y fluidos indicados",
+        "vigilar perfusión"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "absceso-abdominal",
+      "nombre": "Absceso abdominal",
+      "sinonimos": [
+        "colección purulenta abdominal"
+      ],
+      "categoria": "Gastrointestinal / Infecciosa",
+      "descripcion_breve": "Colección localizada de pus dentro de la cavidad abdominal.",
+      "definicion": "Acumulación purulenta intraabdominal secundaria a infección o complicación quirúrgica.",
+      "fisiopatologia": "La infección localizada genera inflamación, dolor y posible respuesta sistémica.",
+      "signos_sintomas": [
+        "dolor abdominal",
+        "fiebre",
+        "malestar general",
+        "náuseas",
+        "sensibilidad abdominal"
+      ],
+      "factores_riesgo": [
+        "cirugía abdominal reciente",
+        "perforación intestinal",
+        "apendicitis complicada",
+        "peritonitis previa"
+      ],
+      "complicaciones": [
+        "sepsis",
+        "diseminación de la infección",
+        "dolor persistente"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar signos vitales",
+        "valorar dolor",
+        "observar drenajes",
+        "controlar temperatura",
+        "vigilar abdomen"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "proceso infeccioso e inflamatorio",
+          "evidenciado_por": [
+            "sensibilidad abdominal"
+          ]
+        },
+        {
+          "nombre": "Riesgo de infección",
+          "relacionado_con": "colección purulenta intraabdominal",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Riesgo de déficit de volumen de líquidos",
+          "relacionado_con": "fiebre y disminución de ingesta",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Estado infeccioso",
+        "Respuesta al tratamiento"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Control de infecciones",
+        "Vigilancia",
+        "Manejo de líquidos"
+      ],
+      "cuidados_generales": [
+        "vigilar estudios y procedimientos de drenaje",
+        "administrar tratamiento prescrito",
+        "educar sobre signos de alarma"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "hemorragia-digestiva-alta",
+      "nombre": "Hemorragia digestiva alta",
+      "sinonimos": [
+        "sangrado digestivo alto"
+      ],
+      "categoria": "Gastrointestinal / Urgencias",
+      "descripcion_breve": "Sangrado originado en esófago, estómago o duodeno.",
+      "definicion": "Pérdida sanguínea del tracto digestivo superior con riesgo de compromiso hemodinámico.",
+      "fisiopatologia": "La lesión vascular o mucosa produce hematemesis, melena y posible hipovolemia.",
+      "signos_sintomas": [
+        "hematemesis",
+        "melena",
+        "palidez",
+        "taquicardia",
+        "hipotensión",
+        "mareo"
+      ],
+      "factores_riesgo": [
+        "úlcera péptica",
+        "varices esofágicas",
+        "gastritis erosiva",
+        "uso de AINE"
+      ],
+      "complicaciones": [
+        "shock hipovolémico",
+        "anemia aguda",
+        "aspiración"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar signos vitales y perfusión",
+        "cuantificar sangrado",
+        "controlar estado de conciencia",
+        "mantener vía venosa permeable",
+        "observar color de heces y vómitos"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Déficit de volumen de líquidos",
+          "relacionado_con": "pérdida activa de sangre",
+          "evidenciado_por": [
+            "hipotensión",
+            "taquicardia"
+          ]
+        },
+        {
+          "nombre": "Riesgo de perfusión tisular ineficaz",
+          "relacionado_con": "disminución del volumen circulante",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "situación aguda y amenaza a la salud",
+          "evidenciado_por": [
+            "inquietud"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado circulatorio",
+        "Severidad de la pérdida sanguínea",
+        "Perfusión tisular"
+      ],
+      "nic_sugeridos": [
+        "Manejo de líquidos",
+        "Precauciones hemorrágicas",
+        "Monitorización hemodinámica",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "mantener ayuno",
+        "preparar para endoscopia si corresponde",
+        "administrar hemoderivados o medicamentos prescritos"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "hernia-inguinal",
+      "nombre": "Hernia inguinal",
+      "sinonimos": [
+        "hernia de la ingle"
+      ],
+      "categoria": "Quirúrgica",
+      "descripcion_breve": "Protrusión de contenido abdominal a través del conducto inguinal.",
+      "definicion": "Salida de tejido abdominal por un defecto de la pared inguinal.",
+      "fisiopatologia": "La debilidad de la pared abdominal favorece protrusión, dolor y riesgo de incarceración.",
+      "signos_sintomas": [
+        "bulto inguinal",
+        "dolor o molestia al esfuerzo",
+        "sensación de peso",
+        "aumento del volumen al toser"
+      ],
+      "factores_riesgo": [
+        "sexo masculino",
+        "esfuerzo físico",
+        "tos crónica",
+        "estreñimiento",
+        "debilidad de pared abdominal"
+      ],
+      "complicaciones": [
+        "incarceración",
+        "estrangulación",
+        "obstrucción intestinal"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar dolor y características del bulto",
+        "evaluar signos de incarceración",
+        "observar tolerancia a la actividad",
+        "educar sobre esfuerzos"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "protrusión herniaria",
+          "evidenciado_por": [
+            "molestia inguinal"
+          ]
+        },
+        {
+          "nombre": "Riesgo de perfusión tisular ineficaz",
+          "relacionado_con": "posible estrangulación herniaria",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "falta de información sobre autocuidado y signos de alarma",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Conocimiento: proceso de la enfermedad",
+        "Estado tisular"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Educación sanitaria",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "evitar esfuerzos según indicación",
+        "preparar para cirugía si aplica",
+        "vigilar cambios bruscos de dolor o coloración"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "neumonia",
+      "nombre": "Neumonía",
+      "sinonimos": [
+        "infección pulmonar"
+      ],
+      "categoria": "Respiratoria / Infecciosa",
+      "descripcion_breve": "Infección del parénquima pulmonar con compromiso del intercambio gaseoso.",
+      "definicion": "Infección pulmonar que produce inflamación alveolar y acumulación de secreciones.",
+      "fisiopatologia": "La respuesta inflamatoria llena los alvéolos de exudado y reduce la oxigenación.",
+      "signos_sintomas": [
+        "tos",
+        "fiebre",
+        "disnea",
+        "taquipnea",
+        "esputo",
+        "dolor torácico",
+        "fatiga"
+      ],
+      "factores_riesgo": [
+        "edad extrema",
+        "tabaquismo",
+        "inmovilidad",
+        "enfermedad crónica",
+        "aspiración"
+      ],
+      "complicaciones": [
+        "insuficiencia respiratoria",
+        "sepsis",
+        "derrame pleural"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar frecuencia respiratoria y saturación",
+        "auscultar campos pulmonares",
+        "observar características del esputo",
+        "controlar temperatura",
+        "evaluar tolerancia a la actividad"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Intercambio gaseoso deteriorado",
+          "relacionado_con": "ocupación alveolar por exudado",
+          "evidenciado_por": [
+            "disnea",
+            "hipoxemia"
+          ]
+        },
+        {
+          "nombre": "Limpieza ineficaz de las vías aéreas",
+          "relacionado_con": "aumento de secreciones",
+          "evidenciado_por": [
+            "tos productiva"
+          ]
+        },
+        {
+          "nombre": "Hipertermia",
+          "relacionado_con": "proceso infeccioso",
+          "evidenciado_por": [
+            "temperatura elevada"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado respiratorio: intercambio gaseoso",
+        "Permeabilidad de las vías aéreas",
+        "Termorregulación"
+      ],
+      "nic_sugeridos": [
+        "Oxigenoterapia",
+        "Manejo de las vías aéreas",
+        "Control de infecciones",
+        "Monitorización respiratoria"
+      ],
+      "cuidados_generales": [
+        "favorecer hidratación si está indicada",
+        "promover tos efectiva y cambios posturales",
+        "administrar medicación prescrita"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "asma",
+      "nombre": "Asma",
+      "sinonimos": [
+        "broncoespasmo",
+        "asma bronquial"
+      ],
+      "categoria": "Respiratoria",
+      "descripcion_breve": "Enfermedad inflamatoria crónica de las vías aéreas con episodios de broncoespasmo.",
+      "definicion": "Trastorno inflamatorio crónico que causa obstrucción reversible del flujo aéreo.",
+      "fisiopatologia": "La hiperreactividad bronquial genera broncoconstricción, edema y producción de moco.",
+      "signos_sintomas": [
+        "disnea",
+        "sibilancias",
+        "tos",
+        "opresión torácica",
+        "dificultad respiratoria nocturna"
+      ],
+      "factores_riesgo": [
+        "alergenos",
+        "infecciones respiratorias",
+        "ejercicio",
+        "humo",
+        "cambios climáticos"
+      ],
+      "complicaciones": [
+        "status asmático",
+        "insuficiencia respiratoria",
+        "ansiedad"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar patrón respiratorio",
+        "auscultar sibilancias",
+        "controlar saturación",
+        "identificar desencadenantes",
+        "evaluar respuesta a broncodilatadores"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Patrón respiratorio ineficaz",
+          "relacionado_con": "broncoespasmo",
+          "evidenciado_por": [
+            "disnea y uso de músculos accesorios"
+          ]
+        },
+        {
+          "nombre": "Limpieza ineficaz de las vías aéreas",
+          "relacionado_con": "moco y broncoconstricción",
+          "evidenciado_por": [
+            "tos y sibilancias"
+          ]
+        },
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "sensación de falta de aire",
+          "evidenciado_por": [
+            "inquietud"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado respiratorio",
+        "Autocontrol del asma",
+        "Permeabilidad de vías aéreas"
+      ],
+      "nic_sugeridos": [
+        "Manejo de las vías aéreas",
+        "Oxigenoterapia",
+        "Educación sanitaria",
+        "Monitorización respiratoria"
+      ],
+      "cuidados_generales": [
+        "enseñar técnica de inhaladores",
+        "evitar desencadenantes",
+        "administrar tratamiento prescrito"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "epoc",
+      "nombre": "EPOC",
+      "sinonimos": [
+        "enfermedad pulmonar obstructiva crónica"
+      ],
+      "categoria": "Respiratoria",
+      "descripcion_breve": "Enfermedad pulmonar obstructiva crónica con limitación persistente del flujo aéreo.",
+      "definicion": "Trastorno respiratorio crónico caracterizado por obstrucción del flujo aéreo no totalmente reversible.",
+      "fisiopatologia": "La inflamación crónica y el daño pulmonar reducen el intercambio gaseoso y la ventilación.",
+      "signos_sintomas": [
+        "disnea progresiva",
+        "tos crónica",
+        "expectoración",
+        "fatiga",
+        "sibilancias",
+        "intolerancia al esfuerzo"
+      ],
+      "factores_riesgo": [
+        "tabaquismo",
+        "exposición a humo o biomasa",
+        "edad avanzada",
+        "infecciones respiratorias repetidas"
+      ],
+      "complicaciones": [
+        "exacerbación aguda",
+        "insuficiencia respiratoria",
+        "cor pulmonale"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar saturación y disnea",
+        "auscultar ruidos respiratorios",
+        "valorar esputo",
+        "observar tolerancia a la actividad",
+        "enseñar respiración con labios fruncidos"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Intercambio gaseoso deteriorado",
+          "relacionado_con": "alteración ventilación/perfusión",
+          "evidenciado_por": [
+            "disnea",
+            "hipoxemia"
+          ]
+        },
+        {
+          "nombre": "Intolerancia a la actividad",
+          "relacionado_con": "desequilibrio entre aporte y demanda de oxígeno",
+          "evidenciado_por": [
+            "fatiga al esfuerzo"
+          ]
+        },
+        {
+          "nombre": "Limpieza ineficaz de las vías aéreas",
+          "relacionado_con": "secreciones y debilidad para expectorar",
+          "evidenciado_por": [
+            "tos crónica"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado respiratorio",
+        "Tolerancia a la actividad",
+        "Conservación de la energía"
+      ],
+      "nic_sugeridos": [
+        "Oxigenoterapia",
+        "Manejo de las vías aéreas",
+        "Conservación de energía",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "promover abandono del tabaco",
+        "administrar broncodilatadores prescritos",
+        "vigilar signos de exacerbación"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "bronquiolitis",
+      "nombre": "Bronquiolitis",
+      "sinonimos": [
+        "infección bronquiolar"
+      ],
+      "categoria": "Respiratoria / Pediátrica",
+      "descripcion_breve": "Infección viral de vías aéreas pequeñas, frecuente en lactantes.",
+      "definicion": "Inflamación aguda de bronquiolos que ocasiona aumento del trabajo respiratorio.",
+      "fisiopatologia": "El edema y las secreciones obstruyen bronquiolos, disminuyendo ventilación efectiva.",
+      "signos_sintomas": [
+        "tos",
+        "sibilancias",
+        "taquipnea",
+        "tiraje",
+        "irritabilidad",
+        "dificultad para alimentarse"
+      ],
+      "factores_riesgo": [
+        "lactancia interrumpida",
+        "prematuridad",
+        "exposición al humo",
+        "contacto con infección viral"
+      ],
+      "complicaciones": [
+        "deshidratación",
+        "apnea",
+        "insuficiencia respiratoria"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar frecuencia respiratoria",
+        "controlar saturación",
+        "valorar signos de esfuerzo respiratorio",
+        "vigilar hidratación y alimentación"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Patrón respiratorio ineficaz",
+          "relacionado_con": "obstrucción bronquiolar",
+          "evidenciado_por": [
+            "taquipnea y tiraje"
+          ]
+        },
+        {
+          "nombre": "Riesgo de déficit de volumen de líquidos",
+          "relacionado_con": "ingesta disminuida y fiebre",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Limpieza ineficaz de las vías aéreas",
+          "relacionado_con": "aumento de secreciones",
+          "evidenciado_por": [
+            "tos y congestión"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado respiratorio",
+        "Hidratación",
+        "Severidad de la infección"
+      ],
+      "nic_sugeridos": [
+        "Monitorización respiratoria",
+        "Manejo de las vías aéreas",
+        "Manejo de líquidos",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "favorecer despeje de secreciones",
+        "administrar oxígeno si se indica",
+        "educar a cuidadores sobre signos de alarma"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "tuberculosis-pulmonar",
+      "nombre": "Tuberculosis pulmonar",
+      "sinonimos": [
+        "TB pulmonar"
+      ],
+      "categoria": "Respiratoria / Infecciosa",
+      "descripcion_breve": "Infección pulmonar por Mycobacterium tuberculosis.",
+      "definicion": "Enfermedad infecciosa que afecta principalmente pulmones y requiere tratamiento prolongado.",
+      "fisiopatologia": "La respuesta granulomatosa produce tos crónica, fiebre y pérdida de peso.",
+      "signos_sintomas": [
+        "tos persistente",
+        "hemoptisis ocasional",
+        "fiebre",
+        "sudoración nocturna",
+        "pérdida de peso",
+        "fatiga"
+      ],
+      "factores_riesgo": [
+        "contacto con caso activo",
+        "hacinamiento",
+        "inmunosupresión",
+        "desnutrición"
+      ],
+      "complicaciones": [
+        "diseminación",
+        "insuficiencia respiratoria",
+        "abandono terapéutico",
+        "resistencia a fármacos"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar patrón respiratorio",
+        "controlar adherencia al tratamiento",
+        "observar pérdida de peso",
+        "educar sobre aislamiento y tos"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Limpieza ineficaz de las vías aéreas",
+          "relacionado_con": "secreciones e inflamación pulmonar",
+          "evidenciado_por": [
+            "tos persistente"
+          ]
+        },
+        {
+          "nombre": "Desequilibrio nutricional: ingesta inferior a las necesidades",
+          "relacionado_con": "demanda aumentada y anorexia",
+          "evidenciado_por": [
+            "pérdida de peso"
+          ]
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "tratamiento prolongado y medidas de prevención",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado respiratorio",
+        "Estado nutricional",
+        "Adherencia al tratamiento"
+      ],
+      "nic_sugeridos": [
+        "Control de infecciones",
+        "Educación sanitaria",
+        "Manejo de la nutrición",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "fomentar cumplimiento terapéutico",
+        "promover higiene respiratoria",
+        "seguir indicaciones de aislamiento"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "derrame-pleural",
+      "nombre": "Derrame pleural",
+      "sinonimos": [
+        "líquido pleural"
+      ],
+      "categoria": "Respiratoria",
+      "descripcion_breve": "Acumulación de líquido en el espacio pleural.",
+      "definicion": "Presencia anormal de líquido pleural que puede comprometer la expansión pulmonar.",
+      "fisiopatologia": "El líquido pleural limita la expansión del pulmón y reduce la ventilación.",
+      "signos_sintomas": [
+        "disnea",
+        "dolor torácico",
+        "taquipnea",
+        "disminución de ruidos respiratorios",
+        "ortopnea"
+      ],
+      "factores_riesgo": [
+        "neumonía",
+        "insuficiencia cardiaca",
+        "neoplasias",
+        "tuberculosis"
+      ],
+      "complicaciones": [
+        "hipoxemia",
+        "infección pleural",
+        "insuficiencia respiratoria"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar respiración y saturación",
+        "auscultar campos pulmonares",
+        "observar comodidad postural",
+        "controlar dolor"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Patrón respiratorio ineficaz",
+          "relacionado_con": "compresión pulmonar por líquido pleural",
+          "evidenciado_por": [
+            "disnea"
+          ]
+        },
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "inflamación pleural",
+          "evidenciado_por": [
+            "dolor torácico"
+          ]
+        },
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "dificultad respiratoria",
+          "evidenciado_por": [
+            "temor e inquietud"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado respiratorio",
+        "Control del dolor",
+        "Nivel de ansiedad"
+      ],
+      "nic_sugeridos": [
+        "Monitorización respiratoria",
+        "Oxigenoterapia",
+        "Manejo del dolor",
+        "Disminución de la ansiedad"
+      ],
+      "cuidados_generales": [
+        "favorecer posición semifowler",
+        "preparar para toracocentesis si aplica",
+        "vigilar respuesta clínica"
+      ],
+      "observaciones": "Útil en PAE médico y postprocedimiento.",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "edema-agudo-de-pulmon",
+      "nombre": "Edema agudo de pulmón",
+      "sinonimos": [
+        "congestión pulmonar aguda"
+      ],
+      "categoria": "Respiratoria / Cardiovascular",
+      "descripcion_breve": "Acumulación aguda de líquido en alvéolos con deterioro respiratorio severo.",
+      "definicion": "Situación clínica aguda en la que líquido pasa al intersticio y alvéolos pulmonares.",
+      "fisiopatologia": "El aumento de presión hidrostática o daño alveolar reduce el intercambio gaseoso.",
+      "signos_sintomas": [
+        "disnea intensa",
+        "ortopnea",
+        "taquipnea",
+        "estertores",
+        "ansiedad",
+        "cianosis",
+        "espuma rosada en casos graves"
+      ],
+      "factores_riesgo": [
+        "insuficiencia cardiaca",
+        "hipertensión",
+        "infarto agudo de miocardio",
+        "sobrecarga de líquidos"
+      ],
+      "complicaciones": [
+        "hipoxemia grave",
+        "insuficiencia respiratoria",
+        "paro cardiorrespiratorio"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar saturación y respiración",
+        "colocar en posición semifowler o fowler",
+        "monitorizar signos vitales",
+        "observar ansiedad y cianosis"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Intercambio gaseoso deteriorado",
+          "relacionado_con": "líquido alveolar",
+          "evidenciado_por": [
+            "disnea intensa",
+            "hipoxemia"
+          ]
+        },
+        {
+          "nombre": "Exceso de volumen de líquidos",
+          "relacionado_con": "sobrecarga circulatoria",
+          "evidenciado_por": [
+            "estertores y disnea"
+          ]
+        },
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "sensación de asfixia",
+          "evidenciado_por": [
+            "agitación"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado respiratorio",
+        "Equilibrio hídrico",
+        "Estado cardiopulmonar"
+      ],
+      "nic_sugeridos": [
+        "Oxigenoterapia",
+        "Monitorización respiratoria",
+        "Manejo de líquidos",
+        "Disminución de la ansiedad"
+      ],
+      "cuidados_generales": [
+        "notificar deterioro inmediato",
+        "administrar tratamiento prescrito",
+        "vigilar respuesta al oxígeno y diuréticos"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "aspiracion-pulmonar",
+      "nombre": "Aspiración pulmonar",
+      "sinonimos": [
+        "broncoaspiración"
+      ],
+      "categoria": "Respiratoria / Urgencias",
+      "descripcion_breve": "Entrada de contenido gástrico o material extraño a la vía aérea.",
+      "definicion": "Paso accidental de secreciones, alimentos o contenido gástrico al árbol respiratorio.",
+      "fisiopatologia": "La obstrucción y reacción inflamatoria alteran oxigenación y predisponen a neumonía aspirativa.",
+      "signos_sintomas": [
+        "tos súbita",
+        "disnea",
+        "desaturación",
+        "roncus",
+        "cianosis",
+        "fiebre posterior si se infecta"
+      ],
+      "factores_riesgo": [
+        "disfagia",
+        "disminución del nivel de conciencia",
+        "vómitos",
+        "alimentación enteral",
+        "trastornos neurológicos"
+      ],
+      "complicaciones": [
+        "neumonía aspirativa",
+        "obstrucción de vía aérea",
+        "insuficiencia respiratoria"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar vía aérea y saturación",
+        "evaluar reflejo de deglución",
+        "observar tos durante alimentación",
+        "mantener posición segura"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Limpieza ineficaz de las vías aéreas",
+          "relacionado_con": "presencia de material aspirado",
+          "evidenciado_por": [
+            "tos y ruidos respiratorios"
+          ]
+        },
+        {
+          "nombre": "Riesgo de aspiración",
+          "relacionado_con": "alteración de la deglución o conciencia",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Intercambio gaseoso deteriorado",
+          "relacionado_con": "compromiso de ventilación",
+          "evidenciado_por": [
+            "desaturación"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Permeabilidad de vías aéreas",
+        "Estado respiratorio",
+        "Prevención de la aspiración"
+      ],
+      "nic_sugeridos": [
+        "Precauciones para evitar la aspiración",
+        "Manejo de las vías aéreas",
+        "Monitorización respiratoria"
+      ],
+      "cuidados_generales": [
+        "elevar cabecera",
+        "verificar tolerancia oral o enteral",
+        "seguir protocolo de alimentación segura"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "sinusitis-aguda",
+      "nombre": "Sinusitis aguda",
+      "sinonimos": [
+        "infección de senos paranasales"
+      ],
+      "categoria": "Respiratoria / ORL",
+      "descripcion_breve": "Inflamación aguda de senos paranasales, usualmente infecciosa.",
+      "definicion": "Inflamación de la mucosa de los senos paranasales con obstrucción del drenaje.",
+      "fisiopatologia": "La obstrucción y el edema favorecen secreción retenida y dolor facial.",
+      "signos_sintomas": [
+        "congestión nasal",
+        "dolor o presión facial",
+        "rinorrea",
+        "cefalea",
+        "fiebre ocasional",
+        "tos"
+      ],
+      "factores_riesgo": [
+        "resfriado común",
+        "alergias",
+        "desviación septal",
+        "tabaquismo"
+      ],
+      "complicaciones": [
+        "sinusitis crónica",
+        "otitis",
+        "diseminación local poco frecuente"
+      ],
+      "valoracion_enfermeria": [
+        "valorar dolor facial",
+        "controlar fiebre",
+        "observar características de secreción nasal",
+        "vigilar patrón de sueño"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "inflamación de senos paranasales",
+          "evidenciado_por": [
+            "presión facial"
+          ]
+        },
+        {
+          "nombre": "Patrón de sueño perturbado",
+          "relacionado_con": "congestión y malestar",
+          "evidenciado_por": [
+            "refiere dificultad para dormir"
+          ]
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "manejo domiciliario y uso correcto de medicamentos",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Estado respiratorio: permeabilidad nasal",
+        "Conocimiento terapéutico"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Educación sanitaria",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "favorecer hidratación y medidas locales si están indicadas",
+        "educar sobre uso de tratamiento",
+        "vigilar evolución"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "hipertension-arterial",
+      "nombre": "Hipertensión arterial",
+      "sinonimos": [
+        "presión alta"
+      ],
+      "categoria": "Cardiovascular",
+      "descripcion_breve": "Elevación persistente de la presión arterial, a menudo asintomática.",
+      "definicion": "Condición crónica caracterizada por cifras elevadas de presión arterial.",
+      "fisiopatologia": "El aumento sostenido de la resistencia vascular y otros factores eleva el riesgo cardiovascular.",
+      "signos_sintomas": [
+        "cefalea ocasional",
+        "mareo ocasional",
+        "visión borrosa ocasional",
+        "puede ser asintomática"
+      ],
+      "factores_riesgo": [
+        "antecedentes familiares",
+        "obesidad",
+        "sedentarismo",
+        "alta ingesta de sodio",
+        "estrés",
+        "edad"
+      ],
+      "complicaciones": [
+        "accidente cerebrovascular",
+        "infarto",
+        "enfermedad renal",
+        "retinopatía"
+      ],
+      "valoracion_enfermeria": [
+        "tomar presión arterial correctamente",
+        "vigilar adherencia al tratamiento",
+        "evaluar estilo de vida",
+        "observar síntomas de daño a órgano blanco"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Gestión ineficaz de la salud",
+          "relacionado_con": "dificultad para mantener medidas terapéuticas",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Riesgo de perfusión tisular ineficaz",
+          "relacionado_con": "cifras tensionales elevadas",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "falta de información sobre autocuidado",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control de la presión arterial",
+        "Conducta de cumplimiento",
+        "Conocimiento: estilo de vida saludable"
+      ],
+      "nic_sugeridos": [
+        "Monitorización de signos vitales",
+        "Educación sanitaria",
+        "Fomento del ejercicio",
+        "Asesoramiento nutricional"
+      ],
+      "cuidados_generales": [
+        "educar sobre adherencia, dieta y ejercicio",
+        "vigilar respuesta al tratamiento",
+        "promover seguimiento periódico"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "insuficiencia-cardiaca",
+      "nombre": "Insuficiencia cardiaca",
+      "sinonimos": [
+        "falla cardiaca"
+      ],
+      "categoria": "Cardiovascular",
+      "descripcion_breve": "Incapacidad del corazón para bombear sangre de manera suficiente para las demandas del organismo.",
+      "definicion": "Síndrome clínico en el que el gasto cardiaco resulta insuficiente o a expensas de presiones elevadas.",
+      "fisiopatologia": "La disfunción ventricular provoca congestión, fatiga y retención de líquidos.",
+      "signos_sintomas": [
+        "disnea",
+        "edema periférico",
+        "fatiga",
+        "ortopnea",
+        "aumento de peso",
+        "estertores"
+      ],
+      "factores_riesgo": [
+        "hipertensión",
+        "cardiopatía isquémica",
+        "valvulopatías",
+        "diabetes"
+      ],
+      "complicaciones": [
+        "edema agudo de pulmón",
+        "arritmias",
+        "insuficiencia renal",
+        "hospitalizaciones repetidas"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar peso diario",
+        "controlar edema y diuresis",
+        "monitorizar respiración y saturación",
+        "evaluar tolerancia a la actividad"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Gasto cardiaco disminuido",
+          "relacionado_con": "deterioro de la función miocárdica",
+          "evidenciado_por": [
+            "fatiga",
+            "disnea"
+          ]
+        },
+        {
+          "nombre": "Exceso de volumen de líquidos",
+          "relacionado_con": "retención hidrosalina",
+          "evidenciado_por": [
+            "edema",
+            "ganancia de peso"
+          ]
+        },
+        {
+          "nombre": "Intolerancia a la actividad",
+          "relacionado_con": "desequilibrio entre aporte y demanda de oxígeno",
+          "evidenciado_por": [
+            "fatiga al esfuerzo"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado cardiaco",
+        "Equilibrio hídrico",
+        "Tolerancia a la actividad"
+      ],
+      "nic_sugeridos": [
+        "Monitorización hemodinámica",
+        "Manejo de líquidos",
+        "Conservación de energía",
+        "Oxigenoterapia"
+      ],
+      "cuidados_generales": [
+        "restringir sodio o líquidos si se indica",
+        "educar sobre peso diario y signos de descompensación",
+        "administrar tratamiento prescrito"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "infarto-agudo-de-miocardio",
+      "nombre": "Infarto agudo de miocardio",
+      "sinonimos": [
+        "IAM",
+        "ataque al corazón"
+      ],
+      "categoria": "Cardiovascular / Urgencias",
+      "descripcion_breve": "Necrosis del músculo cardiaco por isquemia prolongada.",
+      "definicion": "Lesión miocárdica aguda secundaria a obstrucción coronaria.",
+      "fisiopatologia": "La interrupción del flujo coronario causa necrosis, dolor torácico y riesgo de inestabilidad hemodinámica.",
+      "signos_sintomas": [
+        "dolor torácico opresivo",
+        "disnea",
+        "sudoración",
+        "náuseas",
+        "palidez",
+        "ansiedad"
+      ],
+      "factores_riesgo": [
+        "hipertensión",
+        "tabaquismo",
+        "diabetes",
+        "dislipidemia",
+        "obesidad",
+        "sedentarismo"
+      ],
+      "complicaciones": [
+        "arritmias",
+        "shock cardiogénico",
+        "insuficiencia cardiaca",
+        "muerte súbita"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar dolor torácico",
+        "monitorizar signos vitales y ECG si disponible",
+        "observar perfusión",
+        "controlar ansiedad"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Perfusión tisular cardiaca ineficaz",
+          "relacionado_con": "obstrucción coronaria",
+          "evidenciado_por": [
+            "dolor torácico"
+          ]
+        },
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "isquemia miocárdica",
+          "evidenciado_por": [
+            "opresión torácica"
+          ]
+        },
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "amenaza percibida de muerte o daño",
+          "evidenciado_por": [
+            "inquietud"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Perfusión tisular: cardiaca",
+        "Control del dolor",
+        "Estado circulatorio"
+      ],
+      "nic_sugeridos": [
+        "Monitorización cardiaca",
+        "Manejo del dolor",
+        "Oxigenoterapia",
+        "Disminución de la ansiedad"
+      ],
+      "cuidados_generales": [
+        "activar manejo urgente",
+        "mantener reposo",
+        "administrar medicación prescrita",
+        "vigilar complicaciones"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "accidente-cerebrovascular",
+      "nombre": "Accidente cerebrovascular",
+      "sinonimos": [
+        "ictus",
+        "derrame cerebral"
+      ],
+      "categoria": "Neurológica / Urgencias",
+      "descripcion_breve": "Déficit neurológico agudo por interrupción del flujo sanguíneo cerebral o hemorragia.",
+      "definicion": "Evento agudo que compromete la perfusión cerebral y causa déficit focal.",
+      "fisiopatologia": "La isquemia o hemorragia cerebral produce daño neuronal de inicio súbito.",
+      "signos_sintomas": [
+        "debilidad de un lado",
+        "dificultad para hablar",
+        "asimetría facial",
+        "alteración del estado de conciencia",
+        "cefalea en algunos casos"
+      ],
+      "factores_riesgo": [
+        "hipertensión",
+        "fibrilación auricular",
+        "diabetes",
+        "tabaquismo",
+        "dislipidemia"
+      ],
+      "complicaciones": [
+        "edema cerebral",
+        "broncoaspiración",
+        "discapacidad permanente",
+        "muerte"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar Glasgow o estado neurológico",
+        "controlar presión arterial",
+        "valorar deglución",
+        "observar movilidad y lenguaje",
+        "prevenir caídas y úlceras"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Perfusión tisular cerebral ineficaz",
+          "relacionado_con": "alteración del flujo sanguíneo cerebral",
+          "evidenciado_por": [
+            "déficit neurológico agudo"
+          ]
+        },
+        {
+          "nombre": "Deterioro de la movilidad física",
+          "relacionado_con": "compromiso neurológico",
+          "evidenciado_por": [
+            "hemiparesia"
+          ]
+        },
+        {
+          "nombre": "Riesgo de aspiración",
+          "relacionado_con": "alteración de reflejos de deglución",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado neurológico",
+        "Movilidad",
+        "Prevención de aspiración"
+      ],
+      "nic_sugeridos": [
+        "Vigilancia neurológica",
+        "Precauciones para evitar la aspiración",
+        "Prevención de caídas",
+        "Terapia de ejercicios"
+      ],
+      "cuidados_generales": [
+        "mantener cabecera según indicación",
+        "facilitar rehabilitación temprana",
+        "educar a familia sobre cuidado seguro"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "trombosis-venosa-profunda",
+      "nombre": "Trombosis venosa profunda",
+      "sinonimos": [
+        "TVP"
+      ],
+      "categoria": "Vascular",
+      "descripcion_breve": "Formación de trombo en venas profundas, usualmente de miembros inferiores.",
+      "definicion": "Presencia de coágulo en el sistema venoso profundo con riesgo embólico.",
+      "fisiopatologia": "La estasis venosa, lesión endotelial e hipercoagulabilidad favorecen la trombosis.",
+      "signos_sintomas": [
+        "dolor en extremidad",
+        "edema unilateral",
+        "calor local",
+        "enrojecimiento",
+        "sensibilidad"
+      ],
+      "factores_riesgo": [
+        "inmovilidad",
+        "cirugía",
+        "cáncer",
+        "embarazo",
+        "trombofilias",
+        "uso de estrógenos"
+      ],
+      "complicaciones": [
+        "embolia pulmonar",
+        "síndrome postrombótico"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar edema y dolor de extremidad",
+        "evaluar color y temperatura",
+        "observar signos de embolia pulmonar",
+        "favorecer seguridad en la movilización"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Perfusión tisular periférica ineficaz",
+          "relacionado_con": "obstrucción venosa",
+          "evidenciado_por": [
+            "edema unilateral"
+          ]
+        },
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "proceso trombótico",
+          "evidenciado_por": [
+            "dolor en extremidad"
+          ]
+        },
+        {
+          "nombre": "Riesgo de sangrado",
+          "relacionado_con": "tratamiento anticoagulante si está indicado",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Perfusión tisular periférica",
+        "Control del dolor",
+        "Coagulación sanguínea"
+      ],
+      "nic_sugeridos": [
+        "Vigilancia",
+        "Prevención de trombos",
+        "Manejo del dolor",
+        "Precauciones hemorrágicas"
+      ],
+      "cuidados_generales": [
+        "no masajear la extremidad afectada",
+        "fomentar adherencia al tratamiento",
+        "educar sobre signos de embolia"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "diabetes-mellitus-tipo-2",
+      "nombre": "Diabetes mellitus tipo 2",
+      "sinonimos": [
+        "DM2",
+        "diabetes tipo 2"
+      ],
+      "categoria": "Metabólica / Endocrina",
+      "descripcion_breve": "Trastorno metabólico crónico con hiperglucemia por resistencia a la insulina y secreción insuficiente relativa.",
+      "definicion": "Enfermedad metabólica caracterizada por elevación de glucosa sanguínea persistente.",
+      "fisiopatologia": "La resistencia a la insulina y el deterioro progresivo de la célula beta producen hiperglucemia.",
+      "signos_sintomas": [
+        "poliuria",
+        "polidipsia",
+        "polifagia",
+        "fatiga",
+        "visión borrosa",
+        "puede ser asintomática al inicio"
+      ],
+      "factores_riesgo": [
+        "obesidad",
+        "sedentarismo",
+        "antecedentes familiares",
+        "edad",
+        "dieta inadecuada"
+      ],
+      "complicaciones": [
+        "pie diabético",
+        "nefropatía",
+        "retinopatía",
+        "neuropatía",
+        "enfermedad cardiovascular"
+      ],
+      "valoracion_enfermeria": [
+        "controlar glucemia capilar según indicación",
+        "vigilar integridad de piel y pies",
+        "evaluar adherencia a dieta y medicación",
+        "observar signos de hipoglucemia e hiperglucemia"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Riesgo de nivel de glucemia inestable",
+          "relacionado_con": "alteración del metabolismo de la glucosa",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Gestión ineficaz de la salud",
+          "relacionado_con": "complejidad del tratamiento",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Riesgo de deterioro de la integridad cutánea",
+          "relacionado_con": "alteración circulatoria y neuropatía",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control de la glucemia",
+        "Autocontrol de la diabetes",
+        "Integridad tisular: piel"
+      ],
+      "nic_sugeridos": [
+        "Monitorización de glucosa sanguínea",
+        "Educación sanitaria",
+        "Cuidados de los pies",
+        "Asesoramiento nutricional"
+      ],
+      "cuidados_generales": [
+        "promover autocuidado y adherencia",
+        "enseñar signos de alarma",
+        "vigilar heridas y circulación periférica"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "cetoacidosis-diabetica",
+      "nombre": "Cetoacidosis diabética",
+      "sinonimos": [
+        "CAD"
+      ],
+      "categoria": "Metabólica / Urgencias",
+      "descripcion_breve": "Complicación aguda grave de la diabetes con hiperglucemia, cetosis y acidosis.",
+      "definicion": "Descompensación metabólica aguda por déficit de insulina y aumento de hormonas contrarreguladoras.",
+      "fisiopatologia": "La lipólisis excesiva genera cetonas y acidosis, con deshidratación marcada.",
+      "signos_sintomas": [
+        "náuseas",
+        "vómitos",
+        "dolor abdominal",
+        "poliuria",
+        "polidipsia",
+        "respiración de Kussmaul",
+        "aliento cetónico"
+      ],
+      "factores_riesgo": [
+        "suspensión de insulina",
+        "infección",
+        "debut diabético",
+        "estrés fisiológico"
+      ],
+      "complicaciones": [
+        "shock",
+        "alteraciones electrolíticas",
+        "edema cerebral poco frecuente",
+        "muerte"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar glucemia y estado neurológico",
+        "controlar balance hídrico",
+        "observar respiración",
+        "monitorizar signos vitales",
+        "vigilar vómitos"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Déficit de volumen de líquidos",
+          "relacionado_con": "diuresis osmótica y vómitos",
+          "evidenciado_por": [
+            "mucosas secas",
+            "taquicardia"
+          ]
+        },
+        {
+          "nombre": "Riesgo de nivel de glucemia inestable",
+          "relacionado_con": "déficit absoluto o relativo de insulina",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Riesgo de desequilibrio electrolítico",
+          "relacionado_con": "terapia y pérdidas aumentadas",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Hidratación",
+        "Control de la glucemia",
+        "Equilibrio electrolítico"
+      ],
+      "nic_sugeridos": [
+        "Manejo de líquidos",
+        "Monitorización de glucosa sanguínea",
+        "Vigilancia",
+        "Manejo de electrolitos"
+      ],
+      "cuidados_generales": [
+        "seguir protocolo institucional",
+        "vigilar respuesta al tratamiento",
+        "detectar deterioro neurológico"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "hipotiroidismo",
+      "nombre": "Hipotiroidismo",
+      "sinonimos": [
+        "tiroides baja"
+      ],
+      "categoria": "Endocrina",
+      "descripcion_breve": "Disminución de la producción de hormonas tiroideas con enlentecimiento metabólico.",
+      "definicion": "Trastorno endocrino por déficit de hormonas tiroideas.",
+      "fisiopatologia": "La baja disponibilidad hormonal reduce el metabolismo basal y enlentece funciones corporales.",
+      "signos_sintomas": [
+        "fatiga",
+        "intolerancia al frío",
+        "aumento de peso",
+        "piel seca",
+        "estreñimiento",
+        "somnolencia"
+      ],
+      "factores_riesgo": [
+        "enfermedad autoinmune",
+        "cirugía tiroidea",
+        "radiación",
+        "deficiencia de yodo en algunos contextos"
+      ],
+      "complicaciones": [
+        "mixedema",
+        "dislipidemia",
+        "bradicardia marcada"
+      ],
+      "valoracion_enfermeria": [
+        "valorar energía y tolerancia a actividad",
+        "observar piel y eliminación intestinal",
+        "vigilar temperatura y frecuencia cardiaca",
+        "educar adherencia medicamentosa"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Fatiga",
+          "relacionado_con": "disminución del metabolismo",
+          "evidenciado_por": [
+            "cansancio persistente"
+          ]
+        },
+        {
+          "nombre": "Estreñimiento",
+          "relacionado_con": "motilidad intestinal enlentecida",
+          "evidenciado_por": [
+            "evacuaciones infrecuentes"
+          ]
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "manejo del tratamiento hormonal",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Nivel de energía",
+        "Eliminación intestinal",
+        "Conocimiento terapéutico"
+      ],
+      "nic_sugeridos": [
+        "Manejo de la energía",
+        "Manejo intestinal",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "promover cumplimiento terapéutico",
+        "vigilar cambios clínicos",
+        "orientar controles periódicos"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "hipertiroidismo",
+      "nombre": "Hipertiroidismo",
+      "sinonimos": [
+        "tiroides alta"
+      ],
+      "categoria": "Endocrina",
+      "descripcion_breve": "Exceso de hormonas tiroideas con aumento del metabolismo basal.",
+      "definicion": "Trastorno endocrino caracterizado por producción aumentada de hormonas tiroideas.",
+      "fisiopatologia": "El exceso hormonal acelera procesos metabólicos y cardiovasculares.",
+      "signos_sintomas": [
+        "pérdida de peso",
+        "taquicardia",
+        "nerviosismo",
+        "temblor",
+        "intolerancia al calor",
+        "diarrea"
+      ],
+      "factores_riesgo": [
+        "enfermedad de Graves",
+        "nódulos tiroideos",
+        "exceso de hormona exógena"
+      ],
+      "complicaciones": [
+        "crisis tiroidea",
+        "arritmias",
+        "osteopenia"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar frecuencia cardiaca",
+        "evaluar ansiedad y temblor",
+        "controlar peso y tolerancia al calor",
+        "observar diarrea"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Nutrición desequilibrada: inferior a las necesidades",
+          "relacionado_con": "metabolismo aumentado",
+          "evidenciado_por": [
+            "pérdida de peso"
+          ]
+        },
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "estimulación metabólica excesiva",
+          "evidenciado_por": [
+            "nerviosismo"
+          ]
+        },
+        {
+          "nombre": "Intolerancia al calor",
+          "relacionado_con": "aumento del metabolismo",
+          "evidenciado_por": [
+            "refiere calor excesivo"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado metabólico",
+        "Nivel de ansiedad",
+        "Estado cardiovascular"
+      ],
+      "nic_sugeridos": [
+        "Manejo nutricional",
+        "Disminución de la ansiedad",
+        "Monitorización de signos vitales",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "favorecer ambiente tranquilo",
+        "administrar tratamiento prescrito",
+        "vigilar signos de crisis tiroidea"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "obesidad",
+      "nombre": "Obesidad",
+      "sinonimos": [
+        "sobrepeso severo"
+      ],
+      "categoria": "Metabólica / Nutricional",
+      "descripcion_breve": "Acumulación excesiva de grasa corporal que aumenta el riesgo de enfermedad.",
+      "definicion": "Trastorno multifactorial asociado a exceso de tejido adiposo y riesgos metabólicos.",
+      "fisiopatologia": "El balance energético positivo sostenido favorece acumulación de grasa y alteraciones metabólicas.",
+      "signos_sintomas": [
+        "aumento de peso",
+        "fatiga al esfuerzo",
+        "limitación funcional",
+        "ronquidos en algunos casos"
+      ],
+      "factores_riesgo": [
+        "dieta hipercalórica",
+        "sedentarismo",
+        "factores genéticos",
+        "alteraciones hormonales",
+        "sueño insuficiente"
+      ],
+      "complicaciones": [
+        "diabetes tipo 2",
+        "hipertensión",
+        "apnea del sueño",
+        "dislipidemia",
+        "osteoartrosis"
+      ],
+      "valoracion_enfermeria": [
+        "valorar IMC y hábitos",
+        "evaluar disposición al cambio",
+        "observar limitaciones físicas",
+        "explorar comorbilidades"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Nutrición desequilibrada: más que las necesidades corporales",
+          "relacionado_con": "ingesta excesiva y bajo gasto energético",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Baja autoestima situacional",
+          "relacionado_con": "imagen corporal alterada",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "hábitos saludables y plan alimentario",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del peso",
+        "Conocimiento: dieta saludable",
+        "Nivel de autoestima"
+      ],
+      "nic_sugeridos": [
+        "Asesoramiento nutricional",
+        "Fomento del ejercicio",
+        "Apoyo emocional",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "establecer metas realistas",
+        "promover seguimiento continuo",
+        "trabajar en cambios sostenibles"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "infeccion-de-vias-urinarias",
+      "nombre": "Infección de vías urinarias",
+      "sinonimos": [
+        "IVU",
+        "ITU",
+        "UTI"
+      ],
+      "categoria": "Renal / Infecciosa",
+      "descripcion_breve": "Infección del tracto urinario que puede afectar vejiga, uretra o riñón.",
+      "definicion": "Proceso infeccioso del sistema urinario, con frecuencia localizado en vejiga.",
+      "fisiopatologia": "La colonización bacteriana produce inflamación urinaria y síntomas irritativos.",
+      "signos_sintomas": [
+        "disuria",
+        "urgencia urinaria",
+        "polaquiuria",
+        "dolor suprapúbico",
+        "orina turbia",
+        "fiebre en algunos casos"
+      ],
+      "factores_riesgo": [
+        "sexo femenino",
+        "catéter urinario",
+        "diabetes",
+        "retención urinaria",
+        "actividad sexual"
+      ],
+      "complicaciones": [
+        "pielonefritis",
+        "sepsis",
+        "recaídas"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar patrón urinario",
+        "observar características de la orina",
+        "controlar temperatura",
+        "valorar dolor suprapúbico o lumbar",
+        "favorecer hidratación si está indicada"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Eliminación urinaria deteriorada",
+          "relacionado_con": "irritación e inflamación urinaria",
+          "evidenciado_por": [
+            "disuria",
+            "urgencia"
+          ]
+        },
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "inflamación del tracto urinario",
+          "evidenciado_por": [
+            "ardor al orinar"
+          ]
+        },
+        {
+          "nombre": "Hipertermia",
+          "relacionado_con": "proceso infeccioso",
+          "evidenciado_por": [
+            "temperatura elevada"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Eliminación urinaria",
+        "Control del dolor",
+        "Severidad de la infección"
+      ],
+      "nic_sugeridos": [
+        "Manejo de la eliminación urinaria",
+        "Control de infecciones",
+        "Manejo del dolor",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "educar completar antibiótico si fue prescrito",
+        "promover higiene adecuada",
+        "vigilar signos de complicación"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "pielonefritis",
+      "nombre": "Pielonefritis",
+      "sinonimos": [
+        "infección renal"
+      ],
+      "categoria": "Renal / Infecciosa",
+      "descripcion_breve": "Infección bacteriana del riñón y pelvis renal.",
+      "definicion": "Infección del tracto urinario superior con afectación renal.",
+      "fisiopatologia": "La invasión bacteriana renal provoca inflamación, fiebre y dolor lumbar.",
+      "signos_sintomas": [
+        "fiebre",
+        "escalofríos",
+        "dolor lumbar",
+        "náuseas",
+        "vómitos",
+        "disuria"
+      ],
+      "factores_riesgo": [
+        "IVU recurrente",
+        "reflujo vesicoureteral",
+        "obstrucción urinaria",
+        "embarazo",
+        "diabetes"
+      ],
+      "complicaciones": [
+        "absceso renal",
+        "sepsis",
+        "insuficiencia renal"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar temperatura y dolor lumbar",
+        "controlar náuseas y vómitos",
+        "observar patrón urinario",
+        "vigilar hidratación"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Hipertermia",
+          "relacionado_con": "proceso infeccioso renal",
+          "evidenciado_por": [
+            "fiebre"
+          ]
+        },
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "inflamación renal",
+          "evidenciado_por": [
+            "dolor en flanco"
+          ]
+        },
+        {
+          "nombre": "Riesgo de déficit de volumen de líquidos",
+          "relacionado_con": "fiebre, vómitos y disminución de ingesta",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Severidad de la infección",
+        "Control del dolor",
+        "Hidratación"
+      ],
+      "nic_sugeridos": [
+        "Control de infecciones",
+        "Manejo del dolor",
+        "Manejo de líquidos",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "administrar tratamiento indicado",
+        "promover reposo e hidratación si procede",
+        "vigilar signos de sepsis"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "insuficiencia-renal-aguda",
+      "nombre": "Insuficiencia renal aguda",
+      "sinonimos": [
+        "IRA",
+        "lesión renal aguda"
+      ],
+      "categoria": "Renal",
+      "descripcion_breve": "Deterioro súbito de la función renal con alteración de líquidos y electrolitos.",
+      "definicion": "Disminución aguda de la capacidad renal para filtrar desechos y regular volumen.",
+      "fisiopatologia": "La caída de filtración glomerular causa acumulación de toxinas y alteraciones hidroelectrolíticas.",
+      "signos_sintomas": [
+        "oliguria",
+        "edema",
+        "fatiga",
+        "náuseas",
+        "confusión",
+        "hipertensión"
+      ],
+      "factores_riesgo": [
+        "sepsis",
+        "deshidratación",
+        "nefrotóxicos",
+        "obstrucción urinaria",
+        "shock"
+      ],
+      "complicaciones": [
+        "hiperpotasemia",
+        "sobrecarga de volumen",
+        "acidosis metabólica",
+        "necesidad de diálisis"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar diuresis estricta",
+        "controlar peso y edema",
+        "monitorizar presión arterial",
+        "observar alteración del estado mental"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Exceso de volumen de líquidos",
+          "relacionado_con": "disminución de la excreción renal",
+          "evidenciado_por": [
+            "edema",
+            "balance positivo"
+          ]
+        },
+        {
+          "nombre": "Riesgo de desequilibrio electrolítico",
+          "relacionado_con": "alteración de la función renal",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Perfusión tisular renal ineficaz",
+          "relacionado_con": "causas prerrenales o intrarrenales",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Función renal",
+        "Equilibrio hídrico",
+        "Equilibrio electrolítico"
+      ],
+      "nic_sugeridos": [
+        "Manejo de líquidos",
+        "Monitorización de signos vitales",
+        "Vigilancia",
+        "Manejo de electrolitos"
+      ],
+      "cuidados_generales": [
+        "llevar control estricto de ingresos y egresos",
+        "evitar nefrotóxicos sin indicación",
+        "vigilar necesidad de soporte renal"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "enfermedad-renal-cronica",
+      "nombre": "Enfermedad renal crónica",
+      "sinonimos": [
+        "ERC",
+        "riñón crónico"
+      ],
+      "categoria": "Renal",
+      "descripcion_breve": "Pérdida progresiva y sostenida de la función renal.",
+      "definicion": "Disminución crónica e irreversible de la función renal de diversa etiología.",
+      "fisiopatologia": "El daño renal crónico altera excreción, equilibrio ácido-base y regulación hormonal.",
+      "signos_sintomas": [
+        "fatiga",
+        "edema",
+        "prurito",
+        "náuseas",
+        "anemia",
+        "cambios urinarios"
+      ],
+      "factores_riesgo": [
+        "diabetes",
+        "hipertensión",
+        "glomerulopatías",
+        "enfermedad poliquística"
+      ],
+      "complicaciones": [
+        "uremia",
+        "hiperpotasemia",
+        "enfermedad ósea",
+        "cardiopatía",
+        "necesidad de diálisis"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar presión arterial",
+        "controlar edema y peso",
+        "evaluar adherencia a dieta y tratamiento",
+        "observar signos urémicos"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Fatiga",
+          "relacionado_con": "anemia y acumulación de toxinas",
+          "evidenciado_por": [
+            "cansancio"
+          ]
+        },
+        {
+          "nombre": "Exceso de volumen de líquidos",
+          "relacionado_con": "función renal disminuida",
+          "evidenciado_por": [
+            "edema"
+          ]
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "manejo de dieta, medicación y controles",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Función renal",
+        "Estado nutricional",
+        "Conocimiento terapéutico"
+      ],
+      "nic_sugeridos": [
+        "Manejo de líquidos",
+        "Asesoramiento nutricional",
+        "Educación sanitaria",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "promover adherencia a restricciones y medicación",
+        "vigilar accesos de diálisis si existen",
+        "apoyo emocional continuo"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "litiasis-renal",
+      "nombre": "Litiasis renal",
+      "sinonimos": [
+        "cálculos renales",
+        "piedras en el riñón"
+      ],
+      "categoria": "Renal",
+      "descripcion_breve": "Presencia de cálculos en el sistema urinario con dolor tipo cólico frecuente.",
+      "definicion": "Formación de piedras en riñón o vías urinarias.",
+      "fisiopatologia": "La precipitación de sales forma cálculos que pueden obstruir y producir dolor intenso.",
+      "signos_sintomas": [
+        "dolor lumbar o en flanco",
+        "hematuria",
+        "náuseas",
+        "vómitos",
+        "disuria",
+        "inquietud"
+      ],
+      "factores_riesgo": [
+        "baja ingesta de agua",
+        "antecedentes familiares",
+        "dieta rica en oxalato o sodio",
+        "infecciones urinarias"
+      ],
+      "complicaciones": [
+        "obstrucción urinaria",
+        "infección urinaria",
+        "hidronefrosis"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar dolor y patrón urinario",
+        "observar hematuria",
+        "controlar náuseas",
+        "favorecer hidratación según indicación"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "espasmo ureteral por cálculo",
+          "evidenciado_por": [
+            "cólico renal"
+          ]
+        },
+        {
+          "nombre": "Eliminación urinaria deteriorada",
+          "relacionado_con": "obstrucción parcial del flujo urinario",
+          "evidenciado_por": [
+            "disuria o hematuria"
+          ]
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "medidas para prevención de recurrencia",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Eliminación urinaria",
+        "Conocimiento preventivo"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Manejo de la eliminación urinaria",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "filtrar orina si está indicado",
+        "vigilar eliminación del cálculo",
+        "educar sobre hidratación y dieta"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "glomerulonefritis-aguda",
+      "nombre": "Glomerulonefritis aguda",
+      "sinonimos": [
+        "inflamación glomerular"
+      ],
+      "categoria": "Renal / Inmunológica",
+      "descripcion_breve": "Inflamación aguda glomerular que altera la filtración renal.",
+      "definicion": "Proceso inflamatorio glomerular con hematuria, edema e hipertensión.",
+      "fisiopatologia": "La lesión inmunológica glomerular reduce la filtración y favorece retención de líquidos.",
+      "signos_sintomas": [
+        "hematuria",
+        "edema",
+        "hipertensión",
+        "oliguria",
+        "malestar general"
+      ],
+      "factores_riesgo": [
+        "infecciones previas",
+        "trastornos autoinmunes",
+        "depósito de inmunocomplejos"
+      ],
+      "complicaciones": [
+        "insuficiencia renal",
+        "encefalopatía hipertensiva",
+        "sobrecarga de volumen"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar diuresis y presión arterial",
+        "observar edema",
+        "controlar peso diario",
+        "revisar características de la orina"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Exceso de volumen de líquidos",
+          "relacionado_con": "retención secundaria a filtración alterada",
+          "evidenciado_por": [
+            "edema"
+          ]
+        },
+        {
+          "nombre": "Perfusión tisular renal ineficaz",
+          "relacionado_con": "inflamación glomerular",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Riesgo de desequilibrio electrolítico",
+          "relacionado_con": "función renal comprometida",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Función renal",
+        "Equilibrio hídrico",
+        "Presión arterial"
+      ],
+      "nic_sugeridos": [
+        "Manejo de líquidos",
+        "Monitorización de signos vitales",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "seguir restricciones indicadas",
+        "vigilar deterioro renal",
+        "educar sobre control y seguimiento"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "hepatitis-viral",
+      "nombre": "Hepatitis viral",
+      "sinonimos": [
+        "inflamación del hígado"
+      ],
+      "categoria": "Hepática / Infecciosa",
+      "descripcion_breve": "Inflamación del hígado causada por virus hepatotropos.",
+      "definicion": "Proceso inflamatorio hepático infeccioso que puede ser agudo o crónico según el virus.",
+      "fisiopatologia": "La lesión hepatocelular altera metabolismo, excreción biliar y estado general.",
+      "signos_sintomas": [
+        "fatiga",
+        "ictericia",
+        "náuseas",
+        "vómitos",
+        "orina oscura",
+        "dolor en hipocondrio derecho"
+      ],
+      "factores_riesgo": [
+        "exposición a sangre o fluidos",
+        "agua/alimentos contaminados según tipo",
+        "contacto sexual",
+        "uso de agujas compartidas"
+      ],
+      "complicaciones": [
+        "insuficiencia hepática",
+        "cronificación en algunos tipos",
+        "cirrosis"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar coloración de piel y mucosas",
+        "controlar náuseas y apetito",
+        "observar signos de sangrado",
+        "educar medidas de prevención"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Fatiga",
+          "relacionado_con": "proceso inflamatorio hepático",
+          "evidenciado_por": [
+            "cansancio"
+          ]
+        },
+        {
+          "nombre": "Nutrición desequilibrada: inferior a las necesidades",
+          "relacionado_con": "náuseas y anorexia",
+          "evidenciado_por": [
+            "disminución de ingesta"
+          ]
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "transmisión y cuidado domiciliario",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado hepático",
+        "Estado nutricional",
+        "Conocimiento terapéutico"
+      ],
+      "nic_sugeridos": [
+        "Manejo de la nutrición",
+        "Educación sanitaria",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "favorecer reposo relativo",
+        "administrar tratamiento indicado",
+        "vigilar datos de empeoramiento"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "dengue",
+      "nombre": "Dengue",
+      "sinonimos": [
+        "fiebre por dengue"
+      ],
+      "categoria": "Infecciosa",
+      "descripcion_breve": "Infección viral transmitida por mosquitos con fiebre y dolor corporal marcado.",
+      "definicion": "Enfermedad viral aguda transmitida por Aedes, de gravedad variable.",
+      "fisiopatologia": "La infección causa respuesta inflamatoria sistémica y en casos graves fuga capilar y sangrado.",
+      "signos_sintomas": [
+        "fiebre",
+        "cefalea",
+        "dolor retroocular",
+        "mialgias",
+        "artralgias",
+        "exantema",
+        "náuseas"
+      ],
+      "factores_riesgo": [
+        "exposición a mosquitos en áreas endémicas",
+        "falta de control vectorial"
+      ],
+      "complicaciones": [
+        "sangrado",
+        "shock por fuga capilar",
+        "deshidratación"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar temperatura y signos de alarma",
+        "controlar hidratación",
+        "observar sangrado",
+        "monitorizar presión arterial y llenado capilar"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Hipertermia",
+          "relacionado_con": "proceso infeccioso viral",
+          "evidenciado_por": [
+            "fiebre"
+          ]
+        },
+        {
+          "nombre": "Riesgo de déficit de volumen de líquidos",
+          "relacionado_con": "fiebre y extravasación capilar",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "respuesta inflamatoria sistémica",
+          "evidenciado_por": [
+            "mialgias y cefalea"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Termorregulación",
+        "Hidratación",
+        "Severidad del sangrado"
+      ],
+      "nic_sugeridos": [
+        "Manejo de líquidos",
+        "Monitorización de signos vitales",
+        "Manejo del dolor",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "educar sobre signos de alarma",
+        "evitar medicamentos no indicados",
+        "promover control vectorial"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "gastroenteritis-aguda",
+      "nombre": "Gastroenteritis aguda",
+      "sinonimos": [
+        "infección estomacal",
+        "infección intestinal"
+      ],
+      "categoria": "Infecciosa / Gastrointestinal",
+      "descripcion_breve": "Inflamación infecciosa del tracto gastrointestinal con diarrea y vómitos.",
+      "definicion": "Proceso agudo, habitualmente infeccioso, que compromete estómago e intestino.",
+      "fisiopatologia": "La pérdida gastrointestinal de agua y electrolitos genera riesgo de deshidratación.",
+      "signos_sintomas": [
+        "diarrea",
+        "vómitos",
+        "dolor abdominal",
+        "náuseas",
+        "fiebre",
+        "debilidad"
+      ],
+      "factores_riesgo": [
+        "alimentos contaminados",
+        "agua insegura",
+        "contacto con personas infectadas",
+        "higiene deficiente"
+      ],
+      "complicaciones": [
+        "deshidratación",
+        "desequilibrio electrolítico",
+        "shock en casos severos"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar frecuencia de diarreas y vómitos",
+        "controlar hidratación y mucosas",
+        "observar fiebre",
+        "llevar balance hídrico"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Déficit de volumen de líquidos",
+          "relacionado_con": "pérdidas gastrointestinales",
+          "evidenciado_por": [
+            "mucosas secas",
+            "sed"
+          ]
+        },
+        {
+          "nombre": "Diarrea",
+          "relacionado_con": "irritación o infección intestinal",
+          "evidenciado_por": [
+            "evacuaciones líquidas frecuentes"
+          ]
+        },
+        {
+          "nombre": "Náuseas",
+          "relacionado_con": "irritación gastrointestinal",
+          "evidenciado_por": [
+            "reporta vómitos"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Hidratación",
+        "Eliminación intestinal",
+        "Equilibrio electrolítico"
+      ],
+      "nic_sugeridos": [
+        "Manejo de líquidos",
+        "Manejo de la diarrea",
+        "Manejo de la náusea",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "favorecer rehidratación según indicación",
+        "vigilar intolerancia oral",
+        "educar higiene alimentaria"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "sepsis",
+      "nombre": "Sepsis",
+      "sinonimos": [
+        "infección generalizada grave"
+      ],
+      "categoria": "Infecciosa / Urgencias",
+      "descripcion_breve": "Disfunción orgánica potencialmente mortal causada por respuesta desregulada a una infección.",
+      "definicion": "Síndrome de gravedad en el que la respuesta del huésped a la infección provoca daño orgánico.",
+      "fisiopatologia": "La inflamación sistémica altera perfusión, coagulación y función de órganos.",
+      "signos_sintomas": [
+        "fiebre o hipotermia",
+        "taquicardia",
+        "taquipnea",
+        "hipotensión",
+        "confusión",
+        "oliguria"
+      ],
+      "factores_riesgo": [
+        "infección grave",
+        "inmunosupresión",
+        "hospitalización",
+        "procedimientos invasivos"
+      ],
+      "complicaciones": [
+        "shock séptico",
+        "falla multiorgánica",
+        "muerte"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar signos vitales frecuentes",
+        "controlar estado mental y diuresis",
+        "observar perfusión periférica",
+        "monitorizar lactato y estudios según indicación"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Perfusión tisular ineficaz",
+          "relacionado_con": "vasodilatación y alteración circulatoria",
+          "evidenciado_por": [
+            "hipotensión",
+            "oliguria"
+          ]
+        },
+        {
+          "nombre": "Riesgo de shock",
+          "relacionado_con": "infección sistémica severa",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Hipertermia",
+          "relacionado_con": "respuesta infecciosa",
+          "evidenciado_por": [
+            "temperatura alterada"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado circulatorio",
+        "Severidad de la infección",
+        "Función orgánica"
+      ],
+      "nic_sugeridos": [
+        "Control de infecciones",
+        "Monitorización hemodinámica",
+        "Manejo de líquidos",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "seguir protocolos institucionales de sepsis",
+        "administrar tratamiento oportuno",
+        "reconocer deterioro temprano"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "meningitis",
+      "nombre": "Meningitis",
+      "sinonimos": [
+        "infección de meninges"
+      ],
+      "categoria": "Neurológica / Infecciosa",
+      "descripcion_breve": "Inflamación de las meninges, generalmente por infección.",
+      "definicion": "Proceso inflamatorio meníngeo de inicio agudo que puede comprometer la vida.",
+      "fisiopatologia": "La infección meníngea desencadena respuesta inflamatoria con cefalea, fiebre y rigidez nucal.",
+      "signos_sintomas": [
+        "fiebre",
+        "cefalea",
+        "rigidez de nuca",
+        "vómitos",
+        "fotofobia",
+        "alteración del estado mental"
+      ],
+      "factores_riesgo": [
+        "contacto cercano con casos",
+        "inmunosupresión",
+        "edad extrema",
+        "infecciones vecinas"
+      ],
+      "complicaciones": [
+        "convulsiones",
+        "shock séptico",
+        "déficit neurológico",
+        "muerte"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar estado neurológico",
+        "controlar temperatura",
+        "observar signos meníngeos",
+        "disminuir estímulos si hay fotofobia"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Perfusión tisular cerebral ineficaz",
+          "relacionado_con": "proceso inflamatorio meníngeo",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Hipertermia",
+          "relacionado_con": "infección del SNC",
+          "evidenciado_por": [
+            "fiebre"
+          ]
+        },
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "irritación meníngea",
+          "evidenciado_por": [
+            "cefalea intensa"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado neurológico",
+        "Termorregulación",
+        "Control del dolor"
+      ],
+      "nic_sugeridos": [
+        "Vigilancia neurológica",
+        "Control de infecciones",
+        "Manejo del dolor",
+        "Disminución de estímulos ambientales"
+      ],
+      "cuidados_generales": [
+        "seguir aislamiento si corresponde",
+        "administrar medicación prescrita",
+        "vigilar convulsiones y deterioro"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "epilepsia",
+      "nombre": "Epilepsia",
+      "sinonimos": [
+        "trastorno convulsivo"
+      ],
+      "categoria": "Neurológica",
+      "descripcion_breve": "Trastorno caracterizado por predisposición a presentar crisis epilépticas recurrentes.",
+      "definicion": "Enfermedad neurológica crónica en la que ocurren crisis por descarga neuronal anormal.",
+      "fisiopatologia": "La actividad eléctrica cerebral anormal produce manifestaciones motoras, sensoriales o de conciencia.",
+      "signos_sintomas": [
+        "convulsiones",
+        "ausencias",
+        "confusión postictal",
+        "caídas",
+        "mordedura de lengua en algunos casos"
+      ],
+      "factores_riesgo": [
+        "lesiones cerebrales",
+        "factores genéticos",
+        "infecciones del SNC",
+        "trastornos metabólicos"
+      ],
+      "complicaciones": [
+        "traumatismos",
+        "broncoaspiración",
+        "estado epiléptico"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar tipo y duración de crisis",
+        "proteger de lesiones durante convulsión",
+        "valorar estado postictal",
+        "vigilar adherencia a medicación"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Riesgo de lesión",
+          "relacionado_con": "actividad convulsiva",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Riesgo de aspiración",
+          "relacionado_con": "disminución del control de la vía aérea durante crisis",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "manejo de crisis y adherencia terapéutica",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control de las crisis",
+        "Seguridad personal",
+        "Conocimiento terapéutico"
+      ],
+      "nic_sugeridos": [
+        "Precauciones contra convulsiones",
+        "Protección contra lesiones",
+        "Educación sanitaria",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "no introducir objetos en boca durante crisis",
+        "colocar de lado si es posible",
+        "registrar características del episodio"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "migraña",
+      "nombre": "Migraña",
+      "sinonimos": [
+        "jaqueca"
+      ],
+      "categoria": "Neurológica",
+      "descripcion_breve": "Cefalea recurrente, usualmente pulsátil, que puede asociarse a náuseas y fotofobia.",
+      "definicion": "Trastorno neurológico primario con episodios de cefalea de intensidad moderada o severa.",
+      "fisiopatologia": "Mecanismos neurovasculares y sensibilización trigeminal participan en el dolor.",
+      "signos_sintomas": [
+        "cefalea pulsátil",
+        "náuseas",
+        "vómitos",
+        "fotofobia",
+        "fonofobia",
+        "aura en algunos casos"
+      ],
+      "factores_riesgo": [
+        "estrés",
+        "privación de sueño",
+        "alimentos desencadenantes",
+        "cambios hormonales",
+        "luces intensas"
+      ],
+      "complicaciones": [
+        "deshidratación",
+        "incapacidad funcional temporal",
+        "uso excesivo de analgésicos"
+      ],
+      "valoracion_enfermeria": [
+        "valorar intensidad y duración del dolor",
+        "identificar desencadenantes",
+        "observar náuseas y tolerancia oral",
+        "favorecer ambiente oscuro y silencioso"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "proceso neurovascular",
+          "evidenciado_por": [
+            "cefalea intensa"
+          ]
+        },
+        {
+          "nombre": "Náuseas",
+          "relacionado_con": "episodio migrañoso",
+          "evidenciado_por": [
+            "reporta náuseas"
+          ]
+        },
+        {
+          "nombre": "Conocimientos deficientes",
+          "relacionado_con": "falta de control de desencadenantes",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Control de la náusea",
+        "Autocontrol de síntomas"
+      ],
+      "nic_sugeridos": [
+        "Manejo del dolor",
+        "Manejo de la náusea",
+        "Educación sanitaria",
+        "Disminución de estímulos ambientales"
+      ],
+      "cuidados_generales": [
+        "promover registro de desencadenantes",
+        "administrar medicación prescrita",
+        "favorecer descanso"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "anemia-ferropenica",
+      "nombre": "Anemia ferropénica",
+      "sinonimos": [
+        "anemia por falta de hierro"
+      ],
+      "categoria": "Hematológica",
+      "descripcion_breve": "Disminución de hemoglobina por déficit de hierro.",
+      "definicion": "Anemia microcítica e hipocrómica causada por falta de hierro disponible.",
+      "fisiopatologia": "La reducción del hierro limita síntesis de hemoglobina y transporte de oxígeno.",
+      "signos_sintomas": [
+        "fatiga",
+        "palidez",
+        "disnea al esfuerzo",
+        "mareo",
+        "taquicardia",
+        "uñas frágiles"
+      ],
+      "factores_riesgo": [
+        "sangrado crónico",
+        "dieta deficiente en hierro",
+        "embarazo",
+        "parasitismo"
+      ],
+      "complicaciones": [
+        "bajo rendimiento físico",
+        "compromiso del embarazo",
+        "desarrollo alterado en niños"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar fatiga y tolerancia a actividad",
+        "observar palidez",
+        "evaluar dieta y sangrados",
+        "controlar resultados de laboratorio si se dispone"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Fatiga",
+          "relacionado_con": "disminución de la oxigenación tisular",
+          "evidenciado_por": [
+            "cansancio"
+          ]
+        },
+        {
+          "nombre": "Nutrición desequilibrada: inferior a las necesidades",
+          "relacionado_con": "aporte inadecuado de hierro",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Intolerancia a la actividad",
+          "relacionado_con": "disminución del transporte de oxígeno",
+          "evidenciado_por": [
+            "disnea al esfuerzo"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Nivel de energía",
+        "Estado hematológico",
+        "Tolerancia a la actividad"
+      ],
+      "nic_sugeridos": [
+        "Manejo nutricional",
+        "Administración de medicación",
+        "Conservación de energía",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "promover dieta rica en hierro",
+        "vigilar adherencia al suplemento",
+        "investigar causa de pérdidas"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "embarazo-ectopico",
+      "nombre": "Embarazo ectópico",
+      "sinonimos": [
+        "gestación ectópica"
+      ],
+      "categoria": "Ginecoobstétrica / Urgencias",
+      "descripcion_breve": "Implantación del embarazo fuera de la cavidad uterina, con mayor frecuencia en trompa.",
+      "definicion": "Gestación extrauterina que pone en riesgo la vida materna si se rompe.",
+      "fisiopatologia": "El crecimiento del embarazo en localización anómala provoca dolor y sangrado con riesgo hemorrágico.",
+      "signos_sintomas": [
+        "dolor abdominal o pélvico",
+        "sangrado vaginal",
+        "amenorrea",
+        "mareo",
+        "lipotimia"
+      ],
+      "factores_riesgo": [
+        "enfermedad inflamatoria pélvica",
+        "cirugía tubárica",
+        "antecedente de ectópico",
+        "tabaquismo"
+      ],
+      "complicaciones": [
+        "ruptura tubárica",
+        "shock hipovolémico",
+        "hemorragia interna"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar sangrado y signos vitales",
+        "valorar dolor pélvico",
+        "observar signos de shock",
+        "brindar apoyo emocional"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Déficit de volumen de líquidos",
+          "relacionado_con": "sangrado interno o vaginal",
+          "evidenciado_por": [
+            "hipotensión",
+            "taquicardia"
+          ]
+        },
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "distensión o ruptura tubárica",
+          "evidenciado_por": [
+            "dolor pélvico"
+          ]
+        },
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "amenaza a la salud y fertilidad",
+          "evidenciado_por": [
+            "temor"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado circulatorio",
+        "Control del dolor",
+        "Nivel de ansiedad"
+      ],
+      "nic_sugeridos": [
+        "Precauciones hemorrágicas",
+        "Manejo del dolor",
+        "Apoyo emocional",
+        "Vigilancia"
+      ],
+      "cuidados_generales": [
+        "preparar para estudios y manejo urgente",
+        "mantener vía venosa según indicación",
+        "acompañamiento emocional"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "preeclampsia",
+      "nombre": "Preeclampsia",
+      "sinonimos": [
+        "toxemia del embarazo"
+      ],
+      "categoria": "Ginecoobstétrica",
+      "descripcion_breve": "Trastorno hipertensivo del embarazo con riesgo materno-fetal.",
+      "definicion": "Complicación del embarazo caracterizada por hipertensión de nueva aparición y compromiso sistémico.",
+      "fisiopatologia": "La disfunción endotelial y placentaria afecta perfusión materna y fetal.",
+      "signos_sintomas": [
+        "hipertensión",
+        "edema",
+        "cefalea",
+        "fosfenos",
+        "dolor epigástrico",
+        "proteinuria si se documenta"
+      ],
+      "factores_riesgo": [
+        "primigestación",
+        "embarazo múltiple",
+        "antecedente de preeclampsia",
+        "hipertensión crónica",
+        "diabetes"
+      ],
+      "complicaciones": [
+        "eclampsia",
+        "HELLP",
+        "desprendimiento placentario",
+        "restricción de crecimiento fetal"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar presión arterial",
+        "observar cefalea y visión borrosa",
+        "controlar diuresis y edema",
+        "vigilar bienestar fetal según recursos"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Perfusión tisular ineficaz",
+          "relacionado_con": "vasoespasmo y disfunción endotelial",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Riesgo de lesión materna",
+          "relacionado_con": "convulsiones o hipertensión severa",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "riesgo materno-fetal",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Presión arterial",
+        "Estado materno",
+        "Estado fetal"
+      ],
+      "nic_sugeridos": [
+        "Monitorización de signos vitales",
+        "Vigilancia",
+        "Manejo de líquidos",
+        "Apoyo emocional"
+      ],
+      "cuidados_generales": [
+        "reposo según indicación",
+        "educar signos de alarma",
+        "seguir control obstétrico estrecho"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "hemorragia-postparto",
+      "nombre": "Hemorragia postparto",
+      "sinonimos": [
+        "sangrado postparto"
+      ],
+      "categoria": "Ginecoobstétrica / Urgencias",
+      "descripcion_breve": "Pérdida sanguínea excesiva después del parto.",
+      "definicion": "Sangrado obstétrico posparto que puede comprometer rápidamente la estabilidad hemodinámica.",
+      "fisiopatologia": "La atonía uterina u otras causas generan pérdida sanguínea aguda.",
+      "signos_sintomas": [
+        "sangrado abundante",
+        "taquicardia",
+        "hipotensión",
+        "palidez",
+        "mareo",
+        "útero atónico en algunos casos"
+      ],
+      "factores_riesgo": [
+        "atonía uterina",
+        "retención placentaria",
+        "laceraciones",
+        "coagulopatía",
+        "parto prolongado"
+      ],
+      "complicaciones": [
+        "shock hipovolémico",
+        "anemia aguda",
+        "muerte materna"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar cuantía del sangrado",
+        "controlar tono uterino si corresponde",
+        "monitorizar signos vitales",
+        "observar perfusión y conciencia"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Déficit de volumen de líquidos",
+          "relacionado_con": "pérdida sanguínea aguda",
+          "evidenciado_por": [
+            "hipotensión",
+            "taquicardia"
+          ]
+        },
+        {
+          "nombre": "Riesgo de shock",
+          "relacionado_con": "hemorragia obstétrica",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "situación crítica posparto",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado circulatorio",
+        "Severidad del sangrado",
+        "Perfusión tisular"
+      ],
+      "nic_sugeridos": [
+        "Precauciones hemorrágicas",
+        "Manejo de líquidos",
+        "Monitorización hemodinámica",
+        "Apoyo emocional"
+      ],
+      "cuidados_generales": [
+        "activar protocolo institucional",
+        "mantener acceso venoso permeable",
+        "vigilar respuesta a intervenciones"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "mastitis",
+      "nombre": "Mastitis",
+      "sinonimos": [
+        "infección mamaria"
+      ],
+      "categoria": "Ginecoobstétrica / Infecciosa",
+      "descripcion_breve": "Inflamación de la mama, frecuente durante la lactancia.",
+      "definicion": "Infección o inflamación mamaria asociada a estasis de leche y fisuras del pezón.",
+      "fisiopatologia": "La retención de leche favorece inflamación e infección local.",
+      "signos_sintomas": [
+        "dolor mamario",
+        "enrojecimiento",
+        "fiebre",
+        "malestar general",
+        "endurecimiento de la mama"
+      ],
+      "factores_riesgo": [
+        "lactancia ineficaz",
+        "vaciamiento incompleto",
+        "fisuras del pezón",
+        "técnica inadecuada"
+      ],
+      "complicaciones": [
+        "absceso mamario",
+        "abandono de lactancia"
+      ],
+      "valoracion_enfermeria": [
+        "vigilar dolor y temperatura",
+        "observar área afectada",
+        "evaluar técnica de lactancia",
+        "favorecer vaciamiento mamario"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "inflamación mamaria",
+          "evidenciado_por": [
+            "dolor y eritema"
+          ]
+        },
+        {
+          "nombre": "Lactancia materna ineficaz",
+          "relacionado_con": "dolor y técnica inadecuada",
+          "evidenciado_por": [
+            "vaciamiento incompleto"
+          ]
+        },
+        {
+          "nombre": "Hipertermia",
+          "relacionado_con": "proceso infeccioso",
+          "evidenciado_por": [
+            "fiebre"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Control del dolor",
+        "Lactancia materna establecida",
+        "Severidad de la infección"
+      ],
+      "nic_sugeridos": [
+        "Apoyo a la lactancia",
+        "Manejo del dolor",
+        "Control de infecciones",
+        "Educación sanitaria"
+      ],
+      "cuidados_generales": [
+        "corregir técnica de agarre",
+        "continuar lactancia o extracción si se indica",
+        "vigilar progresión a absceso"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "depresion",
+      "nombre": "Depresión",
+      "sinonimos": [
+        "trastorno depresivo"
+      ],
+      "categoria": "Salud mental",
+      "descripcion_breve": "Trastorno del estado de ánimo con tristeza persistente y pérdida de interés.",
+      "definicion": "Afección mental caracterizada por ánimo deprimido y deterioro funcional.",
+      "fisiopatologia": "Factores biológicos, psicológicos y sociales contribuyen a alteraciones del estado de ánimo.",
+      "signos_sintomas": [
+        "tristeza persistente",
+        "anhedonia",
+        "fatiga",
+        "alteración del sueño",
+        "cambios de apetito",
+        "dificultad para concentrarse"
+      ],
+      "factores_riesgo": [
+        "antecedentes personales o familiares",
+        "estrés",
+        "duelos",
+        "enfermedad crónica",
+        "aislamiento"
+      ],
+      "complicaciones": [
+        "riesgo suicida",
+        "deterioro funcional",
+        "abuso de sustancias"
+      ],
+      "valoracion_enfermeria": [
+        "valorar estado de ánimo y sueño",
+        "explorar apoyo social",
+        "indagar ideas de autolesión",
+        "favorecer escucha activa"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Afrontamiento ineficaz",
+          "relacionado_con": "factores estresores y síntomas depresivos",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Baja autoestima crónica",
+          "relacionado_con": "autovaloración negativa",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Riesgo de violencia autodirigida",
+          "relacionado_con": "ideas suicidas o desesperanza",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Estado de ánimo",
+        "Afrontamiento",
+        "Seguridad personal"
+      ],
+      "nic_sugeridos": [
+        "Apoyo emocional",
+        "Potenciación de la autoestima",
+        "Prevención del suicidio",
+        "Escucha activa"
+      ],
+      "cuidados_generales": [
+        "derivar y seguir atención especializada según necesidad",
+        "fortalecer red de apoyo",
+        "vigilar signos de riesgo"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "ansiedad",
+      "nombre": "Ansiedad",
+      "sinonimos": [
+        "nerviosismo patológico"
+      ],
+      "categoria": "Salud mental",
+      "descripcion_breve": "Estado de preocupación excesiva acompañado de síntomas físicos y emocionales.",
+      "definicion": "Respuesta emocional de temor o inquietud que puede volverse desadaptativa.",
+      "fisiopatologia": "La hiperactivación autonómica produce síntomas somáticos y cognitivos.",
+      "signos_sintomas": [
+        "inquietud",
+        "taquicardia",
+        "temblor",
+        "sudoración",
+        "insomnio",
+        "dificultad para concentrarse"
+      ],
+      "factores_riesgo": [
+        "estrés",
+        "eventos traumáticos",
+        "enfermedad crónica",
+        "predisposición individual"
+      ],
+      "complicaciones": [
+        "deterioro funcional",
+        "crisis de pánico",
+        "abuso de sustancias"
+      ],
+      "valoracion_enfermeria": [
+        "valorar nivel de ansiedad y desencadenantes",
+        "observar signos físicos",
+        "favorecer ambiente tranquilo",
+        "enseñar respiración controlada"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Ansiedad",
+          "relacionado_con": "estresores y percepción de amenaza",
+          "evidenciado_por": [
+            "inquietud",
+            "temor"
+          ]
+        },
+        {
+          "nombre": "Afrontamiento ineficaz",
+          "relacionado_con": "manejo inadecuado del estrés",
+          "evidenciado_por": []
+        },
+        {
+          "nombre": "Patrón de sueño perturbado",
+          "relacionado_con": "hiperactivación emocional",
+          "evidenciado_por": [
+            "dificultad para dormir"
+          ]
+        }
+      ],
+      "noc_sugeridos": [
+        "Nivel de ansiedad",
+        "Afrontamiento",
+        "Sueño"
+      ],
+      "nic_sugeridos": [
+        "Disminución de la ansiedad",
+        "Escucha activa",
+        "Enseñanza: técnicas de relajación",
+        "Apoyo emocional"
+      ],
+      "cuidados_generales": [
+        "validar emociones",
+        "promover estrategias de respiración y relajación",
+        "referir si hay deterioro importante"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    },
+    {
+      "id": "quemadura",
+      "nombre": "Quemadura",
+      "sinonimos": [
+        "lesión por quemadura"
+      ],
+      "categoria": "Trauma / Piel",
+      "descripcion_breve": "Lesión tisular causada por calor, sustancias químicas, electricidad o radiación.",
+      "definicion": "Daño de piel y tejidos subyacentes de profundidad variable.",
+      "fisiopatologia": "La destrucción tisular produce dolor, pérdida de barrera cutánea y riesgo de infección y líquidos.",
+      "signos_sintomas": [
+        "dolor",
+        "eritema",
+        "ampollas",
+        "tejido blanquecino o carbonizado en casos profundos",
+        "edema"
+      ],
+      "factores_riesgo": [
+        "exposición térmica",
+        "químicos",
+        "electricidad",
+        "radiación",
+        "accidentes domésticos o laborales"
+      ],
+      "complicaciones": [
+        "infección",
+        "pérdida de líquidos",
+        "shock",
+        "cicatrices",
+        "contracturas"
+      ],
+      "valoracion_enfermeria": [
+        "valorar extensión y profundidad",
+        "vigilar dolor",
+        "controlar signos vitales",
+        "observar perfusión y signos de infección",
+        "llevar balance hídrico en quemaduras extensas"
+      ],
+      "diagnosticos_nanda_sugeridos": [
+        {
+          "nombre": "Deterioro de la integridad cutánea",
+          "relacionado_con": "lesión térmica o química",
+          "evidenciado_por": [
+            "ampollas o tejido dañado"
+          ]
+        },
+        {
+          "nombre": "Dolor agudo",
+          "relacionado_con": "exposición y daño tisular",
+          "evidenciado_por": [
+            "manifestación verbal de dolor"
+          ]
+        },
+        {
+          "nombre": "Riesgo de infección",
+          "relacionado_con": "pérdida de la barrera cutánea",
+          "evidenciado_por": []
+        }
+      ],
+      "noc_sugeridos": [
+        "Integridad tisular: piel",
+        "Control del dolor",
+        "Severidad de la infección"
+      ],
+      "nic_sugeridos": [
+        "Cuidados de heridas",
+        "Manejo del dolor",
+        "Control de infecciones",
+        "Manejo de líquidos"
+      ],
+      "cuidados_generales": [
+        "usar medidas asépticas",
+        "vigilar evolución de la herida",
+        "educar sobre curaciones y signos de alarma"
+      ],
+      "observaciones": "",
+      "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
+      "fecha_creacion": "2026-04-19",
+      "fecha_actualizacion": "2026-04-19"
+    }
+  ]
+}
