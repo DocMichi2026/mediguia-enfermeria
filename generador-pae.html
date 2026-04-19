@@ -433,39 +433,46 @@
           </div>
         </div>
 
-        <div class="box">
-          <h2 class="section-title">Caso base</h2>
+       <div class="box">
+  <h2 class="section-title">Caso base</h2>
 
-          <div class="field">
-            <label for="nombrePaciente">Nombre del paciente</label>
-            <input id="nombrePaciente" type="text" placeholder="Ejemplo: Andrea Sofía Morales García">
-          </div>
+  <div class="field">
+    <label for="nombrePaciente">Nombre del paciente</label>
+    <input id="nombrePaciente" type="text" placeholder="Ejemplo: Andrea Sofía Morales García">
+  </div>
 
-          <div class="field">
-            <label for="edadPaciente">Edad</label>
-            <input id="edadPaciente" type="text" placeholder="Ejemplo: 48 años">
-          </div>
+  <div class="field">
+    <label for="edadPaciente">Edad</label>
+    <input id="edadPaciente" type="text" placeholder="Ejemplo: 48 años">
+  </div>
 
-          <div class="field">
-            <label for="contextoPaciente">Contexto clínico</label>
-            <textarea id="contextoPaciente" placeholder="Escribe un resumen breve del caso, síntomas actuales, cirugía o situación del paciente..."></textarea>
-          </div>
+  <div class="field">
+    <label for="contextoPaciente">Contexto clínico</label>
+    <textarea id="contextoPaciente" placeholder="Escribe un resumen breve del caso, síntomas actuales, cirugía o situación del paciente..."></textarea>
+  </div>
 
-          <div class="field">
-            <label>Síntomas sugeridos</label>
-            <div class="chips" id="sintomasBox">
-              <span class="chip active" data-sintoma="Dolor">Dolor</span>
-              <span class="chip active" data-sintoma="Fiebre">Fiebre</span>
-              <span class="chip" data-sintoma="Náuseas">Náuseas</span>
-              <span class="chip" data-sintoma="Ansiedad">Ansiedad</span>
-              <span class="chip" data-sintoma="Debilidad">Debilidad</span>
-              <span class="chip" data-sintoma="Pérdida del apetito">Pérdida del apetito</span>
-            </div>
-          </div>
+  <div class="field">
+    <label>Síntomas sugeridos</label>
+    <div class="chips" id="sintomasBox">
+      <span class="chip active" data-sintoma="Dolor">Dolor</span>
+      <span class="chip active" data-sintoma="Fiebre">Fiebre</span>
+      <span class="chip" data-sintoma="Náuseas">Náuseas</span>
+      <span class="chip" data-sintoma="Ansiedad">Ansiedad</span>
+      <span class="chip" data-sintoma="Debilidad">Debilidad</span>
+      <span class="chip" data-sintoma="Pérdida del apetito">Pérdida del apetito</span>
+    </div>
+  </div>
 
-          <button class="btn btn-primary" style="width:100%;" onclick="generarPAE()">Generar vista previa</button>
-          <div class="loader" id="loader">Generando vista previa...</div>
-        </div>
+  <button class="btn btn-primary" style="width:100%; margin-bottom:10px;" onclick="generarPAE()">
+    Generar vista previa
+  </button>
+
+  <button class="btn btn-secondary" style="width:100%;" onclick="exportarWord()">
+    Descargar en Word
+  </button>
+
+  <div class="loader" id="loader">Generando vista previa...</div>
+</div>
       </div>
 
       <button class="btn btn-secondary" onclick="exportarWord()">
@@ -746,22 +753,47 @@
     function exportarWord() {
   const contenido = document.getElementById('previewContent');
 
-  if (contenido.classList.contains('hidden')) {
+  if (contenido.classList.contains('hidden') || !contenido.innerHTML.trim()) {
     alert("Primero genera el PAE");
     return;
   }
 
   const html = `
-  <html xmlns:o='urn:schemas-microsoft-com:office:office' 
-        xmlns:w='urn:schemas-microsoft-com:office:word'>
+  <html xmlns:o="urn:schemas-microsoft-com:office:office"
+        xmlns:w="urn:schemas-microsoft-com:office:word">
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <title>PAE</title>
     <style>
-      body { font-family: Arial; }
-      h2 { color: #ff4d88; }
-      h4 { color: #e6005c; }
-      ul { margin-bottom: 10px; }
+      body {
+        font-family: Arial, sans-serif;
+        padding: 24px;
+        color: #333;
+      }
+      h2 {
+        color: #ff4d88;
+      }
+      h4 {
+        color: #e6005c;
+      }
+      ul {
+        margin-bottom: 10px;
+      }
+      .mini-card, .block {
+        border: 1px solid #f3c2d4;
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 12px;
+      }
+      .highlight {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #ffe4ec;
+        color: #e6005c;
+        font-weight: bold;
+        margin-top: 8px;
+      }
     </style>
   </head>
   <body>
@@ -775,14 +807,16 @@
   });
 
   const url = URL.createObjectURL(blob);
-
   const link = document.createElement('a');
   link.href = url;
   link.download = 'PAE.doc';
+
   document.body.appendChild(link);
   link.click();
-
   document.body.removeChild(link);
+
+  URL.revokeObjectURL(url);
+}
 }
   </script>
 </body>
