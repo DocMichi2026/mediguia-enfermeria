@@ -7,7 +7,7 @@
   <style>
     *{margin:0;padding:0;box-sizing:border-box;}
 
-    body{ 
+    body{
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg,#fff0f5,#ffe4ec,#ffd6e7);
       color:#7a1e3a;
@@ -250,6 +250,14 @@
       color:#b84b79;
       font-weight:bold;
       font-size:0.94rem;
+      cursor:pointer;
+      transition:0.2s ease;
+      user-select:none;
+    }
+
+    .chip:hover{
+      transform:translateY(-1px);
+      border-color:#ffb3cc;
     }
 
     .active-chip{
@@ -258,27 +266,72 @@
       border-color:#ffb3cc;
     }
 
+    .hidden-ui{
+      display:none !important;
+    }
+
+    .selector-card{
+      position:relative;
+      overflow:hidden;
+    }
+
+    .selector-card.active-card{
+      border:2px solid #ff9fc1;
+      box-shadow:0 10px 24px rgba(255,77,136,0.18);
+    }
+
+    .mini-title{
+      font-size:0.95rem;
+      color:#b84b79;
+      font-weight:bold;
+      margin-bottom:10px;
+    }
+
+    .live-box{
+      background:#fff;
+      border:1px solid #ffd6e7;
+      border-radius:18px;
+      padding:16px;
+      margin-top:14px;
+    }
+
+    .live-box p{
+      color:#7a1e3a;
+      margin-bottom:8px;
+    }
+
+    .live-label{
+      display:inline-block;
+      padding:7px 11px;
+      border-radius:999px;
+      background:#ffe4ec;
+      color:#ff4d88;
+      font-weight:bold;
+      font-size:0.9rem;
+      margin:4px 6px 0 0;
+    }
+
+    .action-btn{
+      background:#ff4d88;
+      color:white;
+      border:none;
+      padding:12px 18px;
+      border-radius:14px;
+      cursor:pointer;
+      font-weight:bold;
+      margin-top:14px;
+    }
+
+    .action-btn:hover{
+      background:#e6005c;
+    }
+
     footer{text-align:center;padding:30px 20px 50px;color:#7a1e3a;font-size:0.95rem;}
 
     @media(max-width:900px){
       .hero{grid-template-columns:1fr;}
       .hero-text h1{font-size:2.3rem;}
     }
-    .btn-ia{
-  background:#f43f5e;
-  color:white;
-  padding:12px 18px;
-  border:none;
-  border-radius:12px;
-  cursor:pointer;
-  font-weight:bold;
-  transition:0.3s;
-}
-
-.btn-ia:hover{
-  background:#e11d48;
-  transform:scale(1.05);
-}
   </style>
 </head>
 <body>
@@ -310,9 +363,7 @@
         <button class="secondary" onclick="irA('ia')">Idea futura de IA</button>
       </div>
     </div>
-<button onclick="window.location.href='ia-pae.html'" class="btn-ia">
-  🤖 IA para PAE
-</button>
+
     <div class="hero-card">
       <div class="emoji">💗</div>
       <h3>PAE corto o largo</h3>
@@ -326,30 +377,50 @@
     <div class="section-box">
       <h2 class="section-title">Selecciona el tipo de PAE</h2>
       <p class="section-subtitle">
-        Aquí se define desde el inicio si quieres trabajar un caso breve por etapa o un caso completo con desarrollo amplio.
+        Elige primero si quieres trabajar un PAE corto o uno largo. Luego MediGuía te muestra solo las etapas que corresponden.
       </p>
 
       <div class="pae-grid">
-        <div class="pae-block">
+        <div class="pae-block selector-card active-card" id="card-corto">
           <h4>PAE corto</h4>
           <p style="margin-bottom:14px; color:#7a1e3a;">
-            Pensado para trabajos más puntuales. Aquí se escoge una sola etapa del proceso.
+            Para trabajos puntuales con una sola etapa.
           </p>
-          <div class="chips">
-            <span class="chip active-chip">Preoperatorio</span>
-            <span class="chip">Postoperatorio</span>
+          <div class="chips" id="tipo-corto-btn">
+            <span class="chip active-chip">Seleccionado</span>
           </div>
         </div>
 
-        <div class="pae-block">
+        <div class="pae-block selector-card" id="card-largo">
           <h4>PAE largo</h4>
           <p style="margin-bottom:14px; color:#7a1e3a;">
-            Pensado para trabajos completos y extensos. Aquí se desarrollan todas las etapas principales.
+            Para trabajos completos con desarrollo quirúrgico amplio.
           </p>
-          <div class="chips">
+          <div class="chips" id="tipo-largo-btn">
+            <span class="chip">Seleccionar</span>
+          </div>
+        </div>
+
+        <div class="pae-block" style="grid-column:1/-1;">
+          <h4>Etapas disponibles</h4>
+          <div class="chips" id="etapas-corto">
+            <span class="chip active-chip etapa-chip" data-etapa="preoperatorio">Preoperatorio</span>
+            <span class="chip etapa-chip" data-etapa="postoperatorio">Postoperatorio</span>
+          </div>
+          <div class="chips hidden-ui" id="etapas-largo">
             <span class="chip active-chip">Preoperatorio</span>
             <span class="chip active-chip">Transoperatorio</span>
             <span class="chip active-chip">Postoperatorio</span>
+          </div>
+
+          <div class="live-box">
+            <div class="mini-title">Resumen actual</div>
+            <p><strong>Tipo:</strong> <span id="resumen-tipo">PAE corto</span></p>
+            <p><strong>Etapas:</strong></p>
+            <div id="resumen-etapas">
+              <span class="live-label">Preoperatorio</span>
+            </div>
+            <button class="action-btn" onclick="aplicarModoPAE()">Aplicar selección</button>
           </div>
         </div>
       </div>
@@ -360,7 +431,7 @@
     <div class="section-box">
       <h2 class="section-title">Buscador de PAE</h2>
       <p class="section-subtitle">
-        Escribe una condición clínica y la página te mostrará una ficha base orientada al Proceso de Atención de Enfermería.
+        Busca una condición clínica y la página mostrará una ficha base orientada al Proceso de Atención de Enfermería.
       </p>
 
       <div class="search-box">
@@ -393,6 +464,56 @@
           <h3>Neumonía</h3>
           <p>Ficha enfocada en patrón respiratorio, oxigenación y vigilancia clínica.</p>
           <button onclick="mostrarPAE('neumonia')">Ver PAE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="constructor-pae">
+    <div class="section-box">
+      <h2 class="section-title">Constructor rápido</h2>
+      <p class="section-subtitle">
+        Aquí se actualiza automáticamente la ruta del PAE según el tipo que selecciones arriba.
+      </p>
+
+      <div class="pae-grid">
+        <div class="pae-block">
+          <h4>Tipo activo</h4>
+          <div id="constructor-tipo">
+            <span class="live-label">PAE corto</span>
+          </div>
+        </div>
+
+        <div class="pae-block">
+          <h4>Etapas activas</h4>
+          <div id="constructor-etapas">
+            <span class="live-label">Preoperatorio</span>
+          </div>
+        </div>
+
+        <div class="pae-block" id="bloque-corto">
+          <h4>Ruta del PAE corto</h4>
+          <ul>
+            <li>Datos del paciente</li>
+            <li>Valoración de la etapa elegida</li>
+            <li>Diagnósticos NANDA</li>
+            <li>NOC</li>
+            <li>NIC</li>
+            <li>Cuidados y evaluación</li>
+          </ul>
+        </div>
+
+        <div class="pae-block hidden-ui" id="bloque-largo" style="grid-column:1/-1;">
+          <h4>Ruta del PAE largo</h4>
+          <ul>
+            <li>Datos del paciente</li>
+            <li>Etapa preoperatoria</li>
+            <li>Etapa transoperatoria</li>
+            <li>Etapa postoperatoria</li>
+            <li>Entrevista y valoración extensa</li>
+            <li>Anamnesis</li>
+            <li>Diagnósticos NANDA, NOC, NIC y plan de cuidados</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -477,27 +598,27 @@
     <div class="section-box">
       <h2 class="section-title">Demo del generador</h2>
       <p class="section-subtitle">
-        La demo ahora contempla el selector de tipo de PAE para que el usuario entre desde el inicio a la ruta que le conviene.
+        Esta demo ya responde al tipo de PAE elegido arriba. Cambia entre corto y largo para ver cómo se ajusta la estructura.
       </p>
 
       <div class="pae-grid">
         <div class="pae-block">
           <h4>Tipo de PAE</h4>
-          <div class="chips">
-            <span class="chip active-chip">PAE corto</span>
-            <span class="chip">PAE largo</span>
+          <div class="chips" id="demo-tipo-chips">
+            <span class="chip active-chip" id="demo-chip-corto">PAE corto</span>
+            <span class="chip" id="demo-chip-largo">PAE largo</span>
           </div>
         </div>
 
-        <div class="pae-block">
+        <div class="pae-block" id="demo-etapa-corto-box">
           <h4>Etapa seleccionable para PAE corto</h4>
-          <div class="chips">
+          <div class="chips" id="demo-etapas-corto">
             <span class="chip active-chip">Preoperatorio</span>
             <span class="chip">Postoperatorio</span>
           </div>
         </div>
 
-        <div class="pae-block">
+        <div class="pae-block hidden-ui" id="demo-etapa-largo-box">
           <h4>Etapas incluidas en PAE largo</h4>
           <div class="chips">
             <span class="chip active-chip">Preoperatorio</span>
@@ -508,29 +629,22 @@
 
         <div class="pae-block">
           <h4>Síntomas sugeridos</h4>
-          <div class="chips">
-            <span class="chip active-chip">Dolor</span>
-            <span class="chip active-chip">Fiebre</span>
-            <span class="chip active-chip">Náuseas</span>
-            <span class="chip">Ansiedad</span>
-            <span class="chip">Debilidad</span>
-            <span class="chip">Pérdida del apetito</span>
+          <div class="chips" id="sintomas-demo">
+            <span class="chip active-chip sintoma-chip">Dolor</span>
+            <span class="chip active-chip sintoma-chip">Fiebre</span>
+            <span class="chip sintoma-chip">Náuseas</span>
+            <span class="chip sintoma-chip">Ansiedad</span>
+            <span class="chip sintoma-chip">Debilidad</span>
+            <span class="chip sintoma-chip">Pérdida del apetito</span>
           </div>
         </div>
 
         <div class="pae-block" style="grid-column:1/-1;">
-          <h4>Secciones que puede generar MediGuía</h4>
-          <div class="chips">
-            <span class="chip">Datos del paciente</span>
-            <span class="chip">Patología y procedimiento</span>
-            <span class="chip">Entrevista</span>
-            <span class="chip">Valoración</span>
-            <span class="chip">Anamnesis</span>
-            <span class="chip">Diagnósticos NANDA</span>
-            <span class="chip">NOC</span>
-            <span class="chip">NIC</span>
-            <span class="chip">Plan de cuidados</span>
-            <span class="chip">Evaluación</span>
+          <h4>Vista previa generada</h4>
+          <div class="live-box">
+            <p><strong>Modo:</strong> <span id="preview-modo">PAE corto</span></p>
+            <p><strong>Etapas activas:</strong> <span id="preview-etapas">Preoperatorio</span></p>
+            <p><strong>Síntomas marcados:</strong> <span id="preview-sintomas">Dolor, Fiebre</span></p>
           </div>
         </div>
       </div>
@@ -700,6 +814,12 @@
       }
     };
 
+    const estado = {
+      tipoPAE: 'corto',
+      etapaCorta: 'preoperatorio',
+      sintomas: ['Dolor', 'Fiebre']
+    };
+
     function irA(id){
       document.getElementById(id).scrollIntoView({behavior:'smooth'});
     }
@@ -773,6 +893,115 @@
         `;
       }
     }
+
+    function aplicarModoPAE(){
+      actualizarUI();
+      irA('constructor-pae');
+    }
+
+    function actualizarUI(){
+      const esCorto = estado.tipoPAE === 'corto';
+
+      document.getElementById('resumen-tipo').textContent = esCorto ? 'PAE corto' : 'PAE largo';
+      document.getElementById('constructor-tipo').innerHTML = `<span class="live-label">${esCorto ? 'PAE corto' : 'PAE largo'}</span>`;
+      document.getElementById('preview-modo').textContent = esCorto ? 'PAE corto' : 'PAE largo';
+
+      document.getElementById('card-corto').classList.toggle('active-card', esCorto);
+      document.getElementById('card-largo').classList.toggle('active-card', !esCorto);
+
+      document.getElementById('etapas-corto').classList.toggle('hidden-ui', !esCorto);
+      document.getElementById('etapas-largo').classList.toggle('hidden-ui', esCorto);
+      document.getElementById('bloque-corto').classList.toggle('hidden-ui', !esCorto);
+      document.getElementById('bloque-largo').classList.toggle('hidden-ui', esCorto);
+      document.getElementById('demo-etapa-corto-box').classList.toggle('hidden-ui', !esCorto);
+      document.getElementById('demo-etapa-largo-box').classList.toggle('hidden-ui', esCorto);
+
+      document.getElementById('demo-chip-corto').classList.toggle('active-chip', esCorto);
+      document.getElementById('demo-chip-largo').classList.toggle('active-chip', !esCorto);
+
+      const resumenEtapas = document.getElementById('resumen-etapas');
+      const constructorEtapas = document.getElementById('constructor-etapas');
+      const previewEtapas = document.getElementById('preview-etapas');
+
+      if(esCorto){
+        const etapaTexto = capitalizar(estado.etapaCorta);
+        resumenEtapas.innerHTML = `<span class="live-label">${etapaTexto}</span>`;
+        constructorEtapas.innerHTML = `<span class="live-label">${etapaTexto}</span>`;
+        previewEtapas.textContent = etapaTexto;
+      }else{
+        const html = `
+          <span class="live-label">Preoperatorio</span>
+          <span class="live-label">Transoperatorio</span>
+          <span class="live-label">Postoperatorio</span>
+        `;
+        resumenEtapas.innerHTML = html;
+        constructorEtapas.innerHTML = html;
+        previewEtapas.textContent = 'Preoperatorio, Transoperatorio y Postoperatorio';
+      }
+
+      document.getElementById('preview-sintomas').textContent = estado.sintomas.length ? estado.sintomas.join(', ') : 'Ninguno';
+    }
+
+    function capitalizar(texto){
+      return texto.charAt(0).toUpperCase() + texto.slice(1);
+    }
+
+    function activarTipo(tipo){
+      estado.tipoPAE = tipo;
+      actualizarUI();
+    }
+
+    function activarEtapaCorta(etapa){
+      estado.etapaCorta = etapa;
+      document.querySelectorAll('.etapa-chip').forEach(chip => {
+        chip.classList.toggle('active-chip', chip.dataset.etapa === etapa);
+      });
+
+      const demoChips = document.querySelectorAll('#demo-etapas-corto .chip');
+      demoChips.forEach(chip => {
+        chip.classList.toggle('active-chip', chip.textContent.trim().toLowerCase() === etapa);
+      });
+
+      actualizarUI();
+    }
+
+    function configurarEventos(){
+      document.getElementById('tipo-corto-btn').addEventListener('click', () => activarTipo('corto'));
+      document.getElementById('tipo-largo-btn').addEventListener('click', () => activarTipo('largo'));
+      document.getElementById('demo-chip-corto').addEventListener('click', () => activarTipo('corto'));
+      document.getElementById('demo-chip-largo').addEventListener('click', () => activarTipo('largo'));
+
+      document.querySelectorAll('.etapa-chip').forEach(chip => {
+        chip.addEventListener('click', () => activarEtapaCorta(chip.dataset.etapa));
+      });
+
+      document.querySelectorAll('#demo-etapas-corto .chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const etapa = chip.textContent.trim().toLowerCase();
+          activarEtapaCorta(etapa);
+        });
+      });
+
+      document.querySelectorAll('.sintoma-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const texto = chip.textContent.trim();
+          chip.classList.toggle('active-chip');
+
+          if(chip.classList.contains('active-chip')){
+            if(!estado.sintomas.includes(texto)) estado.sintomas.push(texto);
+          }else{
+            estado.sintomas = estado.sintomas.filter(item => item !== texto);
+          }
+
+          actualizarUI();
+        });
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      configurarEventos();
+      actualizarUI();
+    });
   </script>
 
 </body>
