@@ -16,11 +16,11 @@
     header{
       background: linear-gradient(135deg,#ff4d88,#ff80ab,#ff99c2);
       color:white;
-      padding:18px 25px;
+      padding:18px 24px;
       position: sticky;
       top:0;
       z-index:1000;
-      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+      box-shadow:0 6px 18px rgba(0,0,0,0.10);
     }
 
     nav{
@@ -29,308 +29,298 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
-      gap:20px;
+      gap:16px;
       flex-wrap:wrap;
     }
 
-    .logo{font-size:1.7rem;font-weight:bold;}
-    .logo span{color:#ffe4ec;}
-    .menu{display:flex;gap:12px;flex-wrap:wrap;}
+    .logo{
+      font-size:1.65rem;
+      font-weight:bold;
+    }
+
+    .logo span{
+      color:#ffe4ec;
+    }
+
+    .menu{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
 
     .menu button{
-      background:rgba(255,255,255,0.2);
+      background:rgba(255,255,255,0.18);
       border:none;
       color:white;
-      padding:10px 16px;
+      padding:10px 15px;
       border-radius:999px;
       cursor:pointer;
-      transition:0.25s;
       font-weight:bold;
+      transition:0.25s;
     }
 
-    .menu button:hover{background:white;color:#ff4d88;}
+    .menu button:hover{
+      background:white;
+      color:#ff4d88;
+    }
+
+    section{
+      max-width:1200px;
+      margin:0 auto 24px auto;
+      padding:0 20px;
+    }
 
     .hero{
-      max-width:1200px;
-      margin:40px auto;
-      padding:30px 20px;
+      margin-top:28px;
       display:grid;
-      grid-template-columns:1.2fr 0.8fr;
-      gap:25px;
-      align-items:center;
+      grid-template-columns:1.15fr 0.85fr;
+      gap:20px;
+      align-items:stretch;
     }
 
-    .hero-text{
-      background:white;
-      padding:35px;
-      border-radius:28px;
-      box-shadow:0 12px 30px rgba(255,77,136,0.15);
-    }
-
-    .hero-text h1{font-size:3rem;margin-bottom:15px;color:#ff4d88;}
-    .hero-text p{font-size:1.08rem;line-height:1.7;margin-bottom:20px;color:#7a1e3a;}
-    .hero-buttons{display:flex;gap:12px;flex-wrap:wrap;}
-
-    .hero-buttons button{
-      border:none;
-      padding:13px 20px;
-      border-radius:14px;
-      cursor:pointer;
-      font-weight:bold;
-      font-size:1rem;
-      transition:0.25s;
-    }
-
-    .primary{background:#ff4d88;color:white;}
-    .primary:hover{background:#e6005c;}
-    .secondary{background:#ffe4ec;color:#ff4d88;}
-    .secondary:hover{background:#ffd6e7;}
-
-    .hero-card{
-      background:linear-gradient(135deg,#ffe4ec,#ffffff);
-      padding:30px;
-      border-radius:28px;
-      box-shadow:0 12px 30px rgba(255,77,136,0.15);
-      text-align:center;
-    }
-
-    .hero-card .emoji{font-size:5rem;margin-bottom:15px;}
-    .hero-card h3{font-size:1.6rem;margin-bottom:10px;color:#ff4d88;}
-    .hero-card p{color:#7a1e3a;line-height:1.6;}
-
-    section{max-width:1200px;margin:0 auto 35px auto;padding:0 20px;}
-
-    .section-box{
-      background:white;
-      border-radius:28px;
-      padding:30px;
-      box-shadow:0 12px 30px rgba(255,77,136,0.12);
-    }
-
-    .section-title{font-size:2rem;color:#ff4d88;margin-bottom:10px;}
-    .section-subtitle{color:#7a1e3a;margin-bottom:22px;line-height:1.6;}
-
-    .search-box{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;}
-
-    .search-box input{
-      flex:1;min-width:240px;padding:14px 16px;
-      border:2px solid #ffd6e7;border-radius:14px;font-size:1rem;outline:none;
-    }
-
-    .search-box input:focus{border-color:#ff4d88;}
-
-    .search-box button{
-      padding:14px 18px;border:none;border-radius:14px;
-      background:#ff4d88;color:white;cursor:pointer;font-weight:bold;
-    }
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:18px;
-    }
-
+    .hero-box,
+    .hero-side,
+    .section-box,
     .card{
-      background:linear-gradient(135deg,#fff0f5,#ffe4ec);
-      border:1px solid #ffd6e7;border-radius:22px;padding:22px;transition:0.25s;
-    }
-
-    .card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(255,77,136,0.15);}
-    .card h3{color:#ff4d88;margin-bottom:10px;}
-    .card p{color:#7a1e3a;line-height:1.6;margin-bottom:15px;}
-
-    .card button{
-      background:#ffe4ec;color:#ff4d88;border:none;
-      padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:bold;
-    }
-
-    .features{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:16px;
-    }
-
-    .feature{
-      background:#fff0f5;border-left:6px solid #ff4d88;
-      border-radius:18px;padding:20px;
-    }
-
-    .feature h4{margin-bottom:8px;color:#ff4d88;}
-    .feature p{color:#7a1e3a;line-height:1.6;}
-
-    .ai-box{
-      background:linear-gradient(135deg,#ff4d88,#ff80ab);
-      color:white;border-radius:28px;padding:30px;
-    }
-
-    .ai-box h2{margin-bottom:10px;font-size:2rem;}
-    .ai-box p{line-height:1.7;margin-bottom:18px;color:#fff0f5;}
-
-    .ai-box .mini{
-      background:rgba(255,255,255,0.2);
-      padding:16px;border-radius:18px;margin-top:10px;
-    }
-
-    .hidden{display:none;}
-
-    #resultadoBusqueda{
-      margin-top:18px;
-      padding:22px;
-      border-radius:22px;
-      background:#fff0f5;
-      border:1px solid #ffd6e7;
-      color:#7a1e3a;
-      line-height:1.7;
-    }
-
-    .pae-header{
-      margin-bottom:18px;
-      padding-bottom:12px;
-      border-bottom:2px solid #ffd6e7;
-    }
-
-    .pae-header h3{
-      color:#ff4d88;
-      margin-bottom:6px;
-      font-size:1.8rem;
-    }
-
-    .pae-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:16px;
-      margin-top:16px;
-    }
-
-    .pae-block{
       background:white;
-      border:1px solid #ffd6e7;
-      border-radius:18px;
-      padding:18px;
+      border-radius:28px;
+      box-shadow:0 12px 28px rgba(255,77,136,0.10);
     }
 
-    .pae-block h4{
+    .hero-box{
+      padding:34px;
+    }
+
+    .hero-box h1{
+      font-size:2.7rem;
+      line-height:1.08;
+      margin-bottom:14px;
       color:#ff4d88;
-      margin-bottom:10px;
-      font-size:1.08rem;
     }
 
-    .pae-block ul{
-      padding-left:18px;
-    }
-
-    .pae-block li{
-      margin-bottom:8px;
+    .hero-box p{
+      font-size:1.04rem;
+      line-height:1.75;
       color:#7a1e3a;
+      max-width:60ch;
+      margin-bottom:18px;
     }
 
-    .tagline{
-      display:inline-block;
-      background:#ffe4ec;
-      color:#ff4d88;
-      padding:8px 12px;
-      border-radius:999px;
-      font-size:0.92rem;
-      font-weight:bold;
+    .hero-buttons{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
       margin-top:8px;
     }
 
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-
-    .chip{
-      display:inline-block;
-      padding:10px 14px;
-      border-radius:999px;
-      background:#fff;
-      border:1px solid #ffd6e7;
-      color:#b84b79;
-      font-weight:bold;
-      font-size:0.94rem;
-      cursor:pointer;
-      transition:0.2s ease;
-      user-select:none;
-    }
-
-    .chip:hover{
-      transform:translateY(-1px);
-      border-color:#ffb3cc;
-    }
-
-    .active-chip{
-      background:#ffe4ec;
-      color:#ff4d88;
-      border-color:#ffb3cc;
-    }
-
-    .hidden-ui{
-      display:none !important;
-    }
-
-    .selector-card{
-      position:relative;
-      overflow:hidden;
-    }
-
-    .selector-card.active-card{
-      border:2px solid #ff9fc1;
-      box-shadow:0 10px 24px rgba(255,77,136,0.18);
-    }
-
-    .mini-title{
-      font-size:0.95rem;
-      color:#b84b79;
-      font-weight:bold;
-      margin-bottom:10px;
-    }
-
-    .live-box{
-      background:#fff;
-      border:1px solid #ffd6e7;
-      border-radius:18px;
-      padding:16px;
-      margin-top:14px;
-    }
-
-    .live-box p{
-      color:#7a1e3a;
-      margin-bottom:8px;
-    }
-
-    .live-label{
-      display:inline-block;
-      padding:7px 11px;
-      border-radius:999px;
-      background:#ffe4ec;
-      color:#ff4d88;
-      font-weight:bold;
-      font-size:0.9rem;
-      margin:4px 6px 0 0;
-    }
-
-    .action-btn{
-      background:#ff4d88;
-      color:white;
+    .hero-buttons button,
+    .card button,
+    .mini-btn{
       border:none;
       padding:12px 18px;
       border-radius:14px;
       cursor:pointer;
       font-weight:bold;
-      margin-top:14px;
+      transition:0.25s;
     }
 
-    .action-btn:hover{
+    .primary{
+      background:#ff4d88;
+      color:white;
+    }
+
+    .primary:hover{
       background:#e6005c;
     }
 
-    footer{text-align:center;padding:30px 20px 50px;color:#7a1e3a;font-size:0.95rem;}
+    .secondary{
+      background:#ffe4ec;
+      color:#ff4d88;
+    }
+
+    .secondary:hover{
+      background:#ffd6e7;
+    }
+
+    .hero-side{
+      padding:28px;
+      background:linear-gradient(135deg,#fff6fa,#ffffff);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .emoji{
+      font-size:3.6rem;
+      margin-bottom:10px;
+    }
+
+    .hero-side h3{
+      color:#ff4d88;
+      font-size:1.45rem;
+      margin-bottom:10px;
+    }
+
+    .hero-side p{
+      color:#7a1e3a;
+      line-height:1.7;
+      margin-bottom:16px;
+    }
+
+    .section-box{
+      padding:28px;
+    }
+
+    .section-title{
+      font-size:1.8rem;
+      color:#ff4d88;
+      margin-bottom:8px;
+    }
+
+    .section-subtitle{
+      color:#7a1e3a;
+      line-height:1.7;
+      margin-bottom:18px;
+      max-width:74ch;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:16px;
+    }
+
+    .card{
+      padding:22px;
+      background:linear-gradient(135deg,#fff8fb,#ffeef4);
+      border:1px solid #ffd6e7;
+      min-height:230px;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .card h3{
+      color:#ff4d88;
+      margin-bottom:10px;
+      font-size:1.15rem;
+    }
+
+    .card p{
+      color:#7a1e3a;
+      line-height:1.65;
+      margin-bottom:16px;
+      flex:1;
+    }
+
+    .card button{
+      align-self:flex-start;
+      background:#fff;
+      color:#ff4d88;
+      border:1px solid #ffc0d6;
+    }
+
+    .card button:hover{
+      background:#ffe4ec;
+    }
+
+    .chip-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:12px;
+    }
+
+    .chip{
+      display:inline-block;
+      padding:9px 13px;
+      border-radius:999px;
+      background:#ffe4ec;
+      color:#ff4d88;
+      font-weight:bold;
+      font-size:0.92rem;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+
+    .mini-panel{
+      background:#fff8fb;
+      border:1px solid #ffd6e7;
+      border-radius:20px;
+      padding:18px;
+    }
+
+    .mini-panel h4{
+      color:#ff4d88;
+      margin-bottom:10px;
+      font-size:1.04rem;
+    }
+
+    .mini-panel p,
+    .mini-panel li{
+      color:#7a1e3a;
+      line-height:1.6;
+    }
+
+    .mini-panel ul{
+      padding-left:18px;
+    }
+
+    footer{
+      text-align:center;
+      padding:26px 20px 44px;
+      color:#7a1e3a;
+      font-size:0.95rem;
+    }
 
     @media(max-width:900px){
-      .hero{grid-template-columns:1fr;}
-      .hero-text h1{font-size:2.3rem;}
+      .hero,
+      .grid-2{
+        grid-template-columns:1fr;
+      }
+
+      .hero-box h1{
+        font-size:2.2rem;
+      }
+
+      nav{
+        justify-content:center;
+      }
+
+      .menu{
+        justify-content:center;
+      }
+    }
+
+    @media(max-width:640px){
+      header{
+        padding:16px 18px;
+      }
+
+      .hero-box,
+      .hero-side,
+      .section-box,
+      .card{
+        padding:22px;
+      }
+
+      .section-title{
+        font-size:1.5rem;
+      }
+
+      .hero-buttons,
+      .menu{
+        width:100%;
+      }
+
+      .hero-buttons button,
+      .menu button,
+      .mini-btn{
+        width:100%;
+      }
     }
   </style>
 </head>
@@ -341,667 +331,130 @@
       <div class="logo">MediGuía <span>Enfermería</span></div>
       <div class="menu">
         <button onclick="irA('inicio')">Inicio</button>
-        <button onclick="irA('selector-pae')">Tipo de PAE</button>
-        <button onclick="irA('paes')">PAE</button>
-        <button onclick="irA('herramientas')">Herramientas</button>
-        <button onclick="irA('flujo-pae')">Flujo</button>
-        <button onclick="irA('demo-guiado')">Demo</button>
-        <button onclick="irA('ia')">IA</button>
+        <button onclick="irA('modulos')">Módulos</button>
+        <button onclick="irA('estructura')">Estructura</button>
+        <button onclick="irA('proximo')">Siguiente paso</button>
       </div>
     </nav>
   </header>
 
   <section class="hero" id="inicio">
-    <div class="hero-text">
-      <h1>MediGuía para hacer PAE</h1>
+    <div class="hero-box">
+      <h1>MediGuía para organizar tus PAE</h1>
       <p>
-        Esta página está pensada para ayudar a construir procesos de atención de enfermería de forma más ordenada.
-        Ahora MediGuía tendrá dos rutas principales: una para PAE corto y otra para PAE largo, según lo que necesiten trabajar.
+        Esta página ahora queda como un menú principal limpio. Desde aquí se entra a cada módulo por separado,
+        para evitar que todo esté mezclado en un solo archivo y mantener la plataforma más clara, ordenada y fácil de ampliar.
       </p>
       <div class="hero-buttons">
-        <button class="primary" onclick="irA('selector-pae')">Elegir tipo de PAE</button>
-        <button class="secondary" onclick="irA('ia')">Idea futura de IA</button>
+        <button class="primary" onclick="irA('modulos')">Ver módulos</button>
+        <button class="secondary" onclick="irA('estructura')">Ver estructura</button>
+      </div>
+      <div class="chip-row">
+        <span class="chip">PAE corto</span>
+        <span class="chip">PAE largo</span>
+        <span class="chip">Ejemplos</span>
+        <span class="chip">IA aparte</span>
       </div>
     </div>
 
-    <div class="hero-card">
+    <div class="hero-side">
       <div class="emoji">💗</div>
-      <h3>PAE corto o largo</h3>
+      <h3>Más orden, menos ruido visual</h3>
       <p>
-        Puedes trabajar un PAE corto por etapa específica o un PAE largo que abarque todo el proceso quirúrgico.
+        Lo pesado ya no vive todo junto. La idea es que cada parte importante tenga su propio HTML y que esta portada solo sirva para guiar.
       </p>
+      <button class="mini-btn primary" onclick="window.location.href='generador-pae.html'">Entrar al generador</button>
     </div>
   </section>
 
-  <section id="selector-pae">
+  <section id="modulos">
     <div class="section-box">
-      <h2 class="section-title">Selecciona el tipo de PAE</h2>
+      <h2 class="section-title">Módulos principales</h2>
       <p class="section-subtitle">
-        Elige primero si quieres trabajar un PAE corto o uno largo. Luego MediGuía te muestra solo las etapas que corresponden.
+        Desde aquí el usuario entra directo a lo que necesita sin cargar una sola página con demasiadas secciones al mismo tiempo.
       </p>
 
-      <div class="pae-grid">
-        <div class="pae-block selector-card active-card" id="card-corto">
-          <h4>PAE corto</h4>
-          <p style="margin-bottom:14px; color:#7a1e3a;">
-            Para trabajos puntuales con una sola etapa.
+      <div class="cards">
+        <div class="card">
+          <h3>Crear PAE</h3>
+          <p>
+            Módulo para construir un PAE corto o largo, escoger etapas, seleccionar síntomas y generar la ruta de trabajo.
           </p>
-          <div class="chips" id="tipo-corto-btn">
-            <span class="chip active-chip">Seleccionado</span>
-          </div>
+          <button onclick="window.location.href='generador-pae.html'">Abrir módulo</button>
         </div>
 
-        <div class="pae-block selector-card" id="card-largo">
-          <h4>PAE largo</h4>
-          <p style="margin-bottom:14px; color:#7a1e3a;">
-            Para trabajos completos con desarrollo quirúrgico amplio.
+        <div class="card">
+          <h3>Ver ejemplos de PAE</h3>
+          <p>
+            Espacio para consultar fichas base ya armadas, como apendicitis, hipertensión, diabetes o neumonía.
           </p>
-          <div class="chips" id="tipo-largo-btn">
-            <span class="chip">Seleccionar</span>
-          </div>
-        </div>
-
-        <div class="pae-block" style="grid-column:1/-1;">
-          <h4>Etapas disponibles</h4>
-          <div class="chips" id="etapas-corto">
-            <span class="chip active-chip etapa-chip" data-etapa="preoperatorio">Preoperatorio</span>
-            <span class="chip etapa-chip" data-etapa="postoperatorio">Postoperatorio</span>
-          </div>
-          <div class="chips hidden-ui" id="etapas-largo">
-            <span class="chip active-chip">Preoperatorio</span>
-            <span class="chip active-chip">Transoperatorio</span>
-            <span class="chip active-chip">Postoperatorio</span>
-          </div>
-
-          <div class="live-box">
-            <div class="mini-title">Resumen actual</div>
-            <p><strong>Tipo:</strong> <span id="resumen-tipo">PAE corto</span></p>
-            <p><strong>Etapas:</strong></p>
-            <div id="resumen-etapas">
-              <span class="live-label">Preoperatorio</span>
-            </div>
-            <button class="action-btn" onclick="aplicarModoPAE()">Aplicar selección</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="paes">
-    <div class="section-box">
-      <h2 class="section-title">Buscador de PAE</h2>
-      <p class="section-subtitle">
-        Busca una condición clínica y la página mostrará una ficha base orientada al Proceso de Atención de Enfermería.
-      </p>
-
-      <div class="search-box">
-        <input type="text" id="busqueda" placeholder="Ejemplo: apendicitis, hipertensión, diabetes, neumonía...">
-        <button onclick="buscarPAE()">Buscar</button>
-      </div>
-
-      <div id="resultadoBusqueda" class="hidden"></div>
-
-      <div class="cards" style="margin-top:22px;">
-        <div class="card">
-          <h3>Apendicitis</h3>
-          <p>Ficha PAE con valoración, diagnósticos, NOC, NIC y cuidados prioritarios.</p>
-          <button onclick="mostrarPAE('apendicitis')">Ver PAE</button>
+          <button onclick="window.location.href='base-pae.html'">Abrir módulo</button>
         </div>
 
         <div class="card">
-          <h3>Hipertensión arterial</h3>
-          <p>Base práctica para control, vigilancia y educación del paciente.</p>
-          <button onclick="mostrarPAE('hipertension')">Ver PAE</button>
-        </div>
-
-        <div class="card">
-          <h3>Diabetes mellitus</h3>
-          <p>Estructura útil para autocuidado, control glucémico y prevención de complicaciones.</p>
-          <button onclick="mostrarPAE('diabetes')">Ver PAE</button>
-        </div>
-
-        <div class="card">
-          <h3>Neumonía</h3>
-          <p>Ficha enfocada en patrón respiratorio, oxigenación y vigilancia clínica.</p>
-          <button onclick="mostrarPAE('neumonia')">Ver PAE</button>
+          <h3>IA para PAE</h3>
+          <p>
+            Parte separada para trabajar generación automática de contenido o búsqueda de información clínica sin ensuciar el inicio.
+          </p>
+          <button onclick="window.location.href='ia-pae.html'">Abrir módulo</button>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="constructor-pae">
+  <section id="estructura">
     <div class="section-box">
-      <h2 class="section-title">Constructor rápido</h2>
+      <h2 class="section-title">Cómo queda organizada MediGuía</h2>
       <p class="section-subtitle">
-        Aquí se actualiza automáticamente la ruta del PAE según el tipo que selecciones arriba.
+        Así se reparte mejor la plataforma para que crezca sin hacerse un caos visual ni técnico.
       </p>
 
-      <div class="pae-grid">
-        <div class="pae-block">
-          <h4>Tipo activo</h4>
-          <div id="constructor-tipo">
-            <span class="live-label">PAE corto</span>
-          </div>
-        </div>
-
-        <div class="pae-block">
-          <h4>Etapas activas</h4>
-          <div id="constructor-etapas">
-            <span class="live-label">Preoperatorio</span>
-          </div>
-        </div>
-
-        <div class="pae-block" id="bloque-corto">
-          <h4>Ruta del PAE corto</h4>
+      <div class="grid-2">
+        <div class="mini-panel">
+          <h4>Lo que se queda en esta portada</h4>
           <ul>
-            <li>Datos del paciente</li>
-            <li>Valoración de la etapa elegida</li>
-            <li>Diagnósticos NANDA</li>
-            <li>NOC</li>
-            <li>NIC</li>
-            <li>Cuidados y evaluación</li>
+            <li>Presentación general del proyecto.</li>
+            <li>Accesos rápidos a los módulos.</li>
+            <li>Explicación simple de la estructura.</li>
+            <li>Navegación limpia y clara.</li>
           </ul>
         </div>
 
-        <div class="pae-block hidden-ui" id="bloque-largo" style="grid-column:1/-1;">
-          <h4>Ruta del PAE largo</h4>
+        <div class="mini-panel">
+          <h4>Lo que va en archivos aparte</h4>
           <ul>
-            <li>Datos del paciente</li>
-            <li>Etapa preoperatoria</li>
-            <li>Etapa transoperatoria</li>
-            <li>Etapa postoperatoria</li>
-            <li>Entrevista y valoración extensa</li>
-            <li>Anamnesis</li>
-            <li>Diagnósticos NANDA, NOC, NIC y plan de cuidados</li>
+            <li><strong>generador-pae.html</strong> para construir PAE.</li>
+            <li><strong>base-pae.html</strong> para consultar ejemplos.</li>
+            <li><strong>ia-pae.html</strong> para la parte de IA e info.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="herramientas">
+  <section id="proximo">
     <div class="section-box">
-      <h2 class="section-title">Herramientas que sí le sirven al PAE</h2>
+      <h2 class="section-title">Siguiente paso recomendado</h2>
       <p class="section-subtitle">
-        Tomé como referencia las opciones útiles del código que compartiste, como flujo guiado, etapa clínica, síntomas sugeridos y secciones del PAE, pero adaptadas a nuestra estructura. fileciteturn0file0
+        Con esta portada ya limpia, lo mejor ahora es tomar el archivo funcional que ya tenías y convertirlo en <strong>generador-pae.html</strong>.
       </p>
-
-      <div class="features">
-        <div class="feature">
-          <h4>Flujo guiado</h4>
-          <p>La página puede llevar al usuario paso a paso desde la selección del caso hasta la base final del PAE.</p>
-        </div>
-
-        <div class="feature">
-          <h4>Etapa clínica</h4>
-          <p>Permite clasificar el caso como preoperatorio, postoperatorio, hospitalización o consulta externa.</p>
-        </div>
-
-        <div class="feature">
-          <h4>Síntomas sugeridos</h4>
-          <p>Se pueden mostrar síntomas frecuentes para ayudar a construir un caso clínico más coherente.</p>
-        </div>
-
-        <div class="feature">
-          <h4>Secciones del PAE</h4>
-          <p>La estructura puede dejar claro qué apartados se van a trabajar dentro del documento final.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="flujo-pae">
-    <div class="section-box">
-      <h2 class="section-title">Cómo se construiría el PAE</h2>
-      <p class="section-subtitle">
-        El flujo ahora parte del tipo de PAE que el usuario necesite elaborar.
-      </p>
-
-      <div class="pae-grid">
-        <div class="pae-block">
-          <h4>Paso 1</h4>
-          <ul>
-            <li>Elegir entre PAE corto o PAE largo.</li>
-            <li>Si es corto, escoger preoperatorio o postoperatorio.</li>
-          </ul>
-        </div>
-
-        <div class="pae-block">
-          <h4>Paso 2</h4>
-          <ul>
-            <li>Seleccionar patología o problema de salud.</li>
-            <li>Agregar datos del paciente y contexto clínico.</li>
-          </ul>
-        </div>
-
-        <div class="pae-block">
-          <h4>Paso 3</h4>
-          <ul>
-            <li>Definir etapa clínica y síntomas compatibles.</li>
-            <li>Organizar entrevista, valoración y anamnesis según el tipo de PAE.</li>
-          </ul>
-        </div>
-
-        <div class="pae-block">
-          <h4>Paso 4</h4>
-          <ul>
-            <li>Generar la base del PAE.</li>
-            <li>En corto: una etapa específica.</li>
-            <li>En largo: pre, trans y post completos.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="demo-guiado">
-    <div class="section-box">
-      <h2 class="section-title">Demo del generador</h2>
-      <p class="section-subtitle">
-        Esta demo ya responde al tipo de PAE elegido arriba. Cambia entre corto y largo para ver cómo se ajusta la estructura.
-      </p>
-
-      <div class="pae-grid">
-        <div class="pae-block">
-          <h4>Tipo de PAE</h4>
-          <div class="chips" id="demo-tipo-chips">
-            <span class="chip active-chip" id="demo-chip-corto">PAE corto</span>
-            <span class="chip" id="demo-chip-largo">PAE largo</span>
-          </div>
-        </div>
-
-        <div class="pae-block" id="demo-etapa-corto-box">
-          <h4>Etapa seleccionable para PAE corto</h4>
-          <div class="chips" id="demo-etapas-corto">
-            <span class="chip active-chip">Preoperatorio</span>
-            <span class="chip">Postoperatorio</span>
-          </div>
-        </div>
-
-        <div class="pae-block hidden-ui" id="demo-etapa-largo-box">
-          <h4>Etapas incluidas en PAE largo</h4>
-          <div class="chips">
-            <span class="chip active-chip">Preoperatorio</span>
-            <span class="chip active-chip">Transoperatorio</span>
-            <span class="chip active-chip">Postoperatorio</span>
-          </div>
-        </div>
-
-        <div class="pae-block">
-          <h4>Síntomas sugeridos</h4>
-          <div class="chips" id="sintomas-demo">
-            <span class="chip active-chip sintoma-chip">Dolor</span>
-            <span class="chip active-chip sintoma-chip">Fiebre</span>
-            <span class="chip sintoma-chip">Náuseas</span>
-            <span class="chip sintoma-chip">Ansiedad</span>
-            <span class="chip sintoma-chip">Debilidad</span>
-            <span class="chip sintoma-chip">Pérdida del apetito</span>
-          </div>
-        </div>
-
-        <div class="pae-block" style="grid-column:1/-1;">
-          <h4>Vista previa generada</h4>
-          <div class="live-box">
-            <p><strong>Modo:</strong> <span id="preview-modo">PAE corto</span></p>
-            <p><strong>Etapas activas:</strong> <span id="preview-etapas">Preoperatorio</span></p>
-            <p><strong>Síntomas marcados:</strong> <span id="preview-sintomas">Dolor, Fiebre</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="ia">
-    <div class="ai-box">
-      <h2>¿No está el caso que buscas?</h2>
-      <p>
-        Más adelante esta sección puede servir para generar una base PAE a partir del problema de salud que escriba el usuario.
-        La IA no buscaría solo definición, sino una estructura lista con valoración, posibles diagnósticos, NOC, NIC y cuidados.
-      </p>
-
-      <div class="mini">
-        <strong>Idea futura:</strong>
-        <p style="margin-top:8px;">
-          El usuario escribe la condición o caso clínico → el sistema revisa si ya existe → si no existe,
-          propone una ficha PAE inicial y luego se guarda evitando duplicados o sinónimos repetidos.
-        </p>
+      <div class="chip-row">
+        <span class="chip">Index limpio</span>
+        <span class="chip">Generador aparte</span>
+        <span class="chip">Base de ejemplos aparte</span>
+        <span class="chip">IA aparte</span>
       </div>
     </div>
   </section>
 
   <footer>
-    MediGuía Enfermería · Base inicial orientada a PAE
+    MediGuía Enfermería · Menú principal limpio
   </footer>
 
   <script>
-    const paes = {
-      apendicitis: {
-        nombre: 'PAE base · Apendicitis',
-        enfoque: 'Paciente con dolor abdominal agudo y probable manejo quirúrgico.',
-        valoracion: [
-          'Valorar características del dolor: localización, intensidad, duración y factores asociados.',
-          'Controlar signos vitales y vigilar fiebre.',
-          'Observar náuseas, vómitos, sensibilidad abdominal y defensa muscular.',
-          'Verificar estado de hidratación y tolerancia oral.',
-          'Identificar ansiedad relacionada con el procedimiento o la hospitalización.'
-        ],
-        nanda: [
-          'Dolor agudo relacionado con proceso inflamatorio evidenciado por verbalización de dolor y sensibilidad abdominal.',
-          'Riesgo de infección relacionado con proceso inflamatorio y posible intervención quirúrgica.',
-          'Ansiedad relacionada con hospitalización y procedimiento quirúrgico.'
-        ],
-        noc: [
-          'Control del dolor.',
-          'Estado infeccioso controlado.',
-          'Nivel de ansiedad disminuido.',
-          'Paciente preparado para procedimiento indicado.'
-        ],
-        nic: [
-          'Manejo del dolor.',
-          'Monitorización de signos vitales.',
-          'Vigilancia de signos y síntomas de complicación.',
-          'Preparación preoperatoria según indicación médica.',
-          'Disminución de la ansiedad mediante apoyo emocional e información clara.'
-        ],
-        cuidados: [
-          'Mantener ayuno si está indicado.',
-          'Favorecer reposo y ambiente tranquilo.',
-          'Vigilar cambios en dolor abdominal o empeoramiento clínico.',
-          'Administrar tratamiento prescrito y registrar respuesta.',
-          'Educar al paciente sobre el proceso y cuidados inmediatos.'
-        ]
-      },
-      hipertension: {
-        nombre: 'PAE base · Hipertensión arterial',
-        enfoque: 'Paciente con elevación persistente de presión arterial y necesidad de control continuo.',
-        valoracion: [
-          'Tomar presión arterial con técnica correcta y de forma periódica.',
-          'Valorar cefalea, mareo, visión borrosa o dolor torácico si están presentes.',
-          'Indagar adherencia al tratamiento y hábitos de vida.',
-          'Evaluar consumo de sodio, actividad física, estrés y control médico previo.',
-          'Observar signos de complicaciones cardiovasculares o neurológicas.'
-        ],
-        nanda: [
-          'Manejo inefectivo de la salud relacionado con conocimiento insuficiente del tratamiento.',
-          'Riesgo de perfusión tisular ineficaz relacionado con cifras tensionales elevadas.',
-          'Conocimientos deficientes sobre autocuidado y control de la enfermedad.'
-        ],
-        noc: [
-          'Presión arterial dentro de parámetros esperados.',
-          'Mayor adherencia al tratamiento.',
-          'Conocimiento mejorado sobre dieta, medicamentos y signos de alarma.'
-        ],
-        nic: [
-          'Monitorización de la presión arterial.',
-          'Educación sobre medicamentos y adherencia terapéutica.',
-          'Fomento del ejercicio y hábitos saludables.',
-          'Orientación sobre dieta baja en sodio y control periódico.'
-        ],
-        cuidados: [
-          'Registrar presión arterial y evolución clínica.',
-          'Reforzar cumplimiento del tratamiento indicado.',
-          'Educar sobre signos de alarma y consulta oportuna.',
-          'Promover disminución de estrés y autocuidado.'
-        ]
-      },
-      diabetes: {
-        nombre: 'PAE base · Diabetes mellitus',
-        enfoque: 'Paciente con alteración del control glucémico y necesidad de educación continua.',
-        valoracion: [
-          'Controlar glucemia capilar según indicación.',
-          'Valorar signos de hiperglucemia o hipoglucemia.',
-          'Indagar hábitos alimenticios y adherencia al tratamiento.',
-          'Observar estado de piel, hidratación y presencia de lesiones.',
-          'Evaluar conocimiento del paciente sobre su enfermedad y autocuidado.'
-        ],
-        nanda: [
-          'Riesgo de nivel de glucemia inestable relacionado con manejo inadecuado del tratamiento.',
-          'Conocimientos deficientes sobre autocontrol de la diabetes.',
-          'Riesgo de infección relacionado con alteración metabólica.'
-        ],
-        noc: [
-          'Glucemia controlada dentro de valores esperados.',
-          'Mayor conocimiento sobre autocuidado.',
-          'Disminución del riesgo de complicaciones.'
-        ],
-        nic: [
-          'Monitorización de glucosa en sangre.',
-          'Educación sobre alimentación, medicamentos y signos de alarma.',
-          'Fomento del autocuidado.',
-          'Vigilancia de la integridad cutánea y prevención de lesiones.'
-        ],
-        cuidados: [
-          'Registrar glucemias y respuesta al tratamiento.',
-          'Reforzar dieta adecuada y horarios establecidos.',
-          'Educar sobre cuidado de pies y prevención de heridas.',
-          'Promover seguimiento médico y apego terapéutico.'
-        ]
-      },
-      neumonia: {
-        nombre: 'PAE base · Neumonía',
-        enfoque: 'Paciente con compromiso respiratorio e intercambio gaseoso alterado.',
-        valoracion: [
-          'Valorar frecuencia respiratoria, saturación de oxígeno y esfuerzo respiratorio.',
-          'Observar tos, secreciones, fiebre y dolor torácico.',
-          'Auscultar campos pulmonares y registrar hallazgos.',
-          'Valorar coloración de piel y mucosas.',
-          'Identificar intolerancia a la actividad y fatiga.'
-        ],
-        nanda: [
-          'Limpieza ineficaz de las vías aéreas relacionada con secreciones.',
-          'Intercambio gaseoso deteriorado relacionado con proceso infeccioso pulmonar.',
-          'Hipertermia relacionada con proceso infeccioso.'
-        ],
-        noc: [
-          'Mejorar oxigenación del paciente.',
-          'Mantener vía aérea permeable.',
-          'Disminuir temperatura corporal.',
-          'Paciente con menor dificultad respiratoria.'
-        ],
-        nic: [
-          'Monitorización respiratoria.',
-          'Manejo de la vía aérea.',
-          'Control de la temperatura.',
-          'Administración de oxígeno según indicación.',
-          'Fomento de hidratación y eliminación de secreciones.'
-        ],
-        cuidados: [
-          'Colocar al paciente en posición que facilite la respiración.',
-          'Vigilar saturación y signos de dificultad respiratoria.',
-          'Administrar tratamiento indicado y valorar respuesta.',
-          'Favorecer higiene bronquial y educación básica al paciente.'
-        ]
-      }
-    };
-
-    const estado = {
-      tipoPAE: 'corto',
-      etapaCorta: 'preoperatorio',
-      sintomas: ['Dolor', 'Fiebre']
-    };
-
     function irA(id){
       document.getElementById(id).scrollIntoView({behavior:'smooth'});
     }
-
-    function crearLista(items){
-      return `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
-    }
-
-    function renderPAE(data){
-      return `
-        <div class="pae-header">
-          <h3>${data.nombre}</h3>
-          <p>${data.enfoque}</p>
-          <span class="tagline">Formato orientado al Proceso de Atención de Enfermería</span>
-        </div>
-        <div class="pae-grid">
-          <div class="pae-block">
-            <h4>Valoración</h4>
-            ${crearLista(data.valoracion)}
-          </div>
-          <div class="pae-block">
-            <h4>Diagnósticos NANDA</h4>
-            ${crearLista(data.nanda)}
-          </div>
-          <div class="pae-block">
-            <h4>Resultados esperados NOC</h4>
-            ${crearLista(data.noc)}
-          </div>
-          <div class="pae-block">
-            <h4>Intervenciones NIC</h4>
-            ${crearLista(data.nic)}
-          </div>
-          <div class="pae-block" style="grid-column:1/-1;">
-            <h4>Cuidados de enfermería prioritarios</h4>
-            ${crearLista(data.cuidados)}
-          </div>
-        </div>
-      `;
-    }
-
-    function mostrarPAE(clave){
-      const box = document.getElementById('resultadoBusqueda');
-      box.classList.remove('hidden');
-      box.innerHTML = renderPAE(paes[clave]);
-      box.scrollIntoView({behavior:'smooth', block:'center'});
-    }
-
-    function buscarPAE(){
-      const valor = document.getElementById('busqueda').value.trim().toLowerCase();
-      const box = document.getElementById('resultadoBusqueda');
-
-      if(valor.includes('apend')){
-        mostrarPAE('apendicitis');
-      }else if(valor.includes('hipert')){
-        mostrarPAE('hipertension');
-      }else if(valor.includes('diabet')){
-        mostrarPAE('diabetes');
-      }else if(valor.includes('neum')){
-        mostrarPAE('neumonia');
-      }else if(valor === ''){
-        box.classList.remove('hidden');
-        box.innerHTML = 'Escribe una condición clínica para mostrar una ficha base de PAE.';
-      }else{
-        box.classList.remove('hidden');
-        box.innerHTML = `
-          <div class="pae-header">
-            <h3>No encontré esa ficha PAE en la base actual</h3>
-            <p>Más adelante aquí puede entrar la IA para generar una estructura inicial con valoración, NANDA, NOC, NIC y cuidados.</p>
-            <span class="tagline">Pensado para casos que aún no estén guardados</span>
-          </div>
-        `;
-      }
-    }
-
-    function aplicarModoPAE(){
-      actualizarUI();
-      irA('constructor-pae');
-    }
-
-    function actualizarUI(){
-      const esCorto = estado.tipoPAE === 'corto';
-
-      document.getElementById('resumen-tipo').textContent = esCorto ? 'PAE corto' : 'PAE largo';
-      document.getElementById('constructor-tipo').innerHTML = `<span class="live-label">${esCorto ? 'PAE corto' : 'PAE largo'}</span>`;
-      document.getElementById('preview-modo').textContent = esCorto ? 'PAE corto' : 'PAE largo';
-
-      document.getElementById('card-corto').classList.toggle('active-card', esCorto);
-      document.getElementById('card-largo').classList.toggle('active-card', !esCorto);
-
-      document.getElementById('etapas-corto').classList.toggle('hidden-ui', !esCorto);
-      document.getElementById('etapas-largo').classList.toggle('hidden-ui', esCorto);
-      document.getElementById('bloque-corto').classList.toggle('hidden-ui', !esCorto);
-      document.getElementById('bloque-largo').classList.toggle('hidden-ui', esCorto);
-      document.getElementById('demo-etapa-corto-box').classList.toggle('hidden-ui', !esCorto);
-      document.getElementById('demo-etapa-largo-box').classList.toggle('hidden-ui', esCorto);
-
-      document.getElementById('demo-chip-corto').classList.toggle('active-chip', esCorto);
-      document.getElementById('demo-chip-largo').classList.toggle('active-chip', !esCorto);
-
-      const resumenEtapas = document.getElementById('resumen-etapas');
-      const constructorEtapas = document.getElementById('constructor-etapas');
-      const previewEtapas = document.getElementById('preview-etapas');
-
-      if(esCorto){
-        const etapaTexto = capitalizar(estado.etapaCorta);
-        resumenEtapas.innerHTML = `<span class="live-label">${etapaTexto}</span>`;
-        constructorEtapas.innerHTML = `<span class="live-label">${etapaTexto}</span>`;
-        previewEtapas.textContent = etapaTexto;
-      }else{
-        const html = `
-          <span class="live-label">Preoperatorio</span>
-          <span class="live-label">Transoperatorio</span>
-          <span class="live-label">Postoperatorio</span>
-        `;
-        resumenEtapas.innerHTML = html;
-        constructorEtapas.innerHTML = html;
-        previewEtapas.textContent = 'Preoperatorio, Transoperatorio y Postoperatorio';
-      }
-
-      document.getElementById('preview-sintomas').textContent = estado.sintomas.length ? estado.sintomas.join(', ') : 'Ninguno';
-    }
-
-    function capitalizar(texto){
-      return texto.charAt(0).toUpperCase() + texto.slice(1);
-    }
-
-    function activarTipo(tipo){
-      estado.tipoPAE = tipo;
-      actualizarUI();
-    }
-
-    function activarEtapaCorta(etapa){
-      estado.etapaCorta = etapa;
-      document.querySelectorAll('.etapa-chip').forEach(chip => {
-        chip.classList.toggle('active-chip', chip.dataset.etapa === etapa);
-      });
-
-      const demoChips = document.querySelectorAll('#demo-etapas-corto .chip');
-      demoChips.forEach(chip => {
-        chip.classList.toggle('active-chip', chip.textContent.trim().toLowerCase() === etapa);
-      });
-
-      actualizarUI();
-    }
-
-    function configurarEventos(){
-      document.getElementById('tipo-corto-btn').addEventListener('click', () => activarTipo('corto'));
-      document.getElementById('tipo-largo-btn').addEventListener('click', () => activarTipo('largo'));
-      document.getElementById('demo-chip-corto').addEventListener('click', () => activarTipo('corto'));
-      document.getElementById('demo-chip-largo').addEventListener('click', () => activarTipo('largo'));
-
-      document.querySelectorAll('.etapa-chip').forEach(chip => {
-        chip.addEventListener('click', () => activarEtapaCorta(chip.dataset.etapa));
-      });
-
-      document.querySelectorAll('#demo-etapas-corto .chip').forEach(chip => {
-        chip.addEventListener('click', () => {
-          const etapa = chip.textContent.trim().toLowerCase();
-          activarEtapaCorta(etapa);
-        });
-      });
-
-      document.querySelectorAll('.sintoma-chip').forEach(chip => {
-        chip.addEventListener('click', () => {
-          const texto = chip.textContent.trim();
-          chip.classList.toggle('active-chip');
-
-          if(chip.classList.contains('active-chip')){
-            if(!estado.sintomas.includes(texto)) estado.sintomas.push(texto);
-          }else{
-            estado.sintomas = estado.sintomas.filter(item => item !== texto);
-          }
-
-          actualizarUI();
-        });
-      });
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      configurarEventos();
-      actualizarUI();
-    });
   </script>
 
 </body>
