@@ -235,6 +235,29 @@
       margin-top:8px;
     }
 
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .chip{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid #ffd6e7;
+      color:#b84b79;
+      font-weight:bold;
+      font-size:0.94rem;
+    }
+
+    .active-chip{
+      background:#ffe4ec;
+      color:#ff4d88;
+      border-color:#ffb3cc;
+    }
+
     footer{text-align:center;padding:30px 20px 50px;color:#7a1e3a;font-size:0.95rem;}
 
     @media(max-width:900px){
@@ -252,6 +275,8 @@
         <button onclick="irA('inicio')">Inicio</button>
         <button onclick="irA('paes')">PAE</button>
         <button onclick="irA('herramientas')">Herramientas</button>
+        <button onclick="irA('flujo-pae')">Flujo</button>
+        <button onclick="irA('demo-guiado')">Demo</button>
         <button onclick="irA('ia')">IA</button>
       </div>
     </nav>
@@ -327,28 +352,120 @@
     <div class="section-box">
       <h2 class="section-title">Herramientas que sí le sirven al PAE</h2>
       <p class="section-subtitle">
-        Aquí lo importante no es solo la patología, sino cómo se valora y qué hace enfermería con esa información.
+        Tomé como referencia las opciones útiles del código que compartiste, como flujo guiado, etapa clínica, síntomas sugeridos y secciones del PAE, pero adaptadas a nuestra estructura. fileciteturn0file0
       </p>
 
       <div class="features">
         <div class="feature">
-          <h4>Valoración inicial</h4>
-          <p>Datos subjetivos y objetivos, signos vitales, observación clínica y necesidades alteradas.</p>
+          <h4>Flujo guiado</h4>
+          <p>La página puede llevar al usuario paso a paso desde la selección del caso hasta la base final del PAE.</p>
         </div>
 
         <div class="feature">
-          <h4>Diagnósticos NANDA</h4>
-          <p>Diagnósticos sugeridos según la condición del paciente y sus manifestaciones clínicas.</p>
+          <h4>Etapa clínica</h4>
+          <p>Permite clasificar el caso como preoperatorio, postoperatorio, hospitalización o consulta externa.</p>
         </div>
 
         <div class="feature">
-          <h4>Resultados NOC</h4>
-          <p>Objetivos esperados para orientar la evolución y evaluar la respuesta del paciente.</p>
+          <h4>Síntomas sugeridos</h4>
+          <p>Se pueden mostrar síntomas frecuentes para ayudar a construir un caso clínico más coherente.</p>
         </div>
 
         <div class="feature">
-          <h4>Intervenciones NIC</h4>
-          <p>Actividades de enfermería que pueden apoyar el cuidado, la vigilancia y la educación.</p>
+          <h4>Secciones del PAE</h4>
+          <p>La estructura puede dejar claro qué apartados se van a trabajar dentro del documento final.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flujo-pae">
+    <div class="section-box">
+      <h2 class="section-title">Cómo se construiría el PAE</h2>
+      <p class="section-subtitle">
+        En el código que compartiste se veía bien la idea de manejar un flujo por pasos. Aquí lo adapté para que encaje con MediGuía Enfermería y con el enfoque de PAE. fileciteturn0file0
+      </p>
+
+      <div class="pae-grid">
+        <div class="pae-block">
+          <h4>Paso 1</h4>
+          <ul>
+            <li>Seleccionar patología o problema de salud.</li>
+            <li>Definir si el caso partirá de una base existente o desde cero.</li>
+          </ul>
+        </div>
+
+        <div class="pae-block">
+          <h4>Paso 2</h4>
+          <ul>
+            <li>Completar datos del paciente.</li>
+            <li>Agregar valoración inicial y contexto clínico.</li>
+          </ul>
+        </div>
+
+        <div class="pae-block">
+          <h4>Paso 3</h4>
+          <ul>
+            <li>Elegir etapa clínica.</li>
+            <li>Marcar síntomas compatibles con el caso.</li>
+          </ul>
+        </div>
+
+        <div class="pae-block">
+          <h4>Paso 4</h4>
+          <ul>
+            <li>Generar base del PAE.</li>
+            <li>Editar diagnósticos, NOC, NIC y cuidados según necesidad.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo-guiado">
+    <div class="section-box">
+      <h2 class="section-title">Demo del generador</h2>
+      <p class="section-subtitle">
+        Esta parte no reemplaza la ficha PAE ya existente, sino que agrega las opciones que te gustaron del otro código: selector de etapa, síntomas sugeridos y vista previa de secciones a trabajar. fileciteturn0file0
+      </p>
+
+      <div class="pae-grid">
+        <div class="pae-block">
+          <h4>Etapa clínica</h4>
+          <div class="chips">
+            <span class="chip">Preoperatorio</span>
+            <span class="chip">Postoperatorio</span>
+            <span class="chip">Hospitalización</span>
+            <span class="chip">Consulta externa</span>
+          </div>
+        </div>
+
+        <div class="pae-block">
+          <h4>Síntomas sugeridos</h4>
+          <div class="chips">
+            <span class="chip active-chip">Dolor</span>
+            <span class="chip active-chip">Fiebre</span>
+            <span class="chip active-chip">Náuseas</span>
+            <span class="chip">Ansiedad</span>
+            <span class="chip">Debilidad</span>
+            <span class="chip">Pérdida del apetito</span>
+          </div>
+        </div>
+
+        <div class="pae-block" style="grid-column:1/-1;">
+          <h4>Secciones que puede generar MediGuía</h4>
+          <div class="chips">
+            <span class="chip">Datos del paciente</span>
+            <span class="chip">Patología y procedimiento</span>
+            <span class="chip">Entrevista</span>
+            <span class="chip">Valoración</span>
+            <span class="chip">Anamnesis</span>
+            <span class="chip">Diagnósticos NANDA</span>
+            <span class="chip">NOC</span>
+            <span class="chip">NIC</span>
+            <span class="chip">Plan de cuidados</span>
+            <span class="chip">Evaluación</span>
+          </div>
         </div>
       </div>
     </div>
