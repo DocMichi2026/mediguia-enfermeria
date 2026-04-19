@@ -1,4 +1,14 @@
 {
+  "metadata": {
+    "version": "MediGuía Enfermería 1.0",
+    "compatible_con": [
+      "nanda.json",
+      "generador-pae.html"
+    ],
+    "estructura_diagnosticos": "diagnosticos_sugeridos usa códigos NANDA tomados de nanda.json; diagnosticos_respaldo conserva etiquetas heredadas si una coincidencia exacta no existe.",
+    "total_patologias": 50,
+    "fecha_actualizacion": "2026-04-19"
+  },
   "patologias": [
     {
       "id": "apendicitis-aguda",
@@ -37,28 +47,6 @@
         "valorar signos de irritación peritoneal",
         "mantener ayuno según indicación"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "proceso inflamatorio apendicular",
-          "evidenciado_por": [
-            "manifestación verbal de dolor",
-            "defensa abdominal"
-          ]
-        },
-        {
-          "nombre": "Riesgo de infección",
-          "relacionado_con": "posible perforación y proceso inflamatorio agudo",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Náuseas",
-          "relacionado_con": "irritación gastrointestinal",
-          "evidenciado_por": [
-            "reporta náuseas y vómitos"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Severidad de la infección",
@@ -79,7 +67,20 @@
       "observaciones": "Frecuente en PAE preoperatorio y postoperatorio.",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "preoperatorio",
+        "postoperatorio"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00004",
+        "00384"
+      ]
     },
     {
       "id": "colecistitis-aguda",
@@ -120,27 +121,6 @@
         "evaluar coloración de piel y mucosas",
         "vigilar abdomen"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "inflamación vesicular",
-          "evidenciado_por": [
-            "dolor en hipocondrio derecho"
-          ]
-        },
-        {
-          "nombre": "Desequilibrio nutricional: ingesta inferior a las necesidades",
-          "relacionado_con": "náuseas e intolerancia alimentaria",
-          "evidenciado_por": [
-            "disminución del apetito"
-          ]
-        },
-        {
-          "nombre": "Riesgo de infección",
-          "relacionado_con": "proceso inflamatorio biliar",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Estado nutricional",
@@ -160,7 +140,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00343",
+        "00004"
+      ]
     },
     {
       "id": "pancreatitis-aguda",
@@ -201,27 +193,6 @@
         "monitorizar signos vitales",
         "valorar tolerancia digestiva"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "inflamación pancreática",
-          "evidenciado_por": [
-            "dolor epigástrico intenso"
-          ]
-        },
-        {
-          "nombre": "Riesgo de déficit de volumen de líquidos",
-          "relacionado_con": "vómitos y tercer espacio",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Náuseas",
-          "relacionado_con": "irritación gastrointestinal",
-          "evidenciado_por": [
-            "episodios de vómito"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Equilibrio hídrico",
@@ -241,7 +212,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00420",
+        "00384"
+      ]
     },
     {
       "id": "gastritis",
@@ -279,27 +262,6 @@
         "controlar tolerancia oral",
         "indagar consumo de irritantes"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "irritación de la mucosa gástrica",
-          "evidenciado_por": [
-            "ardor o dolor epigástrico"
-          ]
-        },
-        {
-          "nombre": "Náuseas",
-          "relacionado_con": "irritación gástrica",
-          "evidenciado_por": [
-            "sensación nauseosa"
-          ]
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "falta de información sobre dieta y medicamentos",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Estado gastrointestinal",
@@ -318,7 +280,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00384",
+        "00435"
+      ]
     },
     {
       "id": "ulcera-peptica",
@@ -356,25 +330,6 @@
         "evaluar tolerancia oral",
         "monitorizar signos vitales si hay sangrado"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "lesión de mucosa gastrointestinal",
-          "evidenciado_por": [
-            "dolor epigástrico"
-          ]
-        },
-        {
-          "nombre": "Riesgo de sangrado",
-          "relacionado_con": "erosión vascular secundaria a úlcera",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "falta de información sobre dieta y tratamiento",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Severidad del sangrado",
@@ -394,7 +349,19 @@
       "observaciones": "Útil para PAE médico y perioperatorio si hay complicación.",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00374",
+        "00435"
+      ]
     },
     {
       "id": "obstruccion-intestinal",
@@ -434,27 +401,6 @@
         "auscultar ruidos intestinales",
         "mantener ayuno si está indicado"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "distensión intestinal",
-          "evidenciado_por": [
-            "dolor tipo cólico"
-          ]
-        },
-        {
-          "nombre": "Riesgo de déficit de volumen de líquidos",
-          "relacionado_con": "vómitos y secuestro de líquidos",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Deterioro de la motilidad gastrointestinal",
-          "relacionado_con": "obstrucción o íleo",
-          "evidenciado_por": [
-            "distensión y ausencia de evacuaciones"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Equilibrio hídrico",
         "Control del dolor",
@@ -474,7 +420,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00420",
+        "00423"
+      ]
     },
     {
       "id": "peritonitis",
@@ -512,25 +470,6 @@
         "observar signos de sepsis",
         "mantener ayuno según indicación"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "inflamación peritoneal",
-          "evidenciado_por": [
-            "abdomen rígido y dolor intenso"
-          ]
-        },
-        {
-          "nombre": "Riesgo de shock",
-          "relacionado_con": "infección grave y tercer espacio",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Riesgo de infección",
-          "relacionado_con": "contaminación peritoneal activa",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Estado circulatorio",
@@ -550,7 +489,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00205",
+        "00004"
+      ]
     },
     {
       "id": "absceso-abdominal",
@@ -587,25 +538,6 @@
         "controlar temperatura",
         "vigilar abdomen"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "proceso infeccioso e inflamatorio",
-          "evidenciado_por": [
-            "sensibilidad abdominal"
-          ]
-        },
-        {
-          "nombre": "Riesgo de infección",
-          "relacionado_con": "colección purulenta intraabdominal",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Riesgo de déficit de volumen de líquidos",
-          "relacionado_con": "fiebre y disminución de ingesta",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Estado infeccioso",
@@ -625,7 +557,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00004",
+        "00420"
+      ]
     },
     {
       "id": "hemorragia-digestiva-alta",
@@ -663,28 +607,6 @@
         "mantener vía venosa permeable",
         "observar color de heces y vómitos"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Déficit de volumen de líquidos",
-          "relacionado_con": "pérdida activa de sangre",
-          "evidenciado_por": [
-            "hipotensión",
-            "taquicardia"
-          ]
-        },
-        {
-          "nombre": "Riesgo de perfusión tisular ineficaz",
-          "relacionado_con": "disminución del volumen circulante",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "situación aguda y amenaza a la salud",
-          "evidenciado_por": [
-            "inquietud"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado circulatorio",
         "Severidad de la pérdida sanguínea",
@@ -704,7 +626,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00228",
+        "00400"
+      ]
     },
     {
       "id": "hernia-inguinal",
@@ -740,25 +674,6 @@
         "observar tolerancia a la actividad",
         "educar sobre esfuerzos"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "protrusión herniaria",
-          "evidenciado_por": [
-            "molestia inguinal"
-          ]
-        },
-        {
-          "nombre": "Riesgo de perfusión tisular ineficaz",
-          "relacionado_con": "posible estrangulación herniaria",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "falta de información sobre autocuidado y signos de alarma",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Conocimiento: proceso de la enfermedad",
@@ -777,7 +692,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00228",
+        "00435"
+      ]
     },
     {
       "id": "neumonia",
@@ -817,30 +744,6 @@
         "controlar temperatura",
         "evaluar tolerancia a la actividad"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Intercambio gaseoso deteriorado",
-          "relacionado_con": "ocupación alveolar por exudado",
-          "evidenciado_por": [
-            "disnea",
-            "hipoxemia"
-          ]
-        },
-        {
-          "nombre": "Limpieza ineficaz de las vías aéreas",
-          "relacionado_con": "aumento de secreciones",
-          "evidenciado_por": [
-            "tos productiva"
-          ]
-        },
-        {
-          "nombre": "Hipertermia",
-          "relacionado_con": "proceso infeccioso",
-          "evidenciado_por": [
-            "temperatura elevada"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado respiratorio: intercambio gaseoso",
         "Permeabilidad de las vías aéreas",
@@ -860,7 +763,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00030",
+        "00031",
+        "00007"
+      ]
     },
     {
       "id": "asma",
@@ -899,29 +814,6 @@
         "identificar desencadenantes",
         "evaluar respuesta a broncodilatadores"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Patrón respiratorio ineficaz",
-          "relacionado_con": "broncoespasmo",
-          "evidenciado_por": [
-            "disnea y uso de músculos accesorios"
-          ]
-        },
-        {
-          "nombre": "Limpieza ineficaz de las vías aéreas",
-          "relacionado_con": "moco y broncoconstricción",
-          "evidenciado_por": [
-            "tos y sibilancias"
-          ]
-        },
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "sensación de falta de aire",
-          "evidenciado_por": [
-            "inquietud"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado respiratorio",
         "Autocontrol del asma",
@@ -941,7 +833,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00032",
+        "00031",
+        "00400"
+      ]
     },
     {
       "id": "epoc",
@@ -979,30 +883,6 @@
         "observar tolerancia a la actividad",
         "enseñar respiración con labios fruncidos"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Intercambio gaseoso deteriorado",
-          "relacionado_con": "alteración ventilación/perfusión",
-          "evidenciado_por": [
-            "disnea",
-            "hipoxemia"
-          ]
-        },
-        {
-          "nombre": "Intolerancia a la actividad",
-          "relacionado_con": "desequilibrio entre aporte y demanda de oxígeno",
-          "evidenciado_por": [
-            "fatiga al esfuerzo"
-          ]
-        },
-        {
-          "nombre": "Limpieza ineficaz de las vías aéreas",
-          "relacionado_con": "secreciones y debilidad para expectorar",
-          "evidenciado_por": [
-            "tos crónica"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado respiratorio",
         "Tolerancia a la actividad",
@@ -1022,7 +902,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00030",
+        "00298",
+        "00031"
+      ]
     },
     {
       "id": "bronquiolitis",
@@ -1059,27 +951,6 @@
         "valorar signos de esfuerzo respiratorio",
         "vigilar hidratación y alimentación"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Patrón respiratorio ineficaz",
-          "relacionado_con": "obstrucción bronquiolar",
-          "evidenciado_por": [
-            "taquipnea y tiraje"
-          ]
-        },
-        {
-          "nombre": "Riesgo de déficit de volumen de líquidos",
-          "relacionado_con": "ingesta disminuida y fiebre",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Limpieza ineficaz de las vías aéreas",
-          "relacionado_con": "aumento de secreciones",
-          "evidenciado_por": [
-            "tos y congestión"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado respiratorio",
         "Hidratación",
@@ -1099,7 +970,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00032",
+        "00420",
+        "00031"
+      ]
     },
     {
       "id": "tuberculosis-pulmonar",
@@ -1137,27 +1020,6 @@
         "observar pérdida de peso",
         "educar sobre aislamiento y tos"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Limpieza ineficaz de las vías aéreas",
-          "relacionado_con": "secreciones e inflamación pulmonar",
-          "evidenciado_por": [
-            "tos persistente"
-          ]
-        },
-        {
-          "nombre": "Desequilibrio nutricional: ingesta inferior a las necesidades",
-          "relacionado_con": "demanda aumentada y anorexia",
-          "evidenciado_por": [
-            "pérdida de peso"
-          ]
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "tratamiento prolongado y medidas de prevención",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Estado respiratorio",
         "Estado nutricional",
@@ -1177,7 +1039,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00031",
+        "00343",
+        "00435"
+      ]
     },
     {
       "id": "derrame-pleural",
@@ -1213,29 +1087,6 @@
         "observar comodidad postural",
         "controlar dolor"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Patrón respiratorio ineficaz",
-          "relacionado_con": "compresión pulmonar por líquido pleural",
-          "evidenciado_por": [
-            "disnea"
-          ]
-        },
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "inflamación pleural",
-          "evidenciado_por": [
-            "dolor torácico"
-          ]
-        },
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "dificultad respiratoria",
-          "evidenciado_por": [
-            "temor e inquietud"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado respiratorio",
         "Control del dolor",
@@ -1255,7 +1106,19 @@
       "observaciones": "Útil en PAE médico y postprocedimiento.",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00032",
+        "00132",
+        "00400"
+      ]
     },
     {
       "id": "edema-agudo-de-pulmon",
@@ -1293,30 +1156,6 @@
         "monitorizar signos vitales",
         "observar ansiedad y cianosis"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Intercambio gaseoso deteriorado",
-          "relacionado_con": "líquido alveolar",
-          "evidenciado_por": [
-            "disnea intensa",
-            "hipoxemia"
-          ]
-        },
-        {
-          "nombre": "Exceso de volumen de líquidos",
-          "relacionado_con": "sobrecarga circulatoria",
-          "evidenciado_por": [
-            "estertores y disnea"
-          ]
-        },
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "sensación de asfixia",
-          "evidenciado_por": [
-            "agitación"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado respiratorio",
         "Equilibrio hídrico",
@@ -1336,7 +1175,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00030",
+        "00026",
+        "00400"
+      ]
     },
     {
       "id": "aspiracion-pulmonar",
@@ -1374,27 +1225,6 @@
         "observar tos durante alimentación",
         "mantener posición segura"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Limpieza ineficaz de las vías aéreas",
-          "relacionado_con": "presencia de material aspirado",
-          "evidenciado_por": [
-            "tos y ruidos respiratorios"
-          ]
-        },
-        {
-          "nombre": "Riesgo de aspiración",
-          "relacionado_con": "alteración de la deglución o conciencia",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Intercambio gaseoso deteriorado",
-          "relacionado_con": "compromiso de ventilación",
-          "evidenciado_por": [
-            "desaturación"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Permeabilidad de vías aéreas",
         "Estado respiratorio",
@@ -1413,7 +1243,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00031",
+        "00039",
+        "00030"
+      ]
     },
     {
       "id": "sinusitis-aguda",
@@ -1450,27 +1292,6 @@
         "observar características de secreción nasal",
         "vigilar patrón de sueño"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "inflamación de senos paranasales",
-          "evidenciado_por": [
-            "presión facial"
-          ]
-        },
-        {
-          "nombre": "Patrón de sueño perturbado",
-          "relacionado_con": "congestión y malestar",
-          "evidenciado_por": [
-            "refiere dificultad para dormir"
-          ]
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "manejo domiciliario y uso correcto de medicamentos",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Estado respiratorio: permeabilidad nasal",
@@ -1489,7 +1310,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00337",
+        "00435"
+      ]
     },
     {
       "id": "hipertension-arterial",
@@ -1527,23 +1360,6 @@
         "evaluar estilo de vida",
         "observar síntomas de daño a órgano blanco"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Gestión ineficaz de la salud",
-          "relacionado_con": "dificultad para mantener medidas terapéuticas",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Riesgo de perfusión tisular ineficaz",
-          "relacionado_con": "cifras tensionales elevadas",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "falta de información sobre autocuidado",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control de la presión arterial",
         "Conducta de cumplimiento",
@@ -1563,7 +1379,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00276",
+        "00228",
+        "00435"
+      ]
     },
     {
       "id": "insuficiencia-cardiaca",
@@ -1601,31 +1429,6 @@
         "monitorizar respiración y saturación",
         "evaluar tolerancia a la actividad"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Gasto cardiaco disminuido",
-          "relacionado_con": "deterioro de la función miocárdica",
-          "evidenciado_por": [
-            "fatiga",
-            "disnea"
-          ]
-        },
-        {
-          "nombre": "Exceso de volumen de líquidos",
-          "relacionado_con": "retención hidrosalina",
-          "evidenciado_por": [
-            "edema",
-            "ganancia de peso"
-          ]
-        },
-        {
-          "nombre": "Intolerancia a la actividad",
-          "relacionado_con": "desequilibrio entre aporte y demanda de oxígeno",
-          "evidenciado_por": [
-            "fatiga al esfuerzo"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado cardiaco",
         "Equilibrio hídrico",
@@ -1645,7 +1448,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00240",
+        "00026",
+        "00298"
+      ]
     },
     {
       "id": "infarto-agudo-de-miocardio",
@@ -1686,29 +1501,6 @@
         "observar perfusión",
         "controlar ansiedad"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Perfusión tisular cardiaca ineficaz",
-          "relacionado_con": "obstrucción coronaria",
-          "evidenciado_por": [
-            "dolor torácico"
-          ]
-        },
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "isquemia miocárdica",
-          "evidenciado_por": [
-            "opresión torácica"
-          ]
-        },
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "amenaza percibida de muerte o daño",
-          "evidenciado_por": [
-            "inquietud"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Perfusión tisular: cardiaca",
         "Control del dolor",
@@ -1729,7 +1521,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00240",
+        "00132",
+        "00400"
+      ]
     },
     {
       "id": "accidente-cerebrovascular",
@@ -1769,27 +1573,6 @@
         "observar movilidad y lenguaje",
         "prevenir caídas y úlceras"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Perfusión tisular cerebral ineficaz",
-          "relacionado_con": "alteración del flujo sanguíneo cerebral",
-          "evidenciado_por": [
-            "déficit neurológico agudo"
-          ]
-        },
-        {
-          "nombre": "Deterioro de la movilidad física",
-          "relacionado_con": "compromiso neurológico",
-          "evidenciado_por": [
-            "hemiparesia"
-          ]
-        },
-        {
-          "nombre": "Riesgo de aspiración",
-          "relacionado_con": "alteración de reflejos de deglución",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Estado neurológico",
         "Movilidad",
@@ -1809,7 +1592,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00201",
+        "00085",
+        "00039"
+      ]
     },
     {
       "id": "trombosis-venosa-profunda",
@@ -1846,27 +1641,6 @@
         "observar signos de embolia pulmonar",
         "favorecer seguridad en la movilización"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Perfusión tisular periférica ineficaz",
-          "relacionado_con": "obstrucción venosa",
-          "evidenciado_por": [
-            "edema unilateral"
-          ]
-        },
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "proceso trombótico",
-          "evidenciado_por": [
-            "dolor en extremidad"
-          ]
-        },
-        {
-          "nombre": "Riesgo de sangrado",
-          "relacionado_con": "tratamiento anticoagulante si está indicado",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Perfusión tisular periférica",
         "Control del dolor",
@@ -1886,7 +1660,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00204",
+        "00132",
+        "00374"
+      ]
     },
     {
       "id": "diabetes-mellitus-tipo-2",
@@ -1927,23 +1713,6 @@
         "evaluar adherencia a dieta y medicación",
         "observar signos de hipoglucemia e hiperglucemia"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Riesgo de nivel de glucemia inestable",
-          "relacionado_con": "alteración del metabolismo de la glucosa",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Gestión ineficaz de la salud",
-          "relacionado_con": "complejidad del tratamiento",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Riesgo de deterioro de la integridad cutánea",
-          "relacionado_con": "alteración circulatoria y neuropatía",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control de la glucemia",
         "Autocontrol de la diabetes",
@@ -1963,7 +1732,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00489",
+        "00276",
+        "00047"
+      ]
     },
     {
       "id": "cetoacidosis-diabetica",
@@ -2003,26 +1784,6 @@
         "monitorizar signos vitales",
         "vigilar vómitos"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Déficit de volumen de líquidos",
-          "relacionado_con": "diuresis osmótica y vómitos",
-          "evidenciado_por": [
-            "mucosas secas",
-            "taquicardia"
-          ]
-        },
-        {
-          "nombre": "Riesgo de nivel de glucemia inestable",
-          "relacionado_con": "déficit absoluto o relativo de insulina",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Riesgo de desequilibrio electrolítico",
-          "relacionado_con": "terapia y pérdidas aumentadas",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Hidratación",
         "Control de la glucemia",
@@ -2042,7 +1803,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00489",
+        "00491"
+      ]
     },
     {
       "id": "hipotiroidismo",
@@ -2079,27 +1852,6 @@
         "vigilar temperatura y frecuencia cardiaca",
         "educar adherencia medicamentosa"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Fatiga",
-          "relacionado_con": "disminución del metabolismo",
-          "evidenciado_por": [
-            "cansancio persistente"
-          ]
-        },
-        {
-          "nombre": "Estreñimiento",
-          "relacionado_con": "motilidad intestinal enlentecida",
-          "evidenciado_por": [
-            "evacuaciones infrecuentes"
-          ]
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "manejo del tratamiento hormonal",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Nivel de energía",
         "Eliminación intestinal",
@@ -2118,7 +1870,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00477",
+        "00235",
+        "00435"
+      ]
     },
     {
       "id": "hipertiroidismo",
@@ -2154,29 +1918,6 @@
         "controlar peso y tolerancia al calor",
         "observar diarrea"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Nutrición desequilibrada: inferior a las necesidades",
-          "relacionado_con": "metabolismo aumentado",
-          "evidenciado_por": [
-            "pérdida de peso"
-          ]
-        },
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "estimulación metabólica excesiva",
-          "evidenciado_por": [
-            "nerviosismo"
-          ]
-        },
-        {
-          "nombre": "Intolerancia al calor",
-          "relacionado_con": "aumento del metabolismo",
-          "evidenciado_por": [
-            "refiere calor excesivo"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado metabólico",
         "Nivel de ansiedad",
@@ -2196,7 +1937,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00343",
+        "00400",
+        "00007"
+      ]
     },
     {
       "id": "obesidad",
@@ -2234,23 +1987,6 @@
         "observar limitaciones físicas",
         "explorar comorbilidades"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Nutrición desequilibrada: más que las necesidades corporales",
-          "relacionado_con": "ingesta excesiva y bajo gasto energético",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Baja autoestima situacional",
-          "relacionado_con": "imagen corporal alterada",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "hábitos saludables y plan alimentario",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del peso",
         "Conocimiento: dieta saludable",
@@ -2270,7 +2006,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00398",
+        "00481",
+        "00435"
+      ]
     },
     {
       "id": "infeccion-de-vias-urinarias",
@@ -2311,30 +2059,6 @@
         "valorar dolor suprapúbico o lumbar",
         "favorecer hidratación si está indicada"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Eliminación urinaria deteriorada",
-          "relacionado_con": "irritación e inflamación urinaria",
-          "evidenciado_por": [
-            "disuria",
-            "urgencia"
-          ]
-        },
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "inflamación del tracto urinario",
-          "evidenciado_por": [
-            "ardor al orinar"
-          ]
-        },
-        {
-          "nombre": "Hipertermia",
-          "relacionado_con": "proceso infeccioso",
-          "evidenciado_por": [
-            "temperatura elevada"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Eliminación urinaria",
         "Control del dolor",
@@ -2354,7 +2078,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00016",
+        "00132",
+        "00007"
+      ]
     },
     {
       "id": "pielonefritis",
@@ -2392,27 +2128,6 @@
         "observar patrón urinario",
         "vigilar hidratación"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Hipertermia",
-          "relacionado_con": "proceso infeccioso renal",
-          "evidenciado_por": [
-            "fiebre"
-          ]
-        },
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "inflamación renal",
-          "evidenciado_por": [
-            "dolor en flanco"
-          ]
-        },
-        {
-          "nombre": "Riesgo de déficit de volumen de líquidos",
-          "relacionado_con": "fiebre, vómitos y disminución de ingesta",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Severidad de la infección",
         "Control del dolor",
@@ -2432,7 +2147,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00007",
+        "00132",
+        "00420"
+      ]
     },
     {
       "id": "insuficiencia-renal-aguda",
@@ -2472,26 +2199,6 @@
         "monitorizar presión arterial",
         "observar alteración del estado mental"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Exceso de volumen de líquidos",
-          "relacionado_con": "disminución de la excreción renal",
-          "evidenciado_por": [
-            "edema",
-            "balance positivo"
-          ]
-        },
-        {
-          "nombre": "Riesgo de desequilibrio electrolítico",
-          "relacionado_con": "alteración de la función renal",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Perfusión tisular renal ineficaz",
-          "relacionado_con": "causas prerrenales o intrarrenales",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Función renal",
         "Equilibrio hídrico",
@@ -2511,7 +2218,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00026",
+        "00491",
+        "00228"
+      ]
     },
     {
       "id": "enfermedad-renal-cronica",
@@ -2551,27 +2270,6 @@
         "evaluar adherencia a dieta y tratamiento",
         "observar signos urémicos"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Fatiga",
-          "relacionado_con": "anemia y acumulación de toxinas",
-          "evidenciado_por": [
-            "cansancio"
-          ]
-        },
-        {
-          "nombre": "Exceso de volumen de líquidos",
-          "relacionado_con": "función renal disminuida",
-          "evidenciado_por": [
-            "edema"
-          ]
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "manejo de dieta, medicación y controles",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Función renal",
         "Estado nutricional",
@@ -2591,7 +2289,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00477",
+        "00026",
+        "00435"
+      ]
     },
     {
       "id": "litiasis-renal",
@@ -2629,27 +2339,6 @@
         "controlar náuseas",
         "favorecer hidratación según indicación"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "espasmo ureteral por cálculo",
-          "evidenciado_por": [
-            "cólico renal"
-          ]
-        },
-        {
-          "nombre": "Eliminación urinaria deteriorada",
-          "relacionado_con": "obstrucción parcial del flujo urinario",
-          "evidenciado_por": [
-            "disuria o hematuria"
-          ]
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "medidas para prevención de recurrencia",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Eliminación urinaria",
@@ -2668,7 +2357,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00016",
+        "00435"
+      ]
     },
     {
       "id": "glomerulonefritis-aguda",
@@ -2703,25 +2404,6 @@
         "controlar peso diario",
         "revisar características de la orina"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Exceso de volumen de líquidos",
-          "relacionado_con": "retención secundaria a filtración alterada",
-          "evidenciado_por": [
-            "edema"
-          ]
-        },
-        {
-          "nombre": "Perfusión tisular renal ineficaz",
-          "relacionado_con": "inflamación glomerular",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Riesgo de desequilibrio electrolítico",
-          "relacionado_con": "función renal comprometida",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Función renal",
         "Equilibrio hídrico",
@@ -2740,7 +2422,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00026",
+        "00228",
+        "00491"
+      ]
     },
     {
       "id": "hepatitis-viral",
@@ -2777,27 +2471,6 @@
         "observar signos de sangrado",
         "educar medidas de prevención"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Fatiga",
-          "relacionado_con": "proceso inflamatorio hepático",
-          "evidenciado_por": [
-            "cansancio"
-          ]
-        },
-        {
-          "nombre": "Nutrición desequilibrada: inferior a las necesidades",
-          "relacionado_con": "náuseas y anorexia",
-          "evidenciado_por": [
-            "disminución de ingesta"
-          ]
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "transmisión y cuidado domiciliario",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Estado hepático",
         "Estado nutricional",
@@ -2816,7 +2489,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00477",
+        "00343",
+        "00435"
+      ]
     },
     {
       "id": "dengue",
@@ -2852,27 +2537,6 @@
         "observar sangrado",
         "monitorizar presión arterial y llenado capilar"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Hipertermia",
-          "relacionado_con": "proceso infeccioso viral",
-          "evidenciado_por": [
-            "fiebre"
-          ]
-        },
-        {
-          "nombre": "Riesgo de déficit de volumen de líquidos",
-          "relacionado_con": "fiebre y extravasación capilar",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "respuesta inflamatoria sistémica",
-          "evidenciado_por": [
-            "mialgias y cefalea"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Termorregulación",
         "Hidratación",
@@ -2892,7 +2556,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00007",
+        "00420",
+        "00132"
+      ]
     },
     {
       "id": "gastroenteritis-aguda",
@@ -2930,30 +2606,6 @@
         "observar fiebre",
         "llevar balance hídrico"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Déficit de volumen de líquidos",
-          "relacionado_con": "pérdidas gastrointestinales",
-          "evidenciado_por": [
-            "mucosas secas",
-            "sed"
-          ]
-        },
-        {
-          "nombre": "Diarrea",
-          "relacionado_con": "irritación o infección intestinal",
-          "evidenciado_por": [
-            "evacuaciones líquidas frecuentes"
-          ]
-        },
-        {
-          "nombre": "Náuseas",
-          "relacionado_con": "irritación gastrointestinal",
-          "evidenciado_por": [
-            "reporta vómitos"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Hidratación",
         "Eliminación intestinal",
@@ -2973,7 +2625,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00344",
+        "00384"
+      ]
     },
     {
       "id": "sepsis",
@@ -3010,28 +2674,6 @@
         "observar perfusión periférica",
         "monitorizar lactato y estudios según indicación"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Perfusión tisular ineficaz",
-          "relacionado_con": "vasodilatación y alteración circulatoria",
-          "evidenciado_por": [
-            "hipotensión",
-            "oliguria"
-          ]
-        },
-        {
-          "nombre": "Riesgo de shock",
-          "relacionado_con": "infección sistémica severa",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Hipertermia",
-          "relacionado_con": "respuesta infecciosa",
-          "evidenciado_por": [
-            "temperatura alterada"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado circulatorio",
         "Severidad de la infección",
@@ -3051,7 +2693,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00228",
+        "00205",
+        "00007"
+      ]
     },
     {
       "id": "meningitis",
@@ -3089,27 +2743,6 @@
         "observar signos meníngeos",
         "disminuir estímulos si hay fotofobia"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Perfusión tisular cerebral ineficaz",
-          "relacionado_con": "proceso inflamatorio meníngeo",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Hipertermia",
-          "relacionado_con": "infección del SNC",
-          "evidenciado_por": [
-            "fiebre"
-          ]
-        },
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "irritación meníngea",
-          "evidenciado_por": [
-            "cefalea intensa"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado neurológico",
         "Termorregulación",
@@ -3129,7 +2762,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00201",
+        "00007",
+        "00132"
+      ]
     },
     {
       "id": "epilepsia",
@@ -3165,23 +2810,6 @@
         "valorar estado postictal",
         "vigilar adherencia a medicación"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Riesgo de lesión",
-          "relacionado_con": "actividad convulsiva",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Riesgo de aspiración",
-          "relacionado_con": "disminución del control de la vía aérea durante crisis",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "manejo de crisis y adherencia terapéutica",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control de las crisis",
         "Seguridad personal",
@@ -3201,7 +2829,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00336",
+        "00039",
+        "00435"
+      ]
     },
     {
       "id": "migraña",
@@ -3239,27 +2879,6 @@
         "observar náuseas y tolerancia oral",
         "favorecer ambiente oscuro y silencioso"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "proceso neurovascular",
-          "evidenciado_por": [
-            "cefalea intensa"
-          ]
-        },
-        {
-          "nombre": "Náuseas",
-          "relacionado_con": "episodio migrañoso",
-          "evidenciado_por": [
-            "reporta náuseas"
-          ]
-        },
-        {
-          "nombre": "Conocimientos deficientes",
-          "relacionado_con": "falta de control de desencadenantes",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Control de la náusea",
@@ -3279,7 +2898,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00384",
+        "00435"
+      ]
     },
     {
       "id": "anemia-ferropenica",
@@ -3316,27 +2947,6 @@
         "evaluar dieta y sangrados",
         "controlar resultados de laboratorio si se dispone"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Fatiga",
-          "relacionado_con": "disminución de la oxigenación tisular",
-          "evidenciado_por": [
-            "cansancio"
-          ]
-        },
-        {
-          "nombre": "Nutrición desequilibrada: inferior a las necesidades",
-          "relacionado_con": "aporte inadecuado de hierro",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Intolerancia a la actividad",
-          "relacionado_con": "disminución del transporte de oxígeno",
-          "evidenciado_por": [
-            "disnea al esfuerzo"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Nivel de energía",
         "Estado hematológico",
@@ -3356,7 +2966,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00477",
+        "00343",
+        "00298"
+      ]
     },
     {
       "id": "embarazo-ectopico",
@@ -3392,30 +3014,6 @@
         "observar signos de shock",
         "brindar apoyo emocional"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Déficit de volumen de líquidos",
-          "relacionado_con": "sangrado interno o vaginal",
-          "evidenciado_por": [
-            "hipotensión",
-            "taquicardia"
-          ]
-        },
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "distensión o ruptura tubárica",
-          "evidenciado_por": [
-            "dolor pélvico"
-          ]
-        },
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "amenaza a la salud y fertilidad",
-          "evidenciado_por": [
-            "temor"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Estado circulatorio",
         "Control del dolor",
@@ -3435,7 +3033,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00132",
+        "00400"
+      ]
     },
     {
       "id": "preeclampsia",
@@ -3474,23 +3084,6 @@
         "controlar diuresis y edema",
         "vigilar bienestar fetal según recursos"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Perfusión tisular ineficaz",
-          "relacionado_con": "vasoespasmo y disfunción endotelial",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Riesgo de lesión materna",
-          "relacionado_con": "convulsiones o hipertensión severa",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "riesgo materno-fetal",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Presión arterial",
         "Estado materno",
@@ -3510,7 +3103,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00228",
+        "00336",
+        "00400"
+      ]
     },
     {
       "id": "hemorragia-postparto",
@@ -3548,26 +3153,6 @@
         "monitorizar signos vitales",
         "observar perfusión y conciencia"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Déficit de volumen de líquidos",
-          "relacionado_con": "pérdida sanguínea aguda",
-          "evidenciado_por": [
-            "hipotensión",
-            "taquicardia"
-          ]
-        },
-        {
-          "nombre": "Riesgo de shock",
-          "relacionado_con": "hemorragia obstétrica",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "situación crítica posparto",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Estado circulatorio",
         "Severidad del sangrado",
@@ -3587,7 +3172,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00421",
+        "00205",
+        "00400"
+      ]
     },
     {
       "id": "mastitis",
@@ -3622,29 +3219,6 @@
         "evaluar técnica de lactancia",
         "favorecer vaciamiento mamario"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "inflamación mamaria",
-          "evidenciado_por": [
-            "dolor y eritema"
-          ]
-        },
-        {
-          "nombre": "Lactancia materna ineficaz",
-          "relacionado_con": "dolor y técnica inadecuada",
-          "evidenciado_por": [
-            "vaciamiento incompleto"
-          ]
-        },
-        {
-          "nombre": "Hipertermia",
-          "relacionado_con": "proceso infeccioso",
-          "evidenciado_por": [
-            "fiebre"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Control del dolor",
         "Lactancia materna establecida",
@@ -3664,7 +3238,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00132",
+        "00371",
+        "00007"
+      ]
     },
     {
       "id": "depresion",
@@ -3702,23 +3288,6 @@
         "indagar ideas de autolesión",
         "favorecer escucha activa"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Afrontamiento ineficaz",
-          "relacionado_con": "factores estresores y síntomas depresivos",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Baja autoestima crónica",
-          "relacionado_con": "autovaloración negativa",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Riesgo de violencia autodirigida",
-          "relacionado_con": "ideas suicidas o desesperanza",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Estado de ánimo",
         "Afrontamiento",
@@ -3738,7 +3307,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00405",
+        "00483",
+        "00466"
+      ]
     },
     {
       "id": "ansiedad",
@@ -3775,28 +3356,6 @@
         "favorecer ambiente tranquilo",
         "enseñar respiración controlada"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Ansiedad",
-          "relacionado_con": "estresores y percepción de amenaza",
-          "evidenciado_por": [
-            "inquietud",
-            "temor"
-          ]
-        },
-        {
-          "nombre": "Afrontamiento ineficaz",
-          "relacionado_con": "manejo inadecuado del estrés",
-          "evidenciado_por": []
-        },
-        {
-          "nombre": "Patrón de sueño perturbado",
-          "relacionado_con": "hiperactivación emocional",
-          "evidenciado_por": [
-            "dificultad para dormir"
-          ]
-        }
-      ],
       "noc_sugeridos": [
         "Nivel de ansiedad",
         "Afrontamiento",
@@ -3816,7 +3375,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00400",
+        "00405",
+        "00337"
+      ]
     },
     {
       "id": "quemadura",
@@ -3856,27 +3427,6 @@
         "observar perfusión y signos de infección",
         "llevar balance hídrico en quemaduras extensas"
       ],
-      "diagnosticos_nanda_sugeridos": [
-        {
-          "nombre": "Deterioro de la integridad cutánea",
-          "relacionado_con": "lesión térmica o química",
-          "evidenciado_por": [
-            "ampollas o tejido dañado"
-          ]
-        },
-        {
-          "nombre": "Dolor agudo",
-          "relacionado_con": "exposición y daño tisular",
-          "evidenciado_por": [
-            "manifestación verbal de dolor"
-          ]
-        },
-        {
-          "nombre": "Riesgo de infección",
-          "relacionado_con": "pérdida de la barrera cutánea",
-          "evidenciado_por": []
-        }
-      ],
       "noc_sugeridos": [
         "Integridad tisular: piel",
         "Control del dolor",
@@ -3896,7 +3446,19 @@
       "observaciones": "",
       "fuente": "Base MediGuía (borrador inicial para revisión clínica)",
       "fecha_creacion": "2026-04-19",
-      "fecha_actualizacion": "2026-04-19"
+      "fecha_actualizacion": "2026-04-19",
+      "modelos_pae_compatibles": [
+        "corto",
+        "largo"
+      ],
+      "fases_recomendadas": [
+        "general"
+      ],
+      "diagnosticos_sugeridos": [
+        "00046",
+        "00132",
+        "00004"
+      ]
     }
   ]
 }
