@@ -59,88 +59,23 @@ button{
 </div>
 
 <script>
-
-// 🔹 BASE LOCAL (simulada por ahora)
-const baseDatos = [
-  {
-    nombre: "neumonia",
-    sinonimos: ["infeccion pulmonar"],
-    info: "Ya existe en MediGuía (usar datos guardados)"
-  }
-];
-
-// 🔍 BUSCADOR
-function buscar(){
-  const input = document.getElementById("patologia").value.toLowerCase();
-  const estado = document.getElementById("estado");
-  const resultado = document.getElementById("resultado");
-
-  resultado.innerHTML = "";
-  estado.innerHTML = "Buscando...";
-
-  // 1. Buscar en base local
-  const encontrada = baseDatos.find(p =>
-    p.nombre === input ||
-    p.sinonimos.includes(input)
-  );
-
-  if(encontrada){
-    estado.innerHTML = "Patología encontrada en MediGuía";
-    resultado.innerHTML = encontrada.info;
-    return;
-  }
-
-  // 2. Si NO existe → activar IA
-  estado.innerHTML = "No encontrada. Usando IA...";
-
-  usarIA(input);
-}
-
-// 🤖 IA SIMULADA (luego conectamos real)
-function usarIA(patologia){
-  const resultado = document.getElementById("resultado");
-
-  setTimeout(() => {
-    resultado.innerHTML = `
-🧠 Resultado para: ${patologia}
-
-📌 Definición:
-Acumulación anormal relacionada con infección o inflamación.
-
-⚠️ Signos y síntomas:
-- Dolor
-- Fiebre
-- Inflamación
-
-🩺 Diagnósticos NANDA:
-- Dolor agudo
-- Riesgo de infección
-- Deterioro tisular
-
-🎯 NOC:
-- Control del dolor
-- Estado del paciente
-
-🛠️ NIC:
-- Manejo del dolor
-- Vigilancia
-- Control de infección
-
-💡 Usa esta base para construir tu PAE
-`;
-  }, 1200);
-}
 let baseDatos = [];
 
 // Cargar JSON al abrir la página
 async function cargarPatologias() {
   try {
     const res = await fetch("data/patologias.json");
+    if (!res.ok) {
+      throw new Error("No se pudo cargar data/patologias.json");
+    }
+
     const data = await res.json();
     baseDatos = data.patologias || [];
     console.log("Base cargada:", baseDatos.length, "patologías");
   } catch (error) {
     console.error("Error al cargar patologías:", error);
+    document.getElementById("estado").innerHTML =
+      "Error al cargar la base de patologías.";
   }
 }
 
@@ -148,7 +83,7 @@ cargarPatologias();
 
 // Normalizar texto
 function normalizarTexto(texto) {
-  return texto
+  return (texto || "")
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -160,10 +95,13 @@ function buscarEnBase(termino) {
   const terminoNormalizado = normalizarTexto(termino);
 
   return baseDatos.find((patologia) => {
-    const nombre = normalizarTexto(patologia.nombre || "");
-    const sinonimos = (patologia.sinonimos || []).map(s => normalizarTexto(s));
+    const nombre = normalizarTexto(patologia.nombre);
+    const sinonimos = (patologia.sinonimos || []).map(normalizarTexto);
 
-    return nombre === terminoNormalizado || sinonimos.includes(terminoNormalizado);
+    return (
+      nombre === terminoNormalizado ||
+      sinonimos.includes(terminoNormalizado)
+    );
   });
 }
 
@@ -230,7 +168,7 @@ function mostrarPatologia(patologia) {
   `;
 }
 
-// IA temporal o real después
+// IA temporal
 function usarIA(patologia) {
   const resultado = document.getElementById("resultado");
 
@@ -240,6 +178,7 @@ function usarIA(patologia) {
     <p>Aquí entrará la IA para investigar la patología y devolver la información necesaria para construir el PAE.</p>
   `;
 }
+</script>
 </script>
 
 </body>
