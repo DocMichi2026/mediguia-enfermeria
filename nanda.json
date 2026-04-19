@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "version": "NANDA 2024-2026",
+    "total_estimado": 277
+  },
+  "diagnosticos": [
+    {
+      "codigo": "00132",
+      "nombre": "Dolor agudo",
+      "tipo": "real",
+      "dominio_numero": 12,
+      "dominio": "Confort"
+    },
+    {
+      "codigo": "00004",
+      "nombre": "Riesgo de infección",
+      "tipo": "riesgo",
+      "dominio_numero": 11,
+      "dominio": "Seguridad/Protección"
+    },
+    {
+      "codigo": "00044",
+      "nombre": "Deterioro de la integridad tisular",
+      "tipo": "real",
+      "dominio_numero": 11,
+      "dominio": "Seguridad/Protección"
+    },
+    {
+      "codigo": "00007",
+      "nombre": "Hipertermia",
+      "tipo": "real",
+      "dominio_numero": 11,
+      "dominio": "Seguridad/Protección"
+    },
+    {
+      "codigo": "00026",
+      "nombre": "Volumen de líquidos excesivo",
+      "tipo": "real",
+      "dominio_numero": 2,
+      "dominio": "Nutrición"
+    },
+    {
+      "codigo": "00421",
+      "nombre": "Volumen de líquidos inadecuado",
+      "tipo": "real",
+      "dominio_numero": 2,
+      "dominio": "Nutrición"
+    },
+    {
+      "codigo": "00085",
+      "nombre": "Deterioro de la movilidad física",
+      "tipo": "real",
+      "dominio_numero": 4,
+      "dominio": "Actividad/Reposo"
+    },
+    {
+      "codigo": "00298",
+      "nombre": "Disminución de la tolerancia a la actividad",
+      "tipo": "real",
+      "dominio_numero": 4,
+      "dominio": "Actividad/Reposo"
+    },
+    {
+      "codigo": "00032",
+      "nombre": "Patrón respiratorio ineficaz",
+      "tipo": "real",
+      "dominio_numero": 4,
+      "dominio": "Actividad/Reposo"
+    },
+    {
+      "codigo": "00030",
+      "nombre": "Deterioro del intercambio de gases",
+      "tipo": "real",
+      "dominio_numero": 3,
+      "dominio": "Eliminación/Intercambio"
+    },
+    {
+      "codigo": "00016",
+      "nombre": "Deterioro de la eliminación urinaria",
+      "tipo": "real",
+      "dominio_numero": 3,
+      "dominio": "Eliminación/Intercambio"
+    },
+    {
+      "codigo": "00423",
+      "nombre": "Deterioro de la motilidad gastrointestinal",
+      "tipo": "real",
+      "dominio_numero": 3,
+      "dominio": "Eliminación/Intercambio"
+    },
+    {
+      "codigo": "00400",
+      "nombre": "Ansiedad excesiva",
+      "tipo": "real",
+      "dominio_numero": 9,
+      "dominio": "Afrontamiento/Estrés"
+    },
+    {
+      "codigo": "00390",
+      "nombre": "Temor excesivo",
+      "tipo": "real",
+      "dominio_numero": 9,
+      "dominio": "Afrontamiento/Estrés"
+    },
+    {
+      "codigo": "00128",
+      "nombre": "Confusión aguda",
+      "tipo": "real",
+      "dominio_numero": 5,
+      "dominio": "Percepción/Cognición"
+    },
+    {
+      "codigo": "00131",
+      "nombre": "Deterioro de la memoria",
+      "tipo": "real",
+      "dominio_numero": 5,
+      "dominio": "Percepción/Cognición"
+    },
+    {
+      "codigo": "00337",
+      "nombre": "Patrón de sueño ineficaz",
+      "tipo": "real",
+      "dominio_numero": 4,
+      "dominio": "Actividad/Reposo"
+    },
+    {
+      "codigo": "00344",
+      "nombre": "Deterioro de la eliminación intestinal",
+      "tipo": "real",
+      "dominio_numero": 3,
+      "dominio": "Eliminación/Intercambio"
+    },
+    {
+      "codigo": "00039",
+      "nombre": "Riesgo de aspiración",
+      "tipo": "riesgo",
+      "dominio_numero": 11,
+      "dominio": "Seguridad/Protección"
+    },
+    {
+      "codigo": "00205",
+      "nombre": "Riesgo de shock",
+      "tipo": "riesgo",
+      "dominio_numero": 11,
+      "dominio": "Seguridad/Protección"
+    }
+  ]
+}
