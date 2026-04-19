@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Base de PAE · MediGuía Enfermería</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+
+    :root{
+      --rosa:#ff4d88;
+      --rosa-2:#ff80ab;
+      --rosa-3:#ffe4ec;
+      --rosa-4:#ffd6e7;
+      --texto:#7a1e3a;
+      --blanco:#ffffff;
+      --sombra:0 12px 28px rgba(255,77,136,0.10);
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,#fff0f5,#ffe4ec,#ffd6e7);
+      color:var(--texto);
+    }
+
+    header{
+      background: linear-gradient(135deg,var(--rosa),var(--rosa-2),#ff99c2);
+      color:white;
+      padding:18px 24px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 6px 18px rgba(0,0,0,0.10);
+    }
+
+    nav{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-size:1.6rem;
+      font-weight:bold;
+    }
+
+    .logo span{color:#ffe4ec;}
+
+    .menu{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .menu a,
+    .menu button{
+      background:rgba(255,255,255,0.18);
+      border:none;
+      color:white;
+      padding:10px 14px;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:bold;
+      text-decoration:none;
+      transition:0.25s;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .menu a:hover,
+    .menu button:hover{
+      background:white;
+      color:var(--rosa);
+    }
+
+    section{
+      max-width:1200px;
+      margin:0 auto 22px auto;
+      padding:0 20px;
+    }
+
+    .hero{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:1.08fr 0.92fr;
+      gap:18px;
+    }
+
+    .hero-box,
+    .hero-side,
+    .box,
+    .result-box,
+    .card{
+      background:var(--blanco);
+      border-radius:26px;
+      box-shadow:var(--sombra);
+    }
+
+    .hero-box,
+    .hero-side,
+    .box,
+    .result-box{
+      padding:26px;
+    }
+
+    .hero-box h1{
+      color:var(--rosa);
+      font-size:2.35rem;
+      line-height:1.08;
+      margin-bottom:12px;
+    }
+
+    .hero-box p,
+    .hero-side p,
+    .section-subtitle,
+    .result-box p,
+    .helper-text,
+    .card p{
+      line-height:1.7;
+      color:var(--texto);
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+
+    .btn{
+      border:none;
+      border-radius:14px;
+      padding:12px 18px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.25s;
+    }
+
+    .btn-primary{background:var(--rosa);color:white;}
+    .btn-primary:hover{background:#e6005c;}
+    .btn-secondary{background:var(--rosa-3);color:var(--rosa);}
+    .btn-secondary:hover{background:var(--rosa-4);}
+
+    .hero-side{
+      background:linear-gradient(135deg,#fff8fb,#ffffff);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .emoji{font-size:3.3rem;margin-bottom:10px;}
+    .hero-side h3{color:var(--rosa);margin-bottom:10px;font-size:1.35rem;}
+
+    .section-title{
+      color:var(--rosa);
+      font-size:1.7rem;
+      margin-bottom:8px;
+    }
+
+    .section-subtitle{margin-bottom:18px;max-width:75ch;}
+
+    .toolbar{
+      display:grid;
+      grid-template-columns:1fr 220px 160px;
+      gap:12px;
+    }
+
+    input,
+    select{
+      width:100%;
+      border:2px solid var(--rosa-4);
+      border-radius:14px;
+      padding:13px 14px;
+      font-size:1rem;
+      outline:none;
+      background:white;
+      color:var(--texto);
+    }
+
+    input:focus,
+    select:focus{
+      border-color:var(--rosa);
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:16px;
+      margin-top:18px;
+    }
+
+    .card{
+      padding:20px;
+      background:linear-gradient(135deg,#fff8fb,#ffeef4);
+      border:1px solid var(--rosa-4);
+      min-height:220px;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .card h3{
+      color:var(--rosa);
+      margin-bottom:10px;
+      font-size:1.12rem;
+      line-height:1.3;
+    }
+
+    .card p{
+      margin-bottom:16px;
+      flex:1;
+    }
+
+    .card .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-bottom:14px;
+    }
+
+    .tag{
+      display:inline-block;
+      padding:8px 11px;
+      border-radius:999px;
+      background:var(--rosa-3);
+      color:var(--rosa);
+      font-weight:bold;
+      font-size:0.86rem;
+    }
+
+    .card button{
+      align-self:flex-start;
+      background:white;
+      color:var(--rosa);
+      border:1px solid #ffc0d6;
+      padding:10px 14px;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+
+    .card button:hover{
+      background:var(--rosa-3);
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns:1fr 420px;
+      gap:18px;
+      align-items:start;
+    }
+
+    .result-box{
+      position:sticky;
+      top:92px;
+      min-height:260px;
+    }
+
+    .placeholder{
+      border:2px dashed #ffbfd3;
+      background:#fff9fc;
+      border-radius:22px;
+      padding:24px;
+      text-align:center;
+    }
+
+    .placeholder h3{
+      color:var(--rosa);
+      margin-bottom:10px;
+    }
+
+    .ficha-header{
+      margin-bottom:16px;
+      padding-bottom:12px;
+      border-bottom:2px solid var(--rosa-4);
+    }
+
+    .ficha-header h3{
+      color:var(--rosa);
+      margin-bottom:8px;
+      font-size:1.5rem;
+      line-height:1.2;
+    }
+
+    .ficha-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+
+    .block{
+      background:#fff8fb;
+      border:1px solid var(--rosa-4);
+      border-radius:18px;
+      padding:16px;
+    }
+
+    .block h4{
+      color:var(--rosa);
+      margin-bottom:10px;
+      font-size:1rem;
+    }
+
+    .block ul{
+      padding-left:18px;
+      line-height:1.6;
+    }
+
+    .block li{margin-bottom:7px;}
+
+    .highlight{
+      display:inline-block;
+      background:var(--rosa-3);
+      color:var(--rosa);
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:bold;
+      margin-top:10px;
+      font-size:0.9rem;
+    }
+
+    .helper-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .helper-pill{
+      display:inline-flex;
+      padding:8px 12px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--rosa-4);
+      color:#b84b79;
+      font-weight:bold;
+      font-size:0.9rem;
+    }
+
+    .hidden{display:none !important;}
+
+    @media(max-width:1024px){
+      .layout{grid-template-columns:1fr;}
+      .result-box{position:static;}
+      .toolbar{grid-template-columns:1fr;}
+    }
+
+    @media(max-width:780px){
+      .hero{grid-template-columns:1fr;}
+      .hero-box h1{font-size:2rem;}
+      nav{justify-content:center;}
+      .menu{justify-content:center;}
+    }
+
+    @media(max-width:640px){
+      header{padding:16px 18px;}
+      .hero-box,
+      .hero-side,
+      .box,
+      .result-box,
+      .card{padding:22px;}
+      .menu,
+      .hero-buttons{width:100%;}
+      .menu a,
+      .menu button,
+      .btn{width:100%;}
+      .section-title{font-size:1.45rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MediGuía <span>Enfermería</span></div>
+      <div class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="generador-pae.html">Generador</a>
+        <button onclick="irA('explorar')">Explorar</button>
+        <button onclick="irA('ficha')">Ficha</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-box">
+      <h1>Base de PAE</h1>
+      <p>
+        Aquí se consulta la base de patologías para revisar ejemplos y estructuras listas. Esta página lee tu archivo
+        <strong>data/patologias.json</strong> y muestra las fichas en forma ordenada, separadas del generador.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="irA('explorar')">Ver patologías</button>
+        <button class="btn btn-secondary" onclick="cargarPatologias()">Recargar base</button>
+      </div>
+    </div>
+
+    <div class="hero-side">
+      <div class="emoji">📚</div>
+      <h3>Consulta sin mezclar</h3>
+      <p>
+        Aquí solo ves ejemplos y fichas. El generador queda aparte para que cada módulo tenga una función clara.
+      </p>
+      <span class="highlight">Conectado a data/patologias.json</span>
+    </div>
+  </section>
+
+  <section id="explorar">
+    <div class="layout">
+      <div class="box">
+        <h2 class="section-title">Explorar patologías</h2>
+        <p class="section-subtitle">
+          Busca por nombre, organiza el orden y abre una ficha completa al lado.
+        </p>
+
+        <div class="toolbar">
+          <input id="busqueda" type="text" placeholder="Buscar patología...">
+          <select id="ordenSelect">
+            <option value="az">Orden A-Z</option>
+            <option value="za">Orden Z-A</option>
+          </select>
+          <button class="btn btn-primary" onclick="aplicarFiltros()">Aplicar</button>
+        </div>
+
+        <div class="helper-row">
+          <span class="helper-pill" id="contadorPatologias">0 patologías</span>
+          <span class="helper-pill">Base separada del generador</span>
+          <span class="helper-pill">Fichas rápidas</span>
+        </div>
+
+        <div class="cards" id="cardsContainer"></div>
+      </div>
+
+      <div class="result-box" id="ficha">
+        <div class="placeholder" id="placeholderFicha">
+          <h3>Selecciona una patología</h3>
+          <p>Haz clic en “Ver ficha” para mostrar aquí la estructura base del PAE.</p>
+        </div>
+        <div id="fichaContenido" class="hidden"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    MediGuía Enfermería · Base de PAE
+  </footer>
+
+  <script>
+    const estado = {
+      patologias: [],
+      filtradas: [],
+      fichaActiva: null
+    };
+
+    function irA(id){
+      document.getElementById(id).scrollIntoView({ behavior:'smooth' });
+    }
+
+    function normalizarPatologia(item){
+      if(typeof item === 'string'){
+        return {
+          nombre: item,
+          descripcion: 'Patología cargada desde la base.',
+          valoracion: [],
+          nanda: [],
+          noc: [],
+          nic: [],
+          cuidados: []
+        };
+      }
+
+      return {
+        nombre: item.nombre || item.patologia || item.titulo || 'Patología sin nombre',
+        descripcion: item.descripcion || item.resumen || item.definicion || 'Patología cargada desde la base.',
+        valoracion: item.valoracion || [],
+        nanda: item.nanda || item.diagnosticos || [],
+        noc: item.noc || [],
+        nic: item.nic || [],
+        cuidados: item.cuidados || []
+      };
+    }
+
+    async function cargarPatologias(){
+      const container = document.getElementById('cardsContainer');
+      container.innerHTML = '<p>Cargando patologías...</p>';
+
+      try{
+        const response = await fetch('data/patologias.json');
+        if(!response.ok) throw new Error('No se pudo leer el archivo JSON');
+
+        const data = await response.json();
+        const lista = Array.isArray(data) ? data : (data.patologias || data.items || []);
+
+        estado.patologias = lista.map(normalizarPatologia);
+        aplicarFiltros();
+      }catch(error){
+        console.error(error);
+        container.innerHTML = '<p>No se pudieron cargar las patologías.</p>';
+      }
+    }
+
+    function truncar(texto, max=120){
+      if(!texto) return 'Sin descripción disponible.';
+      return texto.length > max ? texto.slice(0, max).trim() + '...' : texto;
+    }
+
+    function renderCards(lista){
+      const container = document.getElementById('cardsContainer');
+      const contador = document.getElementById('contadorPatologias');
+      contador.textContent = `${lista.length} patologías`;
+
+      if(!lista.length){
+        container.innerHTML = '<p>No encontré patologías con ese filtro.</p>';
+        return;
+      }
+
+      container.innerHTML = lista.map((item, index) => `
+        <div class="card">
+          <div class="meta">
+            <span class="tag">PAE base</span>
+            ${item.nanda.length ? '<span class="tag">Con NANDA</span>' : '<span class="tag">General</span>'}
+          </div>
+          <h3>${item.nombre}</h3>
+          <p>${truncar(item.descripcion, 135)}</p>
+          <button onclick="verFicha(${index})">Ver ficha</button>
+        </div>
+      `).join('');
+    }
+
+    function aplicarFiltros(){
+      const texto = document.getElementById('busqueda').value.trim().toLowerCase();
+      const orden = document.getElementById('ordenSelect').value;
+
+      let lista = [...estado.patologias];
+
+      if(texto){
+        lista = lista.filter(item => item.nombre.toLowerCase().includes(texto));
+      }
+
+      lista.sort((a,b) => {
+        return orden === 'az'
+          ? a.nombre.localeCompare(b.nombre, 'es')
+          : b.nombre.localeCompare(a.nombre, 'es');
+      });
+
+      estado.filtradas = lista;
+      renderCards(lista);
+    }
+
+    function generarLista(items, fallback){
+      if(!items || !items.length){
+        return `<ul><li>${fallback}</li></ul>`;
+      }
+      return `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+    }
+
+    function verFicha(index){
+      const item = estado.filtradas[index];
+      if(!item) return;
+
+      estado.fichaActiva = item;
+
+      document.getElementById('placeholderFicha').classList.add('hidden');
+      const ficha = document.getElementById('fichaContenido');
+      ficha.classList.remove('hidden');
+
+      ficha.innerHTML = `
+        <div class="ficha-header">
+          <h3>${item.nombre}</h3>
+          <p>${item.descripcion}</p>
+          <span class="highlight">Ficha cargada desde la base</span>
+        </div>
+
+        <div class="ficha-grid">
+          <div class="block">
+            <h4>Valoración</h4>
+            ${generarLista(item.valoracion, 'Agregar valoración específica para esta patología.')}
+          </div>
+
+          <div class="block">
+            <h4>Diagnósticos NANDA</h4>
+            ${generarLista(item.nanda, 'Agregar diagnósticos de enfermería según el caso.')}
+          </div>
+
+          <div class="block">
+            <h4>Resultados esperados NOC</h4>
+            ${generarLista(item.noc, 'Agregar resultados esperados según el objetivo del cuidado.')}
+          </div>
+
+          <div class="block">
+            <h4>Intervenciones NIC</h4>
+            ${generarLista(item.nic, 'Agregar intervenciones de enfermería apropiadas.')}
+          </div>
+
+          <div class="block">
+            <h4>Cuidados prioritarios</h4>
+            ${generarLista(item.cuidados, 'Completar cuidados prioritarios para esta ficha.')}
+          </div>
+        </div>
+      `;
+
+      irA('ficha');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      cargarPatologias();
+      document.getElementById('busqueda').addEventListener('input', aplicarFiltros);
+      document.getElementById('ordenSelect').addEventListener('change', aplicarFiltros);
+    });
+  </script>
+</body>
+</html>
