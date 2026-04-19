@@ -1,296 +1,729 @@
-export default function MediGuiaEnfermeriaLanding() {
-  const features = [
-    {
-      title: "Reducción real de tiempo",
-      desc: "Convierte un proceso de más de 5 horas en un flujo guiado que puede completarse en mucho menos tiempo.",
-    },
-    {
-      title: "Banco de patologías",
-      desc: "Selecciona una patología y visualiza síntomas frecuentes, posibles y no típicos para construir casos coherentes.",
-    },
-    {
-      title: "Estructura automática",
-      desc: "Organiza anamnesis, valoración, diagnósticos, NOC, NIC y evaluación dentro de un formato ordenado.",
-    },
-    {
-      title: "Pensada para estudiantes",
-      desc: "Diseñada para facilitar la redacción de PAE sin reemplazar el criterio clínico ni el análisis de enfermería.",
-    },
-  ];
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediGuía Enfermería</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  const steps = [
-    "Selecciona la patología o inicia un caso desde cero.",
-    "Completa los datos del paciente y la valoración inicial.",
-    "Elige síntomas compatibles y ajusta el caso clínico.",
-    "Genera la base del PAE y edita lo necesario antes de exportar.",
-  ];
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #06131f, #0b1f33, #08111d);
+      color: white;
+      line-height: 1.6;
+    }
 
-  const sections = [
-    "Datos del paciente",
-    "Patología y procedimiento",
-    "Valoración y entrevista",
-    "Anamnesis",
-    "Diagnósticos NANDA",
-    "NOC y NIC",
-    "Plan de cuidados",
-    "Evaluación final",
-  ];
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-  return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-cyan-300">MediGuía</p>
-            <h1 className="text-xl font-bold">Enfermería</h1>
-          </div>
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-          <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
-            <a href="#inicio" className="transition hover:text-white">Inicio</a>
-            <a href="#funciones" className="transition hover:text-white">Funciones</a>
-            <a href="#como-funciona" className="transition hover:text-white">Cómo funciona</a>
-            <a href="#demo" className="transition hover:text-white">Demo</a>
-          </nav>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(6, 19, 31, 0.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
 
-          <button className="rounded-2xl bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:scale-[1.02]">
-            Crear PAE
-          </button>
-        </div>
-      </header>
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
 
-      <main id="inicio">
-        <section className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.18),transparent_28%),radial-gradient(circle_at_left,rgba(59,130,246,0.18),transparent_25%)]" />
+    .logo small {
+      display: block;
+      color: #69e5ff;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
 
-          <div className="relative mx-auto grid min-h-[82vh] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2">
-            <div>
-              <div className="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200">
-                Plataforma para crear PAE más rápido
-              </div>
+    .logo h1 {
+      font-size: 24px;
+    }
 
-              <h2 className="max-w-3xl text-4xl font-black leading-tight md:text-6xl">
-                Crea tu <span className="text-cyan-300">PAE</span> con menos carga y más orden
-              </h2>
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      color: #c9d7e3;
+      font-size: 15px;
+    }
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                MediGuía Enfermería está pensada para ayudarte a organizar casos clínicos, seleccionar síntomas coherentes y generar una base estructurada del Proceso de Atención en Enfermería sin perder horas en lo repetitivo.
-              </p>
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-weight: bold;
+      transition: 0.25s ease;
+      cursor: pointer;
+      border: none;
+    }
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <button className="rounded-2xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 shadow-xl shadow-cyan-500/20 transition hover:scale-[1.02]">
-                  Empezar demo
-                </button>
-                <button className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10">
-                  Ver estructura
-                </button>
-              </div>
+    .btn-primary {
+      background: #69e5ff;
+      color: #06131f;
+    }
 
-              <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">+5h</p>
-                  <p className="mt-1 text-sm text-slate-300">Tiempo que suele tomar hacerlo manualmente</p>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">30–60m</p>
-                  <p className="mt-1 text-sm text-slate-300">Meta del flujo guiado de la plataforma</p>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">1 sistema</p>
-                  <p className="mt-1 text-sm text-slate-300">Para ordenar valoración, diagnósticos y plan</p>
-                </div>
-              </div>
-            </div>
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
 
-            <div className="relative">
-              <div className="absolute -inset-5 rounded-[2rem] bg-cyan-400/10 blur-3xl" />
-              <div className="relative rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur-xl">
-                <div className="mb-4 flex items-center justify-between border-b border-white/10 pb-4">
-                  <div>
-                    <p className="text-sm text-slate-400">Vista previa</p>
-                    <h3 className="text-xl font-bold">Nuevo PAE</h3>
-                  </div>
-                  <div className="rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-medium text-emerald-300">
-                    Flujo guiado
-                  </div>
-                </div>
+    .btn-secondary {
+      background: rgba(255,255,255,0.06);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
 
-                <div className="space-y-4">
-                  <div className="rounded-2xl bg-slate-900/80 p-4">
-                    <p className="text-sm text-slate-400">Patología seleccionada</p>
-                    <p className="mt-1 font-semibold">Aumento de la presión intracraneal</p>
-                  </div>
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.12);
+    }
 
-                  <div className="rounded-2xl bg-slate-900/80 p-4">
-                    <p className="text-sm text-slate-400">Síntomas compatibles</p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {[
-                        "Cefalea intensa",
-                        "Náuseas",
-                        "Vómitos",
-                        "Fotofobia",
-                        "Mareo",
-                        "Alteración del descanso",
-                      ].map((item) => (
-                        <span
-                          key={item}
-                          className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-sm text-cyan-200"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+    .hero {
+      padding: 90px 0 70px;
+    }
 
-                  <div className="rounded-2xl bg-slate-900/80 p-4">
-                    <p className="text-sm text-slate-400">Secciones que se generarán</p>
-                    <div className="mt-3 grid gap-2 sm:grid-cols-2">
-                      {sections.map((item) => (
-                        <div key={item} className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-200">
-                          {item}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
 
-        <section id="funciones" className="mx-auto max-w-7xl px-6 py-20">
-          <div className="mb-10 max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Funciones</p>
-            <h3 className="mt-3 text-3xl font-bold md:text-4xl">Lo que hace fuerte a MediGuía Enfermería</h3>
-            <p className="mt-4 text-slate-300">
-              La idea no es reemplazar el razonamiento clínico, sino quitar la carga repetitiva y ordenar el trabajo para que crear un PAE sea más rápido y coherente.
-            </p>
-          </div>
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(105, 229, 255, 0.12);
+      border: 1px solid rgba(105, 229, 255, 0.25);
+      color: #9decff;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {features.map((feature) => (
-              <div key={feature.title} className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/20">
-                <div className="mb-4 h-11 w-11 rounded-2xl bg-cyan-400/15" />
-                <h4 className="text-lg font-semibold">{feature.title}</h4>
-                <p className="mt-3 text-sm leading-7 text-slate-300">{feature.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+    .hero h2 {
+      font-size: 58px;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
 
-        <section id="como-funciona" className="border-y border-white/10 bg-white/[0.03]">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr]">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Cómo funciona</p>
-              <h3 className="mt-3 text-3xl font-bold md:text-4xl">Un flujo simple para construir un PAE</h3>
-              <div className="mt-8 space-y-5">
-                {steps.map((step, index) => (
-                  <div key={step} className="flex gap-4 rounded-2xl border border-white/10 bg-slate-900/50 p-5">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-cyan-400 text-sm font-bold text-slate-950">
-                      {index + 1}
-                    </div>
-                    <p className="pt-1 text-slate-200">{step}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+    .hero h2 span {
+      color: #69e5ff;
+    }
 
-            <div id="demo" className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-2xl">
-              <div className="mb-6 flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-slate-400">Demo del generador</p>
-                  <h4 className="text-2xl font-bold">Caso guiado</h4>
-                </div>
-                <div className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200">
-                  Beta visual
-                </div>
-              </div>
+    .hero p {
+      color: #c9d7e3;
+      font-size: 18px;
+      max-width: 700px;
+    }
 
-              <div className="space-y-4">
-                <div>
-                  <label className="mb-2 block text-sm text-slate-300">Patología</label>
-                  <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200">
-                    Seleccionar patología...
-                  </div>
-                </div>
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
 
-                <div>
-                  <label className="mb-2 block text-sm text-slate-300">Etapa clínica</label>
-                  <div className="grid grid-cols-2 gap-3">
-                    {[
-                      "Preoperatorio",
-                      "Postoperatorio",
-                      "Hospitalización",
-                      "Consulta externa",
-                    ].map((item) => (
-                      <button
-                        key={item}
-                        className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200 transition hover:bg-white/10"
-                      >
-                        {item}
-                      </button>
-                    ))}
-                  </div>
-                </div>
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 36px;
+    }
 
-                <div>
-                  <label className="mb-2 block text-sm text-slate-300">Síntomas sugeridos</label>
-                  <div className="flex flex-wrap gap-2">
-                    {[
-                      "Dolor",
-                      "Fiebre",
-                      "Náuseas",
-                      "Debilidad",
-                      "Ansiedad",
-                      "Pérdida del apetito",
-                    ].map((item, i) => (
-                      <button
-                        key={item}
-                        className={`rounded-full px-3 py-1.5 text-sm transition ${
-                          i < 4
-                            ? "border border-cyan-400/30 bg-cyan-400/10 text-cyan-200"
-                            : "border border-white/10 bg-white/5 text-slate-300"
-                        }`}
-                      >
-                        {item}
-                      </button>
-                    ))}
-                  </div>
-                </div>
+    .stat-box,
+    .card,
+    .preview-box,
+    .step,
+    .demo-panel,
+    .cta-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 22px;
+    }
 
-                <div className="rounded-2xl border border-dashed border-cyan-400/30 bg-cyan-400/5 p-4 text-sm leading-7 text-slate-300">
-                  Aquí después conectaremos el banco de patologías, la lógica de síntomas compatibles y la generación de texto base para el PAE.
-                </div>
+    .stat-box {
+      padding: 18px;
+    }
 
-                <button className="w-full rounded-2xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:scale-[1.01]">
-                  Continuar al formulario
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+    .stat-box h3 {
+      color: #69e5ff;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
 
-        <section className="mx-auto max-w-7xl px-6 py-20">
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-400/15 via-slate-900 to-slate-900 p-8 md:p-12">
-            <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Objetivo</p>
-              <h3 className="mt-3 text-3xl font-bold md:text-5xl">
-                Menos tiempo copiando, más tiempo pensando el caso
-              </h3>
-              <p className="mt-5 text-lg leading-8 text-slate-300">
-                La meta de esta plataforma es ayudarte a construir PAE con una base más rápida, mejor organizada y clínicamente coherente, para que el esfuerzo se enfoque en el criterio de enfermería y no en repetir formato una y otra vez.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <button className="rounded-2xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:scale-[1.02]">
-                  Probar demo
-                </button>
-                <button className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10">
-                  Ver próximas funciones
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+    .stat-box p {
+      font-size: 14px;
+      color: #c9d7e3;
+    }
+
+    .preview-box {
+      padding: 24px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    }
+
+    .preview-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .preview-tag {
+      background: rgba(80, 255, 170, 0.15);
+      color: #8ff0b8;
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .mini-box {
+      background: rgba(6, 19, 31, 0.8);
+      border-radius: 18px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .mini-box small,
+    .section-label {
+      color: #9eb2c4;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      background: rgba(105, 229, 255, 0.12);
+      border: 1px solid rgba(105, 229, 255, 0.2);
+      color: #9decff;
+    }
+
+    .sections-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .section-pill {
+      padding: 11px 12px;
+      border-radius: 14px;
+      font-size: 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #dde8f2;
+    }
+
+    .features,
+    .flow,
+    .final-cta {
+      padding: 80px 0;
+    }
+
+    .section-top {
+      max-width: 700px;
+      margin-bottom: 38px;
+    }
+
+    .section-top h3 {
+      font-size: 42px;
+      margin: 10px 0 14px;
+    }
+
+    .section-top p {
+      color: #c9d7e3;
+      font-size: 17px;
+    }
+
+    .eyebrow {
+      color: #69e5ff;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      padding: 24px;
+    }
+
+    .card-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      background: rgba(105, 229, 255, 0.15);
+      margin-bottom: 16px;
+    }
+
+    .card h4 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #c9d7e3;
+      font-size: 15px;
+    }
+
+    .flow {
+      background: rgba(255,255,255,0.03);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .flow-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.95fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .step {
+      padding: 18px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: #69e5ff;
+      color: #06131f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .demo-panel {
+      padding: 24px;
+    }
+
+    .demo-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .demo-badge {
+      font-size: 12px;
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: rgba(105, 229, 255, 0.12);
+      color: #9decff;
+      border: 1px solid rgba(105, 229, 255, 0.2);
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 8px;
+      color: #dbe8f3;
+      font-size: 15px;
+    }
+
+    .fake-input,
+    .option-btn,
+    .symptom-btn {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: white;
+      border-radius: 15px;
+    }
+
+    .fake-input {
+      padding: 14px 16px;
+      color: #afc2d3;
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .option-btn {
+      padding: 13px 14px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .option-btn:hover,
+    .symptom-btn:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .symptoms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .symptom-btn {
+      padding: 9px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .symptom-btn.active {
+      background: rgba(105, 229, 255, 0.12);
+      border-color: rgba(105, 229, 255, 0.25);
+      color: #9decff;
+    }
+
+    .hint-box {
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(105, 229, 255, 0.07);
+      border: 1px dashed rgba(105, 229, 255, 0.28);
+      color: #c9d7e3;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .cta-box {
+      padding: 40px;
+      background: linear-gradient(135deg, rgba(105,229,255,0.12), rgba(255,255,255,0.04));
+    }
+
+    .cta-box h3 {
+      font-size: 46px;
+      max-width: 800px;
+      line-height: 1.08;
+      margin: 10px 0 16px;
+    }
+
+    .cta-box p {
+      color: #d2dfeb;
+      max-width: 800px;
+      font-size: 18px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 14px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      padding: 28px 0 40px;
+      text-align: center;
+      color: #8fa3b5;
+      font-size: 14px;
+    }
+
+    @media (max-width: 1100px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero-grid,
+      .flow-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h2 {
+        font-size: 40px;
+      }
+
+      .hero-stats,
+      .cards,
+      .options-grid,
+      .sections-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box h3,
+      .section-top h3 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <small>MediGuía</small>
+        <h1>Enfermería</h1>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#demo">Demo</a>
+      </nav>
+
+      <a href="#demo" class="btn btn-primary">Crear PAE</a>
     </div>
-  );
-}
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">Plataforma para crear PAE más rápido</div>
+        <h2>Crea tu <span>PAE</span> con menos carga y más orden</h2>
+        <p>
+          MediGuía Enfermería está pensada para ayudarte a organizar casos clínicos,
+          seleccionar síntomas coherentes y generar una base estructurada del Proceso de
+          Atención en Enfermería sin perder horas en lo repetitivo.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#demo" class="btn btn-primary">Empezar demo</a>
+          <a href="#funciones" class="btn btn-secondary">Ver estructura</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-box">
+            <h3>+5h</h3>
+            <p>Tiempo que suele tomar hacerlo manualmente</p>
+          </div>
+          <div class="stat-box">
+            <h3>30–60m</h3>
+            <p>Meta del flujo guiado de la plataforma</p>
+          </div>
+          <div class="stat-box">
+            <h3>1 sistema</h3>
+            <p>Para ordenar valoración, diagnósticos y plan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-box">
+        <div class="preview-head">
+          <div>
+            <small class="section-label">Vista previa</small>
+            <h3>Nuevo PAE</h3>
+          </div>
+          <div class="preview-tag">Flujo guiado</div>
+        </div>
+
+        <div class="mini-box">
+          <small>Patología seleccionada</small>
+          <strong>Aumento de la presión intracraneal</strong>
+        </div>
+
+        <div class="mini-box">
+          <small>Síntomas compatibles</small>
+          <div class="tags">
+            <span class="tag">Cefalea intensa</span>
+            <span class="tag">Náuseas</span>
+            <span class="tag">Vómitos</span>
+            <span class="tag">Fotofobia</span>
+            <span class="tag">Mareo</span>
+            <span class="tag">Alteración del descanso</span>
+          </div>
+        </div>
+
+        <div class="mini-box">
+          <small>Secciones que se generarán</small>
+          <div class="sections-grid">
+            <div class="section-pill">Datos del paciente</div>
+            <div class="section-pill">Patología y procedimiento</div>
+            <div class="section-pill">Valoración y entrevista</div>
+            <div class="section-pill">Anamnesis</div>
+            <div class="section-pill">Diagnósticos NANDA</div>
+            <div class="section-pill">NOC y NIC</div>
+            <div class="section-pill">Plan de cuidados</div>
+            <div class="section-pill">Evaluación final</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="funciones">
+    <div class="container">
+      <div class="section-top">
+        <div class="eyebrow">Funciones</div>
+        <h3>Lo que hace fuerte a MediGuía Enfermería</h3>
+        <p>
+          La idea no es reemplazar el razonamiento clínico, sino quitar la carga repetitiva
+          y ordenar el trabajo para que crear un PAE sea más rápido y coherente.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Reducción real de tiempo</h4>
+          <p>Convierte un proceso de más de 5 horas en un flujo guiado que puede completarse mucho más rápido.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Banco de patologías</h4>
+          <p>Selecciona una patología y visualiza síntomas frecuentes, posibles y no típicos para construir casos coherentes.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Estructura automática</h4>
+          <p>Organiza anamnesis, valoración, diagnósticos, NOC, NIC y evaluación dentro de un formato ordenado.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Pensada para estudiantes</h4>
+          <p>Diseñada para facilitar la redacción del PAE sin reemplazar el criterio clínico ni el análisis de enfermería.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flow" id="como-funciona">
+    <div class="container flow-grid">
+      <div>
+        <div class="eyebrow">Cómo funciona</div>
+        <h3 style="font-size:42px; margin-top:10px;">Un flujo simple para construir un PAE</h3>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div>Selecciona la patología o inicia un caso desde cero.</div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div>Completa los datos del paciente y la valoración inicial.</div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div>Elige síntomas compatibles y ajusta el caso clínico.</div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div>Genera la base del PAE y edita lo necesario antes de exportar.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-panel" id="demo">
+        <div class="demo-top">
+          <div>
+            <small class="section-label">Demo del generador</small>
+            <h3>Caso guiado</h3>
+          </div>
+          <div class="demo-badge">Beta visual</div>
+        </div>
+
+        <div class="field">
+          <label>Patología</label>
+          <div class="fake-input">Seleccionar patología...</div>
+        </div>
+
+        <div class="field">
+          <label>Etapa clínica</label>
+          <div class="options-grid">
+            <div class="option-btn">Preoperatorio</div>
+            <div class="option-btn">Postoperatorio</div>
+            <div class="option-btn">Hospitalización</div>
+            <div class="option-btn">Consulta externa</div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Síntomas sugeridos</label>
+          <div class="symptoms">
+            <div class="symptom-btn active">Dolor</div>
+            <div class="symptom-btn active">Fiebre</div>
+            <div class="symptom-btn active">Náuseas</div>
+            <div class="symptom-btn active">Debilidad</div>
+            <div class="symptom-btn">Ansiedad</div>
+            <div class="symptom-btn">Pérdida del apetito</div>
+          </div>
+        </div>
+
+        <div class="hint-box">
+          Aquí después conectaremos el banco de patologías, la lógica de síntomas compatibles
+          y la generación de texto base para el PAE.
+        </div>
+
+        <a href="#" class="btn btn-primary" style="width:100%; text-align:center;">Continuar al formulario</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-box">
+        <div class="eyebrow">Objetivo</div>
+        <h3>Menos tiempo copiando, más tiempo pensando el caso</h3>
+        <p>
+          La meta de esta plataforma es ayudarte a construir PAE con una base más rápida,
+          mejor organizada y clínicamente coherente, para que el esfuerzo se enfoque en el
+          criterio de enfermería y no en repetir formato una y otra vez.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="#demo" class="btn btn-primary">Probar demo</a>
+          <a href="#funciones" class="btn btn-secondary">Ver próximas funciones</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    MediGuía Enfermería · Base inicial del proyecto
+  </footer>
+</body>
+</html>
