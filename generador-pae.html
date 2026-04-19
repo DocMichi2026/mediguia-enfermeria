@@ -325,6 +325,18 @@
 
     .path-list li{margin-bottom:6px;}
 
+    .debug{
+      margin-top:14px;
+      font-size:0.9rem;
+      line-height:1.5;
+      color:#8a3b5a;
+      background:#fff8fb;
+      border:1px dashed #ffbfd3;
+      padding:12px;
+      border-radius:14px;
+      white-space:pre-wrap;
+    }
+
     @media(max-width:1024px){
       .layout{grid-template-columns:1fr;}
       .sidebar{position:static;}
@@ -482,6 +494,7 @@
         </div>
 
         <div id="previewContent" class="hidden"></div>
+        <div id="debugBox" class="debug hidden"></div>
       </div>
     </div>
   </section>
@@ -504,7 +517,27 @@
     }
 
     function capitalizar(texto=''){
-      return texto.charAt(0).toUpperCase() + texto.slice(1);
+      return texto ? texto.charAt(0).toUpperCase() + texto.slice(1) : '';
+    }
+
+    function asegurarArray(valor){
+      if(Array.isArray(valor)) return valor;
+      if(valor == null) return [];
+      return [valor];
+    }
+
+    function normalizarDiagnosticos(lista){
+      return asegurarArray(lista).map(dx => {
+        if(typeof dx === 'string') return dx;
+        if(!dx || typeof dx !== 'object') return 'Diagnóstico NANDA';
+
+        const relacionado = dx.relacionado_con ? ` relacionado con ${dx.relacionado_con}` : '';
+        const evidenciado = Array.isArray(dx.evidenciado_por) && dx.evidenciado_por.length
+          ? ` evidenciado por ${dx.evidenciado_por.join(', ')}`
+          : '';
+
+        return `${dx.nombre || 'Diagnóstico NANDA'}${relacionado}${evidenciado}`;
+      });
     }
 
     function normalizarPatologia(item){
@@ -519,31 +552,23 @@
           nanda: [],
           noc: [],
           nic: [],
-          cuidados: []
+          cuidados: [],
+          original: item
         };
       }
-
-      const diagnosNanda = Array.isArray(item.diagnosticos_nanda_sugeridos)
-        ? item.diagnosticos_nanda_sugeridos.map(dx => {
-            if(typeof dx === 'string') return dx;
-            const relacionado = dx.relacionado_con ? ` relacionado con ${dx.relacionado_con}` : '';
-            const evidenciado = Array.isArray(dx.evidenciado_por) && dx.evidenciado_por.length
-              ? ` evidenciado por ${dx.evidenciado_por.join(', ')}` : '';
-            return `${dx.nombre || 'Diagnóstico NANDA'}${relacionado}${evidenciado}`;
-          })
-        : [];
 
       return {
         nombre: item.nombre || item.patologia || item.titulo || 'Patología sin nombre',
         descripcion: item.descripcion_breve || item.descripcion || item.definicion || item.resumen || 'Patología cargada desde la base.',
         categoria: item.categoria || 'General',
-        sinonimos: item.sinonimos || [],
-        signos_sintomas: item.signos_sintomas || [],
-        valoracion: item.valoracion_enfermeria || item.valoracion || [],
-        nanda: diagnosNanda,
-        noc: item.noc_sugeridos || item.noc || [],
-        nic: item.nic_sugeridos || item.nic || [],
-        cuidados: item.cuidados_generales || item.cuidados || []
+        sinonimos: asegurarArray(item.sinonimos),
+        signos_sintomas: asegurarArray(item.signos_sintomas || item.signos || item.sintomas),
+        valoracion: asegurarArray(item.valoracion_enfermeria || item.valoracion),
+        nanda: normalizarDiagnosticos(item.diagnosticos_nanda_sugeridos || item.nanda || item.diagnosticos),
+        noc: asegurarArray(item.noc_sugeridos || item.noc),
+        nic: asegurarArray(item.nic_sugeridos || item.nic),
+        cuidados: asegurarArray(item.cuidados_generales || item.cuidados),
+        original: item
       };
     }
 
@@ -552,7 +577,7 @@
       select.innerHTML = '<option value="">Cargando patologías...</option>';
 
       try{
-        const response = await fetch('data/patologias.json');
+        const response = await fetch('data/patologias.json?t=' + Date.now());
         if(!response.ok) throw new Error('No se pudo leer el archivo JSON');
 
         const data = await response.json();
@@ -628,6 +653,28 @@
       const index = document.getElementById('patologiaSelect').value;
       if(index === '') return null;
       return estado.patologias[Number(index)] || null;
+    }
+
+    function mostrarDebug(patologia){
+      const debug = document.getElementById('debugBox');
+
+      if(!patologia){
+        debug.classList.add('hidden');
+        debug.textContent = '';
+        return;
+      }
+
+      debug.classList.remove('hidden');
+      debug.textContent =
+`DEPURACIÓN
+Nombre: ${patologia.nombre}
+Categoría: ${patologia.categoria}
+Signos: ${patologia.signos_sintomas.length}
+Valoración: ${patologia.valoracion.length}
+NANDA: ${patologia.nanda.length}
+NOC: ${patologia.noc.length}
+NIC: ${patologia.nic.length}
+Cuidados: ${patologia.cuidados.length}`;
     }
 
     function generarPAE(){
@@ -736,6 +783,8 @@
             </div>
           </div>
         `;
+
+        mostrarDebug(patologia);
       }, 250);
     }
 
