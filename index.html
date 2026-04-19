@@ -5,20 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MediGuía Enfermería</title>
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+    *{margin:0;padding:0;box-sizing:border-box;}
 
     body{
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg,#eef7ff,#f8fbff,#e8f1ff);
-      color:#16324f;
+      background: linear-gradient(135deg,#fff0f5,#ffe4ec,#ffd6e7);
+      color:#7a1e3a;
     }
 
     header{
-      background: linear-gradient(135deg,#0d3b66,#145da0,#1e81ce);
+      background: linear-gradient(135deg,#ff4d88,#ff80ab,#ff99c2);
       color:white;
       padding:18px 25px;
       position: sticky;
@@ -37,23 +33,13 @@
       flex-wrap:wrap;
     }
 
-    .logo{
-      font-size:1.7rem;
-      font-weight:bold;
-    }
+    .logo{font-size:1.7rem;font-weight:bold;}
+    .logo span{color:#ffe4ec;}
 
-    .logo span{
-      color:#bde0ff;
-    }
-
-    .menu{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-    }
+    .menu{display:flex;gap:12px;flex-wrap:wrap;}
 
     .menu button{
-      background:rgba(255,255,255,0.15);
+      background:rgba(255,255,255,0.2);
       border:none;
       color:white;
       padding:10px 16px;
@@ -63,10 +49,7 @@
       font-weight:bold;
     }
 
-    .menu button:hover{
-      background:white;
-      color:#145da0;
-    }
+    .menu button:hover{background:white;color:#ff4d88;}
 
     .hero{
       max-width:1200px;
@@ -82,27 +65,13 @@
       background:white;
       padding:35px;
       border-radius:28px;
-      box-shadow:0 12px 30px rgba(13,59,102,0.10);
+      box-shadow:0 12px 30px rgba(255,77,136,0.15);
     }
 
-    .hero-text h1{
-      font-size:3rem;
-      margin-bottom:15px;
-      color:#0d3b66;
-    }
+    .hero-text h1{font-size:3rem;margin-bottom:15px;color:#ff4d88;}
+    .hero-text p{font-size:1.08rem;line-height:1.7;margin-bottom:20px;color:#7a1e3a;}
 
-    .hero-text p{
-      font-size:1.08rem;
-      line-height:1.7;
-      margin-bottom:20px;
-      color:#355070;
-    }
-
-    .hero-buttons{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-    }
+    .hero-buttons{display:flex;gap:12px;flex-wrap:wrap;}
 
     .hero-buttons button{
       border:none;
@@ -114,102 +83,48 @@
       transition:0.25s;
     }
 
-    .primary{
-      background:#145da0;
-      color:white;
-    }
+    .primary{background:#ff4d88;color:white;}
+    .primary:hover{background:#e6005c;}
 
-    .primary:hover{
-      background:#0d3b66;
-    }
-
-    .secondary{
-      background:#d9ecff;
-      color:#145da0;
-    }
-
-    .secondary:hover{
-      background:#c4e0ff;
-    }
+    .secondary{background:#ffe4ec;color:#ff4d88;}
+    .secondary:hover{background:#ffd6e7;}
 
     .hero-card{
-      background:linear-gradient(135deg,#dceeff,#ffffff);
+      background:linear-gradient(135deg,#ffe4ec,#ffffff);
       padding:30px;
       border-radius:28px;
-      box-shadow:0 12px 30px rgba(13,59,102,0.10);
+      box-shadow:0 12px 30px rgba(255,77,136,0.15);
       text-align:center;
     }
 
-    .hero-card .emoji{
-      font-size:5rem;
-      margin-bottom:15px;
-    }
+    .hero-card .emoji{font-size:5rem;margin-bottom:15px;}
+    .hero-card h3{font-size:1.6rem;margin-bottom:10px;color:#ff4d88;}
+    .hero-card p{color:#7a1e3a;line-height:1.6;}
 
-    .hero-card h3{
-      font-size:1.6rem;
-      margin-bottom:10px;
-      color:#0d3b66;
-    }
-
-    .hero-card p{
-      color:#355070;
-      line-height:1.6;
-    }
-
-    section{
-      max-width:1200px;
-      margin:0 auto 35px auto;
-      padding:0 20px;
-    }
+    section{max-width:1200px;margin:0 auto 35px auto;padding:0 20px;}
 
     .section-box{
       background:white;
       border-radius:28px;
       padding:30px;
-      box-shadow:0 12px 30px rgba(13,59,102,0.08);
+      box-shadow:0 12px 30px rgba(255,77,136,0.12);
     }
 
-    .section-title{
-      font-size:2rem;
-      color:#0d3b66;
-      margin-bottom:10px;
-    }
+    .section-title{font-size:2rem;color:#ff4d88;margin-bottom:10px;}
+    .section-subtitle{color:#7a1e3a;margin-bottom:22px;line-height:1.6;}
 
-    .section-subtitle{
-      color:#4a6785;
-      margin-bottom:22px;
-      line-height:1.6;
-    }
-
-    .search-box{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-bottom:20px;
-    }
+    .search-box{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;}
 
     .search-box input{
-      flex:1;
-      min-width:240px;
-      padding:14px 16px;
-      border:2px solid #d9e8f7;
-      border-radius:14px;
-      font-size:1rem;
-      outline:none;
+      flex:1;min-width:240px;padding:14px 16px;
+      border:2px solid #ffd6e7;border-radius:14px;font-size:1rem;outline:none;
     }
 
-    .search-box input:focus{
-      border-color:#1e81ce;
-    }
+    .search-box input:focus{border-color:#ff4d88;}
 
     .search-box button{
-      padding:14px 18px;
-      border:none;
-      border-radius:14px;
-      background:#145da0;
-      color:white;
-      cursor:pointer;
-      font-weight:bold;
+      padding:14px 18px;border:none;border-radius:14px;
+      background:#ff4d88;color:white;cursor:pointer;font-weight:bold;
     }
 
     .cards{
@@ -219,37 +134,18 @@
     }
 
     .card{
-      background:linear-gradient(135deg,#f7fbff,#eaf4ff);
-      border:1px solid #d9e8f7;
-      border-radius:22px;
-      padding:22px;
-      transition:0.25s;
+      background:linear-gradient(135deg,#fff0f5,#ffe4ec);
+      border:1px solid #ffd6e7;border-radius:22px;padding:22px;transition:0.25s;
     }
 
-    .card:hover{
-      transform:translateY(-4px);
-      box-shadow:0 12px 24px rgba(13,59,102,0.10);
-    }
+    .card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(255,77,136,0.15);}
 
-    .card h3{
-      color:#0d3b66;
-      margin-bottom:10px;
-    }
-
-    .card p{
-      color:#4a6785;
-      line-height:1.6;
-      margin-bottom:15px;
-    }
+    .card h3{color:#ff4d88;margin-bottom:10px;}
+    .card p{color:#7a1e3a;line-height:1.6;margin-bottom:15px;}
 
     .card button{
-      background:#d9ecff;
-      color:#145da0;
-      border:none;
-      padding:10px 14px;
-      border-radius:12px;
-      cursor:pointer;
-      font-weight:bold;
+      background:#ffe4ec;color:#ff4d88;border:none;
+      padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:bold;
     }
 
     .features{
@@ -259,286 +155,42 @@
     }
 
     .feature{
-      background:#f7fbff;
-      border-left:6px solid #1e81ce;
-      border-radius:18px;
-      padding:20px;
+      background:#fff0f5;border-left:6px solid #ff4d88;
+      border-radius:18px;padding:20px;
     }
 
-    .feature h4{
-      margin-bottom:8px;
-      color:#0d3b66;
-    }
-
-    .feature p{
-      color:#4a6785;
-      line-height:1.6;
-    }
+    .feature h4{margin-bottom:8px;color:#ff4d88;}
+    .feature p{color:#7a1e3a;line-height:1.6;}
 
     .ai-box{
-      background:linear-gradient(135deg,#0d3b66,#145da0);
-      color:white;
-      border-radius:28px;
-      padding:30px;
+      background:linear-gradient(135deg,#ff4d88,#ff80ab);
+      color:white;border-radius:28px;padding:30px;
     }
 
-    .ai-box h2{
-      margin-bottom:10px;
-      font-size:2rem;
-    }
-
-    .ai-box p{
-      line-height:1.7;
-      margin-bottom:18px;
-      color:#e8f3ff;
-    }
+    .ai-box h2{margin-bottom:10px;font-size:2rem;}
+    .ai-box p{line-height:1.7;margin-bottom:18px;color:#fff0f5;}
 
     .ai-box .mini{
-      background:rgba(255,255,255,0.12);
-      padding:16px;
-      border-radius:18px;
-      margin-top:10px;
+      background:rgba(255,255,255,0.2);
+      padding:16px;border-radius:18px;margin-top:10px;
     }
 
-    footer{
-      text-align:center;
-      padding:30px 20px 50px;
-      color:#4a6785;
-      font-size:0.95rem;
-    }
+    footer{text-align:center;padding:30px 20px 50px;color:#7a1e3a;font-size:0.95rem;}
 
-    .hidden{
-      display:none;
-    }
+    .hidden{display:none;}
 
     #resultadoBusqueda{
-      margin-top:18px;
-      padding:18px;
-      border-radius:18px;
-      background:#f3f9ff;
-      border:1px solid #d9e8f7;
-      color:#355070;
-      line-height:1.7;
+      margin-top:18px;padding:18px;border-radius:18px;
+      background:#fff0f5;border:1px solid #ffd6e7;color:#7a1e3a;line-height:1.7;
     }
 
     @media(max-width:900px){
-      .hero{
-        grid-template-columns:1fr;
-      }
-
-      .hero-text h1{
-        font-size:2.3rem;
-      }
+      .hero{grid-template-columns:1fr;}
+      .hero-text h1{font-size:2.3rem;}
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <nav>
-      <div class="logo">MediGuía <span>Enfermería</span></div>
-      <div class="menu">
-        <button onclick="irA('inicio')">Inicio</button>
-        <button onclick="irA('patologias')">Patologías</button>
-        <button onclick="irA('herramientas')">Herramientas</button>
-        <button onclick="irA('ia')">IA</button>
-      </div>
-    </nav>
-  </header>
-
-  <section class="hero" id="inicio">
-    <div class="hero-text">
-      <h1>Tu apoyo digital para enfermería</h1>
-      <p>
-        MediGuía Enfermería está pensada como una base práctica para consultar patologías,
-        signos y síntomas, cuidados, diagnósticos de enfermería y contenido útil para estudio.
-        La idea es que sea clara, rápida y que más adelante pueda crecer con una IA propia.
-      </p>
-      <div class="hero-buttons">
-        <button class="primary" onclick="irA('patologias')">Ver patologías</button>
-        <button class="secondary" onclick="irA('ia')">Explorar idea de IA</button>
-      </div>
-    </div>
-
-    <div class="hero-card">
-      <div class="emoji">🩺</div>
-      <h3>MediGuía te acompaña</h3>
-      <p>
-        Consulta rápida, estructura visual limpia y espacio para seguir agregando temas,
-        cuidados e información clínica de forma organizada.
-      </p>
-    </div>
-  </section>
-
-  <section id="patologias">
-    <div class="section-box">
-      <h2 class="section-title">Buscador de patologías</h2>
-      <p class="section-subtitle">
-        Aquí luego podrás buscar una patología y ver su resumen, síntomas, cuidados de enfermería,
-        complicaciones y más. Por ahora ya te dejo una base que funciona con ejemplos.
-      </p>
-
-      <div class="search-box">
-        <input type="text" id="busqueda" placeholder="Ejemplo: apendicitis, hipertensión, diabetes...">
-        <button onclick="buscarPatologia()">Buscar</button>
-      </div>
-
-      <div id="resultadoBusqueda" class="hidden"></div>
-
-      <div class="cards" style="margin-top:22px;">
-        <div class="card">
-          <h3>Apendicitis</h3>
-          <p>Inflamación del apéndice que suele provocar dolor abdominal, fiebre y náuseas.</p>
-          <button onclick="mostrarPatologia('apendicitis')">Ver ejemplo</button>
-        </div>
-
-        <div class="card">
-          <h3>Hipertensión arterial</h3>
-          <p>Elevación persistente de la presión arterial que puede afectar distintos órganos.</p>
-          <button onclick="mostrarPatologia('hipertension')">Ver ejemplo</button>
-        </div>
-
-        <div class="card">
-          <h3>Diabetes mellitus</h3>
-          <p>Enfermedad metabólica caracterizada por alteración en el control de la glucosa.</p>
-          <button onclick="mostrarPatologia('diabetes')">Ver ejemplo</button>
-        </div>
-
-        <div class="card">
-          <h3>Neumonía</h3>
-          <p>Infección respiratoria que puede causar fiebre, tos, dificultad respiratoria y malestar.</p>
-          <button onclick="mostrarPatologia('neumonia')">Ver ejemplo</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="herramientas">
-    <div class="section-box">
-      <h2 class="section-title">Herramientas que puede llevar</h2>
-      <p class="section-subtitle">
-        Esta parte sirve para mostrar desde el inicio todo lo que MediGuía Enfermería podría incluir.
-      </p>
-
-      <div class="features">
-        <div class="feature">
-          <h4>Resumen de patologías</h4>
-          <p>Definición, causas, signos y síntomas, complicaciones y tratamiento general.</p>
-        </div>
-
-        <div class="feature">
-          <h4>Cuidados de enfermería</h4>
-          <p>Intervenciones básicas, vigilancia, educación al paciente y prevención de riesgos.</p>
-        </div>
-
-        <div class="feature">
-          <h4>NANDA, NOC y NIC</h4>
-          <p>Más adelante se puede agregar una estructura pensada para ayudar con PAE.</p>
-        </div>
-
-        <div class="feature">
-          <h4>Modo estudio</h4>
-          <p>Mini exámenes, tarjetas de repaso y repasos rápidos por tema o sistema.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="ia">
-    <div class="ai-box">
-      <h2>¿Tu patología no está?</h2>
-      <p>
-        Aquí puede ir en el futuro una herramienta de IA que permita buscar una patología que todavía
-        no esté en la base de datos. La idea sería que el sistema consulte la información, la ordene,
-        revise si ya existe una versión o sinónimo y luego la agregue sin duplicados.
-      </p>
-
-      <div class="mini">
-        <strong>Idea futura:</strong>
-        <p style="margin-top:8px;">
-          El usuario escribe una patología → el sistema revisa si ya existe o si hay sinónimos →
-          si no está, genera una ficha inicial con definición, síntomas y cuidados de enfermería →
-          luego esa ficha se puede revisar y guardar en la base de MediGuía.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    MediGuía Enfermería · Base inicial de la página
-  </footer>
-
-  <script>
-    const patologias = {
-      apendicitis: {
-        nombre: "Apendicitis",
-        texto: `
-          <strong>Definición:</strong> inflamación del apéndice, generalmente de inicio agudo.<br><br>
-          <strong>Signos y síntomas:</strong> dolor abdominal que puede iniciar en región periumbilical y luego localizarse en fosa ilíaca derecha, fiebre, náuseas, vómitos y sensibilidad abdominal.<br><br>
-          <strong>Cuidados de enfermería:</strong> vigilar signos vitales, valorar dolor, mantener reposo, controlar hidratación, preparar para procedimientos indicados y educar al paciente.
-        `
-      },
-      hipertension: {
-        nombre: "Hipertensión arterial",
-        texto: `
-          <strong>Definición:</strong> elevación sostenida de la presión arterial por arriba de los valores normales.<br><br>
-          <strong>Signos y síntomas:</strong> a veces puede ser asintomática, aunque algunas personas presentan cefalea, mareo o visión borrosa.<br><br>
-          <strong>Cuidados de enfermería:</strong> control periódico de la presión arterial, educación sobre dieta y medicamentos, vigilancia de signos de alarma y promoción de hábitos saludables.
-        `
-      },
-      diabetes: {
-        nombre: "Diabetes mellitus",
-        texto: `
-          <strong>Definición:</strong> trastorno metabólico caracterizado por hiperglucemia por alteración en la producción o acción de la insulina.<br><br>
-          <strong>Signos y síntomas:</strong> poliuria, polidipsia, polifagia, fatiga y pérdida de peso en algunos casos.<br><br>
-          <strong>Cuidados de enfermería:</strong> control de glucosa, educación sobre alimentación, administración correcta de tratamiento, vigilancia de complicaciones y fomento del autocuidado.
-        `
-      },
-      neumonia: {
-        nombre: "Neumonía",
-        texto: `
-          <strong>Definición:</strong> infección del tejido pulmonar que compromete el intercambio gaseoso.<br><br>
-          <strong>Signos y síntomas:</strong> fiebre, tos, dolor torácico, dificultad respiratoria, secreciones y malestar general.<br><br>
-          <strong>Cuidados de enfermería:</strong> vigilar respiración y saturación, facilitar posición cómoda, favorecer hidratación, controlar temperatura y reforzar indicaciones del tratamiento.
-        `
-      }
-    };
-
-    function irA(id){
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function mostrarPatologia(clave){
-      const box = document.getElementById('resultadoBusqueda');
-      const patologia = patologias[clave];
-
-      box.classList.remove('hidden');
-      box.innerHTML = `<h3 style="margin-bottom:10px; color:#0d3b66;">${patologia.nombre}</h3>${patologia.texto}`;
-      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-
-    function buscarPatologia(){
-      const valor = document.getElementById('busqueda').value.trim().toLowerCase();
-
-      if(valor.includes('apend')){
-        mostrarPatologia('apendicitis');
-      }else if(valor.includes('hipert')){
-        mostrarPatologia('hipertension');
-      }else if(valor.includes('diabet')){
-        mostrarPatologia('diabetes');
-      }else if(valor.includes('neum')){
-        mostrarPatologia('neumonia');
-      }else if(valor === ''){
-        const box = document.getElementById('resultadoBusqueda');
-        box.classList.remove('hidden');
-        box.innerHTML = 'Escribe el nombre de una patología para buscar.';
-      }else{
-        const box = document.getElementById('resultadoBusqueda');
-        box.classList.remove('hidden');
-        box.innerHTML = `No encontré esa patología en la base actual.<br><br><strong>Más adelante aquí podría entrar la IA</strong> para buscarla, ordenarla y proponer agregarla a MediGuía.`;
-      }
-    }
-  </script>
 
 </body>
 </html>
