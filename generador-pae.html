@@ -501,45 +501,244 @@
     }
 
     function normalizarPatologia(item){
-  if(typeof item === 'string'){
-    return {
-      nombre: item,
-      descripcion: 'Patología cargada desde la base.',
-      categoria: 'General',
-      sinonimos: [],
-      signos_sintomas: [],
-      valoracion: [],
-      nanda: [],
-      noc: [],
-      nic: [],
-      cuidados: []
-    };
-  }
+      if(typeof item === 'string'){
+        return {
+          nombre: item,
+          descripcion: 'Patología cargada desde la base.',
+          categoria: 'General',
+          sinonimos: [],
+          signos_sintomas: [],
+          valoracion: [],
+          nanda: [],
+          noc: [],
+          nic: [],
+          cuidados: []
+        };
+      }
 
-  const diagnosNanda = Array.isArray(item.diagnosticos_nanda_sugeridos)
-    ? item.diagnosticos_nanda_sugeridos.map(dx => {
-        if(typeof dx === 'string') return dx;
-        const relacionado = dx.relacionado_con ? ` relacionado con ${dx.relacionado_con}` : '';
-        const evidenciado = Array.isArray(dx.evidenciado_por) && dx.evidenciado_por.length
-          ? ` evidenciado por ${dx.evidenciado_por.join(', ')}`
-          : '';
-        return `${dx.nombre || 'Diagnóstico NANDA'}${relacionado}${evidenciado}`;
-      })
-    : [];
+      const diagnosNanda = Array.isArray(item.diagnosticos_nanda_sugeridos)
+        ? item.diagnosticos_nanda_sugeridos.map(dx => {
+            if(typeof dx === 'string') return dx;
+            const relacionado = dx.relacionado_con ? ` relacionado con ${dx.relacionado_con}` : '';
+            const evidenciado = Array.isArray(dx.evidenciado_por) && dx.evidenciado_por.length
+              ? ` evidenciado por ${dx.evidenciado_por.join(', ')}` : '';
+            return `${dx.nombre || 'Diagnóstico NANDA'}${relacionado}${evidenciado}`;
+          })
+        : [];
 
-  return {
-    nombre: item.nombre || item.patologia || item.titulo || 'Patología sin nombre',
-    descripcion: item.descripcion_breve || item.descripcion || item.definicion || item.resumen || 'Patología cargada desde la base.',
-    categoria: item.categoria || 'General',
-    sinonimos: item.sinonimos || [],
-    signos_sintomas: item.signos_sintomas || [],
-    valoracion: item.valoracion_enfermeria || item.valoracion || [],
-    nanda: diagnosNanda,
-    noc: item.noc_sugeridos || item.noc || [],
-    nic: item.nic_sugeridos || item.nic || [],
-    cuidados: item.cuidados_generales || item.cuidados || []
-  };
-}
+      return {
+        nombre: item.nombre || item.patologia || item.titulo || 'Patología sin nombre',
+        descripcion: item.descripcion_breve || item.descripcion || item.definicion || item.resumen || 'Patología cargada desde la base.',
+        categoria: item.categoria || 'General',
+        sinonimos: item.sinonimos || [],
+        signos_sintomas: item.signos_sintomas || [],
+        valoracion: item.valoracion_enfermeria || item.valoracion || [],
+        nanda: diagnosNanda,
+        noc: item.noc_sugeridos || item.noc || [],
+        nic: item.nic_sugeridos || item.nic || [],
+        cuidados: item.cuidados_generales || item.cuidados || []
+      };
+    }
+
+    async function cargarPatologias(){
+      const select = document.getElementById('patologiaSelect');
+      select.innerHTML = '<option value="">Cargando patologías...</option>';
+
+      try{
+        const response = await fetch('data/patologias.json');
+        if(!response.ok) throw new Error('No se pudo leer el archivo JSON');
+
+        const data = await response.json();
+        const lista = Array.isArray(data) ? data : (data.patologias || data.items || []);
+        estado.patologias = lista.map(normalizarPatologia);
+
+        if(!estado.patologias.length){
+          select.innerHTML = '<option value="">No se encontraron patologías en el archivo</option>';
+          return;
+        }
+
+        select.innerHTML =
+          '<option value="">Selecciona una patología</option>' +
+          estado.patologias
+            .map((item, index) => `<option value="${index}">${item.nombre} — ${item.categoria}</option>`)
+            .join('');
+      }catch(error){
+        console.error(error);
+        select.innerHTML = '<option value="">Error al cargar patologías</option>';
+      }
+    }
+
+    function configurarTipoPAE(){
+      document.querySelectorAll('#tipoPaeRow .chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('#tipoPaeRow .chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          estado.tipoPAE = chip.dataset.tipo;
+          actualizarModo();
+        });
+      });
+    }
+
+    function configurarEtapasCortas(){
+      document.querySelectorAll('#etapaCortaRow .chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('#etapaCortaRow .chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          estado.etapaCorta = chip.dataset.etapa;
+        });
+      });
+    }
+
+    function configurarSintomas(){
+      document.querySelectorAll('#sintomasBox .chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const sintoma = chip.dataset.sintoma;
+          chip.classList.toggle('active');
+
+          if(chip.classList.contains('active')){
+            if(!estado.sintomas.includes(sintoma)) estado.sintomas.push(sintoma);
+          }else{
+            estado.sintomas = estado.sintomas.filter(item => item !== sintoma);
+          }
+        });
+      });
+    }
+
+    function actualizarModo(){
+      const esCorto = estado.tipoPAE === 'corto';
+      document.getElementById('etapaCortaField').classList.toggle('hidden', !esCorto);
+      document.getElementById('etapaLargaField').classList.toggle('hidden', esCorto);
+    }
+
+    function generarLista(items, fallback){
+      if(!items || !items.length){
+        return `<ul><li>${fallback}</li></ul>`;
+      }
+      return `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
+    }
+
+    function obtenerPatologiaSeleccionada(){
+      const index = document.getElementById('patologiaSelect').value;
+      if(index === '') return null;
+      return estado.patologias[Number(index)] || null;
+    }
+
+    function generarPAE(){
+      const loader = document.getElementById('loader');
+      loader.style.display = 'block';
+
+      setTimeout(() => {
+        loader.style.display = 'none';
+
+        const patologia = obtenerPatologiaSeleccionada();
+        const nombrePaciente = document.getElementById('nombrePaciente').value.trim() || 'Paciente no especificado';
+        const edadPaciente = document.getElementById('edadPaciente').value.trim() || 'Edad no especificada';
+        const contexto = document.getElementById('contextoPaciente').value.trim() || 'Sin contexto clínico agregado todavía.';
+
+        estado.patologiaActiva = patologia;
+
+        const empty = document.getElementById('emptyState');
+        const preview = document.getElementById('previewContent');
+
+        empty.classList.add('hidden');
+        preview.classList.remove('hidden');
+
+        const nombrePatologia = patologia ? patologia.nombre : 'Patología no seleccionada';
+        const descripcion = patologia ? patologia.descripcion : 'Selecciona una patología desde el archivo JSON para complementar la vista previa.';
+        const categoria = patologia ? patologia.categoria : 'General';
+        const sintomasTexto = estado.sintomas.length ? estado.sintomas.join(', ') : 'Sin síntomas seleccionados';
+
+        const bloqueEtapas = estado.tipoPAE === 'corto'
+          ? `<div class="block"><h4>Etapa del PAE corto</h4><p>${capitalizar(estado.etapaCorta)}</p><span class="highlight">Se trabajará una sola etapa</span></div>`
+          : `<div class="block"><h4>Etapas del PAE largo</h4><ul class="path-list"><li>Preoperatorio</li><li>Transoperatorio</li><li>Postoperatorio</li></ul><span class="highlight">Se trabajará el proceso completo</span></div>`;
+
+        preview.innerHTML = `
+          <h2 class="section-title">Vista previa generada</h2>
+          <p class="section-subtitle">Esta estructura sirve como base para empezar a redactar el PAE dentro del módulo.</p>
+
+          <div class="summary-grid">
+            <div class="mini-card">
+              <h4>Tipo</h4>
+              <p>${estado.tipoPAE === 'corto' ? 'PAE corto' : 'PAE largo'}</p>
+            </div>
+            <div class="mini-card">
+              <h4>Patología</h4>
+              <p>${nombrePatologia}</p>
+            </div>
+            <div class="mini-card">
+              <h4>Síntomas elegidos</h4>
+              <p>${sintomasTexto}</p>
+            </div>
+          </div>
+
+          <div class="blocks-grid">
+            <div class="block">
+              <h4>Datos del paciente</h4>
+              <ul>
+                <li><strong>Nombre:</strong> ${nombrePaciente}</li>
+                <li><strong>Edad:</strong> ${edadPaciente}</li>
+                <li><strong>Contexto:</strong> ${contexto}</li>
+              </ul>
+            </div>
+
+            <div class="block">
+              <h4>Base patológica</h4>
+              <p>${descripcion}</p>
+              <span class="highlight">${categoria}</span>
+            </div>
+
+            ${bloqueEtapas}
+
+            <div class="block">
+              <h4>Signos y síntomas base</h4>
+              ${generarLista(patologia?.signos_sintomas, 'Agregar signos y síntomas según el caso clínico.')}
+            </div>
+
+            <div class="block">
+              <h4>Valoración de enfermería</h4>
+              ${generarLista(patologia?.valoracion, 'Agregar valoración clínica específica del caso.')}
+            </div>
+
+            <div class="block">
+              <h4>Diagnósticos NANDA sugeridos</h4>
+              ${generarLista(patologia?.nanda, 'Agregar diagnósticos de enfermería según el caso.')}
+            </div>
+
+            <div class="block">
+              <h4>Resultados esperados NOC</h4>
+              ${generarLista(patologia?.noc, 'Agregar resultados esperados según el objetivo del cuidado.')}
+            </div>
+
+            <div class="block">
+              <h4>Intervenciones NIC</h4>
+              ${generarLista(patologia?.nic, 'Agregar intervenciones de enfermería apropiadas.')}
+            </div>
+
+            <div class="block full">
+              <h4>Cuidados prioritarios / ruta sugerida</h4>
+              ${generarLista(
+                patologia?.cuidados?.length ? patologia.cuidados : [
+                  'Completar datos del paciente.',
+                  'Ajustar síntomas según el caso real.',
+                  'Redactar valoración.',
+                  'Seleccionar diagnósticos, NOC y NIC.',
+                  'Completar plan de cuidados y evaluación.'
+                ],
+                'Completar la ruta del PAE.'
+              )}
+            </div>
+          </div>
+        `;
+      }, 250);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      configurarTipoPAE();
+      configurarEtapasCortas();
+      configurarSintomas();
+      actualizarModo();
+      cargarPatologias();
+    });
   </script>
 </body>
 </html>
