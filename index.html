@@ -188,9 +188,216 @@
       .hero{grid-template-columns:1fr;}
       .hero-text h1{font-size:2.3rem;}
     }
+    }
   </style>
 </head>
 <body>
+
+  <header>
+    <nav>
+      <div class="logo">MediGuía <span>Enfermería</span></div>
+      <div class="menu">
+        <button onclick="irA('inicio')">Inicio</button>
+        <button onclick="irA('patologias')">Patologías</button>
+        <button onclick="irA('herramientas')">Herramientas</button>
+        <button onclick="irA('ia')">IA</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <h1>Tu apoyo digital para enfermería</h1>
+      <p>
+        MediGuía Enfermería está pensada como una base práctica para consultar patologías,
+        signos y síntomas, cuidados, diagnósticos de enfermería y contenido útil para estudio.
+        La idea es que sea clara, rápida y que más adelante pueda crecer con una IA propia.
+      </p>
+      <div class="hero-buttons">
+        <button class="primary" onclick="irA('patologias')">Ver patologías</button>
+        <button class="secondary" onclick="irA('ia')">Explorar idea de IA</button>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="emoji">🩺</div>
+      <h3>MediGuía te acompaña</h3>
+      <p>
+        Consulta rápida, estructura visual limpia y espacio para seguir agregando temas,
+        cuidados e información clínica de forma organizada.
+      </p>
+    </div>
+  </section>
+
+  <section id="patologias">
+    <div class="section-box">
+      <h2 class="section-title">Buscador de patologías</h2>
+      <p class="section-subtitle">
+        Aquí luego podrás buscar una patología y ver su resumen, síntomas, cuidados de enfermería,
+        complicaciones y más. Por ahora ya te dejo una base que funciona con ejemplos.
+      </p>
+
+      <div class="search-box">
+        <input type="text" id="busqueda" placeholder="Ejemplo: apendicitis, hipertensión, diabetes...">
+        <button onclick="buscarPatologia()">Buscar</button>
+      </div>
+
+      <div id="resultadoBusqueda" class="hidden"></div>
+
+      <div class="cards" style="margin-top:22px;">
+        <div class="card">
+          <h3>Apendicitis</h3>
+          <p>Inflamación del apéndice que suele provocar dolor abdominal, fiebre y náuseas.</p>
+          <button onclick="mostrarPatologia('apendicitis')">Ver ejemplo</button>
+        </div>
+
+        <div class="card">
+          <h3>Hipertensión arterial</h3>
+          <p>Elevación persistente de la presión arterial que puede afectar distintos órganos.</p>
+          <button onclick="mostrarPatologia('hipertension')">Ver ejemplo</button>
+        </div>
+
+        <div class="card">
+          <h3>Diabetes mellitus</h3>
+          <p>Enfermedad metabólica caracterizada por alteración en el control de la glucosa.</p>
+          <button onclick="mostrarPatologia('diabetes')">Ver ejemplo</button>
+        </div>
+
+        <div class="card">
+          <h3>Neumonía</h3>
+          <p>Infección respiratoria que puede causar fiebre, tos, dificultad respiratoria y malestar.</p>
+          <button onclick="mostrarPatologia('neumonia')">Ver ejemplo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="herramientas">
+    <div class="section-box">
+      <h2 class="section-title">Herramientas que puede llevar</h2>
+      <p class="section-subtitle">
+        Esta parte sirve para mostrar desde el inicio todo lo que MediGuía Enfermería podría incluir.
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <h4>Resumen de patologías</h4>
+          <p>Definición, causas, signos y síntomas, complicaciones y tratamiento general.</p>
+        </div>
+
+        <div class="feature">
+          <h4>Cuidados de enfermería</h4>
+          <p>Intervenciones básicas, vigilancia, educación al paciente y prevención de riesgos.</p>
+        </div>
+
+        <div class="feature">
+          <h4>NANDA, NOC y NIC</h4>
+          <p>Más adelante se puede agregar una estructura pensada para ayudar con PAE.</p>
+        </div>
+
+        <div class="feature">
+          <h4>Modo estudio</h4>
+          <p>Mini exámenes, tarjetas de repaso y repasos rápidos por tema o sistema.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ia">
+    <div class="ai-box">
+      <h2>¿Tu patología no está?</h2>
+      <p>
+        Aquí puede ir en el futuro una herramienta de IA que permita buscar una patología que todavía
+        no esté en la base de datos. La idea sería que el sistema consulte la información, la ordene,
+        revise si ya existe una versión o sinónimo y luego la agregue sin duplicados.
+      </p>
+
+      <div class="mini">
+        <strong>Idea futura:</strong>
+        <p style="margin-top:8px;">
+          El usuario escribe una patología → el sistema revisa si ya existe o si hay sinónimos →
+          si no está, genera una ficha inicial con definición, síntomas y cuidados de enfermería →
+          luego esa ficha se puede revisar y guardar en la base de MediGuía.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    MediGuía Enfermería · Base inicial de la página
+  </footer>
+
+  <script>
+    const patologias = {
+      apendicitis: {
+        nombre: "Apendicitis",
+        texto: `
+          <strong>Definición:</strong> inflamación del apéndice, generalmente de inicio agudo.<br><br>
+          <strong>Signos y síntomas:</strong> dolor abdominal que puede iniciar en región periumbilical y luego localizarse en fosa ilíaca derecha, fiebre, náuseas, vómitos y sensibilidad abdominal.<br><br>
+          <strong>Cuidados de enfermería:</strong> vigilar signos vitales, valorar dolor, mantener reposo, controlar hidratación, preparar para procedimientos indicados y educar al paciente.
+        `
+      },
+      hipertension: {
+        nombre: "Hipertensión arterial",
+        texto: `
+          <strong>Definición:</strong> elevación sostenida de la presión arterial por arriba de los valores normales.<br><br>
+          <strong>Signos y síntomas:</strong> a veces puede ser asintomática, aunque algunas personas presentan cefalea, mareo o visión borrosa.<br><br>
+          <strong>Cuidados de enfermería:</strong> control periódico de la presión arterial, educación sobre dieta y medicamentos, vigilancia de signos de alarma y promoción de hábitos saludables.
+        `
+      },
+      diabetes: {
+        nombre: "Diabetes mellitus",
+        texto: `
+          <strong>Definición:</strong> trastorno metabólico caracterizado por hiperglucemia por alteración en la producción o acción de la insulina.<br><br>
+          <strong>Signos y síntomas:</strong> poliuria, polidipsia, polifagia, fatiga y pérdida de peso en algunos casos.<br><br>
+          <strong>Cuidados de enfermería:</strong> control de glucosa, educación sobre alimentación, administración correcta de tratamiento, vigilancia de complicaciones y fomento del autocuidado.
+        `
+      },
+      neumonia: {
+        nombre: "Neumonía",
+        texto: `
+          <strong>Definición:</strong> infección del tejido pulmonar que compromete el intercambio gaseoso.<br><br>
+          <strong>Signos y síntomas:</strong> fiebre, tos, dolor torácico, dificultad respiratoria, secreciones y malestar general.<br><br>
+          <strong>Cuidados de enfermería:</strong> vigilar respiración y saturación, facilitar posición cómoda, favorecer hidratación, controlar temperatura y reforzar indicaciones del tratamiento.
+        `
+      }
+    };
+
+    function irA(id){
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function mostrarPatologia(clave){
+      const box = document.getElementById('resultadoBusqueda');
+      const patologia = patologias[clave];
+
+      box.classList.remove('hidden');
+      box.innerHTML = `<h3 style="margin-bottom:10px; color:#0d3b66;">${patologia.nombre}</h3>${patologia.texto}`;
+      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function buscarPatologia(){
+      const valor = document.getElementById('busqueda').value.trim().toLowerCase();
+
+      if(valor.includes('apend')){
+        mostrarPatologia('apendicitis');
+      }else if(valor.includes('hipert')){
+        mostrarPatologia('hipertension');
+      }else if(valor.includes('diabet')){
+        mostrarPatologia('diabetes');
+      }else if(valor.includes('neum')){
+        mostrarPatologia('neumonia');
+      }else if(valor === ''){
+        const box = document.getElementById('resultadoBusqueda');
+        box.classList.remove('hidden');
+        box.innerHTML = 'Escribe el nombre de una patología para buscar.';
+      }else{
+        const box = document.getElementById('resultadoBusqueda');
+        box.classList.remove('hidden');
+        box.innerHTML = `No encontré esa patología en la base actual.<br><br><strong>Más adelante aquí podría entrar la IA</strong> para buscarla, ordenarla y proponer agregarla a MediGuía.`;
+      }
+    }
+  </script>
 
 </body>
 </html>
