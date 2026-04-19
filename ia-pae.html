@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>IA PAE - MediGuía</title>
+
+<style>
+body{
+  font-family: Arial;
+  background: linear-gradient(135deg,#fff1f2,#ffe4e6,#fecdd3);
+  padding:20px;
+  color:#7f1d1d;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+input{
+  width:70%;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #fda4af;
+}
+
+button{
+  padding:10px 15px;
+  background:#f43f5e;
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+#resultado{
+  margin-top:20px;
+  white-space:pre-line;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🤖 IA de apoyo para PAE</h1>
+
+<input type="text" id="patologia" placeholder="Ej: Absceso abdominal">
+<button onclick="buscar()">Buscar</button>
+
+<div id="estado"></div>
+<div id="resultado"></div>
+
+</div>
+
+<script>
+
+// 🔹 BASE LOCAL (simulada por ahora)
+const baseDatos = [
+  {
+    nombre: "neumonia",
+    sinonimos: ["infeccion pulmonar"],
+    info: "Ya existe en MediGuía (usar datos guardados)"
+  }
+];
+
+// 🔍 BUSCADOR
+function buscar(){
+  const input = document.getElementById("patologia").value.toLowerCase();
+  const estado = document.getElementById("estado");
+  const resultado = document.getElementById("resultado");
+
+  resultado.innerHTML = "";
+  estado.innerHTML = "Buscando...";
+
+  // 1. Buscar en base local
+  const encontrada = baseDatos.find(p =>
+    p.nombre === input ||
+    p.sinonimos.includes(input)
+  );
+
+  if(encontrada){
+    estado.innerHTML = "Patología encontrada en MediGuía";
+    resultado.innerHTML = encontrada.info;
+    return;
+  }
+
+  // 2. Si NO existe → activar IA
+  estado.innerHTML = "No encontrada. Usando IA...";
+
+  usarIA(input);
+}
+
+// 🤖 IA SIMULADA (luego conectamos real)
+function usarIA(patologia){
+  const resultado = document.getElementById("resultado");
+
+  setTimeout(() => {
+    resultado.innerHTML = `
+🧠 Resultado para: ${patologia}
+
+📌 Definición:
+Acumulación anormal relacionada con infección o inflamación.
+
+⚠️ Signos y síntomas:
+- Dolor
+- Fiebre
+- Inflamación
+
+🩺 Diagnósticos NANDA:
+- Dolor agudo
+- Riesgo de infección
+- Deterioro tisular
+
+🎯 NOC:
+- Control del dolor
+- Estado del paciente
+
+🛠️ NIC:
+- Manejo del dolor
+- Vigilancia
+- Control de infección
+
+💡 Usa esta base para construir tu PAE
+`;
+  }, 1200);
+}
+
+</script>
+
+</body>
+</html>
