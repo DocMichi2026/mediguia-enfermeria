@@ -273,6 +273,7 @@
       <div class="logo">MediGuía <span>Enfermería</span></div>
       <div class="menu">
         <button onclick="irA('inicio')">Inicio</button>
+        <button onclick="irA('selector-pae')">Tipo de PAE</button>
         <button onclick="irA('paes')">PAE</button>
         <button onclick="irA('herramientas')">Herramientas</button>
         <button onclick="irA('flujo-pae')">Flujo</button>
@@ -286,23 +287,55 @@
     <div class="hero-text">
       <h1>MediGuía para hacer PAE</h1>
       <p>
-        Esta página ya no está pensada como una enciclopedia de patologías, sino como una guía práctica
-        para construir procesos de atención de enfermería. La idea es encontrar una condición clínica y
-        ver directamente valoración, diagnósticos, resultados esperados, intervenciones y cuidados.
+        Esta página está pensada para ayudar a construir procesos de atención de enfermería de forma más ordenada.
+        Ahora MediGuía tendrá dos rutas principales: una para PAE corto y otra para PAE largo, según lo que necesiten trabajar.
       </p>
       <div class="hero-buttons">
-        <button class="primary" onclick="irA('paes')">Ver plantillas PAE</button>
+        <button class="primary" onclick="irA('selector-pae')">Elegir tipo de PAE</button>
         <button class="secondary" onclick="irA('ia')">Idea futura de IA</button>
       </div>
     </div>
 
     <div class="hero-card">
       <div class="emoji">💗</div>
-      <h3>Enfoque práctico</h3>
+      <h3>PAE corto o largo</h3>
       <p>
-        Buscar rápido, organizar la información y convertirla en una base útil para tareas, exposiciones y
-        planes de cuidado de enfermería.
+        Puedes trabajar un PAE corto por etapa específica o un PAE largo que abarque todo el proceso quirúrgico.
       </p>
+    </div>
+  </section>
+
+  <section id="selector-pae">
+    <div class="section-box">
+      <h2 class="section-title">Selecciona el tipo de PAE</h2>
+      <p class="section-subtitle">
+        Aquí se define desde el inicio si quieres trabajar un caso breve por etapa o un caso completo con desarrollo amplio.
+      </p>
+
+      <div class="pae-grid">
+        <div class="pae-block">
+          <h4>PAE corto</h4>
+          <p style="margin-bottom:14px; color:#7a1e3a;">
+            Pensado para trabajos más puntuales. Aquí se escoge una sola etapa del proceso.
+          </p>
+          <div class="chips">
+            <span class="chip active-chip">Preoperatorio</span>
+            <span class="chip">Postoperatorio</span>
+          </div>
+        </div>
+
+        <div class="pae-block">
+          <h4>PAE largo</h4>
+          <p style="margin-bottom:14px; color:#7a1e3a;">
+            Pensado para trabajos completos y extensos. Aquí se desarrollan todas las etapas principales.
+          </p>
+          <div class="chips">
+            <span class="chip active-chip">Preoperatorio</span>
+            <span class="chip active-chip">Transoperatorio</span>
+            <span class="chip active-chip">Postoperatorio</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -383,39 +416,40 @@
     <div class="section-box">
       <h2 class="section-title">Cómo se construiría el PAE</h2>
       <p class="section-subtitle">
-        En el código que compartiste se veía bien la idea de manejar un flujo por pasos. Aquí lo adapté para que encaje con MediGuía Enfermería y con el enfoque de PAE. fileciteturn0file0
+        El flujo ahora parte del tipo de PAE que el usuario necesite elaborar.
       </p>
 
       <div class="pae-grid">
         <div class="pae-block">
           <h4>Paso 1</h4>
           <ul>
-            <li>Seleccionar patología o problema de salud.</li>
-            <li>Definir si el caso partirá de una base existente o desde cero.</li>
+            <li>Elegir entre PAE corto o PAE largo.</li>
+            <li>Si es corto, escoger preoperatorio o postoperatorio.</li>
           </ul>
         </div>
 
         <div class="pae-block">
           <h4>Paso 2</h4>
           <ul>
-            <li>Completar datos del paciente.</li>
-            <li>Agregar valoración inicial y contexto clínico.</li>
+            <li>Seleccionar patología o problema de salud.</li>
+            <li>Agregar datos del paciente y contexto clínico.</li>
           </ul>
         </div>
 
         <div class="pae-block">
           <h4>Paso 3</h4>
           <ul>
-            <li>Elegir etapa clínica.</li>
-            <li>Marcar síntomas compatibles con el caso.</li>
+            <li>Definir etapa clínica y síntomas compatibles.</li>
+            <li>Organizar entrevista, valoración y anamnesis según el tipo de PAE.</li>
           </ul>
         </div>
 
         <div class="pae-block">
           <h4>Paso 4</h4>
           <ul>
-            <li>Generar base del PAE.</li>
-            <li>Editar diagnósticos, NOC, NIC y cuidados según necesidad.</li>
+            <li>Generar la base del PAE.</li>
+            <li>En corto: una etapa específica.</li>
+            <li>En largo: pre, trans y post completos.</li>
           </ul>
         </div>
       </div>
@@ -426,17 +460,32 @@
     <div class="section-box">
       <h2 class="section-title">Demo del generador</h2>
       <p class="section-subtitle">
-        Esta parte no reemplaza la ficha PAE ya existente, sino que agrega las opciones que te gustaron del otro código: selector de etapa, síntomas sugeridos y vista previa de secciones a trabajar. fileciteturn0file0
+        La demo ahora contempla el selector de tipo de PAE para que el usuario entre desde el inicio a la ruta que le conviene.
       </p>
 
       <div class="pae-grid">
         <div class="pae-block">
-          <h4>Etapa clínica</h4>
+          <h4>Tipo de PAE</h4>
           <div class="chips">
-            <span class="chip">Preoperatorio</span>
+            <span class="chip active-chip">PAE corto</span>
+            <span class="chip">PAE largo</span>
+          </div>
+        </div>
+
+        <div class="pae-block">
+          <h4>Etapa seleccionable para PAE corto</h4>
+          <div class="chips">
+            <span class="chip active-chip">Preoperatorio</span>
             <span class="chip">Postoperatorio</span>
-            <span class="chip">Hospitalización</span>
-            <span class="chip">Consulta externa</span>
+          </div>
+        </div>
+
+        <div class="pae-block">
+          <h4>Etapas incluidas en PAE largo</h4>
+          <div class="chips">
+            <span class="chip active-chip">Preoperatorio</span>
+            <span class="chip active-chip">Transoperatorio</span>
+            <span class="chip active-chip">Postoperatorio</span>
           </div>
         </div>
 
