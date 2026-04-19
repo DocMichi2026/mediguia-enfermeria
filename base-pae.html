@@ -464,6 +464,9 @@
         return {
           nombre: item,
           descripcion: 'Patología cargada desde la base.',
+          categoria: 'General',
+          sinonimos: [],
+          signos_sintomas: [],
           valoracion: [],
           nanda: [],
           noc: [],
@@ -472,14 +475,28 @@
         };
       }
 
+      const diagnosNanda = Array.isArray(item.diagnosticos_nanda_sugeridos)
+        ? item.diagnosticos_nanda_sugeridos.map(dx => {
+            if(typeof dx === 'string') return dx;
+            const relacionado = dx.relacionado_con ? ` relacionado con ${dx.relacionado_con}` : '';
+            const evidenciado = Array.isArray(dx.evidenciado_por) && dx.evidenciado_por.length
+              ? ` evidenciado por ${dx.evidenciado_por.join(', ')}`
+              : '';
+            return `${dx.nombre || 'Diagnóstico NANDA'}${relacionado}${evidenciado}`;
+          })
+        : [];
+
       return {
         nombre: item.nombre || item.patologia || item.titulo || 'Patología sin nombre',
-        descripcion: item.descripcion || item.resumen || item.definicion || 'Patología cargada desde la base.',
-        valoracion: item.valoracion || [],
-        nanda: item.nanda || item.diagnosticos || [],
-        noc: item.noc || [],
-        nic: item.nic || [],
-        cuidados: item.cuidados || []
+        descripcion: item.descripcion_breve || item.descripcion || item.definicion || item.resumen || 'Patología cargada desde la base.',
+        categoria: item.categoria || 'General',
+        sinonimos: item.sinonimos || [],
+        signos_sintomas: item.signos_sintomas || [],
+        valoracion: item.valoracion_enfermeria || item.valoracion || [],
+        nanda: diagnosNanda,
+        noc: item.noc_sugeridos || item.noc || [],
+        nic: item.nic_sugeridos || item.nic || [],
+        cuidados: item.cuidados_generales || item.cuidados || []
       };
     }
 
