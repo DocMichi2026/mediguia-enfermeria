@@ -130,7 +130,116 @@ Acumulación anormal relacionada con infección o inflamación.
 `;
   }, 1200);
 }
+let baseDatos = [];
 
+// Cargar JSON al abrir la página
+async function cargarPatologias() {
+  try {
+    const res = await fetch("data/patologias.json");
+    const data = await res.json();
+    baseDatos = data.patologias || [];
+    console.log("Base cargada:", baseDatos.length, "patologías");
+  } catch (error) {
+    console.error("Error al cargar patologías:", error);
+  }
+}
+
+cargarPatologias();
+
+// Normalizar texto
+function normalizarTexto(texto) {
+  return texto
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+}
+
+// Buscar en la base local
+function buscarEnBase(termino) {
+  const terminoNormalizado = normalizarTexto(termino);
+
+  return baseDatos.find((patologia) => {
+    const nombre = normalizarTexto(patologia.nombre || "");
+    const sinonimos = (patologia.sinonimos || []).map(s => normalizarTexto(s));
+
+    return nombre === terminoNormalizado || sinonimos.includes(terminoNormalizado);
+  });
+}
+
+// Función principal del botón
+function buscar() {
+  const input = document.getElementById("patologia").value.trim();
+  const estado = document.getElementById("estado");
+  const resultado = document.getElementById("resultado");
+
+  if (!input) {
+    estado.innerHTML = "Escribe una patología.";
+    resultado.innerHTML = "";
+    return;
+  }
+
+  estado.innerHTML = "Buscando...";
+  resultado.innerHTML = "";
+
+  const encontrada = buscarEnBase(input);
+
+  if (encontrada) {
+    estado.innerHTML = "Patología encontrada en MediGuía.";
+    mostrarPatologia(encontrada);
+  } else {
+    estado.innerHTML = "Patología no encontrada. Usando IA...";
+    usarIA(input);
+  }
+}
+
+// Mostrar datos del JSON
+function mostrarPatologia(patologia) {
+  const resultado = document.getElementById("resultado");
+
+  resultado.innerHTML = `
+    <h2>${patologia.nombre}</h2>
+    <p><strong>Categoría:</strong> ${patologia.categoria || "No especificada"}</p>
+    <p><strong>Descripción breve:</strong> ${patologia.descripcion_breve || ""}</p>
+    <p><strong>Definición:</strong> ${patologia.definicion || ""}</p>
+
+    <h3>Signos y síntomas</h3>
+    <ul>
+      ${(patologia.signos_sintomas || []).map(item => `<li>${item}</li>`).join("")}
+    </ul>
+
+    <h3>Valoración de enfermería</h3>
+    <ul>
+      ${(patologia.valoracion_enfermeria || []).map(item => `<li>${item}</li>`).join("")}
+    </ul>
+
+    <h3>Diagnósticos NANDA sugeridos</h3>
+    <ul>
+      ${(patologia.diagnosticos_nanda_sugeridos || []).map(dx => `<li>${dx}</li>`).join("")}
+    </ul>
+
+    <h3>NOC sugeridos</h3>
+    <ul>
+      ${(patologia.noc_sugeridos || []).map(item => `<li>${item}</li>`).join("")}
+    </ul>
+
+    <h3>NIC sugeridos</h3>
+    <ul>
+      ${(patologia.nic_sugeridos || []).map(item => `<li>${item}</li>`).join("")}
+    </ul>
+  `;
+}
+
+// IA temporal o real después
+function usarIA(patologia) {
+  const resultado = document.getElementById("resultado");
+
+  resultado.innerHTML = `
+    <h2>${patologia}</h2>
+    <p>No está en la base local todavía.</p>
+    <p>Aquí entrará la IA para investigar la patología y devolver la información necesaria para construir el PAE.</p>
+  `;
+}
 </script>
 
 </body>
