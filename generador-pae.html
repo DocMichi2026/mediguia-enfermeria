@@ -43,18 +43,10 @@
       flex-wrap:wrap;
     }
 
-    .logo{
-      font-size:1.6rem;
-      font-weight:bold;
-    }
-
+    .logo{font-size:1.6rem;font-weight:bold;}
     .logo span{color:#ffe4ec;}
 
-    .menu{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
+    .menu{display:flex;gap:10px;flex-wrap:wrap;}
 
     .menu button,
     .menu a{
@@ -73,16 +65,9 @@
     }
 
     .menu button:hover,
-    .menu a:hover{
-      background:white;
-      color:var(--rosa);
-    }
+    .menu a:hover{background:white;color:var(--rosa);}
 
-    section{
-      max-width:1200px;
-      margin:0 auto 22px auto;
-      padding:0 20px;
-    }
+    section{max-width:1200px;margin:0 auto 22px auto;padding:0 20px;}
 
     .hero{
       margin-top:28px;
@@ -100,12 +85,7 @@
       box-shadow:var(--sombra);
     }
 
-    .hero-box,
-    .hero-side,
-    .box,
-    .result-box{
-      padding:26px;
-    }
+    .hero-box,.hero-side,.box,.result-box{padding:26px;}
 
     .hero-box h1{
       color:var(--rosa);
@@ -118,17 +98,9 @@
     .hero-side p,
     .section-subtitle,
     .result-box p,
-    .helper-text{
-      line-height:1.7;
-      color:var(--texto);
-    }
+    .helper-text{line-height:1.7;color:var(--texto);}
 
-    .hero-buttons{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top:16px;
-    }
+    .hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;}
 
     .btn{
       border:none;
@@ -154,12 +126,7 @@
     .emoji{font-size:3.4rem;margin-bottom:10px;}
     .hero-side h3{color:var(--rosa);margin-bottom:10px;font-size:1.35rem;}
 
-    .section-title{
-      color:var(--rosa);
-      font-size:1.7rem;
-      margin-bottom:8px;
-    }
-
+    .section-title{color:var(--rosa);font-size:1.7rem;margin-bottom:8px;}
     .section-subtitle{margin-bottom:18px;max-width:75ch;}
 
     .layout{
@@ -169,22 +136,10 @@
       align-items:start;
     }
 
-    .sidebar{
-      position:sticky;
-      top:92px;
-    }
+    .sidebar{position:sticky;top:92px;}
+    .stack{display:grid;gap:18px;}
 
-    .stack{
-      display:grid;
-      gap:18px;
-    }
-
-    .chips,
-    .selection-row{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
+    .chips,.selection-row{display:flex;flex-wrap:wrap;gap:10px;}
 
     .chip{
       display:inline-flex;
@@ -202,29 +157,13 @@
       min-height:40px;
     }
 
-    .chip:hover{
-      transform:translateY(-1px);
-      border-color:#ffb3cc;
-    }
-
-    .chip.active{
-      background:var(--rosa-3);
-      border-color:#ffb3cc;
-      color:var(--rosa);
-    }
+    .chip:hover{transform:translateY(-1px);border-color:#ffb3cc;}
+    .chip.active{background:var(--rosa-3);border-color:#ffb3cc;color:var(--rosa);}
 
     .field{margin-bottom:16px;}
+    .field label{display:block;margin-bottom:8px;font-weight:bold;color:var(--rosa);}
 
-    .field label{
-      display:block;
-      margin-bottom:8px;
-      font-weight:bold;
-      color:var(--rosa);
-    }
-
-    input,
-    select,
-    textarea{
+    input,select,textarea{
       width:100%;
       border:2px solid var(--rosa-4);
       border-radius:14px;
@@ -235,53 +174,25 @@
       color:var(--texto);
     }
 
-    input:focus,
-    select:focus,
-    textarea:focus{
-      border-color:var(--rosa);
-    }
-
+    input:focus,select:focus,textarea:focus{border-color:var(--rosa);}
     textarea{min-height:110px;resize:vertical;}
 
-    .helper-text{
-      font-size:0.94rem;
-      margin-top:8px;
-    }
+    .helper-text{font-size:0.94rem;margin-top:8px;}
+    .result-box{min-height:300px;}
 
-    .result-box{
-      min-height:300px;
-    }
-
-    .summary-grid,
-    .blocks-grid{
-      display:grid;
-      gap:14px;
-    }
-
+    .summary-grid,.blocks-grid{display:grid;gap:14px;}
     .summary-grid{grid-template-columns:repeat(3,1fr);margin-bottom:16px;}
     .blocks-grid{grid-template-columns:repeat(2,1fr);}
 
-    .mini-card,
-    .block{
+    .mini-card,.block{
       background:#fff8fb;
       border:1px solid var(--rosa-4);
       border-radius:18px;
       padding:16px;
     }
 
-    .mini-card h4,
-    .block h4{
-      color:var(--rosa);
-      margin-bottom:10px;
-      font-size:1rem;
-      line-height:1.35;
-    }
-
-    .block ul{
-      padding-left:18px;
-      line-height:1.6;
-    }
-
+    .mini-card h4,.block h4{color:var(--rosa);margin-bottom:10px;font-size:1rem;line-height:1.35;}
+    .block ul{padding-left:18px;line-height:1.6;}
     .block li{margin-bottom:7px;}
 
     .highlight{
@@ -306,42 +217,16 @@
       text-align:center;
     }
 
-    .empty-state h3{
-      color:var(--rosa);
-      margin-bottom:10px;
-    }
+    .empty-state h3{color:var(--rosa);margin-bottom:10px;}
+    .loader{display:none;margin-top:12px;color:var(--rosa);font-weight:bold;}
 
-    .loader{
-      display:none;
-      margin-top:12px;
-      color:var(--rosa);
-      font-weight:bold;
-    }
-
-    .path-list{
-      padding-left:18px;
-      line-height:1.65;
-    }
-
+    .path-list{padding-left:18px;line-height:1.65;}
     .path-list li{margin-bottom:6px;}
-
-    .debug{
-      margin-top:14px;
-      font-size:0.9rem;
-      line-height:1.5;
-      color:#8a3b5a;
-      background:#fff8fb;
-      border:1px dashed #ffbfd3;
-      padding:12px;
-      border-radius:14px;
-      white-space:pre-wrap;
-    }
 
     @media(max-width:1024px){
       .layout{grid-template-columns:1fr;}
       .sidebar{position:static;}
-      .summary-grid,
-      .blocks-grid{grid-template-columns:1fr;}
+      .summary-grid,.blocks-grid{grid-template-columns:1fr;}
     }
 
     @media(max-width:780px){
@@ -353,15 +238,9 @@
 
     @media(max-width:640px){
       header{padding:16px 18px;}
-      .hero-box,
-      .hero-side,
-      .box,
-      .result-box{padding:22px;}
-      .menu,
-      .hero-buttons{width:100%;}
-      .menu button,
-      .menu a,
-      .btn{width:100%;}
+      .hero-box,.hero-side,.box,.result-box{padding:22px;}
+      .menu,.hero-buttons{width:100%;}
+      .menu button,.menu a,.btn{width:100%;}
       .section-title{font-size:1.45rem;}
     }
   </style>
@@ -475,14 +354,8 @@
             </div>
           </div>
 
-          <button class="btn btn-primary" style="width:100%; margin-bottom:10px;" onclick="generarPAE()">
-            Generar vista previa
-          </button>
-
-          <button class="btn btn-secondary" style="width:100%;" onclick="exportarWord()">
-            Descargar en Word
-          </button>
-
+          <button class="btn btn-primary" style="width:100%; margin-bottom:10px;" onclick="generarPAE()">Generar vista previa</button>
+          <button class="btn btn-secondary" style="width:100%;" onclick="exportarWord()">Descargar en Word</button>
           <div class="loader" id="loader">Generando vista previa...</div>
         </div>
       </div>
@@ -494,7 +367,6 @@
         </div>
 
         <div id="previewContent" class="hidden"></div>
-        <div id="debugBox" class="debug hidden"></div>
       </div>
     </div>
   </section>
@@ -503,6 +375,7 @@
     MediGuía Enfermería · Generador de PAE
   </footer>
 
+  <script src="data-helper.js"></script>
   <script>
     const estado = {
       tipoPAE: 'corto',
@@ -520,69 +393,12 @@
       return texto ? texto.charAt(0).toUpperCase() + texto.slice(1) : '';
     }
 
-    function asegurarArray(valor){
-      if(Array.isArray(valor)) return valor;
-      if(valor == null) return [];
-      return [valor];
-    }
-
-    function normalizarDiagnosticos(lista){
-      return asegurarArray(lista).map(dx => {
-        if(typeof dx === 'string') return dx;
-        if(!dx || typeof dx !== 'object') return 'Diagnóstico NANDA';
-
-        const relacionado = dx.relacionado_con ? ` relacionado con ${dx.relacionado_con}` : '';
-        const evidenciado = Array.isArray(dx.evidenciado_por) && dx.evidenciado_por.length
-          ? ` evidenciado por ${dx.evidenciado_por.join(', ')}`
-          : '';
-
-        return `${dx.nombre || 'Diagnóstico NANDA'}${relacionado}${evidenciado}`;
-      });
-    }
-
-    function normalizarPatologia(item){
-      if(typeof item === 'string'){
-        return {
-          nombre: item,
-          descripcion: 'Patología cargada desde la base.',
-          categoria: 'General',
-          sinonimos: [],
-          signos_sintomas: [],
-          valoracion: [],
-          nanda: [],
-          noc: [],
-          nic: [],
-          cuidados: [],
-          original: item
-        };
-      }
-
-      return {
-        nombre: item.nombre || item.patologia || item.titulo || 'Patología sin nombre',
-        descripcion: item.descripcion_breve || item.descripcion || item.definicion || item.resumen || 'Patología cargada desde la base.',
-        categoria: item.categoria || 'General',
-        sinonimos: asegurarArray(item.sinonimos),
-        signos_sintomas: asegurarArray(item.signos_sintomas || item.signos || item.sintomas),
-        valoracion: asegurarArray(item.valoracion_enfermeria || item.valoracion),
-        nanda: normalizarDiagnosticos(item.diagnosticos_nanda_sugeridos || item.nanda || item.diagnosticos),
-        noc: asegurarArray(item.noc_sugeridos || item.noc),
-        nic: asegurarArray(item.nic_sugeridos || item.nic),
-        cuidados: asegurarArray(item.cuidados_generales || item.cuidados),
-        original: item
-      };
-    }
-
     async function cargarPatologias(){
       const select = document.getElementById('patologiaSelect');
       select.innerHTML = '<option value="">Cargando patologías...</option>';
 
       try{
-        const response = await fetch('data/patologias.json?t=' + Date.now());
-        if(!response.ok) throw new Error('No se pudo leer el archivo JSON');
-
-        const data = await response.json();
-        const lista = Array.isArray(data) ? data : (data.patologias || data.items || []);
-        estado.patologias = lista.map(normalizarPatologia);
+        estado.patologias = await cargarPatologiasDesdeJSON();
 
         if(!estado.patologias.length){
           select.innerHTML = '<option value="">No se encontraron patologías en el archivo</option>';
@@ -653,28 +469,6 @@
       const index = document.getElementById('patologiaSelect').value;
       if(index === '') return null;
       return estado.patologias[Number(index)] || null;
-    }
-
-    function mostrarDebug(patologia){
-      const debug = document.getElementById('debugBox');
-
-      if(!patologia){
-        debug.classList.add('hidden');
-        debug.textContent = '';
-        return;
-      }
-
-      debug.classList.remove('hidden');
-      debug.textContent =
-`DEPURACIÓN
-Nombre: ${patologia.nombre}
-Categoría: ${patologia.categoria}
-Signos: ${patologia.signos_sintomas.length}
-Valoración: ${patologia.valoracion.length}
-NANDA: ${patologia.nanda.length}
-NOC: ${patologia.noc.length}
-NIC: ${patologia.nic.length}
-Cuidados: ${patologia.cuidados.length}`;
     }
 
     function generarPAE(){
@@ -783,8 +577,6 @@ Cuidados: ${patologia.cuidados.length}`;
             </div>
           </div>
         `;
-
-        mostrarDebug(patologia);
       }, 250);
     }
 
@@ -792,7 +584,7 @@ Cuidados: ${patologia.cuidados.length}`;
       const contenido = document.getElementById('previewContent');
 
       if (contenido.classList.contains('hidden') || !contenido.innerHTML.trim()) {
-        alert("Primero genera el PAE");
+        alert('Primero genera el PAE');
         return;
       }
 
@@ -803,20 +595,10 @@ Cuidados: ${patologia.cuidados.length}`;
         <meta charset="utf-8">
         <title>PAE</title>
         <style>
-          body {
-            font-family: Arial, sans-serif;
-            padding: 24px;
-            color: #333;
-          }
-          h2 {
-            color: #ff4d88;
-          }
-          h4 {
-            color: #e6005c;
-          }
-          ul {
-            margin-bottom: 10px;
-          }
+          body { font-family: Arial, sans-serif; padding: 24px; color: #333; }
+          h2 { color: #ff4d88; }
+          h4 { color: #e6005c; }
+          ul { margin-bottom: 10px; }
           .mini-card, .block {
             border: 1px solid #f3c2d4;
             border-radius: 12px;
@@ -840,19 +622,14 @@ Cuidados: ${patologia.cuidados.length}`;
       </html>
       `;
 
-      const blob = new Blob(['\ufeff', html], {
-        type: 'application/msword'
-      });
-
+      const blob = new Blob(['\ufeff', html], { type: 'application/msword' });
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
       link.download = 'PAE.doc';
-
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-
       URL.revokeObjectURL(url);
     }
 
